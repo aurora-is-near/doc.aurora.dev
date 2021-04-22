@@ -1,16 +1,8 @@
 ---
-hide:
-  - navigation
+title: "Aurora: Connecting with MetaMask"
 ---
 
-# Welcome to Project Aurora
-
-!!! caution "Here be dragons"
-
-    This documentation is a work in progress and may contain incomplete,
-    inaccurate, or outdated information.
-
-**[Project Aurora] delivers an Ethereum Virtual Machine (EVM) on the [NEAR Protocol].**
+# Connecting with MetaMask
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus
 nisl eget urna tempus tincidunt. Vivamus porta interdum elit, dictum
@@ -27,5 +19,10 @@ tempor egestas. Donec dignissim neque turpis, ac sagittis neque fermentum
 vel. Duis cursus commodo ligula id finibus. Nullam ut ultrices neque. Fusce
 lobortis auctor diam, vitae ultricies dolor bibendum eget.
 
-[NEAR Protocol]:  https://near.org
-[Project Aurora]: https://aurora.dev
+Quisque id sem sagittis, faucibus odio sit amet, dignissim enim. Duis tortor
+sem, malesuada eu cursus nec, ullamcorper non mi. Morbi sagittis risus sed
+ligula consectetur, eget vulputate justo gravida. Vivamus ultrices, nunc ut
+mattis ultrices, enim elit elementum orci, id blandit turpis lorem dictum
+turpis. Donec sed tincidunt ligula. Nam tincidunt eros non quam rutrum, at
+feugiat ipsum maximus. Sed scelerisque magna felis, et lobortis massa
+viverra non.

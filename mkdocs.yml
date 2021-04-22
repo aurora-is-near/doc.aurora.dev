@@ -16,26 +16,46 @@ use_directory_urls: false
 
 # Table of contents (TOC):
 nav:
-  - Introduction: index.md
-  - Getting Started:
-    - MetaMask: start/metamask.md
-    - Truffle: start/truffle.md
-    - Hardhat: start/hardhat.md
-  - Networks: networks.md
-  - Compatibility:
-    - JSON-RPC: compat/rpc.md
-    - EVM: compat/evm.md
-  - FAQs: faq.md
-  - Resources:
-    - Media Kit: media.md
-    - Roadmap: roadmap.md
-    - Glossary: glossary.md
+  - Overview: index.md
+  - Learn:
+    - Connecting a Wallet:
+      - MetaMask: learn/connect/metamask.md
+      - WalletConnect: learn/connect/walletconnect.md
+    - Bridging Funds:
+      - ETH Balances: learn/bridge/eth.md
+      - ERC-20 Tokens: learn/bridge/erc-20.md
+    - Deploying a Contract:
+      - Using Remix: learn/deploy/remix.md
+      - Using Hardhat: learn/deploy/hardhat.md
+      - Using Truffle: learn/deploy/truffle.md
+    - Interacting with Contracts:
+      - Using Remix: learn/interact/remix.md
+  - Develop:
+    - Networks: develop/networks.md
+    - FAQs: develop/faq.md
+    - Getting Started:
+      - MetaMask: develop/start/metamask.md
+      - Truffle: develop/start/truffle.md
+      - Hardhat: develop/start/hardhat.md
+    - Compatibility:
+      - JSON-RPC: develop/compat/rpc.md
+      - EVM: develop/compat/evm.md
+    - Resources:
+      - Roadmap: develop/roadmap.md
+      - Glossary: develop/glossary.md
+  - Integrate: integrate/index.md
 
 # Theme configuration:
 theme:
   name: material
   icon:
     repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
   custom_dir: theme
 
 # Markdown configuration:
