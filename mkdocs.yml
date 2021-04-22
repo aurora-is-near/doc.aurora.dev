@@ -22,8 +22,14 @@ nav:
     - Truffle: start/truffle.md
     - Hardhat: start/hardhat.md
   - Networks: networks.md
+  - Compatibility:
+    - JSON-RPC: compat/rpc.md
+    - EVM: compat/evm.md
   - FAQs: faq.md
-  - Glossary: glossary.md
+  - Resources:
+    - Media Kit: media.md
+    - Roadmap: roadmap.md
+    - Glossary: glossary.md
 
 # Theme configuration:
 theme:

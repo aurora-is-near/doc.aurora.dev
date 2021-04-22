@@ -7,7 +7,7 @@ title: "Aurora: Networks"
 Ethereum Virtual Machine (EVM) support is currently available on the
 following networks:
 
-<div id="network-table"></div>
+<div id="networks-table"></div>
 
 Network | Contract ID         | Chain ID   | Status
 ------- | ------------------- | ---------- | ------
