@@ -1,0 +1,9 @@
+div.md-typeset__table { width: 100%; }
+
+table { width: 100%; }
+
+table tbody tr td:last-child { width: 100%; }
+
+.md-typeset h2 {
+  margin: 1.6rem 0 .8rem;
+}
