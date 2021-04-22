@@ -1,11 +1,8 @@
-# Aurora Documentation
+---
+title: "Aurora: Getting Started with Hardhat"
+---
 
-!!! caution "Here be dragons"
-
-    This documentation is a work in progress and may contain incomplete,
-    inaccurate, or outdated information.
-
-[Project Aurora] delivers an Ethereum Virtual Machine (EVM) on the [NEAR Protocol].
+# Getting Started with Hardhat
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus
 nisl eget urna tempus tincidunt. Vivamus porta interdum elit, dictum
@@ -29,6 +26,3 @@ mattis ultrices, enim elit elementum orci, id blandit turpis lorem dictum
 turpis. Donec sed tincidunt ligula. Nam tincidunt eros non quam rutrum, at
 feugiat ipsum maximus. Sed scelerisque magna felis, et lobortis massa
 viverra non.
-
-[NEAR Protocol]:  https://near.org
-[Project Aurora]: https://aurora.dev

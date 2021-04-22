@@ -17,7 +17,10 @@ use_directory_urls: false
 # Table of contents (TOC):
 nav:
   - Introduction: index.md
-  - Getting Started: start.md
+  - Getting Started:
+    - MetaMask: start/metamask.md
+    - Truffle: start/truffle.md
+    - Hardhat: start/hardhat.md
   - Networks: networks.md
   - FAQs: faq.md
   - Glossary: glossary.md
