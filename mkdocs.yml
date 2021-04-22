@@ -107,6 +107,9 @@ extra:
     - name: Aurora on GitHub
       icon: fontawesome/brands/github
       link: https://github.com/aurora-is-near
+    - name: Aurora on Telegram
+      icon: fontawesome/brands/telegram
+      link: https://t.me/auroraisnear
     - name: Aurora on Discord
       icon: fontawesome/brands/discord
       link: https://discord.gg/jNjHYUF8vw
