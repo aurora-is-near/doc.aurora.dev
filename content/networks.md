@@ -4,25 +4,18 @@ title: "Aurora: Networks"
 
 # Networks
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus
-nisl eget urna tempus tincidunt. Vivamus porta interdum elit, dictum
-bibendum odio. Aliquam rutrum dapibus est, eget facilisis ligula congue
-vitae. Nulla egestas magna urna, vitae vestibulum metus interdum sit amet.
-Nulla facilisis urna imperdiet eros suscipit, id pharetra augue pulvinar.
-Pellentesque vitae libero quis erat convallis hendrerit non eget sapien.
-Phasellus eu sollicitudin leo.
+Ethereum Virtual Machine (EVM) support is currently available on the
+following networks:
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas
-iaculis dapibus felis, in varius urna mollis quis. Donec luctus tellus eget
-augue vulputate, id pellentesque nisi eleifend. Duis pretium augue sed
-tempor egestas. Donec dignissim neque turpis, ac sagittis neque fermentum
-vel. Duis cursus commodo ligula id finibus. Nullam ut ultrices neque. Fusce
-lobortis auctor diam, vitae ultricies dolor bibendum eget.
+<div id="network-table"></div>
 
-Quisque id sem sagittis, faucibus odio sit amet, dignissim enim. Duis tortor
-sem, malesuada eu cursus nec, ullamcorper non mi. Morbi sagittis risus sed
-ligula consectetur, eget vulputate justo gravida. Vivamus ultrices, nunc ut
-mattis ultrices, enim elit elementum orci, id blandit turpis lorem dictum
-turpis. Donec sed tincidunt ligula. Nam tincidunt eros non quam rutrum, at
-feugiat ipsum maximus. Sed scelerisque magna felis, et lobortis massa
-viverra non.
+Network | Contract ID         | Chain ID   | Status
+------- | ------------------- | ---------- | ------
+MainNet | [`aurora`][MainNet] | 1313161554 | ❌
+TestNet | [`aurora`][TestNet] | 1313161555 | 🚧
+BetaNet | [`aurora`][BetaNet] | 1313161556 | 🚧
+Local   | `aurora.test.near`  | 1313161556 | ✅
+
+[MainNet]: https://explorer.near.org/accounts/aurora
+[TestNet]: https://explorer.testnet.near.org/accounts/aurora
+[BetaNet]: https://explorer.betanet.near.org/accounts/aurora
