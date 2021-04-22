@@ -9,3 +9,6 @@
 
 # Editor backup files
 *~
+
+# MkDocs build output
+public/
