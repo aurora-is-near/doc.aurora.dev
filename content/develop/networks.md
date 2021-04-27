@@ -9,13 +9,17 @@ following networks:
 
 <div id="networks-table"></div>
 
-Network | Contract ID         | Chain ID   | Status
-------- | ------------------- | ---------- | ------
-MainNet | [`aurora`][MainNet] | 1313161554 | ❌
-TestNet | [`aurora`][TestNet] | 1313161555 | 🚧
-BetaNet | [`aurora`][BetaNet] | 1313161556 | 🚧
-Local   | `aurora.test.near`  | 1313161556 | ✅
+Network | Contract ID                | Chain ID                | Status
+------- | -------------------------- | ----------------------- | ------
+[MainNet](#mainnet) | [`aurora`][aurora@MainNet] | 1313161554 (0x4e454152) | ❌
+[TestNet](#testnet) | [`aurora`][aurora@TestNet] | 1313161555 (0x4e454153) | 🚧
+[BetaNet](#betanet) | [`aurora`][aurora@BetaNet] | 1313161556 (0x4e454154) | 🚧
+Local   | `aurora.test.near`         | 1313161556 (0x4e454154) | ✅
 
-[MainNet]: https://explorer.near.org/accounts/aurora
-[TestNet]: https://explorer.testnet.near.org/accounts/aurora
-[BetaNet]: https://explorer.betanet.near.org/accounts/aurora
+[aurora@MainNet]: https://explorer.near.org/accounts/aurora
+[aurora@TestNet]: https://explorer.testnet.near.org/accounts/aurora
+[aurora@BetaNet]: https://explorer.betanet.near.org/accounts/aurora
+
+## TestNet
+
+## BetaNet
