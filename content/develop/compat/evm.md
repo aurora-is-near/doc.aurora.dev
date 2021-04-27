@@ -4,25 +4,26 @@ title: "Aurora: Compatibility with the EVM"
 
 # Compatibility with the Ethereum Virtual Machine (EVM)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus
-nisl eget urna tempus tincidunt. Vivamus porta interdum elit, dictum
-bibendum odio. Aliquam rutrum dapibus est, eget facilisis ligula congue
-vitae. Nulla egestas magna urna, vitae vestibulum metus interdum sit amet.
-Nulla facilisis urna imperdiet eros suscipit, id pharetra augue pulvinar.
-Pellentesque vitae libero quis erat convallis hendrerit non eget sapien.
-Phasellus eu sollicitudin leo.
+## Precompiles
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas
-iaculis dapibus felis, in varius urna mollis quis. Donec luctus tellus eget
-augue vulputate, id pellentesque nisi eleifend. Duis pretium augue sed
-tempor egestas. Donec dignissim neque turpis, ac sagittis neque fermentum
-vel. Duis cursus commodo ligula id finibus. Nullam ut ultrices neque. Fusce
-lobortis auctor diam, vitae ultricies dolor bibendum eget.
+### Standard precompiles
 
-Quisque id sem sagittis, faucibus odio sit amet, dignissim enim. Duis tortor
-sem, malesuada eu cursus nec, ullamcorper non mi. Morbi sagittis risus sed
-ligula consectetur, eget vulputate justo gravida. Vivamus ultrices, nunc ut
-mattis ultrices, enim elit elementum orci, id blandit turpis lorem dictum
-turpis. Donec sed tincidunt ligula. Nam tincidunt eros non quam rutrum, at
-feugiat ipsum maximus. Sed scelerisque magna felis, et lobortis massa
-viverra non.
+<div id="compat-evm-precompiles-table"></div>
+
+Address | ID          | Name                                 | Standard       | Status
+------- | ----------- | ------------------------------------ | -------------- | ------
+0x01    | `ECRecover` | ECDSA public key recovery            | [Yellow Paper] | ✅
+0x02    | `SHA256`    | SHA-2 256-bit hash function          | [Yellow Paper] | ✅
+0x03    | `RIPEMD160` | RIPEMD 160-bit hash function         | [Yellow Paper] | ✅
+0x04    | `Identity`  | Identity function                    | [Yellow Paper] | ✅
+0x05    | `ModExp`    | Big integer modular exponentation    | [EIP-198]      | ✅
+0x06    | `BN128Add`  | Elliptic curve addition              | [EIP-196]      | ✅
+0x07    | `BN128Mul`  | Elliptic curve scalar multiplication | [EIP-196]      | ✅
+0x08    | `BN128Pair` | Elliptic curve pairing check         | [EIP-197]      | ✅
+0x09    | `Blake2F`   | BLAKE2b `F` compression function     | [EIP-152]      | ✅
+
+[Yellow Paper]: https://ethereum.github.io/yellowpaper/paper.pdf
+[EIP-152]:      https://eips.ethereum.org/EIPS/eip-152
+[EIP-196]:      https://eips.ethereum.org/EIPS/eip-196
+[EIP-197]:      https://eips.ethereum.org/EIPS/eip-197
+[EIP-198]:      https://eips.ethereum.org/EIPS/eip-198
