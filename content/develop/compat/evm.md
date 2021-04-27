@@ -34,13 +34,14 @@ Address | ID          | Name                                 | Spec           | 
 
 This opcode currently always returns zero. This is a known limitation that
 will be remedied in a protocol upgrade in the near future.
+(See [nearcore#4256](https://github.com/near/nearcore/pull/4256).)
 
 ### `COINBASE`
 
 This opcode returns the EVM address of the Aurora Engine.
 
 For example, for the Aurora Engine deployment on the `aurora` account,
-`COINBASE` returns 0x4444588443C3a91288c5002483449Aba1054192b.
+`COINBASE` returns _0x4444588443C3a91288c5002483449Aba1054192b_.
 
 ### `DIFFICULTY`
 
@@ -50,7 +51,7 @@ network.
 ### `GASLIMIT`
 
 This opcode always returns
-0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+_0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff_
 (2^256-1).
 
 ## Limitations

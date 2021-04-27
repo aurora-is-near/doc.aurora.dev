@@ -82,8 +82,36 @@ Method | Status | Notes
 
 ## Limitations
 
-- The `eth_getProof` method (EIP-1186) is not supported and is unlikely to be
+- The `eth_getProof` method ([EIP-1186]) is not supported and is unlikely to be
   possible to implement.
+
+## Notes
+
+- For now, the `eth_estimateGas` method returns zero, since no gas is charged.
+
+- Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
+  network.
+  Therefore with Aurora all mining-related methods such as `eth_getWork`,
+  `eth_submitHashrate`, and `eth_submitWork` are not supported and return
+  an error code.
+  Additionally, PoW-related block metadata such as `nonce` and `difficulty`
+  contain all zeroes.
+
+- The `eth_coinbase` method returns the EVM address of the Aurora Engine.
+  For example, for the Aurora Engine deployment on the `aurora` account,
+  `COINBASE` returns _0x4444588443C3a91288c5002483449Aba1054192b_.
+
+- There is no concept of uncle (aka ommer) blocks.
+  The `eth_getUncleByBlockHashAndIndex` and `eth_getUncleByBlockNumberAndIndex`
+  methods always return `null`.
+  The `eth_getUncleCountByBlockHash` and `eth_getUncleCountByBlockNumber`
+  methods return zero for valid block IDs and `null` for invalid block IDs.
+  Additionally, uncle-related block metadata such as `sha3Uncles` contain
+  all zeroes.
+
+- There is no access to pending transactions.
+  The `eth_newPendingTransactionFilter` method creates a filter that returns
+  nothing when polled with `eth_getFilterChanges`.
 
 [web3_clientVersion]: https://eth.wiki/json-rpc/API#web3_clientVersion
 [web3_sha3]: https://eth.wiki/json-rpc/API#web3_sha3
@@ -152,3 +180,5 @@ Method | Status | Notes
 [shh_post]: https://eth.wiki/json-rpc/API#shh_post
 [shh_uninstallFilter]: https://eth.wiki/json-rpc/API#shh_uninstallFilter
 [shh_version]: https://eth.wiki/json-rpc/API#shh_version
+
+[EIP-1186]: https://eips.ethereum.org/EIPS/eip-1186
