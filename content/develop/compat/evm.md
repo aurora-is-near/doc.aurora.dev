@@ -4,13 +4,6 @@ title: "Aurora: Compatibility with the EVM"
 
 # Compatibility with the Ethereum Virtual Machine (EVM)
 
-## Limitations
-
-- The Berlin hard fork is not yet supported. The EVM currently supports the
-  feature set of the Istanbul hard fork.
-
-- The [`BLOCKHASH` opcode](#blockhash) currently always returns zero.
-
 ## Precompiles
 
 ### Standard precompiles
@@ -59,3 +52,10 @@ network.
 This opcode always returns
 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 (2^256-1).
+
+## Limitations
+
+- The Berlin hard fork is not yet supported. The EVM currently supports the
+  feature set of the Istanbul hard fork.
+
+- The [`BLOCKHASH` opcode](#blockhash) currently always returns zero.

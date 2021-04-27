@@ -4,6 +4,8 @@ title: "Aurora: Compatibility with Web3 JSON-RPC"
 
 # Compatibility with the Web3 JSON-RPC Protocol
 
+## Methods
+
 <div id="compat-json-rpc-table"></div>
 
 Method | Status | Notes
@@ -77,6 +79,11 @@ Method | Status | Notes
 [shh_version] | ❌ | Discontinued
 
 **Legend**: ❌ = not supported. 🚧 = work in progress. ✅ = supported.
+
+## Limitations
+
+- The `eth_getProof` method (EIP-1186) is not supported and is unlikely to be
+  possible to implement.
 
 [web3_clientVersion]: https://eth.wiki/json-rpc/API#web3_clientVersion
 [web3_sha3]: https://eth.wiki/json-rpc/API#web3_sha3
