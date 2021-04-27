@@ -4,13 +4,20 @@ title: "Aurora: Compatibility with the EVM"
 
 # Compatibility with the Ethereum Virtual Machine (EVM)
 
+## Limitations
+
+- The Berlin hard fork is not yet supported. The EVM currently supports the
+  feature set of the Istanbul hard fork.
+
+- The [`BLOCKHASH` opcode](#blockhash) currently always returns zero.
+
 ## Precompiles
 
 ### Standard precompiles
 
 <div id="compat-evm-precompiles-table"></div>
 
-Address | ID          | Name                                 | Standard       | Status
+Address | ID          | Name                                 | Spec           | Status
 ------- | ----------- | ------------------------------------ | -------------- | ------
 0x01    | `ECRecover` | ECDSA public key recovery            | [Yellow Paper] | ✅
 0x02    | `SHA256`    | SHA-2 256-bit hash function          | [Yellow Paper] | ✅
@@ -27,3 +34,28 @@ Address | ID          | Name                                 | Standard       | 
 [EIP-196]:      https://eips.ethereum.org/EIPS/eip-196
 [EIP-197]:      https://eips.ethereum.org/EIPS/eip-197
 [EIP-198]:      https://eips.ethereum.org/EIPS/eip-198
+
+## Opcodes
+
+### `BLOCKHASH`
+
+This opcode currently always returns zero. This is a known limitation that
+will be remedied in a protocol upgrade in the near future.
+
+### `COINBASE`
+
+This opcode returns the EVM address of the Aurora Engine.
+
+For example, for the Aurora Engine deployment on the `aurora` account,
+`COINBASE` returns 0x4444588443C3a91288c5002483449Aba1054192b.
+
+### `DIFFICULTY`
+
+This opcode always returns zero, since NEAR is not a proof-of-work (PoW)
+network.
+
+### `GASLIMIT`
+
+This opcode always returns
+0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+(2^256-1).

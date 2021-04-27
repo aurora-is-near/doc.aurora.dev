@@ -38,6 +38,12 @@ title: "Aurora: Glossary"
 
 ## P
 
+### PoS
+Proof of stake.
+
+### PoW
+Proof of work.
+
 ## Q
 
 ## R
