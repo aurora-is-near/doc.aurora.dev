@@ -6,6 +6,7 @@ MD013:        # line-length
   code_blocks: false
   tables: false
   headings: false
+  line_length: 200
 MD014: false  # commands-show-output
 MD022:        # blanks-around-headings
   lines_above: 1
