@@ -17,33 +17,33 @@ use_directory_urls: false
 # Table of contents (TOC):
 nav:
   - Overview: index.md
-  - Learn:
-    - Connecting a Wallet:
-      - MetaMask: learn/connect/metamask.md
-      - WalletConnect: learn/connect/walletconnect.md
-    - Bridging Funds:
-      - ETH Balances: learn/bridge/eth.md
-      - ERC-20 Tokens: learn/bridge/erc-20.md
-    - Deploying a Contract:
-      - Using Remix: learn/deploy/remix.md
-      - Using Hardhat: learn/deploy/hardhat.md
-      - Using Truffle: learn/deploy/truffle.md
-    - Interacting with Contracts:
-      - Using Remix: learn/interact/remix.md
+  #- Learn:
+  #  - Connecting a Wallet:
+  #    - MetaMask: learn/connect/metamask.md
+  #    - WalletConnect: learn/connect/walletconnect.md
+  #  - Bridging Funds:
+  #    - ETH Balances: learn/bridge/eth.md
+  #    - ERC-20 Tokens: learn/bridge/erc-20.md
+  #  - Deploying a Contract:
+  #    - Using Remix: learn/deploy/remix.md
+  #    - Using Hardhat: learn/deploy/hardhat.md
+  #    - Using Truffle: learn/deploy/truffle.md
+  #  - Interacting with Contracts:
+  #    - Using Remix: learn/interact/remix.md
   - Develop:
     - Networks: develop/networks.md
     - FAQs: develop/faq.md
-    - Getting Started:
-      - MetaMask: develop/start/metamask.md
-      - Truffle: develop/start/truffle.md
-      - Hardhat: develop/start/hardhat.md
+    #- Getting Started:
+    #  - MetaMask: develop/start/metamask.md
+    #  - Truffle: develop/start/truffle.md
+    #  - Hardhat: develop/start/hardhat.md
     - Compatibility:
       - JSON-RPC: develop/compat/rpc.md
       - EVM: develop/compat/evm.md
     - Resources:
       - Roadmap: develop/roadmap.md
       - Glossary: develop/glossary.md
-  - Integrate: integrate/index.md
+  #- Integrate: integrate/index.md
 
 # Theme configuration:
 theme:
