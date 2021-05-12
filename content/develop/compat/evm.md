@@ -32,9 +32,12 @@ Address | ID          | Name                                 | Spec           | 
 
 ### `BLOCKHASH`
 
-This opcode currently always returns zero. This is a known limitation that
-will be remedied in a protocol upgrade in the near future.
-(See [nearcore#4256](https://github.com/near/nearcore/pull/4256).)
+This opcode currently does not return a real blockhash.
+However, it does respect the logic that a non-zero value is returned for the most recent 256 blocks (not including the current block).
+For all other inputs it returns zero.
+The non-zero value that is returned is `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff`.
+For example, if the current block height is `h`, then `BLOCKHASH(h) = 0x000...`, `BLOCKHASH(h - 100) = 0xfff...` and `BLOCKHASH(h - 257) = 0x000..`.
+This behavior may change in the future, see [nearcore#4256](https://github.com/near/nearcore/pull/4256) to track this issue.
 
 ### `COINBASE`
 
@@ -59,4 +62,4 @@ _0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff_
 - The Berlin hard fork is not yet supported. The EVM currently supports the
   feature set of the Istanbul hard fork.
 
-- The [`BLOCKHASH` opcode](#blockhash) currently always returns zero.
+- The [`BLOCKHASH` opcode](#blockhash) currently always returns either `0xfff...` (if the input is within 256 blocks) or `0x000...` (for the current height or one more than 256 blocks in the past).
