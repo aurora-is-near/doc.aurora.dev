@@ -20,6 +20,14 @@ Local   | `aurora.test.near`         | 1313161556 (0x4e454154) | ✅
 [aurora@TestNet]: https://explorer.testnet.near.org/accounts/aurora
 [aurora@BetaNet]: https://explorer.betanet.near.org/accounts/aurora
 
+## MainNet
+
+The MainNet Web3 endpoint will be available shortly.
+
 ## TestNet
 
+The TestNet Web3 endpoint is at: https://rpc.testnet.aurora.dev:8545
+
 ## BetaNet
+
+The BetaNet Web3 endpoint is at: https://rpc.betanet.aurora.dev:8545
