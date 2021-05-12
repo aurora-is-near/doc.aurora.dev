@@ -22,7 +22,7 @@ Local   | `aurora.test.near`         | 1313161556 (0x4e454154) | ✅
 
 ## MainNet
 
-The MainNet Web3 endpoint will be available shortly.
+The MainNet Web3 endpoint is at: https://rpc.mainnet.aurora.dev:8545
 
 ## TestNet
 
