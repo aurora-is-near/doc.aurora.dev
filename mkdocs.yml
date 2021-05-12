@@ -48,6 +48,10 @@ nav:
 # Theme configuration:
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: black
+  favicon: _img/favicon.svg
   icon:
     repo: fontawesome/brands/github
   features:
