@@ -49,8 +49,14 @@ nav:
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: black
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   favicon: _img/favicon.svg
   icon:
     repo: fontawesome/brands/github
@@ -60,6 +66,7 @@ theme:
     - navigation.sections
     - navigation.indexes
   custom_dir: theme
+  logo: _img/favicon.svg
 
 # Markdown configuration:
 markdown_extensions:
