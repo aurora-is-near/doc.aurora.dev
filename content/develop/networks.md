@@ -16,18 +16,22 @@ Network | Contract ID                | Chain ID                | Status
 [BetaNet](#betanet) | [`aurora`][aurora@BetaNet] | 1313161556 (0x4e454154) | ✅
 Local   | `aurora.test.near`         | 1313161556 (0x4e454154) | ✅
 
-[aurora@MainNet]: https://explorer.near.org/accounts/aurora
-[aurora@TestNet]: https://explorer.testnet.near.org/accounts/aurora
-[aurora@BetaNet]: https://explorer.betanet.near.org/accounts/aurora
+Find the status page and public incident log at
+[api.aurora.dev](https://api.aurora.dev).
+You can also subscribe to incident notifications there.
 
 ## MainNet
 
-The MainNet Web3 endpoint is at: https://rpc.mainnet.aurora.dev:8545
+The MainNet Web3 endpoint is at: `https://rpc.mainnet.aurora.dev:8545`
 
 ## TestNet
 
-The TestNet Web3 endpoint is at: https://rpc.testnet.aurora.dev:8545
+The TestNet Web3 endpoint is at: `https://rpc.testnet.aurora.dev:8545`
 
 ## BetaNet
 
-The BetaNet Web3 endpoint is at: https://rpc.betanet.aurora.dev:8545
+The BetaNet Web3 endpoint is at: `https://rpc.betanet.aurora.dev:8545`
+
+[aurora@MainNet]: https://explorer.near.org/accounts/aurora
+[aurora@TestNet]: https://explorer.testnet.near.org/accounts/aurora
+[aurora@BetaNet]: https://explorer.betanet.near.org/accounts/aurora
