@@ -41,6 +41,7 @@ nav:
       - JSON-RPC: develop/compat/rpc.md
       - EVM: develop/compat/evm.md
     - Resources:
+      - Changelog: develop/changelog.md
       - Roadmap: develop/roadmap.md
       - Glossary: develop/glossary.md
   #- Integrate: integrate/index.md
