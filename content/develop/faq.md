@@ -29,12 +29,12 @@ AuroraDAO directed mechanisms of channeling a portion of collected fees back to 
 
 ## What does the high-level roadmap look like?
 
-While the detailed Aurora roadmap is available on the [web-site], in general,
+While the detailed Aurora roadmap is available on the [web site], in general,
 over the course of summer we plan to optimise Aurora and take care of the DAO formation and token development (if this is decided by the DAO).
 In Autumn, we plan to deliver several major features, such as introduction of fast bridging of the most popular tokens,
 ability to pay fees in stable coins and simplified UX for non-blockchain users. We’re planning to deliver a sharded version of Aurora early next year.
 
-[web-site] :  https://aurora.dev/about
+[web site]:  https://aurora.dev/about
 
 ## How do I get started with Aurora?
 
