@@ -1,0 +1,23 @@
+div.md-typeset__table { width: 100%; }
+
+table { width: 100%; }
+
+table thead tr th:last-child { width: 100%; }
+
+.md-typeset h2 {
+  margin: 1.6rem 0 .8rem;
+}
+
+div#networks-table + div table thead tr th:nth-child(1) { width: 20%; }
+div#networks-table + div table thead tr th:nth-child(2) { width: 25%; }
+div#networks-table + div table thead tr th:nth-child(3) { width: 50%; }
+
+div#compat-evm-precompiles-table + div table thead tr th:nth-child(1) { width: 15%; }
+div#compat-evm-precompiles-table + div table thead tr th:nth-child(2) { width: 15%; }
+div#compat-evm-precompiles-table + div table thead tr th:nth-child(3) { width: 50%; }
+div#compat-evm-precompiles-table + div table thead tr th:nth-child(4) { width: 15%; }
+div#compat-evm-precompiles-table + div table thead tr th:nth-child(5) { width: 5%; }
+
+div#compat-json-rpc-table + div table thead tr th:nth-child(1) { width: 50%; }
+div#compat-json-rpc-table + div table thead tr th:nth-child(2) { width: 10%; }
+div#compat-json-rpc-table + div table thead tr th:nth-child(3) { width: 50%; }
