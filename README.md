@@ -23,6 +23,10 @@ $ pip3 install -r requirements.txt
 $ mkdocs serve
 ```
 
+## Deployment
+
+The docs are automatically built and deployed to [doc.aurora.dev](https://doc.aurora.dev/) with each commit to `master`.
+
 [Python]:   https://www.python.org
 [MkDocs]:   https://www.mkdocs.org
 [Macros]:   https://github.com/fralau/mkdocs_macros_plugin
