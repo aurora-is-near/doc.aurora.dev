@@ -4,6 +4,13 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-05-19
+
+- We have rolled out [new endpoint URLs](/develop/networks.html). Changing
+  from the former endpoint URL `https://rpc.$NETWORK.aurora.dev:8545` to
+  `https://$NETWORK.aurora.dev` is recommended and will decrease your
+  response latency and increase your rate limits.
+
 ## 2021-05-17
 
 ### All endpoints
