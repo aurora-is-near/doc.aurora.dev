@@ -9,12 +9,12 @@ following networks:
 
 <div id="networks-table"></div>
 
-Network | Contract ID                | Chain ID                | Endpoint URL
-------- | -------------------------- | ----------------------- | ------------
+Network  | Engine ID                  | Chain ID                | Endpoint URL
+-------- | -------------------------- | ----------------------- | ------------
 [MainNet](#mainnet) | [`aurora`][aurora@MainNet] | 1313161554 (0x4e454152) | <https://mainnet.aurora.dev>
 [TestNet](#testnet) | [`aurora`][aurora@TestNet] | 1313161555 (0x4e454153) | <https://testnet.aurora.dev>
 [BetaNet](#betanet) | [`aurora`][aurora@BetaNet] | 1313161556 (0x4e454154) | <https://betanet.aurora.dev>
-Local   | `aurora.test.near`         | 1313161556 (0x4e454154) | <http://localhost:8545>
+LocalNet | `aurora.test.near`         | 1313161556 (0x4e454154) | <http://localhost:8545>
 
 Find the status page and public incident log at
 [api.aurora.dev](https://api.aurora.dev).
