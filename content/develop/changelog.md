@@ -4,6 +4,14 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-05-24
+
+### All endpoints
+
+- Aurora Relayer: Fixed a bug in the `eth_call` RPC method. This had been
+  affecting MetaMask users in particular.
+  ([1d0d7cd](https://github.com/aurora-is-near/aurora-relayer/commit/1d0d7cd7f00da1f0d118e8a79cfc70362ed773f2))
+
 ## 2021-05-19
 
 - We have rolled out [new endpoint URLs](/develop/networks.html). Changing
