@@ -21,7 +21,7 @@ In the top-right corner of the MetaMask interface, click the network select drop
 Fill in the form with the following information:
 
 * Network Name: Aurora TestNet
-* New RPC URL: https://testnet.aurora.dev/
+* New RPC URL: `https://testnet.aurora.dev/`
 * Chain ID: 1313161555
 
 ![MetaMask-create-aurora-rpc](../../_img/metamask_create_aurora_rpc.png)
@@ -150,4 +150,3 @@ The only difference from doing this on an original Ethereum network was setting 
 [Remix]: https://remix.ethereum.org/
 [OpenZeppelin]: https://openzeppelin.com/contracts/
 [example from Solidity by Example]: https://solidity-by-example.org/app/erc20/
-
