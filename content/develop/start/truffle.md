@@ -18,7 +18,7 @@ This example is originally forked from [OpenZeppelin examples](https://docs.open
 
 1. The `minter` address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program. 
 2. When a participant receives the token 💊, he/she can get access to the vaccine by spending the NFT token. 
-3. This means whether burning the NFT token or sending it back to the minter address.
+3. This means either burning the NFT token or sending it back to the minter address.
 4. Now the `minter` can redistribute that ticket 🎫 to new participant in the line.
 5. And now that participant have access to the same ticket that have been spended by participant-1.
 
