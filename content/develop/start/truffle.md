@@ -6,7 +6,7 @@ title: "Aurora: Deploying a Contract Using Truffle"
 
 ## Introduction
 
-[Truffle](https://www.trufflesuite.com/) is widely used development environment and testing environment for  Ethereum smart contracts. In this tutorial, we will discuss how to use `Truffle` with Aurora Testnet by example. 
+[Truffle](https://www.trufflesuite.com/) is widely used development environment and testing framework for  Ethereum smart contracts. In this tutorial, we will show how to use `Truffle` with Aurora Testnet by example. 
 
 This tutorial assumes that you are familiar with `Truffle` and the non-fungible tokens (NFT) concept. For more details about the non-fungible token standard (ERC721), please refer to [ERC-721 non-fungible token standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/).
 
@@ -17,17 +17,23 @@ This example is originally forked from [OpenZeppelin examples](https://docs.open
 ![](../../_img/Truffle-nft-aurora-example.png)
 
 1. The `minter` address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program. 
-2. When a participant receives the token 💊, he/she can get access to the vaccine by spending the NFT token. 
-3. This means whether burning the NFT token or sending it back to the minter address.
-4. Now the `minter` can redistribute that ticket 🎫 to new participant in the line.
-5. And now that participant have access to the same ticket that have been spended by participant-1.
+2. When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token. 
+3. This means either burning the NFT token or sending it back to the minter address.
+4. If the participant chose to send it back. The minter can redistribute that token 🎫 to another participant in the line.
+5. Then the new participant will have access to the same vaccine token that has been used by the old participant.
 
 
 ## Installing Prerequisites
 This tutorial assumes that you have `Node 12+` and `yarn`. Please refer to the [Yarn installation page](https://classic.yarnpkg.com/en/docs/install) if you don't have `yarn` installed locally.
 
 To install the prerequisites packages, clone the examples code then run `yarn` in order to install the prerequisites:
+ 
+ - Install Truffle:
+```bash
+npm install -g truffle 
 ```
+- Install dependecies:
+```bash
 git clone https://github.com/aurora-is-near/aurora-examples.git
 cd aurora-examples/truffle/erc721-example/
 yarn 
@@ -39,7 +45,6 @@ Export your `MNEMONIC` as follows:
 ```
 export MNEMONIC='YOUR MNEMONICS HERE'
 ```
-The `truffle-config.js` will pickup your `MNEMONIC` and extract the address that will be used for sending, and signing transactions on Aurora network.
 
 Now in `truffle-config.js`, you have to change the `from` address as shown below in the aurora network section.
 
@@ -52,6 +57,7 @@ aurora: {
       from: '0x6A33382de9f73B846878a57500d055B981229ac4' // CHANGE THIS ADDRESS
     },
 ```
+The `truffle-config.js` will pickup your `MNEMONIC` and recover the address that will be used for sending, and signing transactions on Aurora network.
 
 ## Deploying The Contract
 
@@ -81,7 +87,7 @@ _deploy_contracts.js
 
 ## Play with Truffle console
 
-Now you can test the flow that we discussed before:
+Now you can test the flow as mentioned in the NFT Example section:
 
 ### Mint
 
@@ -119,12 +125,12 @@ Then connect your Truffle console to the Aurora testnet again:
 ```bash
 % truffle console --network aurora
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x3531a4D108619a20ACeE88C4354a50e9aC48ecf5', 1) 
+truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1) 
 Uncaught:
 Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"
 ...
 reason: 'Invalid Transfer',
-  hijackedStack: 'Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"\n'
+  hijackedStack: 'Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"\n' 
 ```
 This is exactly the same error message we have in our NFT contract in `safeTransferFrom`: 
 ```javascript
@@ -144,16 +150,20 @@ function safeTransferFrom(
         safeTransferFrom(from, to, tokenId, "");
     }
 ```
+You should change the `from` back to the minter address before continue to the next step.
 ### Transfer
 
 Participant can transfer the token to the `minter` after receiving the vaccine. As shown below a participant can only send the NFT token if the receiver for this token is the minter (`0x6A33382de9f73B846878a57500d055B981229ac4`). 
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1)
+% truffle console --network aurora
+truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
+truffle(aurora)> await cvt.ownerOf(1)
+truffle(aurora)> await cvt.safeTransferFrom('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1)
 ```
 
 ### Burn
-This is an alternative scenario for the NFT token lifecycle. Instead of transfering the token back to the `minter`, the participant can decide to burn his/her NFT token:
+This is an alternative scenario for the NFT token lifecycle. Instead of transfering the token back to the `minter`, the participant can decide to burn the NFT token by calling the `burn` function:
 ```bash
 truffle(aurora)> await cvt.burn(1) // 1 is the tokenID
 ```
