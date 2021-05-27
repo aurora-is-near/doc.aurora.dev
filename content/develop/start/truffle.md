@@ -20,7 +20,7 @@ This example is originally forked from [OpenZeppelin examples](https://docs.open
 2. When a participant receives the token 💊, he/she can get access to the vaccine by spending the NFT token. 
 3. This means either burning the NFT token or sending it back to the minter address.
 4. Now the `minter` can redistribute that ticket 🎫 to new participant in the line.
-5. And now that participant have access to the same ticket that have been spended by participant-1.
+5. And now that participant has access to the same ticket that was spent by the previous participant.
 
 
 ## Installing Prerequisites
