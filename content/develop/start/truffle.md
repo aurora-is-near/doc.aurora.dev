@@ -150,7 +150,7 @@ function safeTransferFrom(
         safeTransferFrom(from, to, tokenId, "");
     }
 ```
-You should change the `from` back to the minter address before continue to the next step.
+You should change the `from` back to the minter address before continuing to the next step.
 ### Transfer
 
 Participant can transfer the token to the `minter` after receiving the vaccine. As shown below a participant can only send the NFT token if the receiver for this token is the minter (`0x6A33382de9f73B846878a57500d055B981229ac4`). 
