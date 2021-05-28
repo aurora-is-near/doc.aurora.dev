@@ -100,7 +100,7 @@ Please make sure that you are using the same deployer address as a minter addres
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
 truffle(aurora)> await cvt.minter()
 '0x6A33382de9f73B846878a57500d055B981229ac4'
-truffle(aurora)> await cvt.mint('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe')
+truffle(aurora)> await cvt.mint('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe' , {from: accounts[0]})
 ```
 
 You should notice that participants are not allowed to transfer their NFT tokens except for the minter. 
@@ -125,7 +125,7 @@ Then connect your Truffle console to the Aurora testnet again:
 ```bash
 % truffle console --network aurora
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1) 
+truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1, , {from: accounts[1]}) 
 Uncaught:
 Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"
 ...
@@ -159,7 +159,7 @@ Participant can transfer the token to the `minter` after receiving the vaccine. 
 % truffle console --network aurora
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
 truffle(aurora)> await cvt.ownerOf(1)
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1)
+truffle(aurora)> await cvt.safeTransferFrom('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1 , {from: accounts[1]})
 ```
 
 ### Burn
@@ -173,7 +173,7 @@ truffle(aurora)> await cvt.burn(1) // 1 is the tokenID
 Finally, the `minter` can send the same token (if not burnt) to a new partcipant in the line:
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom('0x6A33382de9f73B846878a57500d055B981229ac4','0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1)
+truffle(aurora)> await cvt.safeTransferFrom('0x6A33382de9f73B846878a57500d055B981229ac4','0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1 , {from: accounts[0]})
 ```
 ## Summary:
 
