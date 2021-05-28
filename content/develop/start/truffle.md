@@ -24,7 +24,7 @@ has been changed to fit the use case of this tutorial. The use case is about how
 to deploy and manage the life cycle of a simple COVID-19 vaccine NFT token 💊💊
 using Truffle on the Aurora TestNet.
 
-![Truffle NFT example](../../_img/Truffle-nft-aurora-example.png)
+![Truffle NFT example](../../_img/truffle_nft_example.png)
 
 1. The minter address (which is managed by the vaccination program manager) can
 distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are
