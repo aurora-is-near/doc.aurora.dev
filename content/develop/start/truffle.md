@@ -91,7 +91,7 @@ Now you can test the flow as mentioned in the NFT Example section:
 
 ### Mint
 
-Minter mints and transfers NFT tokens for the vaccine program participant-1. In this example, the new participant address is `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe` and the minter address is `0x6A33382de9f73B846878a57500d055B981229ac4`.
+Minter mints and transfers NFT tokens for the vaccine program participant. In this example, the new participant address is `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe` and the minter address is `0x6A33382de9f73B846878a57500d055B981229ac4`.
 
 Please make sure that you are using the same deployer address as a minter address otherwise the `mint` transaction will revert.
 
