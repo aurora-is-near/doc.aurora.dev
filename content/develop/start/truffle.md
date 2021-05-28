@@ -103,34 +103,18 @@ truffle(aurora)> await cvt.minter()
 truffle(aurora)> await cvt.mint('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe' , {from: accounts[0]})
 ```
 
-You should notice that participants are not allowed to transfer their NFT tokens except for the minter. 
+You should notice that `accounts[0]` is the minter address and all the participants are not allowed to transfer their NFT tokens except for the minter. 
 
-So lets try to use any participant address to validate this. First you should exit from the 
-truffle terminal then in `truffle-config.js`, change the value of `from` field to a new address (e.g the participant address `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe`) in the `aurora` network configuration. 
+So lets try to use any participant address to validate this. To do that, change the value of `from` to `accounts[1]`, so the sender will be the first participant (e.g the participant address `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe`).
 
-```
-{
-    ...
-    aurora: {
-      provider: () => setupWallet('https://testnet.aurora.dev'),
-      network_id: 0x4e454153,
-      gas: 10000000,
-      from: '0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'
-    },
-}
-```
 
-Then connect your Truffle console to the Aurora testnet again:
-
+In the truffle console: 
 ```bash
-% truffle console --network aurora
-truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1, , {from: accounts[1]}) 
-Uncaught:
-Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"
+truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1, {from: accounts[1]}) 
+Uncaught Error: execution reverted:
 ...
 reason: 'Invalid Transfer',
-  hijackedStack: 'Error: Unknown address - unable to sign transaction for this address: "0x2531a4d108619a20acee88c4354a50e9ac48ecfe"\n' 
+  hijackedStack: 'Error: execution reverted:\n'
 ```
 This is exactly the same error message we have in our NFT contract in `safeTransferFrom`: 
 ```javascript
@@ -150,22 +134,24 @@ function safeTransferFrom(
         safeTransferFrom(from, to, tokenId, "");
     }
 ```
-You should change the `from` back to the minter address before continuing to the next step.
 ### Transfer
 
 Participant can transfer the token to the `minter` after receiving the vaccine. As shown below a participant can only send the NFT token if the receiver for this token is the minter (`0x6A33382de9f73B846878a57500d055B981229ac4`). 
 
 ```bash
-% truffle console --network aurora
-truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.ownerOf(1)
+truffle(aurora)> await cvt.ownerOf(1) // TokenID 1
+'0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'
+truffle(aurora)> await cvt.minter()
+'0x6A33382de9f73B846878a57500d055B981229ac4'
 truffle(aurora)> await cvt.safeTransferFrom('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1 , {from: accounts[1]})
+truffle(aurora)> await cvt.ownerOf(1) // TokenID 1
+'0x6A33382de9f73B846878a57500d055B981229ac4'
 ```
 
 ### Burn
 This is an alternative scenario for the NFT token lifecycle. Instead of transfering the token back to the `minter`, the participant can decide to burn the NFT token by calling the `burn` function:
 ```bash
-truffle(aurora)> await cvt.burn(1) // 1 is the tokenID
+truffle(aurora)> await cvt.burn(1, {from: accounts[1]}) // 1 is the tokenID
 ```
 
 ### Redistribute
@@ -174,6 +160,8 @@ Finally, the `minter` can send the same token (if not burnt) to a new partcipant
 
 ```bash
 truffle(aurora)> await cvt.safeTransferFrom('0x6A33382de9f73B846878a57500d055B981229ac4','0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1 , {from: accounts[0]})
+truffle(aurora)> await cvt.ownerOf(1)
+'0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771'
 ```
 ## Summary:
 
