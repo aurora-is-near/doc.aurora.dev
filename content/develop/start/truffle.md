@@ -19,7 +19,7 @@ This example is originally forked from [OpenZeppelin examples](https://docs.open
 1. The `minter` address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program. 
 2. When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token. 
 3. This means either burning the NFT token or sending it back to the minter address.
-4. If the participant chose to send it back. The minter can redistribute that token 🎫 to another participant in the line.
+4. If the participant chose to send it back then the minter can redistribute that token 🎫 to another participant in the line.
 5. Then the new participant will have access to the same vaccine token that has been used by the old participant.
 
 
