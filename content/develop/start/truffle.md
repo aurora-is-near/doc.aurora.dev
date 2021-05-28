@@ -19,7 +19,7 @@ This example is originally forked from [OpenZeppelin examples](https://docs.open
 1. The `minter` address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program. 
 2. When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token. 
 3. This means either burning the NFT token or sending it back to the minter address.
-4. If the participant chose to send it back. The minter can redistribute that token 🎫 to another participant in the line.
+4. If the participant chose to send it back then the minter can redistribute that token 🎫 to another participant in the line.
 5. Then the new participant will have access to the same vaccine token that has been used by the old participant.
 
 
@@ -91,7 +91,7 @@ Now you can test the flow as mentioned in the NFT Example section:
 
 ### Mint
 
-Minter mints and transfers NFT tokens for the vaccine program participant-1. In this example, the new participant address is `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe` and the minter address is `0x6A33382de9f73B846878a57500d055B981229ac4`.
+Minter mints and transfers NFT tokens for the vaccine program participant. In this example, the new participant address is `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe` and the minter address is `0x6A33382de9f73B846878a57500d055B981229ac4`.
 
 Please make sure that you are using the same deployer address as a minter address otherwise the `mint` transaction will revert.
 
@@ -150,7 +150,7 @@ function safeTransferFrom(
         safeTransferFrom(from, to, tokenId, "");
     }
 ```
-You should change the `from` back to the minter address before continue to the next step.
+You should change the `from` back to the minter address before continuing to the next step.
 ### Transfer
 
 Participant can transfer the token to the `minter` after receiving the vaccine. As shown below a participant can only send the NFT token if the receiver for this token is the minter (`0x6A33382de9f73B846878a57500d055B981229ac4`). 
