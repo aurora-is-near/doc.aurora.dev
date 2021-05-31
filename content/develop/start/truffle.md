@@ -136,9 +136,11 @@ address, otherwise the `mint` transaction will revert.
 ```bash
 % truffle console --network aurora
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.minter() == accounts[0]
+truffle(aurora)> const minter = accounts[0]
+truffle(aurora)> const participant = accounts[1]
+truffle(aurora)> await cvt.minter() == minter
 true
-truffle(aurora)> await cvt.mint(accounts[1] , {from: accounts[0]})
+truffle(aurora)> await cvt.mint(participant, {from: minter})
 ```
 
 You should notice that none of the participants are allowed to transfer their
@@ -152,7 +154,7 @@ participant (e.g., the participant address
 In the Truffle console:
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom(accounts[1], accounts[2], 1, {from: accounts[1]})
+truffle(aurora)> await cvt.safeTransferFrom(participant, accounts[2], 1, {from: participant})
 Uncaught Error: execution reverted:
 ...
 reason: 'Invalid Transfer',
@@ -188,10 +190,10 @@ this token is the minter (`accounts[0]`).
 
 ```bash
 truffle(aurora)> const tokenID = 1
-truffle(aurora)> await cvt.ownerOf(tokenID) == accounts[1]
+truffle(aurora)> await cvt.ownerOf(tokenID) == participant
 true
-truffle(aurora)> await cvt.safeTransferFrom(accounts[1], accounts[0], tokenID, {from: accounts[1]})
-truffle(aurora)> await cvt.ownerOf(tokenID) == accounts[0]
+truffle(aurora)> await cvt.safeTransferFrom(participant, minter, tokenID, {from: participant})
+truffle(aurora)> await cvt.ownerOf(tokenID) == minter
 true
 ```
 
@@ -202,7 +204,7 @@ transfering the token back to the minter, the participant can decide to burn the
 NFT token by calling the `burn` function:
 
 ```bash
-truffle(aurora)> await cvt.burn(1, {from: accounts[1]}) // 1 is the tokenID
+truffle(aurora)> await cvt.burn(1, {from: participant}) // 1 is the tokenID
 ```
 
 ### Redistribute tokens
@@ -211,7 +213,7 @@ Finally, the minter can send the same token (if not burnt) to a new participant
 in the line:
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom(accounts[0],accounts[2], 1, {from: accounts[0]})
+truffle(aurora)> await cvt.safeTransferFrom(minter, accounts[2], 1, {from: minter})
 truffle(aurora)> await cvt.ownerOf(1) == accounts[2]
 true
 ```
