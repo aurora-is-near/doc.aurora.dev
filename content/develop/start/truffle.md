@@ -88,7 +88,7 @@ aurora: {
 },
 ```
 
-The `truffle-config.js` configuration will pick up your `MNEMONIC` environmen
+The `truffle-config.js` configuration will pick up your `MNEMONIC` environment
 variable and recover the address that will be used for sending and signing
 transactions on the Aurora network.
 
@@ -128,8 +128,7 @@ section:
 
 The minter mints and transfers NFT tokens for the vaccine program participant.
 In this example, the new participant address is
-`0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe` and the minter address is
-`0x6A33382de9f73B846878a57500d055B981229ac4`.
+`accounts[1]` and the minter address is `accounts[0]`.
 
 Please make sure that you are using the same deployer address as a minter
 address, otherwise the `mint` transaction will revert.
@@ -137,13 +136,15 @@ address, otherwise the `mint` transaction will revert.
 ```bash
 % truffle console --network aurora
 truffle(aurora)> const cvt = await CovidVaccineToken.deployed()
-truffle(aurora)> await cvt.minter()
-'0x6A33382de9f73B846878a57500d055B981229ac4'
-truffle(aurora)> await cvt.mint('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe' , {from: accounts[0]})
+truffle(aurora)> const minter = accounts[0]
+truffle(aurora)> const participant = accounts[1]
+truffle(aurora)> await cvt.minter() == minter
+true
+truffle(aurora)> await cvt.mint(participant, {from: minter})
 ```
 
-You should notice that `accounts[0]` is the minter address and none of the
-participants are allowed to transfer their NFT tokens except for the minter.
+You should notice that none of the participants are allowed to transfer their
+NFT tokens to anyone except back to the minter.
 
 So let's try to use any participant address to validate this. To do that, change
 the value of `from` to `accounts[1]`, so that the sender will be the first
@@ -153,7 +154,7 @@ participant (e.g., the participant address
 In the Truffle console:
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4d108619a20acee88c4354a50e9ac48ecfe', '0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1, {from: accounts[1]}) 
+truffle(aurora)> await cvt.safeTransferFrom(participant, accounts[2], 1, {from: participant})
 Uncaught Error: execution reverted:
 ...
 reason: 'Invalid Transfer',
@@ -185,16 +186,15 @@ function safeTransferFrom(
 
 Participants can transfer the token to the minter after receiving the vaccine.
 As shown below, a participant can only send the NFT token if the receiver for
-this token is the minter (`0x6A33382de9f73B846878a57500d055B981229ac4`).
+this token is the minter (`accounts[0]`).
 
 ```bash
-truffle(aurora)> await cvt.ownerOf(1) // TokenID 1
-'0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'
-truffle(aurora)> await cvt.minter()
-'0x6A33382de9f73B846878a57500d055B981229ac4'
-truffle(aurora)> await cvt.safeTransferFrom('0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe', '0x6A33382de9f73B846878a57500d055B981229ac4', 1 , {from: accounts[1]})
-truffle(aurora)> await cvt.ownerOf(1) // TokenID 1
-'0x6A33382de9f73B846878a57500d055B981229ac4'
+truffle(aurora)> const tokenID = 1
+truffle(aurora)> await cvt.ownerOf(tokenID) == participant
+true
+truffle(aurora)> await cvt.safeTransferFrom(participant, minter, tokenID, {from: participant})
+truffle(aurora)> await cvt.ownerOf(tokenID) == minter
+true
 ```
 
 ### Burn tokens
@@ -204,7 +204,7 @@ transfering the token back to the minter, the participant can decide to burn the
 NFT token by calling the `burn` function:
 
 ```bash
-truffle(aurora)> await cvt.burn(1, {from: accounts[1]}) // 1 is the tokenID
+truffle(aurora)> await cvt.burn(1, {from: participant}) // 1 is the tokenID
 ```
 
 ### Redistribute tokens
@@ -213,9 +213,9 @@ Finally, the minter can send the same token (if not burnt) to a new participant
 in the line:
 
 ```bash
-truffle(aurora)> await cvt.safeTransferFrom('0x6A33382de9f73B846878a57500d055B981229ac4','0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771', 1 , {from: accounts[0]})
-truffle(aurora)> await cvt.ownerOf(1)
-'0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771'
+truffle(aurora)> await cvt.safeTransferFrom(minter, accounts[2], 1, {from: minter})
+truffle(aurora)> await cvt.ownerOf(1) == accounts[2]
+true
 ```
 
 ## Summary
