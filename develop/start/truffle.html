@@ -496,7 +496,7 @@ below in the <code>aurora</code> network section:</p>
   <span class="kc">fr</span><span class="err">om</span><span class="p">:</span> <span class="err">'</span><span class="mi">0</span><span class="err">x</span><span class="mi">6</span><span class="err">A</span><span class="mi">33382</span><span class="err">de</span><span class="mi">9</span><span class="kc">f</span><span class="mi">73</span><span class="err">B</span><span class="mi">846878</span><span class="err">a</span><span class="mi">57500</span><span class="err">d</span><span class="mi">055</span><span class="err">B</span><span class="mi">981229</span><span class="err">ac</span><span class="mi">4</span><span class="err">'</span> <span class="err">//</span> <span class="err">CHANGE</span> <span class="err">THIS</span> <span class="err">ADDRESS</span>
 <span class="p">},</span>
 </code></pre></div>
-<p>The <code>truffle-config.js</code> configuration will pick up your <code>MNEMONIC</code> environmen
+<p>The <code>truffle-config.js</code> configuration will pick up your <code>MNEMONIC</code> environment
 variable and recover the address that will be used for sending and signing
 transactions on the Aurora network.</p>
 <h2 id="deploying-the-contract">Deploying the Contract<a class="headerlink" href="#deploying-the-contract" title="Permanent link">¶</a></h2>
@@ -528,24 +528,25 @@ section:</p>
 <h3 id="mint-tokens">Mint tokens<a class="headerlink" href="#mint-tokens" title="Permanent link">¶</a></h3>
 <p>The minter mints and transfers NFT tokens for the vaccine program participant.
 In this example, the new participant address is
-<code>0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe</code> and the minter address is
-<code>0x6A33382de9f73B846878a57500d055B981229ac4</code>.</p>
+<code>accounts[1]</code> and the minter address is <code>accounts[0]</code>.</p>
 <p>Please make sure that you are using the same deployer address as a minter
 address, otherwise the <code>mint</code> transaction will revert.</p>
 <div class="highlight"><pre><span></span><code>% truffle console --network aurora
 truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; const <span class="nv">cvt</span> <span class="o">=</span> await CovidVaccineToken.deployed<span class="o">()</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.minter<span class="o">()</span>
-<span class="s1">'0x6A33382de9f73B846878a57500d055B981229ac4'</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.mint<span class="o">(</span><span class="s1">'0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'</span> , <span class="o">{</span>from: accounts<span class="o">[</span><span class="m">0</span><span class="o">]})</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; const <span class="nv">minter</span> <span class="o">=</span> accounts<span class="o">[</span><span class="m">0</span><span class="o">]</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; const <span class="nv">participant</span> <span class="o">=</span> accounts<span class="o">[</span><span class="m">1</span><span class="o">]</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.minter<span class="o">()</span> <span class="o">==</span> minter
+<span class="nb">true</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.mint<span class="o">(</span>participant, <span class="o">{</span>from: minter<span class="o">})</span>
 </code></pre></div>
-<p>You should notice that <code>accounts[0]</code> is the minter address and none of the
-participants are allowed to transfer their NFT tokens except for the minter.</p>
+<p>You should notice that none of the participants are allowed to transfer their
+NFT tokens to anyone except back to the minter.</p>
 <p>So let's try to use any participant address to validate this. To do that, change
 the value of <code>from</code> to <code>accounts[1]</code>, so that the sender will be the first
 participant (e.g., the participant address
 <code>0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe</code>).</p>
 <p>In the Truffle console:</p>
-<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span><span class="s1">'0x2531a4d108619a20acee88c4354a50e9ac48ecfe'</span>, <span class="s1">'0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771'</span>, <span class="m">1</span>, <span class="o">{</span>from: accounts<span class="o">[</span><span class="m">1</span><span class="o">]})</span> 
+<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span>participant, accounts<span class="o">[</span><span class="m">2</span><span class="o">]</span>, <span class="m">1</span>, <span class="o">{</span>from: participant<span class="o">})</span>
 Uncaught Error: execution reverted:
 ...
 reason: <span class="s1">'Invalid Transfer'</span>,
@@ -572,27 +573,26 @@ reason: <span class="s1">'Invalid Transfer'</span>,
 <h3 id="transfer-tokens">Transfer tokens<a class="headerlink" href="#transfer-tokens" title="Permanent link">¶</a></h3>
 <p>Participants can transfer the token to the minter after receiving the vaccine.
 As shown below, a participant can only send the NFT token if the receiver for
-this token is the minter (<code>0x6A33382de9f73B846878a57500d055B981229ac4</code>).</p>
-<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span><span class="m">1</span><span class="o">)</span> // TokenID <span class="m">1</span>
-<span class="s1">'0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.minter<span class="o">()</span>
-<span class="s1">'0x6A33382de9f73B846878a57500d055B981229ac4'</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span><span class="s1">'0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe'</span>, <span class="s1">'0x6A33382de9f73B846878a57500d055B981229ac4'</span>, <span class="m">1</span> , <span class="o">{</span>from: accounts<span class="o">[</span><span class="m">1</span><span class="o">]})</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span><span class="m">1</span><span class="o">)</span> // TokenID <span class="m">1</span>
-<span class="s1">'0x6A33382de9f73B846878a57500d055B981229ac4'</span>
+this token is the minter (<code>accounts[0]</code>).</p>
+<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; const <span class="nv">tokenID</span> <span class="o">=</span> <span class="m">1</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span>tokenID<span class="o">)</span> <span class="o">==</span> participant
+<span class="nb">true</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span>participant, minter, tokenID, <span class="o">{</span>from: participant<span class="o">})</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span>tokenID<span class="o">)</span> <span class="o">==</span> minter
+<span class="nb">true</span>
 </code></pre></div>
 <h3 id="burn-tokens">Burn tokens<a class="headerlink" href="#burn-tokens" title="Permanent link">¶</a></h3>
 <p>This is an alternative scenario for the NFT token lifecycle. Instead of
 transfering the token back to the minter, the participant can decide to burn the
 NFT token by calling the <code>burn</code> function:</p>
-<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.burn<span class="o">(</span><span class="m">1</span>, <span class="o">{</span>from: accounts<span class="o">[</span><span class="m">1</span><span class="o">]})</span> // <span class="m">1</span> is the tokenID
+<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.burn<span class="o">(</span><span class="m">1</span>, <span class="o">{</span>from: participant<span class="o">})</span> // <span class="m">1</span> is the tokenID
 </code></pre></div>
 <h3 id="redistribute-tokens">Redistribute tokens<a class="headerlink" href="#redistribute-tokens" title="Permanent link">¶</a></h3>
 <p>Finally, the minter can send the same token (if not burnt) to a new participant
 in the line:</p>
-<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span><span class="s1">'0x6A33382de9f73B846878a57500d055B981229ac4'</span>,<span class="s1">'0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771'</span>, <span class="m">1</span> , <span class="o">{</span>from: accounts<span class="o">[</span><span class="m">0</span><span class="o">]})</span>
-truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span><span class="m">1</span><span class="o">)</span>
-<span class="s1">'0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771'</span>
+<div class="highlight"><pre><span></span><code>truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.safeTransferFrom<span class="o">(</span>minter, accounts<span class="o">[</span><span class="m">2</span><span class="o">]</span>, <span class="m">1</span>, <span class="o">{</span>from: minter<span class="o">})</span>
+truffle<span class="o">(</span>aurora<span class="o">)</span>&gt; await cvt.ownerOf<span class="o">(</span><span class="m">1</span><span class="o">)</span> <span class="o">==</span> accounts<span class="o">[</span><span class="m">2</span><span class="o">]</span>
+<span class="nb">true</span>
 </code></pre></div>
 <h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>In this simple tutorial, we deployed an NFT contract to the Aurora TestNet using
