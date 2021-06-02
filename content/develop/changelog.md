@@ -4,6 +4,15 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-06-02
+
+### All endpoints
+
+- Aurora Relayer: Bumped the `eth_estimateGas` RPC method's return value from
+  zero to 300,000, sufficient to cover most MetaMask transactions.
+  ([6797a94](https://github.com/aurora-is-near/aurora-relayer/commit/6797a94a781cd239122b73724bb6f528a37a3772),
+  [#16](https://github.com/aurora-is-near/aurora-relayer/issues/16))
+
 ## 2021-05-24
 
 ### All endpoints
