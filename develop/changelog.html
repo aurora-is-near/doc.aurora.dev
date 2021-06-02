@@ -238,13 +238,27 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#2021-06-02">
+    2021-06-02
+  </a>
+<nav aria-label="2021-06-02" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-endpoints">
+    All endpoints
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#2021-05-24">
     2021-05-24
   </a>
 <nav aria-label="2021-05-24" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints">
+<a class="md-nav__link" href="#all-endpoints_1">
     All endpoints
   </a>
 </li>
@@ -263,7 +277,7 @@
 <nav aria-label="2021-05-17" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints_1">
+<a class="md-nav__link" href="#all-endpoints_2">
     All endpoints
   </a>
 </li>
@@ -277,7 +291,7 @@
 <nav aria-label="2021-05-13" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints_2">
+<a class="md-nav__link" href="#all-endpoints_3">
     All endpoints
   </a>
 </li>
@@ -332,13 +346,27 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#2021-06-02">
+    2021-06-02
+  </a>
+<nav aria-label="2021-06-02" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#all-endpoints">
+    All endpoints
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#2021-05-24">
     2021-05-24
   </a>
 <nav aria-label="2021-05-24" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints">
+<a class="md-nav__link" href="#all-endpoints_1">
     All endpoints
   </a>
 </li>
@@ -357,7 +385,7 @@
 <nav aria-label="2021-05-17" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints_1">
+<a class="md-nav__link" href="#all-endpoints_2">
     All endpoints
   </a>
 </li>
@@ -371,7 +399,7 @@
 <nav aria-label="2021-05-13" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#all-endpoints_2">
+<a class="md-nav__link" href="#all-endpoints_3">
     All endpoints
   </a>
 </li>
@@ -403,8 +431,16 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">¶</a></h1>
-<h2 id="2021-05-24">2021-05-24<a class="headerlink" href="#2021-05-24" title="Permanent link">¶</a></h2>
+<h2 id="2021-06-02">2021-06-02<a class="headerlink" href="#2021-06-02" title="Permanent link">¶</a></h2>
 <h3 id="all-endpoints">All endpoints<a class="headerlink" href="#all-endpoints" title="Permanent link">¶</a></h3>
+<ul>
+<li>Aurora Relayer: Bumped the <code>eth_estimateGas</code> RPC method's return value from
+  zero to 300,000, sufficient to cover most MetaMask transactions.
+  (<a href="https://github.com/aurora-is-near/aurora-relayer/commit/6797a94a781cd239122b73724bb6f528a37a3772">6797a94</a>,
+  <a href="https://github.com/aurora-is-near/aurora-relayer/issues/16">#16</a>)</li>
+</ul>
+<h2 id="2021-05-24">2021-05-24<a class="headerlink" href="#2021-05-24" title="Permanent link">¶</a></h2>
+<h3 id="all-endpoints_1">All endpoints<a class="headerlink" href="#all-endpoints_1" title="Permanent link">¶</a></h3>
 <ul>
 <li>Aurora Relayer: Fixed a bug in the <code>eth_call</code> RPC method. This had been
   affecting MetaMask users in particular.
@@ -418,7 +454,7 @@
   response latency and increase your rate limits.</li>
 </ul>
 <h2 id="2021-05-17">2021-05-17<a class="headerlink" href="#2021-05-17" title="Permanent link">¶</a></h2>
-<h3 id="all-endpoints_1">All endpoints<a class="headerlink" href="#all-endpoints_1" title="Permanent link">¶</a></h3>
+<h3 id="all-endpoints_2">All endpoints<a class="headerlink" href="#all-endpoints_2" title="Permanent link">¶</a></h3>
 <ul>
 <li>Aurora Relayer: Fixed a response encoding discrepancy with the
   <code>eth_getTransactionReceipt</code> RPC method which was causing Truffle to
@@ -426,7 +462,7 @@
   (<a href="https://github.com/aurora-is-near/aurora-relayer/commit/2500fd9d805f361e2f871c4cd8791308ce8a3417">2500fd9</a>)</li>
 </ul>
 <h2 id="2021-05-13">2021-05-13<a class="headerlink" href="#2021-05-13" title="Permanent link">¶</a></h2>
-<h3 id="all-endpoints_2">All endpoints<a class="headerlink" href="#all-endpoints_2" title="Permanent link">¶</a></h3>
+<h3 id="all-endpoints_3">All endpoints<a class="headerlink" href="#all-endpoints_3" title="Permanent link">¶</a></h3>
 <ul>
 <li>Aurora Relayer: Fixed a regression in the <code>eth_getTransactionReceipt</code> RPC method.
   (<a href="https://github.com/aurora-is-near/aurora-relayer/commit/07dc0daf291160aa7c81d99a9573d1d1d3af6933">07dc0da</a>)</li>
