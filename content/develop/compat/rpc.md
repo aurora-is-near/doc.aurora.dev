@@ -4,6 +4,8 @@ title: "Aurora: Compatibility with Web3 JSON-RPC"
 
 # Compatibility with the Web3 JSON-RPC Protocol
 
+The Aurora Relayer implements the Web3 JSON-RPC protocol.
+
 ## Methods
 
 <div id="compat-json-rpc-table"></div>
@@ -87,7 +89,9 @@ Method | Status | Notes
 
 ## Notes
 
-- For now, the `eth_estimateGas` method returns zero, since no gas is charged.
+- For now, the `eth_estimateGas` method returns a fixed value (6,721,975,
+  matching Truffle's default gas limit), since [no gas is
+  charged](evm.html#gas).
 
 - Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
   network.
@@ -112,6 +116,19 @@ Method | Status | Notes
 - There is no access to pending transactions.
   The `eth_newPendingTransactionFilter` method creates a filter that returns
   nothing when polled with `eth_getFilterChanges`.
+
+- The nonstandard Geth tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  ([#12](https://github.com/aurora-is-near/aurora-relayer/issues/12))
+
+- The nonstandard Parity tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  ([#13](https://github.com/aurora-is-near/aurora-relayer/issues/13))
+
+## Source Code
+
+The Aurora Relayer source code repository is at:
+[github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
 
 [web3_clientVersion]: https://eth.wiki/json-rpc/API#web3_clientVersion
 [web3_sha3]: https://eth.wiki/json-rpc/API#web3_sha3

@@ -4,6 +4,8 @@ title: "Aurora: Getting Started with MetaMask"
 
 # Getting Started with MetaMask
 
+## Introduction
+
 [MetaMask] is a convenient UI for interacting with Ethereum-compatible blockchains (such as Aurora).
 For the purpose of this guide, we will assume you are already familiar with MetaMask and have it installed.
 If you need help getting started with MetaMask itself, [check out their documentation](https://metamask.io/faqs.html).

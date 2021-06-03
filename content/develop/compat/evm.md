@@ -4,6 +4,19 @@ title: "Aurora: Compatibility with the EVM"
 
 # Compatibility with the Ethereum Virtual Machine (EVM)
 
+The Aurora Engine implements an Ethereum Virtual Machine (EVM) on top of the
+NEAR Protocol.
+
+## Balances
+
+EVM address balances are denominated in ether (ETH) for compatibility with
+Ethereum.
+
+## Gas
+
+Currently, no gas is charged during EVM execution. This means you can leave
+the gas price as zero on submitted transactions.
+
 ## Precompiles
 
 ### Standard precompiles
@@ -63,3 +76,8 @@ _0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff_
   feature set of the Istanbul hard fork.
 
 - The [`BLOCKHASH` opcode](#blockhash) currently always returns either `0xfff...` (if the input is within 256 blocks) or `0x000...` (for the current height or one more than 256 blocks in the past).
+
+## Source Code
+
+The Aurora Engine source code repository is at:
+[github.com/aurora-is-near/aurora-engine](https://github.com/aurora-is-near/aurora-engine).
