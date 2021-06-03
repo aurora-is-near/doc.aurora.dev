@@ -227,6 +227,11 @@
     Notes
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#source-code">
+    Source Code
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -300,6 +305,11 @@
     Notes
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#source-code">
+    Source Code
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -311,6 +321,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="compatibility-with-the-web3-json-rpc-protocol">Compatibility with the Web3 JSON-RPC Protocol<a class="headerlink" href="#compatibility-with-the-web3-json-rpc-protocol" title="Permanent link">¶</a></h1>
+<p>The Aurora Relayer implements the Web3 JSON-RPC protocol.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">¶</a></h2>
 <div id="compat-json-rpc-table"></div>
 <table>
@@ -668,7 +679,9 @@
 <h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">¶</a></h2>
 <ul>
 <li>
-<p>For now, the <code>eth_estimateGas</code> method returns zero, since no gas is charged.</p>
+<p>For now, the <code>eth_estimateGas</code> method returns a fixed value (6,721,975,
+  matching Truffle's default gas limit), since <a href="evm.html#gas">no gas is
+  charged</a>.</p>
 </li>
 <li>
 <p>Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
@@ -698,7 +711,20 @@
   The <code>eth_newPendingTransactionFilter</code> method creates a filter that returns
   nothing when polled with <code>eth_getFilterChanges</code>.</p>
 </li>
+<li>
+<p>The nonstandard Geth tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  (<a href="https://github.com/aurora-is-near/aurora-relayer/issues/12">#12</a>)</p>
+</li>
+<li>
+<p>The nonstandard Parity tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  (<a href="https://github.com/aurora-is-near/aurora-relayer/issues/13">#13</a>)</p>
+</li>
 </ul>
+<h2 id="source-code">Source Code<a class="headerlink" href="#source-code" title="Permanent link">¶</a></h2>
+<p>The Aurora Relayer source code repository is at:
+<a href="https://github.com/aurora-is-near/aurora-relayer">github.com/aurora-is-near/aurora-relayer</a>.</p>
 </article>
 </div>
 </div>
