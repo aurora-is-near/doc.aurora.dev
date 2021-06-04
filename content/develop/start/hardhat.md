@@ -40,7 +40,7 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 ✨  Done in 14.96s.
 ```
 
-## Hardhat tasks
+## Hardhat Tasks
 In this example, we have a user defined tasks that uses the Hardhat Runtime Environment [hre](https://hardhat.org/advanced/hardhat-runtime-environment.html). In order to complete the tutorial, you should use them in the same order.
 
 ### ETH Balance
@@ -86,20 +86,40 @@ Total Supply is 1000000
 ### Transfer ERC20
 ```javascript
 task("transfer", "ERC20 transfer")
-.addParam("token", "Token address")
-.addParam("spender", "Spender address")
-.addParam("amount", "Token amount")
-.setAction(async function ({ token, spender, amount }, { ethers: { getSigners } }, runSuper) {
-  const watermelonToken = await ethers.getContractFactory("WatermelonToken")
-  const watermelon = watermelonToken.attach(token)   
-  const [minter] = await ethers.getSigners();
-  await (await watermelon.connect(minter).transfer(spender, amount)).wait()
-  console.log(`${minter.address} has transferred ${amount} to ${spender}`);
-});
+    .addParam("token", "Token address")
+    .addParam("spender", "Spender address")
+    .addParam("amount", "Token amount")
+    .setAction(async function ({ token, spender, amount }, { ethers: { getSigners } }, runSuper) {
+        const watermelonToken = await ethers.getContractFactory("WatermelonToken")
+        const watermelon = watermelonToken.attach(token)
+        const [minter] = await ethers.getSigners();
+        await (await watermelon.connect(minter).transfer(spender, amount)).wait()
+        console.log(`${minter.address} has transferred ${amount} to ${spender}`);
+    });
 ```
 ```bash
-$ npx hardhat transfer --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
+$ npx hardhat transfer --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe --network testnet_aurora
 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred 10 to 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
+```
+
+### BalanceOf ERC20
+
+```javascript
+task("balanceOf", "Total supply of ERC20 token")
+.addParam("token", "Token address")
+.addParam("account", "Account address")
+.setAction(async function ({ token, account }, { ethers: { getSigners } }, runSuper) {
+  const watermelonToken = await ethers.getContractFactory("WatermelonToken")
+  const watermelon = watermelonToken.attach(token)
+  const [minter] = await ethers.getSigners();
+  const balance = (await (await watermelon.connect(minter)).balanceOf(account)).toNumber()
+  console.log(`Account ${account} has a total token balance:  ${balance} WTM`);
+});
+```
+
+```bash
+$ npx hardhat balanceOf --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --account 0x6A33382de9f73B846878a57500d055B981229ac4 --network testnet_aurora
+Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  999970 WTM
 ```
 
 ### Approve ERC20
