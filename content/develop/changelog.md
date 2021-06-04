@@ -4,6 +4,15 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-06-04
+
+### All endpoints
+
+- **Aurora Relayer**: Fixed a bug in the `eth_getTransactionByHash` RPC
+  method's return value: an empty `input` property must be returned as `"0x"`,
+  not `null`.
+  ([8cd353e](https://github.com/aurora-is-near/aurora-relayer/commit/8cd353eab5bf54e23b454c115ed8aa325cc3022e))
+
 ## 2021-06-02
 
 ### All endpoints
