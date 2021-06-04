@@ -14,8 +14,7 @@ Ethereum.
 
 ## Gas
 
-Currently, no gas is charged during EVM execution. This means you can leave
-the gas price as zero on submitted transactions.
+See [notes on gas](gas.md).
 
 ## Precompiles
 

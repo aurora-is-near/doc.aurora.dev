@@ -91,7 +91,7 @@ Method | Status | Notes
 
 - For now, the `eth_estimateGas` method returns a fixed value (6,721,975,
   matching Truffle's default gas limit), since [no gas is
-  charged](evm.html#gas).
+  charged](gas.md).
 
 - Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
   network.
