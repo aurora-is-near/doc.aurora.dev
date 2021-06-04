@@ -29,7 +29,7 @@ Click `Confirm`, then confirm the transaction in the MetaMask pop-up.
 After a minute or two the transaction on the Ropsten network will confirm in MetaMask.
 At this point the ETH is locked on the Ropsten side in a contract, and it has emitted a `Deposit` event.
 The Aurora relayers watch for such events and automatically forward a transaction to the NEAR network (where Aurora runs).
-This takes some time because we must wait for multiple block confirmations on Ropstent to be sure it will not revert.
+This takes some time because we must wait for multiple block confirmations on Ropsten to be sure it will not revert.
 While this is happening you will see an intermediate message in the Bridge UI.
 
 ![bridge-send-one-eth-to-aurora-waiting](../../_img/bridge_send_one_eth_to_aurora_waiting.png)
