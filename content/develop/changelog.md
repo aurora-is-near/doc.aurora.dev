@@ -79,4 +79,4 @@ title: "Aurora: Changelog"
 ### All networks
 
 - **Aurora Engine**: Deployed release [1.0.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.0.0)
-  to MainNet, TestNet, and BetaNet.
+  to Mainnet, Testnet, and Betanet.

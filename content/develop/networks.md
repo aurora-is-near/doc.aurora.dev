@@ -11,9 +11,9 @@ following networks:
 
 Network  | Engine ID                  | Chain ID                | Endpoint URL
 -------- | -------------------------- | ----------------------- | ------------
-[MainNet](#mainnet) | [`aurora`][aurora@MainNet] | 1313161554 (0x4e454152) | <https://mainnet.aurora.dev>
-[TestNet](#testnet) | [`aurora`][aurora@TestNet] | 1313161555 (0x4e454153) | <https://testnet.aurora.dev>
-[BetaNet](#betanet) | [`aurora`][aurora@BetaNet] | 1313161556 (0x4e454154) | <https://betanet.aurora.dev>
+[Mainnet](#mainnet) | [`aurora`][aurora@Mainnet] | 1313161554 (0x4e454152) | <https://mainnet.aurora.dev>
+[Testnet](#testnet) | [`aurora`][aurora@Testnet] | 1313161555 (0x4e454153) | <https://testnet.aurora.dev>
+[Betanet](#betanet) | [`aurora`][aurora@Betanet] | 1313161556 (0x4e454154) | <https://betanet.aurora.dev>
 LocalNet | `aurora.test.near`         | 1313161556 (0x4e454154) | <http://localhost:8545>
 
 Find the status page and public incident log at
@@ -22,21 +22,21 @@ You can also subscribe to incident notifications there.
 
 ## Endpoints
 
-### MainNet
+### Mainnet
 
-The MainNet Web3 endpoint is at: `https://mainnet.aurora.dev` (port 443)
+The Mainnet Web3 endpoint is at: `https://mainnet.aurora.dev` (port 443)
 
-### TestNet
+### Testnet
 
-The TestNet Web3 endpoint is at: `https://testnet.aurora.dev` (port 443)
+The Testnet Web3 endpoint is at: `https://testnet.aurora.dev` (port 443)
 
-### BetaNet
+### Betanet
 
-The BetaNet Web3 endpoint is at: `https://betanet.aurora.dev` (port 443)
+The Betanet Web3 endpoint is at: `https://betanet.aurora.dev` (port 443)
 
-[aurora@MainNet]: https://explorer.near.org/accounts/aurora
-[aurora@TestNet]: https://explorer.testnet.near.org/accounts/aurora
-[aurora@BetaNet]: https://explorer.betanet.near.org/accounts/aurora
+[aurora@Mainnet]: https://explorer.near.org/accounts/aurora
+[aurora@Testnet]: https://explorer.testnet.near.org/accounts/aurora
+[aurora@Betanet]: https://explorer.betanet.near.org/accounts/aurora
 
 [mainnet.aurora.dev]: https://mainnet.aurora.dev
 [testnet.aurora.dev]: https://testnet.aurora.dev
