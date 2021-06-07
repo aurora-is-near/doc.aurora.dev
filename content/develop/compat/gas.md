@@ -29,7 +29,8 @@ In this case the transaction will be considered as failed on Aurora, but this ma
 (if the gas limit was actually high enough for the transaction to complete had NEAR gas not been the limiting factor).
 
 This case will not come up for the vast majority of transactions, and indeed will become less and less likely as we improve the efficiency of our EVM contract
-(thus allowing NEAR gas to go further in terms of EVM computation). Eventually we hope to eliminate this entirely by setting the [ETH block gas limit] on Aurora to be lower than the amount of NEAR which we could spend in one transaction.
+(thus allowing NEAR gas to go further in terms of EVM computation).
+Eventually we hope to eliminate this entirely by setting the [ETH block gas limit] on Aurora to be lower than the amount of NEAR which we could spend in one transaction.
 
 [NEAR gas]: https://docs.near.org/docs/concepts/gas
 [ETH block gas limit]: https://ethereum.org/en/developers/docs/blocks/#block-size
