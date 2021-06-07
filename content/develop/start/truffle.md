@@ -8,7 +8,7 @@ title: "Aurora: Deploying a Contract Using Truffle"
 
 [Truffle](https://www.trufflesuite.com/) is a widely used development
 environment and testing framework for Ethereum smart contracts. In this
-tutorial, we will show by example how to use Truffle with the Aurora TestNet.
+tutorial, we will show by example how to use Truffle with the Aurora Testnet.
 
 This tutorial assumes that you are familiar with Truffle and the non-fungible
 tokens (NFT) concept. For more details about the non-fungible token standard,
@@ -22,7 +22,7 @@ This example is originally forked from the [OpenZeppelin
 examples](https://docs.openzeppelin.com/contracts/4.x/erc721). However, the code
 has been changed to fit the use case of this tutorial. The use case is about how
 to deploy and manage the life cycle of a simple COVID-19 vaccine NFT token 💊💊
-using Truffle on the Aurora TestNet.
+using Truffle on the Aurora Testnet.
 
 ![Truffle NFT example](../../_img/truffle_nft_example.png)
 
@@ -220,5 +220,5 @@ true
 
 ## Summary
 
-In this simple tutorial, we deployed an NFT contract to the Aurora TestNet using
+In this simple tutorial, we deployed an NFT contract to the Aurora Testnet using
 Truffle and interacted with the contract's functions.
