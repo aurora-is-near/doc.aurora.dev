@@ -8,7 +8,7 @@ title: "Aurora: Getting Started with Hardhat"
 
 [HardHat](https://hardhat.org/) is yet another Ethereum development environment.
 It is known for debugging the Solidity code and the explicit error messages.
-Moreover it has extra nice features such as the interactive Javascript console
+Moreover it has extra nice features such as the interactive JavaScript console
 and the user defined tasks.
 
 The main objective of this tutorial is to show how to deploy and interact with
