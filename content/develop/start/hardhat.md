@@ -83,7 +83,7 @@ task("balance", "Prints an account's balance")
 
 To get the `ETH` balance, use the following command:
 
-```
+```bash
 npx hardhat balance --network testnet_aurora --account 0x6A33382de9f73B846878a57500d055B981229ac4
 2.2100102 ETH
 ```
