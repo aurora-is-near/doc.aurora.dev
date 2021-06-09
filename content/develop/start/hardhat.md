@@ -41,7 +41,10 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 ```
 
 ## Hardhat Tasks
-In this example, we will go through pre-defined hardhat tasks that uses the Hardhat Runtime Environment [hre](https://hardhat.org/advanced/hardhat-runtime-environment.html). In order to complete the tutorial, you should use them in the same order:
+
+Hardhat tasks take care of parsing the values provided for each parameter. It gets the values, performs the type validation and converts them into your desired type.
+
+In this example, we will go through a set of pre-defined hardhat tasks that uses the Hardhat Runtime Environment ([HRE](https://hardhat.org/advanced/hardhat-runtime-environment.html)). In order to complete the tutorial, you should use them in the same order:
 
 ### ETH Balance
 
@@ -57,14 +60,17 @@ task("balance", "Prints an account's balance")
     console.log(web3.utils.fromWei(balance, "ether"), "ETH");
   });
 ```
-To run this task, use the following command:
+To get the `ETH` balance, use the following command:
 ```
 npx hardhat balance --network testnet_aurora --account 0x6A33382de9f73B846878a57500d055B981229ac4
 2.2100102 ETH
 ```
-You should notice that `--network` is a global built-in option (parameter) in Hardhat.
+You should notice that `--network` is a global built-in option (parameter) in Hardhat. We will use it for the following commands as well.
 
 ### Total Supply
+
+The following task script gets the total supply of the Watermelon ERC20 token. First it attachs the 
+token contract, gets the sender address and finaly retrieves the total supply by calling `totalSupply()` method in our ERC20 contract. The `--token` address is the ERC20 contract address.
 
 ```javascript
 task("totalSupply", "Total supply of ERC20 token")
@@ -77,6 +83,7 @@ task("totalSupply", "Total supply of ERC20 token")
   console.log(`Total Supply is ${totalSupply}`);
 });
 ```
+To get the `totalSupply`, use the following command:
 
 ```bash
 $ npx hardhat totalSupply --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --network testnet_aurora
@@ -84,6 +91,9 @@ Total Supply is 1000000
 ```
 
 ### Transfer ERC20
+
+The `transfer` option allows anyone holding an ERC20 tokens to transfer them to any Ethereum address. In the following script, the minter address will mint (implicitly) and transfer `10 WTM` tokens to the `spender` address:
+
 ```javascript
 task("transfer", "ERC20 transfer")
     .addParam("token", "Token address")
@@ -97,12 +107,16 @@ task("transfer", "ERC20 transfer")
         console.log(`${minter.address} has transferred ${amount} to ${spender}`);
     });
 ```
+To call `transfer`, use the following command:
+
 ```bash
 $ npx hardhat transfer --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe --network testnet_aurora
 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred 10 tokens to 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
 ```
 
 ### BalanceOf ERC20
+
+We can prove that the `spender` has received the exact amount of tokens by calling the `balanceOf` as shown below:
 
 ```javascript
 task("balanceOf", "Total supply of ERC20 token")
@@ -116,7 +130,7 @@ task("balanceOf", "Total supply of ERC20 token")
   console.log(`Account ${account} has a total token balance:  ${balance} WTM`);
 });
 ```
-
+To get the `balance`, use the following command:
 ```bash
 $ npx hardhat balanceOf --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --account 0x6A33382de9f73B846878a57500d055B981229ac4 --network testnet_aurora
 Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  999970 WTM
@@ -124,12 +138,49 @@ Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  9
 
 ### Approve ERC20
 
+In some cases, instead of calling the `transfer` directly, the sender can approve a specific amount of tokens to be withdrawn from his account to specific receipient address later. This can be done by calling `approve` then calling `transferFrom`.
+
+```javascript
+task("approve", "ERC20 approve")
+    .addParam("token", "Token address")
+    .addParam("spender", "Spender address")
+    .addParam("amount", "Token amount")
+    .setAction(async function ({ token, spender, amount }, { ethers: { getSigners } }, runSuper) {
+        const watermelonToken = await ethers.getContractFactory("WatermelonToken")
+        const watermelon = watermelonToken.attach(token)
+        const [sender] = await ethers.getSigners();
+        await (await watermelon.connect(sender).approve(spender, amount)).wait()
+        console.log(`${sender.address} has approved ${amount} tokens to ${spender}`);
+    });
+
+module.exports = {};
+```
+
+To call `approve`, use the following command:
+
 ```bash
 npx hardhat approve --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --spender 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 --amount 10 --network testnet_aurora
 0x6A33382de9f73B846878a57500d055B981229ac4 has approved 10 tokens to 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771
 ```
 ### TransferFrom ERC20
 
+After approving the tokens, a receipient can call `transferFrom` to move the `allowance` to his account.  
+
+```javascript
+task("transferFrom", "ERC20 transferFrom")
+    .addParam("token", "Token address")
+    .addParam("sender", "Sender address")
+    .addParam("amount", "Token amount")
+    .setAction(async function ({ token, sender, amount }, { ethers: { getSigners } }, runSuper) {
+        const watermelonToken = await ethers.getContractFactory("WatermelonToken")
+        const watermelon = watermelonToken.attach(token)
+        const [recipient] = await ethers.getSigners()
+        console.log(recipient.address);
+        await (await watermelon.connect(recipient).transferFrom(sender, recipient.address, amount)).wait()
+        console.log(`${recipient.address} has received ${amount} tokens from ${sender}`)
+    });
+```
+To call `transferFrom`, use the following command:
 ```bash
 npx hardhat transferFrom --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has received 10 tokens from 0x6A33382de9f73B846878a57500d055B981229ac4
