@@ -10,7 +10,7 @@ title: "Aurora: Getting Started with MetaMask"
 For the purpose of this guide, we will assume you are already familiar with MetaMask and have it installed.
 If you need help getting started with MetaMask itself, [check out their documentation](https://metamask.io/faqs.html).
 
-In this tutorial we will walk through connecting MetaMask to the Aurora TestNet, deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
+In this tutorial we will walk through connecting MetaMask to the Aurora Testnet, deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
 
 !!! note
     Screenshots in this tutorial are taken from the MetaMask browser extension version 9.5.5.
@@ -23,7 +23,7 @@ In the top-right corner of the MetaMask interface, click the network selection d
 
 Fill in the form with the following information:
 
-* Network Name: Aurora TestNet
+* Network Name: Aurora Testnet
 * New RPC URL: `https://testnet.aurora.dev/`
 * Chain ID: 1313161555
 * Currency Symbol: ETH
@@ -33,7 +33,7 @@ Fill in the form with the following information:
 !!! note
     All the Aurora RPC endpoint URLs and chain IDs can be found on our [Networks](../networks.md) page.
 
-Click `Save`, and you should see `Aurora TestNet` is now the network selected in MetaMask.
+Click `Save`, and you should see `Aurora Testnet` is now the network selected in MetaMask.
 To see MetaMask in action, we will connect it to [Remix] and perform some transactions.
 
 ## Deploying an ERC-20 Token using Remix
@@ -104,7 +104,7 @@ Now that the contract is deployed on the Aurora network, we can interact with it
 
 ## Adding an ERC-20 Token to MetaMask
 
-In the MetaMask interface (with the Aurora TestNet network still selected), click the `Add Token` button:
+In the MetaMask interface (with the Aurora Testnet network still selected), click the `Add Token` button:
 
 ![MetaMask-add-token-button](../../_img/metamask_add_token_button.png)
 
@@ -150,7 +150,7 @@ If you transferred to another MetaMask account you hold then you can follow the 
 
 ## Summary
 
-In this tutorial we connected MetaMask to the Aurora TestNet, deployed an ERC-20 token contract using Remix, and transferred that token using MetaMask.
+In this tutorial we connected MetaMask to the Aurora Testnet, deployed an ERC-20 token contract using Remix, and transferred that token using MetaMask.
 The only difference to doing this on the original Ethereum network was setting the RPC endpoint to be Aurora's.
 
 [MetaMask]: https://metamask.io
