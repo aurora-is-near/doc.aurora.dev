@@ -41,7 +41,7 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 ```
 
 ## Hardhat Tasks
-In this example, we have a user defined tasks that uses the Hardhat Runtime Environment [hre](https://hardhat.org/advanced/hardhat-runtime-environment.html). In order to complete the tutorial, you should use them in the same order.
+In this example, we will go through pre-defined hardhat tasks that uses the Hardhat Runtime Environment [hre](https://hardhat.org/advanced/hardhat-runtime-environment.html). In order to complete the tutorial, you should use them in the same order:
 
 ### ETH Balance
 
@@ -99,7 +99,7 @@ task("transfer", "ERC20 transfer")
 ```
 ```bash
 $ npx hardhat transfer --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe --network testnet_aurora
-0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred 10 to 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
+0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred 10 tokens to 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
 ```
 
 ### BalanceOf ERC20
@@ -123,10 +123,26 @@ Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  9
 ```
 
 ### Approve ERC20
-TBD
+
+```bash
+npx hardhat approve --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --spender 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 --amount 10 --network testnet_aurora
+0x6A33382de9f73B846878a57500d055B981229ac4 has approved 10 tokens to 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771
+```
 ### TransferFrom ERC20
-TBD
 
+```bash
+npx hardhat transferFrom --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
+0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has received 10 tokens from 0x6A33382de9f73B846878a57500d055B981229ac4
+```
 
+Checking the balance of `0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771`:
 
+```bash
+npx hardhat balanceOf --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771  --network testnet_aurora
+Account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has a total token balance:  10 WTM
+```
+
+## Conclusion
+
+In this tutorial we deployed an ERC20 token using Hardhat on the Aurora TestNet, transferred, and approved ERC20 tokens. Moreover, we added other utility tasks such as getting the total supply, and the account balance. The only difference is we changed the Ethereum MainNet to the Aurora RPC endpoint.
 
