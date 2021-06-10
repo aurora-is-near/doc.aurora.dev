@@ -55,6 +55,9 @@ Deploying contracts with the account: 0x6A33382de9f73B846878a57500d055B981229ac4
 Account balance: 2210010200000000000
 WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 ✨  Done in 14.96s.
+
+# export the token address
+$ export TOKEN_ADDRESS='0xD7f2A76F5DA173043E6c61a0A18D835809A07766'
 ```
 
 ## Hardhat Tasks
@@ -114,7 +117,7 @@ task("totalSupply", "Total supply of ERC20 token")
 To get the `totalSupply`, use the following command:
 
 ```bash
-$ npx hardhat totalSupply --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --network testnet_aurora
+$ npx hardhat totalSupply --token $TOKEN_ADDRESS --network testnet_aurora
 Total Supply is 1000000
 ```
 
@@ -141,7 +144,7 @@ task("transfer", "ERC20 transfer")
 To call `transfer`, use the following command:
 
 ```bash
-$ npx hardhat transfer --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe --network testnet_aurora
+$ npx hardhat transfer --token $TOKEN_ADDRESS --amount 10 --spender 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe --network testnet_aurora
 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred 10 tokens to 0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe
 ```
 
@@ -166,7 +169,7 @@ task("balanceOf", "Total supply of ERC20 token")
 To get the `balance`, use the following command:
 
 ```bash
-$ npx hardhat balanceOf --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --account 0x6A33382de9f73B846878a57500d055B981229ac4 --network testnet_aurora
+$ npx hardhat balanceOf --token $TOKEN_ADDRESS --account 0x6A33382de9f73B846878a57500d055B981229ac4 --network testnet_aurora
 Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  999970 WTM
 ```
 
@@ -196,7 +199,7 @@ module.exports = {};
 To call `approve`, use the following command:
 
 ```bash
-npx hardhat approve --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --spender 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 --amount 10 --network testnet_aurora
+npx hardhat approve --token $TOKEN_ADDRESS --spender 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 --amount 10 --network testnet_aurora
 0x6A33382de9f73B846878a57500d055B981229ac4 has approved 10 tokens to 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771
 ```
 
@@ -223,14 +226,16 @@ task("transferFrom", "ERC20 transferFrom")
 To call `transferFrom`, use the following command:
 
 ```bash
-npx hardhat transferFrom --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
+# export the recipient private key
+export AURORA_PRIVATE_KEY="THE RECIPIENT PRIVATE KEY"
+npx hardhat transferFrom --token $TOKEN_ADDRESS --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has received 10 tokens from 0x6A33382de9f73B846878a57500d055B981229ac4
 ```
 
 Checking the balance of `0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771`:
 
 ```bash
-npx hardhat balanceOf --token 0xD7f2A76F5DA173043E6c61a0A18D835809A07766 --account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771  --network testnet_aurora
+npx hardhat balanceOf --token $TOKEN_ADDRESS --account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771  --network testnet_aurora
 Account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has a total token balance:  10 WTM
 ```
 
