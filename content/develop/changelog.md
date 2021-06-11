@@ -11,6 +11,14 @@ title: "Aurora: Changelog"
 - **Aurora Engine**: Deployed release [1.2.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.2.0)
   to Testnet and Betanet.
 
+## 2021-06-09
+
+### All endpoints
+
+- **Aurora Relayer**: Fixed a bug in the `eth_getFilterChanges` RPC
+  method's return value: the `data` property must never be `null`.
+  ([f0a41f1](https://github.com/aurora-is-near/aurora-relayer/commit/f0a41f18e2a76ba3d4fabddd449cf9f677586473))
+
 ## 2021-06-04
 
 - [The weekly update](https://aurora.dev/blog/2021-06-04-update)
@@ -40,6 +48,13 @@ title: "Aurora: Changelog"
   from zero to 300,000, sufficient to cover most MetaMask transactions.
   ([6797a94](https://github.com/aurora-is-near/aurora-relayer/commit/6797a94a781cd239122b73724bb6f528a37a3772),
   [#16](https://github.com/aurora-is-near/aurora-relayer/issues/16))
+
+## 2021-05-29
+
+### All networks
+
+- **Aurora Engine**: Deployed release [1.1.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.1.0)
+  to Testnet.
 
 ## 2021-05-28
 
