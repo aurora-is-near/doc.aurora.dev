@@ -1,8 +1,8 @@
 ---
-title: "Aurora: Getting Started with Hardhat"
+title: "Aurora: Getting Started with HardHat"
 ---
 
-# Getting Started with Hardhat
+# Getting Started with HardHat
 
 ## Introduction
 

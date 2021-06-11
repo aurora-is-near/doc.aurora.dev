@@ -26,7 +26,7 @@ nav:
   #    - ERC-20 Tokens: learn/bridge/erc-20.md
   #  - Deploying a Contract:
   #    - Using Remix: learn/deploy/remix.md
-  #    - Using Hardhat: learn/deploy/hardhat.md
+  #    - Using HardHat: learn/deploy/hardhat.md
   #    - Using Truffle: learn/deploy/truffle.md
   #  - Interacting with Contracts:
   #    - Using Remix: learn/interact/remix.md

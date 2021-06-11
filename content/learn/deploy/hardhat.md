@@ -1,5 +1,5 @@
 ---
-title: "Aurora: Deploying a Contract Using Hardhat"
+title: "Aurora: Deploying a Contract Using HardHat"
 ---
 
-# Deploying a Contract Using Hardhat
+# Deploying a Contract Using HardHat

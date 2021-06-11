@@ -26,7 +26,7 @@ transaction finalization), scalable, and [carbon neutral].
 
 Even though NEAR is a separate blockchain from Ethereum, Aurora aims for
 full compatibility with Ethereum development tools such as [Truffle] and
-[Hardhat]. Additionally, NEAR's [trustless bridge] to Ethereum means even
+[HardHat]. Additionally, NEAR's [trustless bridge] to Ethereum means even
 the assets on Aurora are the same as Ethereum. For example, account balances
 in Aurora's EVM are denominated in the same Ether (ETH) as on Ethereum
 itself.
@@ -42,5 +42,5 @@ Still have questions? Check out our [answers to frequently asked questions
 [Develop]: develop/networks.md
 [carbon neutral]: https://near.org/blog/near-climate-neutral-product/
 [Truffle]: https://www.trufflesuite.com/truffle
-[Hardhat]: https://hardhat.org
+[HardHat]: https://hardhat.org
 [trustless bridge]: https://near.org/bridge/
