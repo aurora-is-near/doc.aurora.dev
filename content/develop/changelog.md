@@ -6,7 +6,7 @@ title: "Aurora: Changelog"
 
 ## 2021-06-11
 
-### All networks
+### Testnet & Betanet only
 
 - **Aurora Engine**: Deployed release [1.2.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.2.0)
   to Testnet and Betanet.
@@ -51,7 +51,7 @@ title: "Aurora: Changelog"
 
 ## 2021-05-29
 
-### All networks
+### Testnet only
 
 - **Aurora Engine**: Deployed release [1.1.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.1.0)
   to Testnet.
