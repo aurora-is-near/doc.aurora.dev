@@ -57,7 +57,7 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 ✨  Done in 14.96s.
 
 # export the token address
-$ export TOKEN_ADDRESS='0xD7f2A76F5DA173043E6c61a0A18D835809A07766'
+$ export TOKEN_ADDRESS='YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0A18D835809A07766)'
 ```
 
 ## HardHat Tasks
@@ -227,8 +227,7 @@ To call `transferFrom`, use the following command:
 
 ```bash
 # export the recipient private key
-export AURORA_PRIVATE_KEY="THE RECIPIENT PRIVATE KEY"
-npx hardhat transferFrom --token $TOKEN_ADDRESS --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
+AURORA_PRIVATE_KEY="THE RECIPIENT PRIVATE KEY" npx hardhat transferFrom --token $TOKEN_ADDRESS --sender 0x6A33382de9f73B846878a57500d055B981229ac4  --amount 10 --network testnet_aurora
 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has received 10 tokens from 0x6A33382de9f73B846878a57500d055B981229ac4
 ```
 
