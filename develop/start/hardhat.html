@@ -274,9 +274,9 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#hardhat-tasks">
-    HardHat Tasks
+    Hardhat Tasks
   </a>
-<nav aria-label="HardHat Tasks" class="md-nav">
+<nav aria-label="Hardhat Tasks" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#eth-balance">
@@ -416,9 +416,9 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#hardhat-tasks">
-    HardHat Tasks
+    Hardhat Tasks
   </a>
-<nav aria-label="HardHat Tasks" class="md-nav">
+<nav aria-label="Hardhat Tasks" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#eth-balance">
@@ -470,13 +470,13 @@
 </a>
 <h1 id="getting-started-with-hardhat">Getting Started with Hardhat<a class="headerlink" href="#getting-started-with-hardhat" title="Permanent link">¶</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p><a href="https://hardhat.org/">HardHat</a> is yet another Ethereum development environment.
+<p><a href="https://hardhat.org/">Hardhat</a> is yet another Ethereum development environment.
 It is known for debugging the Solidity code and the explicit error messages.
 Moreover it has extra nice features such as the interactive JavaScript console
 and the user defined tasks.</p>
 <p>The main objective of this tutorial is to show how to deploy and interact with
-the Solidity smart contracts on Aurora using HardHat. This tutorial assumes that
-you are familiar with <code>HardHat</code> and the ERC-20 tokens. For more details about
+the Solidity smart contracts on Aurora using Hardhat. This tutorial assumes that
+you are familiar with <code>Hardhat</code> and the ERC-20 tokens. For more details about
 the fungible token standard, please refer to
 the <a href="https://eips.ethereum.org/EIPS/eip-20">ERC-20 Standard specification</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
@@ -513,14 +513,14 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 <span class="c1"># export the token address</span>
 $ <span class="nb">export</span> <span class="nv">TOKEN_ADDRESS</span><span class="o">=</span><span class="s1">'YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0A18D835809A07766)'</span>
 </code></pre></div>
-<h2 id="hardhat-tasks">HardHat Tasks<a class="headerlink" href="#hardhat-tasks" title="Permanent link">¶</a></h2>
-<p>HardHat tasks take care of parsing the values provided for each parameter.
+<h2 id="hardhat-tasks">Hardhat Tasks<a class="headerlink" href="#hardhat-tasks" title="Permanent link">¶</a></h2>
+<p>Hardhat tasks take care of parsing the values provided for each parameter.
 It gets the values, performs the type validation and converts them into your desired type.</p>
-<p>In this example, we will go through a set of pre-defined HardHat tasks
-that uses the HardHat Runtime Environment (<a href="https://hardhat.org/advanced/hardhat-runtime-environment.html">HRE</a>). In order to complete the tutorial,
+<p>In this example, we will go through a set of pre-defined Hardhat tasks
+that uses the Hardhat Runtime Environment (<a href="https://hardhat.org/advanced/hardhat-runtime-environment.html">HRE</a>). In order to complete the tutorial,
 you should use them in the same order:</p>
 <h3 id="eth-balance">ETH Balance<a class="headerlink" href="#eth-balance" title="Permanent link">¶</a></h3>
-<p>The following HardHat task uses the <code>Web3</code> plugin to get the account’s balance:</p>
+<p>The following Hardhat task uses the <code>Web3</code> plugin to get the account’s balance:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">task</span><span class="p">(</span><span class="s2">"balance"</span><span class="p">,</span> <span class="s2">"Prints an account's balance"</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">addParam</span><span class="p">(</span><span class="s2">"account"</span><span class="p">,</span> <span class="s2">"The account's address"</span><span class="p">)</span>
   <span class="p">.</span><span class="nx">setAction</span><span class="p">(</span><span class="k">async</span> <span class="nx">taskArgs</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -535,7 +535,7 @@ you should use them in the same order:</p>
 <span class="m">2</span>.2100102 ETH
 </code></pre></div>
 <p>You should notice that <code>--network</code> is a global built-in option (parameter)
-in HardHat. We will use it for the following commands as well.</p>
+in Hardhat. We will use it for the following commands as well.</p>
 <h3 id="total-supply">Total Supply<a class="headerlink" href="#total-supply" title="Permanent link">¶</a></h3>
 <p>The following task script gets the total supply of the Watermelon ERC-20 token.
 First it attachs the
@@ -643,10 +643,10 @@ the <code>allowance</code> to his account.  </p>
 Account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has a total token balance:  <span class="m">10</span> WTM
 </code></pre></div>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">¶</a></h2>
-<p>In this tutorial we deployed an ERC-20 token using HardHat on the Aurora
-TestNet, transferred, and approved ERC-20 tokens. Moreover, we added other
+<p>In this tutorial we deployed an ERC-20 token using Hardhat on the Aurora
+Testnet, transferred, and approved ERC-20 tokens. Moreover, we added other
 utility tasks such as getting the total supply, and the account balance.
-The only difference is we changed the Ethereum MainNet to the Aurora
+The only difference is we changed the Ethereum Mainnet to the Aurora
 RPC endpoint.</p>
 </article>
 </div>
