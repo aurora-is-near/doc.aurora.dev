@@ -26,7 +26,7 @@ nav:
   #    - ERC-20 Tokens: learn/bridge/erc-20.md
   #  - Deploying a Contract:
   #    - Using Remix: learn/deploy/remix.md
-  #    - Using HardHat: learn/deploy/hardhat.md
+  #    - Using Hardhat: learn/deploy/hardhat.md
   #    - Using Truffle: learn/deploy/truffle.md
   #  - Interacting with Contracts:
   #    - Using Remix: learn/interact/remix.md
@@ -36,7 +36,7 @@ nav:
     - Getting Started:
       - MetaMask: develop/start/metamask.md
       - Truffle: develop/start/truffle.md
-      - HardHat: develop/start/hardhat.md
+      - Hardhat: develop/start/hardhat.md
     - Compatibility:
       - JSON-RPC: develop/compat/rpc.md
       - EVM: develop/compat/evm.md
