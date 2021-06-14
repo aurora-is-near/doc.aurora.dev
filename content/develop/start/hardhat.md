@@ -6,14 +6,14 @@ title: "Aurora: Getting Started with Hardhat"
 
 ## Introduction
 
-[HardHat](https://hardhat.org/) is yet another Ethereum development environment.
+[Hardhat](https://hardhat.org/) is yet another Ethereum development environment.
 It is known for debugging the Solidity code and the explicit error messages.
 Moreover it has extra nice features such as the interactive JavaScript console
 and the user defined tasks.
 
 The main objective of this tutorial is to show how to deploy and interact with
-the Solidity smart contracts on Aurora using HardHat. This tutorial assumes that
-you are familiar with `HardHat` and the ERC-20 tokens. For more details about
+the Solidity smart contracts on Aurora using Hardhat. This tutorial assumes that
+you are familiar with `Hardhat` and the ERC-20 tokens. For more details about
 the fungible token standard, please refer to
 the [ERC-20 Standard specification](https://eips.ethereum.org/EIPS/eip-20).
 
@@ -60,18 +60,18 @@ WatermelonToken deployed to: 0xD7f2A76F5DA173043E6c61a0A18D835809A07766
 $ export TOKEN_ADDRESS='YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0A18D835809A07766)'
 ```
 
-## HardHat Tasks
+## Hardhat Tasks
 
-HardHat tasks take care of parsing the values provided for each parameter.
+Hardhat tasks take care of parsing the values provided for each parameter.
 It gets the values, performs the type validation and converts them into your desired type.
 
-In this example, we will go through a set of pre-defined HardHat tasks
-that uses the HardHat Runtime Environment ([HRE](https://hardhat.org/advanced/hardhat-runtime-environment.html)). In order to complete the tutorial,
+In this example, we will go through a set of pre-defined Hardhat tasks
+that uses the Hardhat Runtime Environment ([HRE](https://hardhat.org/advanced/hardhat-runtime-environment.html)). In order to complete the tutorial,
 you should use them in the same order:
 
 ### ETH Balance
 
-The following HardHat task uses the `Web3` plugin to get the account’s balance:
+The following Hardhat task uses the `Web3` plugin to get the account’s balance:
 
 ```javascript
 task("balance", "Prints an account's balance")
@@ -92,7 +92,7 @@ npx hardhat balance --network testnet_aurora --account 0x6A33382de9f73B846878a57
 ```
 
 You should notice that `--network` is a global built-in option (parameter)
-in HardHat. We will use it for the following commands as well.
+in Hardhat. We will use it for the following commands as well.
 
 ### Total Supply
 
@@ -240,8 +240,8 @@ Account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has a total token balance:  1
 
 ## Conclusion
 
-In this tutorial we deployed an ERC-20 token using HardHat on the Aurora
-TestNet, transferred, and approved ERC-20 tokens. Moreover, we added other
+In this tutorial we deployed an ERC-20 token using Hardhat on the Aurora
+Testnet, transferred, and approved ERC-20 tokens. Moreover, we added other
 utility tasks such as getting the total supply, and the account balance.
-The only difference is we changed the Ethereum MainNet to the Aurora
+The only difference is we changed the Ethereum Mainnet to the Aurora
 RPC endpoint.
