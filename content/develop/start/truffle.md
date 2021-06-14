@@ -200,7 +200,7 @@ true
 ### Burn tokens
 
 This is an alternative scenario for the NFT token lifecycle. Instead of
-transfering the token back to the minter, the participant can decide to burn the
+transferring the token back to the minter, the participant can decide to burn the
 NFT token by calling the `burn` function:
 
 ```bash

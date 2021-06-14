@@ -7,7 +7,7 @@ title: "Aurora: Roadmap"
 For the latest roadmap updates, see our posts in the [Aurora forum][1] or the [roadmap section on Aurora website][2].
 
 - **Done** — Deploy Aurora Engine to Mainnet, Testnet and Betanet
-- **May 2021** — Transfer ETH and ERC20 tokens beween Ethereum and Aurora
+- **May 2021** — Transfer ETH and ERC-20 tokens between Ethereum and Aurora
 - **May 2021** — Transfer the NEAR token between Ethereum and NEAR
 - **June 2021** — Completion of Aurora fund-raising campaign
 - **June 2021** — Filling of all AuroraDAO initial seats

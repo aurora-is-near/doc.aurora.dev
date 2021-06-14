@@ -21,3 +21,7 @@ jobs:
           VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Spell check
+        uses: crate-ci/typos@master
+        with:
+          files: content/
