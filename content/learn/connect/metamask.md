@@ -13,8 +13,8 @@ If you need help getting set up with MetaMask in the first place, please see [th
 
 ## Connecting to the Bridge front-end
 
-Aurora is still a work in progress, so our bridge is currently only working with the Ropsten testnet (and Ethereum test network).
-For the remainder of the tutorial we will focus on adding the Aurora testnet to MetaMask.
+Aurora is still a work in progress, so our bridge is currently only working with the Ropsten Testnet (an Ethereum test network).
+For the remainder of the tutorial we will focus on adding the Aurora Testnet to MetaMask.
 
 Before we begin, ensure that you have the Ropsten network selected in MetaMask.
 In the MetaMask UI click the network selection drop-down in the top right, then click `Ropsten test network`.
