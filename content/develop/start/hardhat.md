@@ -241,7 +241,7 @@ Account 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771 has a total token balance:  1
 ## Conclusion
 
 In this tutorial we deployed an ERC-20 token using Hardhat on the Aurora
-TestNet, transferred, and approved ERC-20 tokens. Moreover, we added other
+Testnet, transferred, and approved ERC-20 tokens. Moreover, we added other
 utility tasks such as getting the total supply, and the account balance.
-The only difference is we changed the Ethereum MainNet to the Aurora
+The only difference is we changed the Ethereum Mainnet to the Aurora
 RPC endpoint.
