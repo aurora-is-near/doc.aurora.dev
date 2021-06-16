@@ -21,6 +21,11 @@ MD033: false  # no-inline-html
 MD044:        # proper-names
   names:
     - JavaScript
+    - Hardhat
+    - MetaMask
+    - Testnet
+    - Mainnet
+    - Betanet
   code_blocks: false
 MD046: false  # code-block-style
 MD048:        # code-fence-style

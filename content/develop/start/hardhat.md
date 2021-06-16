@@ -98,7 +98,7 @@ in Hardhat. We will use it for the following commands as well.
 
 The following task script gets the total supply of the Watermelon ERC-20 token.
 First it attachs the
-token contract, gets the sender address and finaly retrieves the total supply
+token contract, gets the sender address and finally retrieves the total supply
 by calling `totalSupply()` method in our ERC-20 contract. The `--token`
 address is the ERC-20 contract address.
 
