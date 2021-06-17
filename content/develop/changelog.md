@@ -4,6 +4,15 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-06-17
+
+### All endpoints
+
+- **Aurora Relayer**: Fixed a bug in handling empty log event `data` properties.
+  This affected the `eth_getFilterLogs`, `eth_getLogs`, and
+  `eth_getTransactionReceipt` RPC methods.
+  ([df29187](https://github.com/aurora-is-near/aurora-relayer/commit/df291873b859f1412306a60a7bfb69506f4d3336))
+
 ## 2021-06-11
 
 ### Testnet & Betanet only
