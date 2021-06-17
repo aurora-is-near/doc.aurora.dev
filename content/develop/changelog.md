@@ -13,6 +13,11 @@ title: "Aurora: Changelog"
   `eth_getTransactionReceipt` RPC methods.
   ([df29187](https://github.com/aurora-is-near/aurora-relayer/commit/df291873b859f1412306a60a7bfb69506f4d3336))
 
+### Testnet & Betanet only
+
+- **Aurora Engine**: Deployed release [1.3.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.3.0)
+  to Testnet and Betanet.
+
 ## 2021-06-11
 
 - [The weekly update](https://aurora.dev/blog/2021-06-11-update)
