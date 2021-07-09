@@ -2,7 +2,7 @@
 ---
 # Site configuration:
 site_name: Aurora Documentation
-site_author: NEAR Protocol
+site_author: Aurora Labs
 site_url: https://doc.aurora.dev
 repo_name: aurora-is-near/doc.aurora.dev
 repo_url: https://github.com/aurora-is-near/doc.aurora.dev
