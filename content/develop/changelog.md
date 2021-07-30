@@ -4,6 +4,27 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-07-30
+
+### Testnet & Betanet only
+
+- **Aurora Engine**: Deployed release [1.5.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.5.0)
+  to Testnet and Betanet.
+
+## 2021-07-08
+
+### Testnet & Betanet only
+
+- **Aurora Engine**: Deployed release [1.4.3](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.3)
+  to Testnet and Betanet.
+
+## 2021-06-25
+
+### All networks
+
+- **Aurora Engine**: Deployed release [1.4.2](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.2)
+  to Mainnet, Testnet, and Betanet.
+
 ## 2021-06-23
 
 ### Testnet & Betanet only
