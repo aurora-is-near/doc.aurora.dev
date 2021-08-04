@@ -28,7 +28,7 @@ Address | ID          | Name                                 | Spec           | 
 0x02    | `SHA256`    | SHA-2 256-bit hash function          | [Yellow Paper] | ✅
 0x03    | `RIPEMD160` | RIPEMD 160-bit hash function         | [Yellow Paper] | ✅
 0x04    | `Identity`  | Identity function                    | [Yellow Paper] | ✅
-0x05    | `ModExp`    | Big integer modular exponentation    | [EIP-198]      | ✅
+0x05    | `ModExp`    | Big integer modular exponentiation   | [EIP-198]      | ✅
 0x06    | `BN128Add`  | Elliptic curve addition              | [EIP-196]      | ✅
 0x07    | `BN128Mul`  | Elliptic curve scalar multiplication | [EIP-196]      | ✅
 0x08    | `BN128Pair` | Elliptic curve pairing check         | [EIP-197]      | ✅
