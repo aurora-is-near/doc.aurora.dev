@@ -36,7 +36,7 @@ nav:
     - Getting Started:
       - MetaMask: develop/start/metamask.md
       - Truffle: develop/start/truffle.md
-      - HardHat: develop/start/hardhat.md
+      - Hardhat: develop/start/hardhat.md
     - Compatibility:
       - JSON-RPC: develop/compat/rpc.md
       - EVM: develop/compat/evm.md
