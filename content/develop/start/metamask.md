@@ -92,7 +92,7 @@ Click `Confirm`.
 !!! note
     You may be surprised to see the gas price set to zero in this transaction.
     During the early access period Aurora transactions are free, however this will change in the future.
-    Not to worry, even when transaction fees will be non-zero, they'll still be much lower than on the Ethereum 1.0 mainnet.
+    Not to worry, even when transaction fees will be non-zero, they'll still be much lower than on the Ethereum 1.0 Mainnet.
 
 After a few moments the transaction will be confirmed by the network.
 You will see a success message in the bottom panel and the contract listed under `Deployed Contracts` on the left panel.
