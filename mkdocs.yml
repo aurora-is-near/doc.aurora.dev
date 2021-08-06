@@ -41,6 +41,8 @@ nav:
       - JSON-RPC: develop/compat/rpc.md
       - EVM: develop/compat/evm.md
       - Gas: develop/compat/gas.md
+    - Indexers:
+      - TheGraph: develop/indexers/thegraph.md
     - Resources:
       - Changelog: develop/changelog.md
       - Roadmap: develop/roadmap.md
