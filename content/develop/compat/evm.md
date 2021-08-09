@@ -47,9 +47,17 @@ Address | ID          | Name                                 | Spec           | 
 This opcode currently does not return a real blockhash.
 However, it does respect the logic that a non-zero value is returned for the most recent 256 blocks (not including the current block).
 For all other inputs it returns zero.
-The non-zero value that is returned is `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff`.
-For example, if the current block height is `h`, then `BLOCKHASH(h) = 0x000...`, `BLOCKHASH(h - 100) = 0xfff...` and `BLOCKHASH(h - 257) = 0x000..`.
-This behavior may change in the future, see [nearcore#4256](https://github.com/near/nearcore/pull/4256) to track this issue.
+The non-zero value that is returned is computed based on the block height and properties of the Aurora Engine contract (chain ID and account ID).
+Concretely, as of [#213](https://github.com/aurora-is-near/aurora-engine/pull/213/), the value returned is
+
+```text
+BLOCKHASH(h: u64) = sha256( 0x00 || h || chain_id || account_id )
+```
+
+where `||` is byte concatenation and it is assumed `h` (a 64-bit number) is converted to bytes in big endian encoding.
+The leading zero byte in the concatenation is a version byte which may change if a new blockhash scheme is introduced in the future.
+The `chain_id` depends on the network the Aurora Engine contract is deployed to (see [networks table](/develop/networks.html#networks)).
+The `account_id` is the name of the NEAR account where the contract is deployed (see the Engine ID column in the [networks table](https://doc.aurora.dev/develop/networks.html#networks)).
 
 ### `COINBASE`
 
@@ -74,7 +82,7 @@ _0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff_
 - The Berlin hard fork is not yet supported. The EVM currently supports the
   feature set of the Istanbul hard fork.
 
-- The [`BLOCKHASH` opcode](#blockhash) currently always returns either `0xfff...` (if the input is within 256 blocks) or `0x000...` (for the current height or one more than 256 blocks in the past).
+- The [`BLOCKHASH` opcode](#blockhash) does not return the hash of an actual block (see above for details).
 
 ## Source Code
 
