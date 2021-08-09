@@ -97,7 +97,7 @@ in Hardhat. We will use it for the following commands as well.
 ### Total Supply
 
 The following task script gets the total supply of the Watermelon ERC-20 token.
-First it attachs the
+First it attaches the
 token contract, gets the sender address and finally retrieves the total supply
 by calling `totalSupply()` method in our ERC-20 contract. The `--token`
 address is the ERC-20 contract address.
@@ -177,7 +177,7 @@ Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  9
 
 In some cases, instead of calling the `transfer` directly, the sender
 can approve a specific amount of tokens to be withdrawn from his account
-to specific receipient address later. This can be done by calling `approve`
+to specific recipient address later. This can be done by calling `approve`
 then calling `transferFrom`.
 
 ```javascript
@@ -205,7 +205,7 @@ npx hardhat approve --token $TOKEN_ADDRESS --spender 0x8722C88e82AbCC639148Ab612
 
 ### TransferFrom ERC-20
 
-After approving the tokens, a receipient can call `transferFrom` to move
+After approving the tokens, a recipient can call `transferFrom` to move
 the `allowance` to his account.  
 
 ```javascript
