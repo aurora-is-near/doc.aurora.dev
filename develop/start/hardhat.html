@@ -538,7 +538,7 @@ you should use them in the same order:</p>
 in Hardhat. We will use it for the following commands as well.</p>
 <h3 id="total-supply">Total Supply<a class="headerlink" href="#total-supply" title="Permanent link">¶</a></h3>
 <p>The following task script gets the total supply of the Watermelon ERC-20 token.
-First it attachs the
+First it attaches the
 token contract, gets the sender address and finally retrieves the total supply
 by calling <code>totalSupply()</code> method in our ERC-20 contract. The <code>--token</code>
 address is the ERC-20 contract address.</p>
@@ -597,7 +597,7 @@ Account 0x6A33382de9f73B846878a57500d055B981229ac4 has a total token balance:  <
 <h3 id="approve-erc-20">Approve ERC-20<a class="headerlink" href="#approve-erc-20" title="Permanent link">¶</a></h3>
 <p>In some cases, instead of calling the <code>transfer</code> directly, the sender
 can approve a specific amount of tokens to be withdrawn from his account
-to specific receipient address later. This can be done by calling <code>approve</code>
+to specific recipient address later. This can be done by calling <code>approve</code>
 then calling <code>transferFrom</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">task</span><span class="p">(</span><span class="s2">"approve"</span><span class="p">,</span> <span class="s2">"ERC-20 approve"</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">addParam</span><span class="p">(</span><span class="s2">"token"</span><span class="p">,</span> <span class="s2">"Token address"</span><span class="p">)</span>
@@ -618,7 +618,7 @@ then calling <code>transferFrom</code>.</p>
 0x6A33382de9f73B846878a57500d055B981229ac4 has approved <span class="m">10</span> tokens to 0x8722C88e82AbCC639148Ab6128Cd63333B2Ad771
 </code></pre></div>
 <h3 id="transferfrom-erc-20">TransferFrom ERC-20<a class="headerlink" href="#transferfrom-erc-20" title="Permanent link">¶</a></h3>
-<p>After approving the tokens, a receipient can call <code>transferFrom</code> to move
+<p>After approving the tokens, a recipient can call <code>transferFrom</code> to move
 the <code>allowance</code> to his account.  </p>
 <div class="highlight"><pre><span></span><code><span class="nx">task</span><span class="p">(</span><span class="s2">"transferFrom"</span><span class="p">,</span> <span class="s2">"ERC-20 transferFrom"</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">addParam</span><span class="p">(</span><span class="s2">"token"</span><span class="p">,</span> <span class="s2">"Token address"</span><span class="p">)</span>
