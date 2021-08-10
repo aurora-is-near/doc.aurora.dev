@@ -568,9 +568,14 @@ Ethereum.</p>
 <p>This opcode currently does not return a real blockhash.
 However, it does respect the logic that a non-zero value is returned for the most recent 256 blocks (not including the current block).
 For all other inputs it returns zero.
-The non-zero value that is returned is <code>0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</code>.
-For example, if the current block height is <code>h</code>, then <code>BLOCKHASH(h) = 0x000...</code>, <code>BLOCKHASH(h - 100) = 0xfff...</code> and <code>BLOCKHASH(h - 257) = 0x000..</code>.
-This behavior may change in the future, see <a href="https://github.com/near/nearcore/pull/4256">nearcore#4256</a> to track this issue.</p>
+The non-zero value that is returned is computed based on the block height and properties of the Aurora Engine contract (chain ID and account ID).
+Concretely, as of <a href="https://github.com/aurora-is-near/aurora-engine/pull/213/">#213</a>, the value returned is</p>
+<div class="highlight"><pre><span></span><code>BLOCKHASH(h: u64) = sha256( 0x00 || h || chain_id || account_id )
+</code></pre></div>
+<p>where <code>||</code> is byte concatenation and it is assumed <code>h</code> (a 64-bit number) is converted to bytes in big endian encoding.
+The leading zero byte in the concatenation is a version byte which may change if a new blockhash scheme is introduced in the future.
+The <code>chain_id</code> depends on the network the Aurora Engine contract is deployed to (see <a href="/develop/networks.html#networks">networks table</a>).
+The <code>account_id</code> is the name of the NEAR account where the contract is deployed (see the Engine ID column in the <a href="https://doc.aurora.dev/develop/networks.html#networks">networks table</a>).</p>
 <h3 id="coinbase"><code>COINBASE</code><a class="headerlink" href="#coinbase" title="Permanent link">¶</a></h3>
 <p>This opcode returns the EVM address of the Aurora Engine.</p>
 <p>For example, for the Aurora Engine deployment on the <code>aurora</code> account,
@@ -589,7 +594,7 @@ network.</p>
   feature set of the Istanbul hard fork.</p>
 </li>
 <li>
-<p>The <a href="#blockhash"><code>BLOCKHASH</code> opcode</a> currently always returns either <code>0xfff...</code> (if the input is within 256 blocks) or <code>0x000...</code> (for the current height or one more than 256 blocks in the past).</p>
+<p>The <a href="#blockhash"><code>BLOCKHASH</code> opcode</a> does not return the hash of an actual block (see above for details).</p>
 </li>
 </ul>
 <h2 id="source-code">Source Code<a class="headerlink" href="#source-code" title="Permanent link">¶</a></h2>
