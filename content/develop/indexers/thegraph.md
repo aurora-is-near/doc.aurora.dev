@@ -142,6 +142,16 @@ $ export TOKEN_ADDRESS='0x6a82DC18F5a0f694b55A59429402C7F868dA10E4'
 
 ## Prepare the Subgraph
 
+You have to update the contract `address` and (the `startBlock` optional) in `subgraph.yaml` as follows:
+```yaml
+    ...
+    source:
+      address: '0x6a82DC18F5a0f694b55A59429402C7F868dA10E4'
+      abi: CovidVaccineToken
+      startBlock: 57941537
+    ...
+```
+
 ### Generating types
 
 ```bash
@@ -248,16 +258,22 @@ In oder to use query the subgraph endpoint, you should first seed your contract 
 of events. The following command line will trigger a `Hardhat task` in which sends multiple transfer transactions which in turn will emit the `Transfer` event.
 
 ```bash
-$ npx hardhat mint --token $TOKEN_ADDRESS
-The minter 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred vaccine token to account: 0xb7AFc7b0453AE893E6A9f2dD3C4593fd696BdeF2
-The minter 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred vaccine token to account: 0x761d77bCeF097DBEdb8e48cF4aC9dC7238Bf3C8E
-The minter 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred vaccine token to account: 0x4A79B63bA5e9d23A93a4b887eE00949C454720C2
-The minter 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 has transferred vaccine token to account: 0x614E188acBB597C2b2BF0CB39819975b05217C33
+$ npx hardhat mint --token $TOKEN_ADDRESS --network aurora --to 0x614E188acBB597C2b2BF0CB39819975b05217C33
+Minter address:  0x6A33382de9f73B846878a57500d055B981229ac4
+Successfully minted the token ID:  1  for  0x614E188acBB597C2b2BF0CB39819975b05217C33
 ```
 
 ## Query Events
 
 To query events, TheGraph protocol provides a [GraphQL endpoint](http://127.0.0.1:8000/subgraphs/name/aurora/CovidVaccineToken) for your local graph node.
 
+```yaml
+{
+  vaccinateds(first: 10) {
+    id
+    count
+  }
+}
+```
 ## Conclusion
 
