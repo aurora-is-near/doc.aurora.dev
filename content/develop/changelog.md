@@ -4,6 +4,49 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-xx-xx
+
+- Aurora Engine: Deployed hot-fix [1.6.1](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.6.0)
+
+### Breaking changes
+
+- The view call has been correctly updated to return the Borsh serialization of TransactionStatus. Prior it was returning a string with the result of the transaction by name.
+
+- ft_balance_of return was changed as prior it was returning a non-JSON string value 0. This has been fixed to return "0".
+
+## 2021-08-13
+
+- Aurora Engine: Deployed release [1.6.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.6.0)
+
+### Breaking changes
+
+- The transaction status of submit was changed as running out of gas, funds, or being out of the offset are not errors but failed executions.
+
+submit call must altered the SubmitResult object to the following format:
+
+```rust
+
+enum TransactionStatus {
+    Succeed(Vec<u8>),
+    Revert(Vec<u8>),
+    OutOfGas,
+    OutOfFund,
+    OutOfOffset,
+    CallTooDeep,
+}
+
+struct ResultLog {
+    topics: Vec<[u8; 32]>,
+    data: Vec<u8>,
+}
+
+struct SubmitResult {
+    status: TransactionStatus,
+    gas_used: u64,
+    logs: Vec<ResultLog>,
+}
+```
+
 ## 2021-07-30
 
 ### Testnet & Betanet only
