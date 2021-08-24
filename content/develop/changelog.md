@@ -4,7 +4,7 @@ title: "Aurora: Changelog"
 
 # Changelog
 
-## 2021-xx-xx
+## 2021-08-23
 
 - Aurora Engine: Deployed hot-fix [1.6.1](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.6.0)
 
