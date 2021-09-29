@@ -4,6 +4,17 @@ title: "Aurora: Changelog"
 
 # Changelog
 
+## 2021-09-29
+
+### All networks
+
+- **Aurora Relayer**: Fixed a bug in several RPC methods' return values:
+  an empty `input` property must be returned as `"0x"`, not `null`.
+  This affected the `eth_getBlockByHash`, `eth_getBlockByNumber`,
+  `eth_getTransactionByBlockHashAndIndex`, and
+  `eth_getTransactionByBlockNumberAndIndex` methods.
+  ([6fe9477](https://github.com/aurora-is-near/aurora-relayer/commit/6fe9477149d8d0370a28609c2891f8be53445a78))
+
 ## 2021-07-30
 
 ### Testnet & Betanet only
