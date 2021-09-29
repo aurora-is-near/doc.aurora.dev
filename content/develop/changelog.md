@@ -15,6 +15,31 @@ title: "Aurora: Changelog"
   `eth_getTransactionByBlockNumberAndIndex` methods.
   ([6fe9477](https://github.com/aurora-is-near/aurora-relayer/commit/6fe9477149d8d0370a28609c2891f8be53445a78))
 
+- **Aurora Relayer**: Made the `eth_call` RPC method return an error for
+  missing blocks.
+  ([d572f7b](https://github.com/aurora-is-near/aurora-relayer/commit/d572f7b425572a59e5826fe42eaa986bf9e3c47e))
+
+## 2021-09-13
+
+### All networks
+
+- **Aurora Relayer**: Fixed a regression in the `eth_call` RPC method.
+  ([f294406](https://github.com/aurora-is-near/aurora-relayer/commit/f294406ff843db8e7c2f87c09319f7d0d31801a6))
+
+- **Aurora Relayer**: Changed the `net_version` RPC method to return a
+  decimal number.
+  ([7732d3d](https://github.com/aurora-is-near/aurora-relayer/commit/7732d3d67aa69e02c76f974597a79c803e014498))
+
+## 2021-09-10
+
+### All networks
+
+- **Aurora Relayer**: Added EIP-1898 support to the `eth_call` RPC method.
+  ([c6d416e](https://github.com/aurora-is-near/aurora-relayer/commit/c6d416ed5681e5a17c757500b84c5a1e87c07761))
+
+- **Aurora Relayer**: Fixed a bug in the `eth_getLogs` RPC method.
+  ([8449360](https://github.com/aurora-is-near/aurora-relayer/commit/844936099e9b737ca616e824848db18ac5db908a))
+
 ## 2021-07-30
 
 ### Testnet & Betanet only
