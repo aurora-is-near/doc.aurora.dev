@@ -13,15 +13,19 @@ If you need help getting set up with MetaMask in the first place, please see [th
 
 ## Connecting to the Bridge front-end
 
-Aurora is still a work in progress, so our bridge is currently only working with the Ropsten Testnet (an Ethereum test network).
+Aurora is still a work in progress, so our bridge is currently only working with the Goerli Testnet (an Ethereum test network).
 For the remainder of the tutorial we will focus on adding the Aurora Testnet to MetaMask.
 
-Before we begin, ensure that you have the Ropsten network selected in MetaMask.
-In the MetaMask UI click the network selection drop-down in the top right, then click `Ropsten test network`.
+Before we begin, ensure that you have the Goerli network selected in MetaMask.
+In the MetaMask UI click the network selection drop-down in the top right, then click `Goerli test network`.
 
-![metamask-ropsten-network-select](../../_img/metamask_ropsten_network_select.png)
+![metamask-goerli-network-select](../../_img/metamask_goerli_network_select.png)
 
-Go to [the Bridge webpage](https://testnet.aurora.dev/bridge) and click the `Connect wallet` button in the top right.
+Go to [the Bridge webpage](https://testnet.aurora.dev/bridge) and click the `New transfer` button in the top right.
+
+![bridge_new_transfer](../../_img/bridge_new_transfer.png)
+
+You will be taken to the wallet connection page, click the `Connect wallet` button.
 
 ![bridge-connect-wallet](../../_img/bridge_connect_wallet.png)
 
@@ -29,14 +33,17 @@ In the pop-up MetaMask window click `Next` then `Connect`.
 
 ![bridge-connect-with-metamask](../../_img/bridge_connect_with_metamask.png)
 
-If you see `Unsupported` in the top right corner of the Bridge page, make sure you have the Ropsten network selected in MetaMask (per the previous steps),
-otherwise you should now see `Ropsten Testnet` in the top right corner.
+If you see `Unsupported network` in the Type of transfer on the Bridge page, make sure you have the Goerli network selected in MetaMask (per the previous steps).
 
-![bridge-ropsten-connected](../../_img/bridge_ropsten_connected.png)
+![bridge-unsupported-network](../../_img/bridge_unsupported_network.png)
 
-To connect MetaMask with Aurora, click the `<>` arrows between `Ropsten Testnet` and `Aurora Testnet`.
+Otherwise you should now see the Deposit to Aurora surrounded by a green border.
 
-![bridge-switch-ropsten-to-aurora](../../_img/bridge_switch_ropsten_to_aurora.png)
+![bridge-goerli-connected](../../_img/bridge_goerli_connected.png)
+
+To connect MetaMask with Aurora, click the `Withdraw from Aurora` in the Type of transfer.
+
+![bridge-switch-goerli-to-aurora](../../_img/bridge_switch_goerli_to_aurora.png)
 
 In the MetaMask pop-up window click `Approve` then `Switch network`.
 
@@ -48,9 +55,9 @@ That's it! If you look in the MetaMask UI you will see that you are now connecte
 
 ## Next steps
 
-While you are on the bridge page, why not [transfer some ETH from your account on Ropsten to your account on Aurora]?
+While you are on the bridge page, why not [transfer some ETH from your account on Goerli to your account on Aurora]?
 Or if you want to try deploing a smart contract, check out the [tutorial using Remix with MetaMask].
 
 [tutorial under the Develop tab]: ../../develop/start/metamask.md
-[transfer some ETH from your account on Ropsten to your account on Aurora]: ../bridge/eth.md
+[transfer some ETH from your account on Goerli to your account on Aurora]: ../bridge/eth.md
 [tutorial using Remix with MetaMask]: /develop/start/metamask.html#deploying-an-erc-20-token-using-remix
