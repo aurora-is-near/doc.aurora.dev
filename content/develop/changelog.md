@@ -4,9 +4,23 @@ title: "Aurora: Changelog"
 
 # Changelog
 
-## 2021-09-29
+## 2021-10-18
 
 ### All networks
+
+- **Aurora Relayer**: Changed the block hash scheme.
+  ([#55](https://github.com/aurora-is-near/aurora-relayer/pull/55))
+
+## 2021-10-14
+
+### All networks
+
+- **Aurora Engine**: Deployed release [1.7.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.7.0)
+  to all networks.
+
+## 2021-09-29
+
+### All endpoints
 
 - **Aurora Relayer**: Fixed a bug in several RPC methods' return values:
   an empty `input` property must be returned as `"0x"`, not `null`.
@@ -19,9 +33,14 @@ title: "Aurora: Changelog"
   missing blocks.
   ([d572f7b](https://github.com/aurora-is-near/aurora-relayer/commit/d572f7b425572a59e5826fe42eaa986bf9e3c47e))
 
+### All networks
+
+- **Aurora Engine**: Deployed release [1.6.4](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.6.4)
+  to all networks.
+
 ## 2021-09-13
 
-### All networks
+### All endpoints
 
 - **Aurora Relayer**: Fixed a regression in the `eth_call` RPC method.
   ([f294406](https://github.com/aurora-is-near/aurora-relayer/commit/f294406ff843db8e7c2f87c09319f7d0d31801a6))
@@ -32,7 +51,7 @@ title: "Aurora: Changelog"
 
 ## 2021-09-10
 
-### All networks
+### All endpoints
 
 - **Aurora Relayer**: Added EIP-1898 support to the `eth_call` RPC method.
   ([c6d416e](https://github.com/aurora-is-near/aurora-relayer/commit/c6d416ed5681e5a17c757500b84c5a1e87c07761))
