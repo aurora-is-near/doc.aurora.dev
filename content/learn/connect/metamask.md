@@ -8,7 +8,7 @@ The easiest way to connect Aurora to MetaMask is to use the Bridge UI.
 If you want to manually add Aurora as a custom RPC in MetaMask, then check out the [tutorial under the Develop tab].
 If that last sentence didn't make sense to you, that's good, you're in the right place.
 
-We assume you already have the MetaMask browser extension installed.
+We assume you already have the MetaMask browser extension installed.git
 If you need help getting set up with MetaMask in the first place, please see [their website](https://metamask.io/).
 
 ## Connecting to the Bridge front-end
