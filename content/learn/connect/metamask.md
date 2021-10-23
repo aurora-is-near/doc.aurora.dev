@@ -60,4 +60,4 @@ Or if you want to try deploing a smart contract, check out the [tutorial using R
 
 [tutorial under the Develop tab]: ../../develop/start/metamask.md
 [transfer some ETH from your account on Goerli to your account on Aurora]: ../bridge/eth.md
-[tutorial using Remix with MetaMask]: /develop/start/metamask.html#deploying-an-erc-20-token-using-remix
+[tutorial using Remix withvi ~/.ssh/config MetaMask]: /develop/start/metamask.html#deploying-an-erc-20-token-using-remix
