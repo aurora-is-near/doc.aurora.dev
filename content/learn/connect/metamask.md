@@ -23,7 +23,7 @@ In the MetaMask UI click the network selection drop-down in the top right, then 
 
 Go to [the Bridge webpage](https://testnet.aurora.dev/bridge) and click the `New transfer` button in the top right.
 
-![bridge_new_transfer](../../_img/bridge_new_transfer.png)
+![bridge-new-transfer](../../_img/bridge_new_transfer.png)
 
 You will be taken to the wallet connection page, click the `Connect wallet` button.
 
