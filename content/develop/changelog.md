@@ -61,40 +61,40 @@ title: "Aurora: Changelog"
 
 ## 2021-07-30
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.5.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.5.0)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-07-08
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.4.3](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.3)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-06-25
 
 ### All networks
 
 - **Aurora Engine**: Deployed release [1.4.2](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.2)
-  to Mainnet, Testnet, and Betanet.
+  to Mainnet and Testnet.
 
 ## 2021-06-23
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.4.1](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.1)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-06-18
 
 - [The weekly update](https://aurora.dev/blog/2021-06-18-update)
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.4.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.4.0)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-06-17
 
@@ -105,19 +105,19 @@ title: "Aurora: Changelog"
   `eth_getTransactionReceipt` RPC methods.
   ([df29187](https://github.com/aurora-is-near/aurora-relayer/commit/df291873b859f1412306a60a7bfb69506f4d3336))
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.3.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.3.0)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-06-11
 
 - [The weekly update](https://aurora.dev/blog/2021-06-11-update)
 
-### Testnet & Betanet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.2.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.2.0)
-  to Testnet and Betanet.
+  to Testnet.
 
 ## 2021-06-09
 
@@ -159,7 +159,7 @@ title: "Aurora: Changelog"
 
 ## 2021-05-29
 
-### Testnet only
+### Testnet
 
 - **Aurora Engine**: Deployed release [1.1.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.1.0)
   to Testnet.
@@ -211,4 +211,4 @@ title: "Aurora: Changelog"
 ### All networks
 
 - **Aurora Engine**: Deployed release [1.0.0](https://github.com/aurora-is-near/aurora-engine/releases/tag/1.0.0)
-  to Mainnet, Testnet, and Betanet.
+  to Mainnet and Testnet.
