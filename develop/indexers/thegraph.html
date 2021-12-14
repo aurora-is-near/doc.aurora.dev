@@ -6,10 +6,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Aurora Labs" name="author"/>
-<link href="https://doc.aurora.dev/develop/compat/evm.html" rel="canonical"/>
+<link href="https://doc.aurora.dev/develop/indexers/thegraph.html" rel="canonical"/>
 <link href="../../_img/favicon.svg" rel="icon"/>
 <meta content="mkdocs-1.1.2, mkdocs-material-7.1.4" name="generator"/>
-<title>Aurora: Compatibility with the EVM - Aurora Documentation</title>
+<title>Aurora: The Graph - Aurora Documentation</title>
 <link href="../../assets/stylesheets/main.bde7dde4.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#compatibility-with-the-ethereum-virtual-machine-evm">
+<a class="md-skip" href="#introduction">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Aurora: Compatibility with the EVM
+              Aurora: The Graph
             
           </span>
 </div>
@@ -250,8 +250,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" id="__nav_3_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" id="__nav_3_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_4">
         Compatibility
         <span class="md-nav__icon md-icon"></span>
@@ -263,101 +263,25 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="rpc.html">
+<a class="md-nav__link" href="../compat/rpc.html">
         JSON-RPC
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          EVM
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="evm.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../compat/evm.html">
         EVM
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#balances">
-    Balances
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gas">
-    Gas
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#precompiles">
-    Precompiles
-  </a>
-<nav aria-label="Precompiles" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#standard-precompiles">
-    Standard precompiles
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#opcodes">
-    Opcodes
-  </a>
-<nav aria-label="Opcodes" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#blockhash">
-    BLOCKHASH
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#coinbase">
-    COINBASE
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#difficulty">
-    DIFFICULTY
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#gaslimit">
-    GASLIMIT
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#limitations">
-    Limitations
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#source-code">
-    Source Code
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="gas.html">
+<a class="md-nav__link" href="../compat/gas.html">
         Gas
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" id="__nav_3_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_5">
         Indexers
         <span class="md-nav__icon md-icon"></span>
@@ -368,10 +292,111 @@
           Indexers
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../indexers/thegraph.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          TheGraph
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="thegraph.html">
         TheGraph
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+    Introduction
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-graph-node">
+    Running Graph Node
+  </a>
+<nav aria-label="Running Graph Node" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone">
+    Clone
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure">
+    Configure
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start">
+    Start
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-a-subgraph">
+    Create a subgraph
+  </a>
+<nav aria-label="Create a subgraph" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clone-subgraph">
+    Clone subgraph
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install">
+    Install
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-the-subgraph">
+    Configure the Subgraph
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#generating-types">
+    Generating types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#deploy-the-subgraph">
+    Deploy the Subgraph
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#publish-events-optional">
+    Publish Events (optional)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#query-events">
+    Query Events
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+    Summary
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -424,66 +449,91 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#balances">
-    Balances
+<a class="md-nav__link" href="#introduction">
+    Introduction
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gas">
-    Gas
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#precompiles">
-    Precompiles
+<a class="md-nav__link" href="#running-graph-node">
+    Running Graph Node
   </a>
-<nav aria-label="Precompiles" class="md-nav">
+<nav aria-label="Running Graph Node" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#standard-precompiles">
-    Standard precompiles
+<a class="md-nav__link" href="#clone">
+    Clone
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure">
+    Configure
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start">
+    Start
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#opcodes">
-    Opcodes
+<a class="md-nav__link" href="#create-a-subgraph">
+    Create a subgraph
   </a>
-<nav aria-label="Opcodes" class="md-nav">
+<nav aria-label="Create a subgraph" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#blockhash">
-    BLOCKHASH
+<a class="md-nav__link" href="#clone-subgraph">
+    Clone subgraph
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#coinbase">
-    COINBASE
+<a class="md-nav__link" href="#install">
+    Install
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#difficulty">
-    DIFFICULTY
+<a class="md-nav__link" href="#configure-the-subgraph">
+    Configure the Subgraph
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#gaslimit">
-    GASLIMIT
+<a class="md-nav__link" href="#generating-types">
+    Generating types
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+    Mappings
   </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#limitations">
-    Limitations
+<a class="md-nav__link" href="#deploy-the-subgraph">
+    Deploy the Subgraph
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#source-code">
-    Source Code
+<a class="md-nav__link" href="#publish-events-optional">
+    Publish Events (optional)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#query-events">
+    Query Events
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+    Summary
   </a>
 </li>
 </ul>
@@ -493,140 +543,215 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/aurora-is-near/doc.aurora.dev/edit/master/docs/develop/compat/evm.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/aurora-is-near/doc.aurora.dev/edit/master/docs/develop/indexers/thegraph.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
-<h1 id="compatibility-with-the-ethereum-virtual-machine-evm">Compatibility with the Ethereum Virtual Machine (EVM)<a class="headerlink" href="#compatibility-with-the-ethereum-virtual-machine-evm" title="Permanent link">¶</a></h1>
-<p>The Aurora Engine implements an Ethereum Virtual Machine (EVM) on top of the
-NEAR Protocol.</p>
-<h2 id="balances">Balances<a class="headerlink" href="#balances" title="Permanent link">¶</a></h2>
-<p>EVM address balances are denominated in ether (ETH) for compatibility with
-Ethereum.</p>
-<h2 id="gas">Gas<a class="headerlink" href="#gas" title="Permanent link">¶</a></h2>
-<p>See <a href="gas.html">notes on gas</a>.</p>
-<h2 id="precompiles">Precompiles<a class="headerlink" href="#precompiles" title="Permanent link">¶</a></h2>
-<h3 id="standard-precompiles">Standard precompiles<a class="headerlink" href="#standard-precompiles" title="Permanent link">¶</a></h3>
-<div id="compat-evm-precompiles-table"></div>
-<table>
-<thead>
-<tr>
-<th>Address</th>
-<th>ID</th>
-<th>Name</th>
-<th>Spec</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x01</td>
-<td><code>ECRecover</code></td>
-<td>ECDSA public key recovery</td>
-<td><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellow Paper</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td><code>SHA256</code></td>
-<td>SHA-2 256-bit hash function</td>
-<td><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellow Paper</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td><code>RIPEMD160</code></td>
-<td>RIPEMD 160-bit hash function</td>
-<td><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellow Paper</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x04</td>
-<td><code>Identity</code></td>
-<td>Identity function</td>
-<td><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellow Paper</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x05</td>
-<td><code>ModExp</code></td>
-<td>Big integer modular exponentiation</td>
-<td><a href="https://eips.ethereum.org/EIPS/eip-198">EIP-198</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x06</td>
-<td><code>BN128Add</code></td>
-<td>Elliptic curve addition</td>
-<td><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x07</td>
-<td><code>BN128Mul</code></td>
-<td>Elliptic curve scalar multiplication</td>
-<td><a href="https://eips.ethereum.org/EIPS/eip-196">EIP-196</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x08</td>
-<td><code>BN128Pair</code></td>
-<td>Elliptic curve pairing check</td>
-<td><a href="https://eips.ethereum.org/EIPS/eip-197">EIP-197</a></td>
-<td>✅</td>
-</tr>
-<tr>
-<td>0x09</td>
-<td><code>Blake2F</code></td>
-<td>BLAKE2b <code>F</code> compression function</td>
-<td><a href="https://eips.ethereum.org/EIPS/eip-152">EIP-152</a></td>
-<td>✅</td>
-</tr>
-</tbody>
-</table>
-<h2 id="opcodes">Opcodes<a class="headerlink" href="#opcodes" title="Permanent link">¶</a></h2>
-<h3 id="blockhash"><code>BLOCKHASH</code><a class="headerlink" href="#blockhash" title="Permanent link">¶</a></h3>
-<p>This opcode currently does not return a real blockhash.
-However, it does respect the logic that a non-zero value is returned for the most recent 256 blocks (not including the current block).
-For all other inputs it returns zero.
-The non-zero value that is returned is computed based on the block height and properties of the Aurora Engine contract (chain ID and account ID).
-Concretely, as of <a href="https://github.com/aurora-is-near/aurora-engine/pull/213/">#213</a>, the value returned is</p>
-<div class="highlight"><pre><span></span><code>BLOCKHASH(h: u64) = sha256( 0x00 || h || chain_id || account_id )
-</code></pre></div>
-<p>where <code>||</code> is byte concatenation and it is assumed <code>h</code> (a 64-bit number) is converted to bytes in big endian encoding.
-The leading zero byte in the concatenation is a version byte which may change if a new blockhash scheme is introduced in the future.
-The <code>chain_id</code> depends on the network the Aurora Engine contract is deployed to (see <a href="/develop/networks.html#networks">networks table</a>).
-The <code>account_id</code> is the name of the NEAR account where the contract is deployed (see the Engine ID column in the <a href="https://doc.aurora.dev/develop/networks.html#networks">networks table</a>).</p>
-<h3 id="coinbase"><code>COINBASE</code><a class="headerlink" href="#coinbase" title="Permanent link">¶</a></h3>
-<p>This opcode returns the EVM address of the Aurora Engine.</p>
-<p>For example, for the Aurora Engine deployment on the <code>aurora</code> account,
-<code>COINBASE</code> returns <em>0x4444588443C3a91288c5002483449Aba1054192b</em>.</p>
-<h3 id="difficulty"><code>DIFFICULTY</code><a class="headerlink" href="#difficulty" title="Permanent link">¶</a></h3>
-<p>This opcode always returns zero, since NEAR is not a proof-of-work (PoW)
-network.</p>
-<h3 id="gaslimit"><code>GASLIMIT</code><a class="headerlink" href="#gaslimit" title="Permanent link">¶</a></h3>
-<p>This opcode always returns
-<em>0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</em>
-(2^256-1).</p>
-<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
+<h1>TheGraph</h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p><a href="https://thegraph.com/">The Graph</a> is an indexing service which collects
+Ethereum events and exports them through GraphQL endpoints. It is widely
+used in the Ethereum ecosystem which supports fast and cheap queries for
+DApps.</p>
+<p>This tutorial covers the following topics:</p>
 <ul>
-<li>
-<p>The Berlin hard fork is not yet supported. The EVM currently supports the
-  feature set of the Istanbul hard fork.</p>
-</li>
-<li>
-<p>The <a href="#blockhash"><code>BLOCKHASH</code> opcode</a> does not return the hash of an actual block (see above for details).</p>
-</li>
+<li>Running a Graph node on Aurora.</li>
+<li>Creating and deploying a subgraph.</li>
+<li>Querying events from the subgraph.</li>
 </ul>
-<h2 id="source-code">Source Code<a class="headerlink" href="#source-code" title="Permanent link">¶</a></h2>
-<p>The Aurora Engine source code repository is at:
-<a href="https://github.com/aurora-is-near/aurora-engine">github.com/aurora-is-near/aurora-engine</a>.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
+<p>Before delving into the tutorial, you need to make sure that you have setup
+the following tools on you machine:</p>
+<ul>
+<li><a href="https://git-scm.com/downloads">git</a></li>
+<li><a href="https://docs.docker.com/get-docker/">Docker</a></li>
+<li><a href="https://docs.docker.com/compose/install/">Docker-Compose</a></li>
+<li><a href="https://nodejs.org/en/download/">Node 12+</a></li>
+<li><a href="https://stedolan.github.io/jq/download/">jq</a></li>
+</ul>
+<h2 id="running-graph-node">Running Graph Node<a class="headerlink" href="#running-graph-node" title="Permanent link">¶</a></h2>
+<h3 id="clone">Clone<a class="headerlink" href="#clone" title="Permanent link">¶</a></h3>
+<p>Clone the graph node source code</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/graphprotocol/graph-node/
+<span class="nb">cd</span> graph-node
+</code></pre></div>
+<h3 id="configure">Configure<a class="headerlink" href="#configure" title="Permanent link">¶</a></h3>
+<p>In order wire your local graph node with Aurora Testnet RPC, you should change
+the value of <code>ethereum</code> section in <code>docker/docker-compose.yaml</code> file from
+ <code>mainnet:http://host.docker.internal:8545</code> to
+ <code>'aurora:https://testnet.aurora.dev'</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">....</span>
+    <span class="l l-Scalar l-Scalar-Plain">environment</span><span class="p p-Indicator">:</span>
+      <span class="nt">postgres_host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>
+      <span class="nt">postgres_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">graph-node</span>
+      <span class="nt">postgres_pass</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">let-me-in</span>
+      <span class="nt">postgres_db</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">graph-node</span>
+      <span class="nt">ipfs</span><span class="p">:</span> <span class="s">'ipfs:5001'</span>
+      <span class="nt">ethereum</span><span class="p">:</span> <span class="s">'aurora:https://testnet.aurora.dev'</span>
+      <span class="nt">GRAPH_LOG</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
+<span class="nn">...</span>
+</code></pre></div>
+<h3 id="start">Start<a class="headerlink" href="#start" title="Permanent link">¶</a></h3>
+<p>The following commands will setup the environment and start the graph indexer.
+The indexing process might take long time to have 100% sync with the chain.
+This has nothing to do with our tutorial but keep this process running in a
+separate terminal.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> graph-node/docker
+./setup.sh
+docker-compose up
+</code></pre></div>
+<h2 id="create-a-subgraph">Create a subgraph<a class="headerlink" href="#create-a-subgraph" title="Permanent link">¶</a></h2>
+<p>Now we are done with starting our graph node, the next step is to create and
+deploy a subgraph. The subgraph defines how the data on Ethereum will be
+indexed and stored on the graph node.</p>
+<p>In this tutorial, we are going to use the subgraph example called
+<a href="https://github.com/aurora-is-near/example-subgraph">GravatarRegistry</a> (a simple
+on-chain Gravatar). The GravatarRegistry contract has two events:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">event</span> <span class="nx">NewGravatar</span><span class="p">(</span><span class="nx">uint</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">displayName</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">imageUrl</span><span class="p">);</span>
+<span class="nx">event</span> <span class="nx">UpdatedGravatar</span><span class="p">(</span><span class="nx">uint</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">displayName</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">imageUrl</span><span class="p">);</span>
+</code></pre></div>
+<p>The contract was already deployed on Aurora Testnet. The deployed <code>GravatarRegistry</code>
+contract address is <code>0x8773e6832f44b2C17AC78592ffCe407C62d8c36E</code> and the start
+block number is <code>74885768</code>.</p>
+<h3 id="clone-subgraph">Clone subgraph<a class="headerlink" href="#clone-subgraph" title="Permanent link">¶</a></h3>
+<p>Clone subgraph example repo.</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/aurora-is-near/example-subgraph.git
+<span class="nb">cd</span> example-subgraph
+</code></pre></div>
+<h3 id="install">Install<a class="headerlink" href="#install" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code>yarn install
+</code></pre></div>
+<h3 id="configure-the-subgraph">Configure the Subgraph<a class="headerlink" href="#configure-the-subgraph" title="Permanent link">¶</a></h3>
+<p>Update the <code>address</code> and (the <code>startBlock</code> optional) in <code>subgraph.yaml</code> as follows:</p>
+<div class="highlight"><pre><span></span><code>    <span class="l l-Scalar l-Scalar-Plain">...</span>
+    <span class="l l-Scalar l-Scalar-Plain">network</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">aurora</span>
+    <span class="nt">source</span><span class="p">:</span>
+      <span class="nt">address</span><span class="p">:</span> <span class="s">'0x8773e6832f44b2C17AC78592ffCe407C62d8c36E'</span>
+      <span class="nt">abi</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Gravity</span>
+      <span class="nt">startBlock</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">74885768</span>
+    <span class="l l-Scalar l-Scalar-Plain">...</span>
+</code></pre></div>
+<p>Also make sure you are pointing into <code>aurora</code> as a network.</p>
+<h3 id="generating-types">Generating types<a class="headerlink" href="#generating-types" title="Permanent link">¶</a></h3>
+<div class="highlight"><pre><span></span><code>yarn codegen 
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.1 to <span class="m">0</span>.0.2
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.2 to <span class="m">0</span>.0.3
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.3 to <span class="m">0</span>.0.4
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.4 to <span class="m">0</span>.0.5
+  Skip migration: Bump mapping specVersion from <span class="m">0</span>.0.1 to <span class="m">0</span>.0.2
+✔ Apply migrations
+⚠ Warnings <span class="k">while</span> loading subgraph from subgraph.yaml: Warnings <span class="k">in</span> subgraph.yaml:
+
+    Path: repository
+    The repository is still <span class="nb">set</span> to https://github.com/graphprotocol/example-subgraph.
+    Please replace it with a link to your subgraph <span class="nb">source</span> code.
+
+    Path: description
+    The description is still the one from the example subgraph.
+    Please update it to tell users more about your subgraph.
+
+✔ Load subgraph from subgraph.yaml
+  Load contract ABI from abis/Gravity.json
+✔ Load contract ABIs
+  Generate types <span class="k">for</span> contract ABI: Gravity <span class="o">(</span>abis/Gravity.json<span class="o">)</span>
+  Write types to generated/Gravity/Gravity.ts
+✔ Generate types <span class="k">for</span> contract ABIs
+✔ Generate types <span class="k">for</span> data <span class="nb">source</span> templates
+✔ Load data <span class="nb">source</span> template ABIs
+✔ Generate types <span class="k">for</span> data <span class="nb">source</span> template ABIs
+✔ Load GraphQL schema from schema.graphql
+  Write types to generated/schema.ts
+✔ Generate types <span class="k">for</span> GraphQL schema
+
+Types generated successfully
+
+✨  Done <span class="k">in</span> <span class="m">3</span>.38s.
+</code></pre></div>
+<h3 id="mappings">Mappings<a class="headerlink" href="#mappings" title="Permanent link">¶</a></h3>
+<p>Maps Ethereum event data to the data that has been defined in the
+<code>schema.graphql</code>. For example <code>handleNewGravatar</code> parses the new event
+parameters, and save them in <code>gravatar</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span> <span class="kd">function</span> <span class="nx">handleNewGravatar</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span> <span class="nx">NewGravatar</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">gravatar</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Gravatar</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span><span class="p">.</span><span class="nx">toHex</span><span class="p">())</span>
+  <span class="nx">gravatar</span><span class="p">.</span><span class="nx">owner</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">owner</span>
+  <span class="nx">gravatar</span><span class="p">.</span><span class="nx">displayName</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">displayName</span>
+  <span class="nx">gravatar</span><span class="p">.</span><span class="nx">imageUrl</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">imageUrl</span>
+  <span class="nx">gravatar</span><span class="p">.</span><span class="nx">save</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="deploy-the-subgraph">Deploy the Subgraph<a class="headerlink" href="#deploy-the-subgraph" title="Permanent link">¶</a></h2>
+<p>First, we need to register the subgraph name on the graph node. To do that
+run <code>yarn create-local</code>.</p>
+<div class="highlight"><pre><span></span><code>$ yarn create-local              
+Created subgraph: example
+✨  Done <span class="k">in</span> <span class="m">2</span>.12s.
+</code></pre></div>
+<p>Once the subgraph is registered, now you can deploy it by executing the
+following command:</p>
+<div class="highlight"><pre><span></span><code>$ yarn deploy-local
+✔ Version Label <span class="o">(</span>e.g. v0.0.1<span class="o">)</span> · 
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.1 to <span class="m">0</span>.0.2
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.2 to <span class="m">0</span>.0.3
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.3 to <span class="m">0</span>.0.4
+  Skip migration: Bump mapping apiVersion from <span class="m">0</span>.0.4 to <span class="m">0</span>.0.5
+  Skip migration: Bump mapping specVersion from <span class="m">0</span>.0.1 to <span class="m">0</span>.0.2
+✔ Apply migrations
+⚠ Warnings loading subgraph from subgraph.yaml: Warnings <span class="k">in</span> subgraph.yaml:
+
+    Path: repository
+    The repository is still <span class="nb">set</span> to https://github.com/graphprotocol/example-subgraph.
+    Please replace it with a link to your subgraph <span class="nb">source</span> code.
+
+    Path: description
+    The description is still the one from the example subgraph.
+    Please update it to tell users more about your subgraph.
+
+✔ Load subgraph from subgraph.yaml
+  Compile data source: <span class="nv">Gravity</span> <span class="o">=</span>&gt; build/Gravity/Gravity.wasm
+✔ Compile subgraph
+  Copy schema file build/schema.graphql
+  Write subgraph file build/Gravity/abis/Gravity.json
+  Write subgraph manifest build/subgraph.yaml
+✔ Write compiled subgraph to build/
+  Add file to IPFS build/schema.graphql
+                .. QmbSFRGGvHM7Cn8YSjDL41diDMxN4LQUDEMqaa5VVc5sC4
+  Add file to IPFS build/Gravity/abis/Gravity.json
+                .. QmajZTadknSpgsCWRz9fG6bXFHdpVXPMWpx9yMipz3VtMQ
+  Add file to IPFS build/Gravity/Gravity.wasm
+                .. QmbK8QL1GWmsdTsgFYawvxFCjLEFwBsPjMGWpeRh6yaXEk
+✔ Upload subgraph to IPFS
+
+Build completed: QmUiu7NRW7Lc89rxfacqUViaFLYwftrGUn54segMFgWggu
+
+Deployed to http://127.0.0.1:8000/subgraphs/name/example/graphql
+
+Subgraph endpoints:
+Queries <span class="o">(</span>HTTP<span class="o">)</span>:     http://127.0.0.1:8000/subgraphs/name/example
+Subscriptions <span class="o">(</span>WS<span class="o">)</span>: http://127.0.0.1:8001/subgraphs/name/example
+
+✨  Done <span class="k">in</span> <span class="m">10</span>.23s.
+</code></pre></div>
+<p>Now, you should be able to access your subgraph endpoint through <code>http://127.0.0.1:8000/subgraphs/name/example</code>.</p>
+<h2 id="publish-events-optional">Publish Events (optional)<a class="headerlink" href="#publish-events-optional" title="Permanent link">¶</a></h2>
+<p>There were already published events starting from block number <code>74885768</code>,
+So you can skip this step.</p>
+<h2 id="query-events">Query Events<a class="headerlink" href="#query-events" title="Permanent link">¶</a></h2>
+<p>To query events, TheGraph protocol provides a <a href="http://127.0.0.1:8000/subgraphs/name/example">GraphQL endpoint</a>
+for your local graph node. Go to <code>http://127.0.0.1:8000/subgraphs/name/example</code>,
+it automatically will show up a predefined GraphQL query. Run this query to
+get the results as shown below:</p>
+<p><img alt="image" src="https://user-images.githubusercontent.com/5428661/145963887-82f6877b-56c8-47d8-8f62-802fccf575aa.png"/></p>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
+<p>In this tutorial, we started a Graph node locally, then we wired our node to Aurora
+Testnet RPC. We also configured a subgraph example and deployed that subgraph
+on our local graph node. Finally the graph node was able to collect and index
+the subgraph example (GravatarRegistry) events from Aurora Testnet.</p>
 </article>
 </div>
 </div>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a class="md-footer__link md-footer__link--prev" href="rpc.html" rel="prev">
+<a class="md-footer__link md-footer__link--prev" href="../compat/gas.html" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -635,17 +760,17 @@ network.</p>
 <span class="md-footer__direction">
                 Previous
               </span>
-              JSON-RPC
+              Gas
             </div>
 </div>
 </a>
-<a class="md-footer__link md-footer__link--next" href="gas.html" rel="next">
+<a class="md-footer__link md-footer__link--next" href="../changelog.html" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Gas
+              Changelog
             </div>
 </div>
 <div class="md-footer__button md-icon">
