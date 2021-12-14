@@ -2,39 +2,48 @@
 title: "Aurora: The Graph"
 ---
 
-# The Graph
 
 ## Introduction
 
-[The Graph](https://thegraph.com/) is an indexing service which collects Ethereum events and exports them through GraphQL endpoints. It is widely used in the Ethereum ecosystem which supports fast and cheap queries for DApps. 
+[The Graph](https://thegraph.com/) is an indexing service which collects
+Ethereum events and exports them through GraphQL endpoints. It is widely
+used in the Ethereum ecosystem which supports fast and cheap queries for
+DApps.
 
 This tutorial covers the following topics:
 
-- Running a Graph node on Aurora. 
+- Running a Graph node on Aurora.
 - Creating and deploying a subgraph.
 - Querying events from the subgraph.
 
 ## Prerequisites
 
-Before delving into the tutorial, you need to make sure that you have setup the following tools on you machine:
+Before delving into the tutorial, you need to make sure that you have setup
+the following tools on you machine:
 
 - [git](https://git-scm.com/downloads)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker-Compose](https://docs.docker.com/compose/install/)
 - [Node 12+](https://nodejs.org/en/download/)
+- [jq](https://stedolan.github.io/jq/download/)
 
 ## Running Graph Node
 
-### Clone 
+### Clone
+
 Clone the graph node source code
+
 ```bash
-$ git clone https://github.com/graphprotocol/graph-node/
-$ cd graph-node
+git clone https://github.com/graphprotocol/graph-node/
+cd graph-node
 ```
 
 ### Configure
 
-In order wire your local graph node with Aurora Testnet RPC, you should change the value of `ethereum` section in `docker/docker-compose.yaml` file from `mainnet:http://host.docker.internal:8545` to `'aurora:https://testnet.aurora.dev'`.
+In order wire your local graph node with Aurora Testnet RPC, you should change
+the value of `ethereum` section in `docker/docker-compose.yaml` file from
+ `mainnet:http://host.docker.internal:8545` to
+ `'aurora:https://testnet.aurora.dev'`.
 
 ```yaml
 ....
@@ -51,53 +60,55 @@ In order wire your local graph node with Aurora Testnet RPC, you should change t
 
 ### Start
 
-The following commands will setup the environment and start the graph indexer. The indexing process might take long time to have 100% sync with the chain. This has nothing to do with our tutorial but keep this process running in a separate terminal.
+The following commands will setup the environment and start the graph indexer.
+The indexing process might take long time to have 100% sync with the chain.
+This has nothing to do with our tutorial but keep this process running in a
+separate terminal.
+
 ```bash
-$ cd graph-node/docker
-$ ./setup.sh
-$ docker-compose up
-
-...
-
-graph-node_1  | Aug 04 11:41:46.081 INFO Syncing 2 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 2, blocks_behind: 2, latest_block_head: 57783334, current_block_head: 57783332, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:47.868 INFO Syncing 4 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 4, blocks_behind: 4, latest_block_head: 57783338, current_block_head: 57783334, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:50.552 INFO Syncing 4 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 4, blocks_behind: 4, latest_block_head: 57783342, current_block_head: 57783338, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:52.796 INFO Syncing 3 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 3, blocks_behind: 3, latest_block_head: 57783345, current_block_head: 57783342, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:54.698 INFO Syncing 4 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 4, blocks_behind: 4, latest_block_head: 57783349, current_block_head: 57783345, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:56.906 INFO Syncing 2 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 2, blocks_behind: 2, latest_block_head: 57783351, current_block_head: 57783349, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:41:58.340 INFO Syncing 2 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 2, blocks_behind: 2, latest_block_head: 57783353, current_block_head: 57783351, provider: aurora-rpc-0, component: BlockIngestor
-graph-node_1  | Aug 04 11:42:00.060 INFO Syncing 2 blocks from Ethereum., code: BlockIngestionStatus, blocks_needed: 2, blocks_behind: 2, latest_block_head: 57783355, current_block_head: 57783353, provider: aurora-rpc-0, component: BlockIngestor
-...
+cd graph-node/docker
+./setup.sh
+docker-compose up
 ```
 
 ## Create a subgraph
 
-Now we are done with starting our graph node, the next step is to create and deploy a subgraph. The subgraph defines how the data on Ethereum will be indexed and stored on the graph node.
+Now we are done with starting our graph node, the next step is to create and
+deploy a subgraph. The subgraph defines how the data on Ethereum will be
+indexed and stored on the graph node.
 
-In this tutorial, we are going to use the subgraph example called [GravatarRegistry](https://github.com/aurora-is-near/example-subgraph) (a simple on-chain Gravatar). The GravatarRegistry contract has two events:
+In this tutorial, we are going to use the subgraph example called
+[GravatarRegistry](https://github.com/aurora-is-near/example-subgraph) (a simple
+on-chain Gravatar). The GravatarRegistry contract has two events:
 
 ```javascript
 event NewGravatar(uint id, address owner, string displayName, string imageUrl);
 event UpdatedGravatar(uint id, address owner, string displayName, string imageUrl);
 ```
-The contract was already deployed on Aurora Testnet. You can find more information about it on [Aurora Blockscout explorer](https://explorer.testnet.aurora.dev/address/0x8773e6832f44b2C17AC78592ffCe407C62d8c36E/transactions). The deployed `GravatarRegistry` contract address is `0x8773e6832f44b2C17AC78592ffCe407C62d8c36E` and the start block number is `74885768`.
 
-### Clone
+The contract was already deployed on Aurora Testnet. The deployed `GravatarRegistry`
+contract address is `0x8773e6832f44b2C17AC78592ffCe407C62d8c36E` and the start
+block number is `74885768`.
 
-Clone subgraph example repo. 
+### Clone subgraph
+
+Clone subgraph example repo.
 
 ```bash
-$ git clone https://github.com/aurora-is-near/example-subgraph.git
-$ cd example-subgraph
+git clone https://github.com/aurora-is-near/example-subgraph.git
+cd example-subgraph
 ```
+
 ### Install
 
+```bash
+yarn install
 ```
-$ yarn install
-```
+
 ### Configure the Subgraph
 
 Update the `address` and (the `startBlock` optional) in `subgraph.yaml` as follows:
+
 ```yaml
     ...
     network: aurora
@@ -107,6 +118,7 @@ Update the `address` and (the `startBlock` optional) in `subgraph.yaml` as follo
       startBlock: 74885768
     ...
 ```
+
 Also make sure you are pointing into `aurora` as a network.
 
 ### Generating types
@@ -149,7 +161,9 @@ Types generated successfully
 
 ### Mappings
 
-Maps Ethereum event data to the data that has been defined in the `schema.graphql`. For example `handleNewGravatar` parses the new event parameters, and save them in `gravatar`.
+Maps Ethereum event data to the data that has been defined in the
+`schema.graphql`. For example `handleNewGravatar` parses the new event
+parameters, and save them in `gravatar`.
 
 ```javascript
 export function handleNewGravatar(event: NewGravatar): void {
@@ -162,14 +176,18 @@ export function handleNewGravatar(event: NewGravatar): void {
 ```
 
 ## Deploy the Subgraph
-First, we need to register the subgraph name on the graph node. To do that run `yarn create-local`.
+
+First, we need to register the subgraph name on the graph node. To do that
+run `yarn create-local`.
+
 ```bash
 $ yarn create-local              
 Created subgraph: example
 ✨  Done in 2.12s.
 ```
 
-Once the subgraph is registered, now you can deploy it by executing the following command:
+Once the subgraph is registered, now you can deploy it by executing the
+following command:
 
 ```bash
 $ yarn deploy-local
@@ -220,15 +238,21 @@ Now, you should be able to access your subgraph endpoint through `http://127.0.0
 
 ## Publish Events (optional)
 
-There were already published events starting from block number `74885768`, So you can skip this step.
+There were already published events starting from block number `74885768`,
+So you can skip this step.
 
 ## Query Events
 
-To query events, TheGraph protocol provides a [GraphQL endpoint](http://127.0.0.1:8000/subgraphs/name/example) for your local graph node. Go to `http://127.0.0.1:8000/subgraphs/name/example`, it automatically will show up a predefined GraphQL query. Run this query to get the results as shown below:
-
+To query events, TheGraph protocol provides a [GraphQL endpoint](http://127.0.0.1:8000/subgraphs/name/example)
+for your local graph node. Go to `http://127.0.0.1:8000/subgraphs/name/example`,
+it automatically will show up a predefined GraphQL query. Run this query to
+get the results as shown below:
 
 ![image](https://user-images.githubusercontent.com/5428661/145963887-82f6877b-56c8-47d8-8f62-802fccf575aa.png)
 
 ## Summary
 
-In this tutorial, we started a Graph node locally, then we wired our node to Aurora Testnet RPC. We also configured a subgraph example and deployed that subgraph on our local graph node. Finally the graph node was able to collect and index the subgraph example (GravatarRegistry) events from Aurora Testnet.
+In this tutorial, we started a Graph node locally, then we wired our node to Aurora
+Testnet RPC. We also configured a subgraph example and deployed that subgraph
+on our local graph node. Finally the graph node was able to collect and index
+the subgraph example (GravatarRegistry) events from Aurora Testnet.
