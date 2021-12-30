@@ -31,7 +31,6 @@ the assets on Aurora are the same as Ethereum. For example, account balances
 in Aurora's EVM are denominated in the same Ether (ETH) as on Ethereum
 itself.
 
-
 # Aurora Developer cheatsheet
 
 ### Gas fees and API Keys
