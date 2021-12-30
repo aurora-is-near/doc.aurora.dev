@@ -55,7 +55,7 @@ If you feel like you need to run an Aurora Node yourself, please use [this setup
 The hardware requirements for the node are same as for [NEAR RPC Node](https://docs.near.org/docs/develop/node/rpc/hardware-rpc#recommended-hardware-specifications) though we recommend to having 20-30% more storage.
 
 ### Adding assets to the bridge
-We have recently released this [UI interface](https://rainbowbridge.app/deploy) to deploy and view bridge tokens.
+We have recently released this [UI interface](https://rainbowbridge.app/deploy) to deploy and view bridge tokens. The metadata status update is also available.
 And to add your assets to the bridge you need to create a PR in [bridge-assets](https://github.com/aurora-is-near/bridge-assets) (see readme).
 
 ### Requestions Eth for the testnet
