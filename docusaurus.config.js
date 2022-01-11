@@ -39,6 +39,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      hideableSidebar: true,
       navbar: {
         title: 'Aurora Documentation',
         logo: {
@@ -60,10 +61,6 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/aurora-is-near',
-              },
-              {
                 label: 'Discourse',
                 href: 'https://gov.near.org/c/dev/aurora/46',
               },
@@ -81,7 +78,18 @@ const config = {
               },
             ],
           },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/aurora-is-near',
+              },
+            ],
+          },
+          {},
         ],
+        copyright: `© ${new Date().getFullYear()} Aurora Labs`,
       },
       prism: {
         theme: lightCodeTheme,
