@@ -71,6 +71,7 @@ const sidebars = {
         'learn/how-aurora-works',
         'learn/how-aurora-started',
         'learn/roadmap',
+        'learn/test',
       ]
     },
   ],

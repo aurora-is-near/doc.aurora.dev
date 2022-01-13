@@ -16,6 +16,10 @@ const config = {
   organizationName: 'aurora-is-near',
   projectName: 'doc.aurora.dev',
 
+  stylesheets: [
+    'https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,700|IBM+Plex+Sans:400,500,700',
+  ],
+
   presets: [
     [
       'classic',
@@ -41,10 +45,10 @@ const config = {
       },
       hideableSidebar: true,
       navbar: {
-        title: 'Aurora Documentation',
         logo: {
           alt: 'Aurora logo',
-          src: 'img/favicon.svg',
+          src: 'img/docs_logo.svg',
+          srcDark: 'img/docs_logo_white.svg',
         },
         items: [
           {
