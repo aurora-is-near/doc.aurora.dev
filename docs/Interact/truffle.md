@@ -1,6 +1,6 @@
 ---
 title: Truffle
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 To deploy the `CovidVaccineToken` contract, you can run the `yarn` command as

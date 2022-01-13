@@ -1,6 +1,6 @@
 ---
 title: Hardhat
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 The ERC-20 example is about a naive Watermelon token 🍉. You can exchange

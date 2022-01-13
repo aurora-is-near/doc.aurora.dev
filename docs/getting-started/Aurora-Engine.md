@@ -1,9 +1,8 @@
 ---
-title: What is Aurora
-sidebar_position: 1
+title: "Aurora Engine"
 ---
 
-# What is Aurora?
+# Introduction
 
 [Aurora](https://aurora.dev) is an Ethereum Virtual Machine (EVM) built on the [NEAR Protocol](https://medium.com/dia-insights/hello-near-protocol-dia-oracles-now-available-natively-on-near-3bbef5b3f13), that provides a solution for developers to deploy their apps on an Ethereum-compatible, high-throughput, scalable and future-safe platform, with low transaction costs for their users. Besides the EVM, Aurora developed the Rainbow Bridge which allows users to transfer assets between Ethereum, NEAR, and Aurora. Aurora is backed by top VCs such as Pantera Capital, Electric Capital, Dragonfly Capital, Three Arrows Capital, and Alameda Research.
 
