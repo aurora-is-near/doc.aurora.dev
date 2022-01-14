@@ -44,6 +44,7 @@ nav:
     - Indexers:
       - TheGraph: develop/indexers/thegraph.md
     - Resources:
+      - Running RPC: develop/running-relayer.md
       - Changelog: develop/changelog.md
       - Roadmap: develop/roadmap.md
       - Glossary: develop/glossary.md
