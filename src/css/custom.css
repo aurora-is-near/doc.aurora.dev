@@ -65,3 +65,14 @@ h4 {
 h6 {
   font-size: 13.5px;
 }
+
+.compat-json-rpc-table + table thead tr th:nth-child(1) {
+  width: 50%;
+}
+
+.compat-json-rpc-table + table thead tr th:nth-child(2) {
+  width: 10%;
+}
+.compat-json-rpc-table + table thead tr th:nth-child(3) {
+  width: 40%;
+}

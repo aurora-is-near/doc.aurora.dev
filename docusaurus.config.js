@@ -20,6 +20,17 @@ const config = {
     'https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,700|IBM+Plex+Sans:400,500,700',
   ],
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        indexBlog: false,
+        docsRouteBasePath: "/",
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
