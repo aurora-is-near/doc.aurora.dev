@@ -27,7 +27,7 @@ Bridging ETH is currently only enabled for Ropsten Testnet to Aurora Testnet.
 
 :::
 
-Before you begin, ensure you have the Ropsten Testnet selected in MetaMask (see instructions [here](./testnet-faucet.md)).
+Before you begin, ensure you have the Ropsten Testnet selected in MetaMask (see instructions [here](../Interact/testnet-faucet.md)).
 
 If you need Ropsten ETH to transfer, you can get some from faucets such as [MetaMask's](https://faucet.metamask.io/) or [DeFi Karen's](https://faucet.ropsten.be/).
 For this tutorial, you should have (at least) 2 Ropsten ETH already on your account.
@@ -35,7 +35,7 @@ For this tutorial, you should have (at least) 2 Ropsten ETH already on your acco
 ![metamask-two-ropsten-eth](/img/metamask_two_ropsten_eth.png)
 
 Go to the [Bridge UI](https://testnet.aurora.dev/bridge).
-If you have not yet connected MetaMask to the UI, follow the instructions [here](./testnet-faucet.md)).
+If you have not yet connected MetaMask to the UI, follow the instructions [here](../Interact/testnet-faucet.md)).
 Enter the amount of ETH to transfer in the `Amount` box (in this example we send 1 ETH) then click `Continue`.
 
 ![bridge-send-one-eth-to-aurora](/img/bridge_send_one_eth_to_aurora.png)
