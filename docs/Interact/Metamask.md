@@ -13,14 +13,15 @@ If you need help getting started with MetaMask itself, [check out their document
 
 In this tutorial we will walk through connecting MetaMask to the Aurora Testnet, deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
 
-!!! note
+:::note
     Screenshots in this tutorial are taken from the MetaMask browser extension version 9.5.5.
+:::
 
 ## Connecting MetaMask to Aurora
 
 In the top-right corner of the MetaMask interface, click the network selection drop-down and then click `Custom RPC`.
 
-![MetaMask-network-select](../../img/metamask_choose_network.png)
+![MetaMask-network-select](/img/metamask_choose_network.png)
 
 Fill in the form with the following information:
 
@@ -29,10 +30,11 @@ Fill in the form with the following information:
 * Chain ID: 1313161555
 * Currency Symbol: ETH
 
-![MetaMask-create-aurora-rpc](../../img/metamask_create_aurora_rpc.png)
+![MetaMask-create-aurora-rpc](/img/metamask_create_aurora_rpc.png)
 
-!!! note
+:::note
     All the Aurora RPC endpoint URLs and chain IDs can be found on our [Networks](../networks.md) page.
+:::
 
 Click `Save`, and you should see `Aurora Testnet` is now the network selected in MetaMask.
 To see MetaMask in action, we will connect it to [Remix] and perform some transactions.
@@ -42,7 +44,7 @@ To see MetaMask in action, we will connect it to [Remix] and perform some transa
 In a new tab, open the Remix IDE at [remix.ethereum.org](https://remix.ethereum.org).
 It might take a minute to load, but once it has, create a new file `ERC20Token.sol` in the workspace panel on the left:
 
-![Remix-new-file](../../img/remix_new_file.png)
+![Remix-new-file](/img/remix_new_file.png)
 
 Copy and paste the following code into the central editor panel:
 
@@ -68,27 +70,27 @@ This code is a slightly modified (the Solidity compiler and [OpenZeppelin] versi
 Click the `Solidity Compile` button on the far left panel (the second icon down);
 ensure your selected Solidity compiler version is 0.8 (minor versions within 0.8, e.g., 0.8.4 work too), and click `Compile ERC20Token.sol`.
 
-![Remix-solidity-compile](../../img/remix_solidity_compile.png)
+![Remix-solidity-compile](/img/remix_solidity_compile.png)
 
 Once the contract is compiled, click the `Deploy & run transactions` button in the far left panel (the icon below the Solidity compiler).
 In the `ENVIRONMENT` drop-down select `Injected Web3`.
 
-![Remix-inject-web3](../../img/remix_injected_web3.png)
+![Remix-inject-web3](/img/remix_injected_web3.png)
 
 You will see a MetaMask pop-up window asking you to give the Remix IDE permission to access it.
 Click `Next` and then `Connect` to grant access.
 
-![Remix-connect-metamask](../../img/remix_connect_with_metamask.png)
+![Remix-connect-metamask](/img/remix_connect_with_metamask.png)
 
 Back in the Remix interface, click the arrow next to the `DEPLOY` section of the left panel.
 Fill in the token details with whatever you like (`MyToken` and `MT` in the example), and click `transact`.
 
-![Remix-deploy-contract](../../img/remix_deploy_contract.png)
+![Remix-deploy-contract](/img/remix_deploy_contract.png)
 
 Another MetaMask pop-up will appear asking you to confirm the transaction.
 Click `Confirm`.
 
-![Remix-deploy-contract-metamask-confirm](../../img/remix_deploy_contract_metamask_confirm.png)
+![Remix-deploy-contract-metamask-confirm](/img/remix_deploy_contract_metamask_confirm.png)
 
 !!! note
     You may be surprised to see the gas price set to zero in this transaction.
@@ -99,7 +101,7 @@ After a few moments the transaction will be confirmed by the network.
 You will see a success message in the bottom panel and the contract listed under `Deployed Contracts` on the left panel.
 Click the copy button to copy the address of the newly deployed contract.
 
-![Remix-deploy-contract-confirmed](../../img/remix_deploy_contract_confirmed.png)
+![Remix-deploy-contract-confirmed](/img/remix_deploy_contract_confirmed.png)
 
 Now that the contract is deployed on the Aurora network, we can interact with it via MetaMask.
 
@@ -107,18 +109,18 @@ Now that the contract is deployed on the Aurora network, we can interact with it
 
 In the MetaMask interface (with the Aurora Testnet network still selected), click the `Add Token` button:
 
-![MetaMask-add-token-button](../../img/metamask_add_token_button.png)
+![MetaMask-add-token-button](/img/metamask_add_token_button.png)
 
 Paste the token address copied from Remix in the previous step.
 The remaining token details should fill in automatically as MetaMask finds the contract on-chain.
 Click `Next`:
 
-![MetaMask-add-token](../../img/metamask_add_token.png)
+![MetaMask-add-token](/img/metamask_add_token.png)
 
 On the next screen you see the balance (100 tokens), as minted in our contract constructor.
 Click `Add Tokens`:
 
-![MetaMask-add-token-confirm](../../img/metamask_add_token_confirm.png)
+![MetaMask-add-token-confirm](/img/metamask_add_token_confirm.png)
 
 The token has now been added to MetaMask and we can use the MetaMask interface to view the token balance and to transfer the token to others.
 
@@ -126,28 +128,28 @@ The token has now been added to MetaMask and we can use the MetaMask interface t
 
 Continuing from the previous step, click the `Send` button in the MetaMask interface:
 
-![MetaMask-my-token](../../img/metamask_my_token.png)
+![MetaMask-my-token](/img/metamask_my_token.png)
 
 Select a recipient (if you have multiple accounts in MetaMask you can simply select another account), and an amount of tokens to send.
 Click `Next`:
 
-![MetaMask-send-my-token](../../img/metamask_send_my_token.png)
+![MetaMask-send-my-token](/img/metamask_send_my_token.png)
 
 !!! note
     Once again the gas price should be set to zero, but this will change going forward.
 
 Click `Confirm` to send the transaction to the network:
 
-![MetaMask-send-my-token-confirm](../../img/metamask_send_my_token_confirm.png)
+![MetaMask-send-my-token-confirm](/img/metamask_send_my_token_confirm.png)
 
 After a few moments the transaction will be confirmed by the network.
 You can see the updated balance your account holds in the MetaMask interface:
 
-![MetaMask-my-token-sent-account1](../../img/metamask_my_token_sent_account1.png)
+![MetaMask-my-token-sent-account1](/img/metamask_my_token_sent_account1.png)
 
 If you transferred to another MetaMask account you hold then you can follow the aforementioned instructions for adding the token to MetaMask on the other account, and view its balance also.
 
-![MetaMask-add-token-account2](../../img/metamask_add_token_account2.png)
+![MetaMask-add-token-account2](/img/metamask_add_token_account2.png)
 
 ## Summary
 
