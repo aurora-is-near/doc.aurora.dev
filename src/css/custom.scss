@@ -76,3 +76,15 @@ h6 {
 .compat-json-rpc-table + table thead tr th:nth-child(3) {
   width: 40%;
 }
+
+.footer__items.is-inline {
+  display: flex;
+
+  li {
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

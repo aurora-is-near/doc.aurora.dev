@@ -22,13 +22,14 @@ const config = {
 
   plugins: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
         indexBlog: false,
         docsRouteBasePath: "/",
       },
     ],
+    require.resolve('docusaurus-plugin-sass'),
   ],
 
   presets: [
@@ -42,7 +43,9 @@ const config = {
           editUrl: 'https://github.com/aurora-is-near/doc.aurora.dev/edit/master',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.scss')
+          ],
         },
       }),
     ],
@@ -72,36 +75,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discourse',
-                href: 'https://gov.near.org/c/dev/aurora/46',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.aurora.dev',
-              },
-              {
-                label: 'Telegram',
-                href: 'https://t.me/auroraisnear',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/auroraisnear',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/aurora-is-near',
-              },
-            ],
-          },
           {},
         ],
         copyright: `© ${new Date().getFullYear()} Aurora Labs`,
