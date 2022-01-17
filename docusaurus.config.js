@@ -74,9 +74,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {},
-        ],
         copyright: `© ${new Date().getFullYear()} Aurora Labs`,
       },
       prism: {

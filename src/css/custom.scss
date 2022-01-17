@@ -77,8 +77,10 @@ h6 {
   width: 40%;
 }
 
-.footer__items.is-inline {
+.footer__items.is-custom-links {
   display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 
   li {
     margin-left: 15px;

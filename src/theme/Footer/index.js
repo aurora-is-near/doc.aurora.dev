@@ -59,8 +59,7 @@ function FooterLogo({sources, alt, width, height}) {
 function CustomFooterLinks() {
   return (
     <div className="col footer__col">
-      <div className="footer__title">Community</div>
-      <ul className="footer__items is-inline">
+      <ul className="footer__items is-custom-links">
         <li className="footer__item">
           <Link
             className="footer__link-item"
@@ -146,7 +145,6 @@ function CustomFooterLinks() {
 function MultiColumnLinks({links}) {
   return (
     <>
-      <CustomFooterLinks />
       {links.map((linkItem, i) => (
         <div key={i} className="col footer__col">
           <div className="footer__title">{linkItem.title}</div>
@@ -222,6 +220,7 @@ function Footer() {
         'footer--dark': footer.style === 'dark',
       })}>
       <div className="container container-fluid">
+        <CustomFooterLinks />
         {links &&
           links.length > 0 &&
           (isMultiColumnFooterLinks(links) ? (
