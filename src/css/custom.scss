@@ -102,3 +102,34 @@ h6 {
     }
   }
 }
+
+@media screen and (max-width: 966px) {
+  .navbar__logo {
+    width: 262px;
+
+    img {
+      display: none !important;
+    }
+  }
+
+  html[data-theme='light'] {
+    .navbar__logo {
+      background-image: url('/img/docs_logo_mobile.svg') !important;
+    }
+  }
+
+  html[data-theme='dark'] {
+    .navbar__logo {
+      background-image: url('/img/docs_logo_mobile_white.svg') !important;
+    }
+  }
+
+  .navbar-sidebar__brand {
+    .navbar__logo {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 190px;
+    }
+  }
+}
