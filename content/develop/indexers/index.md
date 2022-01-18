@@ -1,5 +1,0 @@
----
-title: "Aurora: Indexers"
----
-
-# Indexers

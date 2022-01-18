@@ -6,10 +6,7 @@
 
 ## Prerequisites
 
-- [Python] 3
-
-- [MkDocs] 1.1+
-  with the [Macros] and [Mermaid] plugins and the [Material] theme
+- [Node] 16.13+
 
 ## Development
 
@@ -18,17 +15,15 @@ $ git clone https://github.com/aurora-is-near/doc.aurora.dev.git
 
 $ cd doc.aurora.dev
 
-$ pip3 install -r requirements.txt
+$ corepack enable && corepack prepare pnpm@6.25.1 --activate
 
-$ mkdocs serve
+$ pnpm i
+
+$ pnpm start
 ```
 
 ## Deployment
 
 The docs are automatically built and deployed to [doc.aurora.dev](https://doc.aurora.dev/) with each commit to `master`.
 
-[Python]:   https://www.python.org
-[MkDocs]:   https://www.mkdocs.org
-[Macros]:   https://github.com/fralau/mkdocs_macros_plugin
-[Mermaid]:  https://github.com/fralau/mkdocs-mermaid2-plugin
-[Material]: https://github.com/squidfunk/mkdocs-material
+[Node]:     https://nodejs.org
