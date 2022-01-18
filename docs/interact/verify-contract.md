@@ -15,7 +15,7 @@ sidebar_position: 7
 
 [Compiler Input JSON Description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description)
 
-![contract_verification_standart_input_json](/img/contract_verification_standart_input_json.png)
+![contract_verification_standard_input_json](/img/contract_verification_standard_input_json.png)
 
 ## Verification through Sourcify
 
@@ -26,4 +26,4 @@ sidebar_position: 7
 
 [Example](https://explorer.mainnet.aurora.dev/address/0x9c821E39610376E755D903AEBfB0c5713A651622/contract_verifications/new)
 
-![contract_verification_vyper_conract](/img/contract_verification_vyper_conract.png)
+![contract_verification_vyper_contract](/img/contract_verification_vyper_contract.png)
