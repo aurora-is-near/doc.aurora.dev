@@ -14,7 +14,7 @@ If you need help getting started with MetaMask itself, [check out their document
 In this tutorial we will walk through connecting MetaMask to the Aurora Testnet, deploying a simple ERC-20 contract using [Remix], and transferring the new token using MetaMask.
 
 :::note
-    Screenshots in this tutorial are taken from the MetaMask browser extension version 9.5.5.
+Screenshots in this tutorial are taken from the MetaMask browser extension version 9.5.5.
 :::
 
 ## Connecting MetaMask to Aurora
@@ -33,7 +33,7 @@ Fill in the form with the following information:
 ![MetaMask-create-aurora-rpc](/img/metamask_create_aurora_rpc.png)
 
 :::note
-    All the Aurora RPC endpoint URLs and chain IDs can be found on our [Networks](../networks.md) page.
+All the Aurora RPC endpoint URLs and chain IDs can be found on our [Networks](../getting-started/network-endpoints.md) page.
 :::
 
 Click `Save`, and you should see `Aurora Testnet` is now the network selected in MetaMask.
@@ -92,10 +92,11 @@ Click `Confirm`.
 
 ![Remix-deploy-contract-metamask-confirm](/img/remix_deploy_contract_metamask_confirm.png)
 
-!!! note
-    You may be surprised to see the gas price set to zero in this transaction.
-    During the early access period Aurora transactions are free, however this will change in the future.
-    Not to worry, even when transaction fees will be non-zero, they'll still be much lower than on the Ethereum 1.0 Mainnet.
+:::note
+You may be surprised to see the gas price set to zero in this transaction.
+During the early access period Aurora transactions are free, however this will change in the future.
+Not to worry, even when transaction fees will be non-zero, they'll still be much lower than on the Ethereum 1.0 Mainnet.
+:::
 
 After a few moments the transaction will be confirmed by the network.
 You will see a success message in the bottom panel and the contract listed under `Deployed Contracts` on the left panel.
@@ -135,8 +136,9 @@ Click `Next`:
 
 ![MetaMask-send-my-token](/img/metamask_send_my_token.png)
 
-!!! note
-    Once again the gas price should be set to zero, but this will change going forward.
+:::note
+Once again the gas price should be set to zero, but this will change going forward.
+:::
 
 Click `Confirm` to send the transaction to the network:
 

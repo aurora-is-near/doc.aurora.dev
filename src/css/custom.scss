@@ -77,6 +77,18 @@ h6 {
   width: 40%;
 }
 
+.networks-table + table thead tr th:nth-child(1) {
+  width: 20%;
+}
+
+.networks-table + table thead tr th:nth-child(2) {
+  width: 25%;
+}
+
+.networks-table + table thead tr th:nth-child(3) {
+  width: 40%;
+}
+
 .footer__items.is-custom-links {
   display: flex;
   justify-content: center;

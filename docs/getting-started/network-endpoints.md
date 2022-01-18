@@ -7,7 +7,7 @@ title: "Networks Endpoints"
 Ethereum Virtual Machine (EVM) support is currently available on the
 following networks:
 
-<div id="networks-table"></div>
+<div class="networks-table"></div>
 
 Network  | Engine ID                  | Chain ID                | Endpoint URL
 -------- | -------------------------- | ----------------------- | ------------
