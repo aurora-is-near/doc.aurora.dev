@@ -56,8 +56,8 @@ BLOCKHASH(h: u64) = sha256( 0x00 || h || chain_id || account_id )
 
 where `||` is byte concatenation and it is assumed `h` (a 64-bit number) is converted to bytes in big endian encoding.
 The leading zero byte in the concatenation is a version byte which may change if a new blockhash scheme is introduced in the future.
-The `chain_id` depends on the network the Aurora Engine contract is deployed to (see [networks table](/develop/networks.html#networks)).
-The `account_id` is the name of the NEAR account where the contract is deployed (see the Engine ID column in the [networks table](https://doc.aurora.dev/develop/networks.html#networks)).
+The `chain_id` depends on the network the Aurora Engine contract is deployed to (see [networks table](../getting-started/network-endpoints)).
+The `account_id` is the name of the NEAR account where the contract is deployed (see the Engine ID column in the [networks table](../getting-started/network-endpoints)).
 
 ### `COINBASE`
 
