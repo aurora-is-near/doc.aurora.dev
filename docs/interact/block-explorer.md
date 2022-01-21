@@ -10,8 +10,6 @@ An ability to view all blockchain transactions is crucial for the convenience of
 So, the Aurora explorer gives users access to transaction details about specific wallet addresses including amount transacted, sources,
 destination of funds, and transaction status.
 
-### What will the Aurora explorer be able to do?
-
 The blockchain search engine is built using the open source EVM block explorer BlockScout. Its utility is to give transaction details about specific wallet addresses, including:
 
 - amount transacted

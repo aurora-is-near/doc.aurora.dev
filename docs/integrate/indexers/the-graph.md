@@ -125,7 +125,7 @@ Also make sure you are pointing into `aurora` as a network.
 ### Generating types
 
 ```bash
-yarn codegen 
+yarn codegen
   Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
   Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
   Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
@@ -133,11 +133,11 @@ yarn codegen
   Skip migration: Bump mapping specVersion from 0.0.1 to 0.0.2
 ✔ Apply migrations
 ⚠ Warnings while loading subgraph from subgraph.yaml: Warnings in subgraph.yaml:
-  
+
     Path: repository
     The repository is still set to https://github.com/graphprotocol/example-subgraph.
     Please replace it with a link to your subgraph source code.
-  
+
     Path: description
     The description is still the one from the example subgraph.
     Please update it to tell users more about your subgraph.
@@ -182,7 +182,7 @@ First, we need to register the subgraph name on the graph node. To do that
 run `yarn create-local`.
 
 ```bash
-$ yarn create-local              
+$ yarn create-local
 Created subgraph: example
 ✨  Done in 2.12s.
 ```
@@ -192,7 +192,7 @@ following command:
 
 ```bash
 $ yarn deploy-local
-✔ Version Label (e.g. v0.0.1) · 
+✔ Version Label (e.g. v0.0.1) ·
   Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
   Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
   Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
@@ -200,11 +200,11 @@ $ yarn deploy-local
   Skip migration: Bump mapping specVersion from 0.0.1 to 0.0.2
 ✔ Apply migrations
 ⚠ Warnings loading subgraph from subgraph.yaml: Warnings in subgraph.yaml:
-  
+
     Path: repository
     The repository is still set to https://github.com/graphprotocol/example-subgraph.
     Please replace it with a link to your subgraph source code.
-  
+
     Path: description
     The description is still the one from the example subgraph.
     Please update it to tell users more about your subgraph.
