@@ -29,6 +29,53 @@ const config = {
         docsRouteBasePath: "/",
       },
     ],
+    [
+      require.resolve('@docusaurus/plugin-client-redirects'),
+      {
+        redirects: [
+          {
+            to: '/interact/truffle',
+            from: ['/develop/start/truffle'],
+          },
+          {
+            to: '/getting-started/network-endpoints',
+            from: ['/develop/networks'],
+          },
+          {
+            to: '/interact/metamask',
+            from: ['/develop/start/metamask'],
+          },
+          {
+            to: '/interact/hardhat',
+            from: ['/develop/start/hardhat'],
+          },
+          {
+            to: '/public-apis/etherum-rpc',
+            from: ['/develop/compat/rpc'],
+          },
+          {
+            to: '/public-apis/etherum-rpc',
+            from: ['/develop/compat/gas'],
+          },
+          {
+            to: '/public-apis/etherum-rpc',
+            from: ['/develop/compat/evm'],
+          },
+          {
+            to: '/faq',
+            from: ['/develop/faq'],
+          },
+          {
+            to: '/integrate/indexers/the-graph',
+            from: ['/develop/indexers/thegraph'],
+          },
+          {
+            to: '/',
+            from: ['/changelog', '/roadmap'],
+          },
+        ],
+      },
+    ],
     require.resolve('docusaurus-plugin-sass'),
   ],
 

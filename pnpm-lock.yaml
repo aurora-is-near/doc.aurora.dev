@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@docusaurus/core': 2.0.0-beta.14
+  '@docusaurus/plugin-client-redirects': ^2.0.0-beta.14
   '@docusaurus/preset-classic': 2.0.0-beta.14
   '@docusaurus/theme-common': ^2.0.0-beta.14
   '@easyops-cn/docusaurus-search-local': ^0.21.4
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   '@docusaurus/core': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
+  '@docusaurus/plugin-client-redirects': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
   '@docusaurus/preset-classic': 2.0.0-beta.14_cf03b7458ee8070c9e09362c20b6f0a1
   '@docusaurus/theme-common': 2.0.0-beta.14_cf03b7458ee8070c9e09362c20b6f0a1
   '@easyops-cn/docusaurus-search-local': 0.21.4_react-dom@17.0.2+react@17.0.2
@@ -1654,6 +1656,42 @@ packages:
       - esbuild
       - supports-color
       - uglify-js
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/plugin-client-redirects/2.0.0-beta.14_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-CHxEZk20URQb3CU6l4egXYpSVMpgIQ3/niTrx8MCjyfQVnLl/yIKiLeYA1ja4i/wa8UmQnJwKUL7mZDbuP9qeg==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@docusaurus/core': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
+      '@docusaurus/logger': 2.0.0-beta.14
+      '@docusaurus/utils': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
+      '@docusaurus/utils-common': 2.0.0-beta.14
+      '@docusaurus/utils-validation': 2.0.0-beta.14_react-dom@17.0.2+react@17.0.2
+      chalk: 4.1.2
+      eta: 1.12.3
+      fs-extra: 10.0.0
+      lodash: 4.17.21
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      tslib: 2.3.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - acorn
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack
       - webpack-cli
     dev: false
 
