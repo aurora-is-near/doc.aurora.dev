@@ -50,15 +50,15 @@ const config = {
             from: ['/develop/start/hardhat'],
           },
           {
-            to: '/public-apis/etherum-rpc',
+            to: '/compat/rpc',
             from: ['/develop/compat/rpc'],
           },
           {
-            to: '/public-apis/etherum-rpc',
+            to: '/compat/gas',
             from: ['/develop/compat/gas'],
           },
           {
-            to: '/public-apis/etherum-rpc',
+            to: '/compat/evm',
             from: ['/develop/compat/evm'],
           },
           {
