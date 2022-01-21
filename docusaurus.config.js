@@ -70,8 +70,12 @@ const config = {
             from: ['/develop/indexers/thegraph'],
           },
           {
+            to: '/bridge/rainbow-bridge',
+            from: ['/learn/bridge/eth'],
+          },
+          {
             to: '/',
-            from: ['/changelog', '/roadmap'],
+            from: ['/develop/changelog', '/develop/roadmap'],
           },
         ],
       },
