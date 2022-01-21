@@ -108,6 +108,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      image: 'img/og_image.png',
       hideableSidebar: true,
       navbar: {
         logo: {
