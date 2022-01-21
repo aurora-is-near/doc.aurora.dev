@@ -1,0 +1,135 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #78d64b;
+  --ifm-color-primary-dark: #66d133;
+  --ifm-color-primary-darker: #60c82e;
+  --ifm-color-primary-darkest: #4fa526;
+  --ifm-color-primary-light: #8adb63;
+  --ifm-color-primary-lighter: #92de6e;
+  --ifm-color-primary-lightest: #ade692;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+code,
+pre {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 13.5px;
+}
+
+.compat-json-rpc-table + table thead tr th:nth-child(1) {
+  width: 50%;
+}
+
+.compat-json-rpc-table + table thead tr th:nth-child(2) {
+  width: 10%;
+}
+.compat-json-rpc-table + table thead tr th:nth-child(3) {
+  width: 40%;
+}
+
+.networks-table + table thead tr th:nth-child(1) {
+  width: 20%;
+}
+
+.networks-table + table thead tr th:nth-child(2) {
+  width: 25%;
+}
+
+.networks-table + table thead tr th:nth-child(3) {
+  width: 40%;
+}
+
+.footer__items.is-custom-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  li {
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .navbar__logo {
+    width: 262px;
+
+    img {
+      display: none !important;
+    }
+  }
+
+  html[data-theme='light'] {
+    .navbar__logo {
+      background-image: url('/img/docs_logo_mobile.svg') !important;
+    }
+  }
+
+  html[data-theme='dark'] {
+    .navbar__logo {
+      background-image: url('/img/docs_logo_mobile_white.svg') !important;
+    }
+  }
+
+  .navbar-sidebar__brand {
+    .navbar__logo {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 190px;
+    }
+  }
+}
