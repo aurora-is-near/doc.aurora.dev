@@ -80,7 +80,6 @@ const sidebars = {
         }
       ]
     },
-    'roadmap',
     'faq',
   ],
 };
