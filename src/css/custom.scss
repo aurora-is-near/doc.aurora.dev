@@ -40,12 +40,7 @@ p {
   font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   text-transform: uppercase;
 }
 
@@ -87,6 +82,26 @@ h6 {
 
 .networks-table + table thead tr th:nth-child(3) {
   width: 40%;
+}
+
+.compat-evm-precompiles-table + table thead tr th:nth-child(1) {
+  width: 15%;
+}
+
+.compat-evm-precompiles-table + table thead tr th:nth-child(2) {
+  width: 15%;
+}
+
+.compat-evm-precompiles-table + table thead tr th:nth-child(3) {
+  width: 50%;
+}
+
+.compat-evm-precompiles-table + table thead tr th:nth-child(4) {
+  width: 15%;
+}
+
+.compat-evm-precompiles-table + table thead tr th:nth-child(5) {
+  width: 5%;
 }
 
 .footer__items.is-custom-links {

@@ -1,14 +1,12 @@
 ---
-title: Etherum RPCs
-sidebar_position: 1
+title: "JSON-RPC"
 ---
 
-## Introduction to Ethereum RPCs
+# Compatibility with the Web3 JSON-RPC Protocol
 
-The Aurora Relayer implements the Web3 JSON-RPC protocol making Aurora
-compatible with most RPC methods that are supported on the Ethereum blockchain.
+The Aurora Relayer implements the Web3 JSON-RPC protocol.
 
-## RPC methods
+## Methods
 
 <div class="compat-json-rpc-table"></div>
 
@@ -84,13 +82,53 @@ Method | Status | Notes
 
 **Legend**: ❌ = not supported. 🚧 = work in progress. ✅ = supported.
 
-## Notes on JSON RPCs
+## Limitations
 
-- Ethereum is a proof-of-work (PoW) network, and NEAR, the underlying network that Aurora runs on is a proof-of-stake (PoS) network.
-Therefore with Aurora, all mining-related methods such as eth_getWork, eth_submitHashrate, and eth_submitWork are not supported and return an error code.
-Additionally, PoW-related block metadata such as nonce and difficulty contain all zeroes.
+- The `eth_getProof` method ([EIP-1186]) is not supported and is unlikely to be
+  possible to implement.
 
-- The Aurora Relayer source code repository is at: [github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
+## Notes
+
+- For now, the `eth_estimateGas` method returns a fixed value (6,721,975,
+  matching Truffle's default gas limit), since [no gas is
+  charged](gas.md).
+
+- Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
+  network.
+  Therefore with Aurora all mining-related methods such as `eth_getWork`,
+  `eth_submitHashrate`, and `eth_submitWork` are not supported and return
+  an error code.
+  Additionally, PoW-related block metadata such as `nonce` and `difficulty`
+  contain all zeroes.
+
+- The `eth_coinbase` method returns the EVM address of the Aurora Engine.
+  For example, for the Aurora Engine deployment on the `aurora` account,
+  `COINBASE` returns _0x4444588443C3a91288c5002483449Aba1054192b_.
+
+- There is no concept of uncle (aka ommer) blocks.
+  The `eth_getUncleByBlockHashAndIndex` and `eth_getUncleByBlockNumberAndIndex`
+  methods always return `null`.
+  The `eth_getUncleCountByBlockHash` and `eth_getUncleCountByBlockNumber`
+  methods return zero for valid block IDs and `null` for invalid block IDs.
+  Additionally, uncle-related block metadata such as `sha3Uncles` contain
+  all zeroes.
+
+- There is no access to pending transactions.
+  The `eth_newPendingTransactionFilter` method creates a filter that returns
+  nothing when polled with `eth_getFilterChanges`.
+
+- The nonstandard Geth tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  ([#12](https://github.com/aurora-is-near/aurora-relayer/issues/12))
+
+- The nonstandard Parity tracing APIs are not supported at present, but we do
+  have plans to implement them going forward.
+  ([#13](https://github.com/aurora-is-near/aurora-relayer/issues/13))
+
+## Source Code
+
+The Aurora Relayer source code repository is at:
+[github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
 
 [web3_clientVersion]: https://eth.wiki/json-rpc/API#web3_clientVersion
 [web3_sha3]: https://eth.wiki/json-rpc/API#web3_sha3
