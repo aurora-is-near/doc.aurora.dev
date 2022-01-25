@@ -98,6 +98,10 @@ const config = {
             require.resolve('./src/css/custom.scss')
           ],
         },
+        gtag: {
+          trackingID: 'GTM-MX4G4L5',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
