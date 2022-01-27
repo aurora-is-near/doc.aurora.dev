@@ -121,6 +121,8 @@ h6 {
 @media screen and (max-width: 966px) {
   .navbar__logo {
     width: 262px;
+    background-repeat: no-repeat;
+    background-position: left center;
 
     img {
       display: none !important;
