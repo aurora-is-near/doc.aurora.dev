@@ -29,7 +29,7 @@ The Mainnet Web3 endpoint is at: `https://mainnet.aurora.dev` (port 443)
 
 #### WSS
 
-The Mainnet Webscoket endpoint is at: `wss://1a67ac2cb6d7.relayer.mainnet.partners.aurora.dev`
+The Mainnet Webscoket endpoint is at: `wss://mainnet.aurora.dev`
 
 ### Testnet
 
@@ -37,7 +37,7 @@ The Testnet Web3 endpoint is at: `https://testnet.aurora.dev` (port 443)
 
 #### WSS
 
-The Testnet Webscoket endpoint is not yet available.
+The Testnet Webscoket endpoint is at: `wss://testnet.aurora.dev`
 
 [aurora@Mainnet]: https://explorer.near.org/accounts/aurora
 [aurora@Testnet]: https://explorer.testnet.near.org/accounts/aurora
