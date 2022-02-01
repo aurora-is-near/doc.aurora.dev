@@ -41,7 +41,7 @@ The nature of the issue comes from the fact that the block time on NEAR is 1 sec
 Usually, the transaction must fit in a block.
 There's no easy way to map NEAR Gas to Ethereum Gas.
 If you see `"error": "wasm execution failed with error: FunctionCallError(HostError(GasLimitExceeded))"`, it means you've hit that limit.
-It's ofter possible to optimise the contract to overcome the issue (reducing transaction batch sizes, optimising big transactions).
+It's often possible to optimise the contract to overcome the issue (reducing transaction batch sizes, optimising big transactions).
 We're working hard on making the issue non-existent, but it's important to know it's present at the moment.
 
 ### Running your own Aurora Node
