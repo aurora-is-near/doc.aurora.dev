@@ -22,14 +22,6 @@ const config = {
 
   plugins: [
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        indexBlog: false,
-        docsRouteBasePath: "/",
-      },
-    ],
-    [
       require.resolve('@docusaurus/plugin-client-redirects'),
       {
         redirects: [
@@ -135,6 +127,12 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        appId: 'BEGR6ON9SL',
+        apiKey: 'e0a8f49db413df8c28341a74f2a799ae',
+        indexName: 'doc-aurora',
+        contextualSearch: true,
       },
     }),
 };
