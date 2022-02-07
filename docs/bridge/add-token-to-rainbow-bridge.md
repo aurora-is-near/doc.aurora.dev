@@ -1,5 +1,5 @@
 ---
-title: Add token to Rainbow Bridge
+title: Add a token to Rainbow Bridge
 ---
 
 If you are a developer, and you can deploy tokens using the Rainbow Bridge:
