@@ -3,6 +3,8 @@ title: Verify a contract
 sidebar_position: 7
 ---
 
+## Aurorascan
+
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -11,12 +13,57 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <ThemedImage
   alt="Conract verification"
   sources={{
-    light: useBaseUrl('/img/contract_verification.png'),
-    dark: useBaseUrl('/img/contract_verification_dark_mode.png'),
+    light: useBaseUrl('/img/contract_verification_aurorascan.png'),
+    dark: useBaseUrl('/img/contract_verification_aurorascan_dark_mode.png'),
   }}
 />
 
-## Verification through Sourcify
+## Block Explorers
+
+### Verification through Sourcify
 
 - if smart-contract already verified on [Sourcify](https://sourcify.dev/), it will automatically fetch the data from the [repo](https://repo.sourcify.dev/select-contract/)
 - otherwise you will be asked to upload source files and JSON metadata file(s).
+
+### Verification through flattened source code
+
+[Example](https://explorer.mainnet.aurora.dev/address/0x9c821E39610376E755D903AEBfB0c5713A651622/verify-via-flattened-code/new)
+
+<ThemedImage
+  alt="Conract verification"
+  sources={{
+    light: useBaseUrl('/img/contract_verification_explorer_flatten_code.png'),
+    dark: useBaseUrl('/img/contract_verification_explorer_flatten_code_dark_mode.png'),
+  }}
+/>
+
+### Verification using Standard input JSON file
+
+[Example](https://explorer.mainnet.aurora.dev/address/0x9c821E39610376E755D903AEBfB0c5713A651622/verify-via-standard-json-input/new)
+
+[Compiler Input JSON Description](https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description)
+
+<ThemedImage
+  alt="Conract verification"
+  sources={{
+    light: useBaseUrl('/img/contract_verification_explorer_standard_input_json.png'),
+    dark: useBaseUrl('/img/contract_verification_explorer_standard_input_json_dark_mode.png'),
+  }}
+/>
+
+### Verification through Sourcify
+
+- if smart-contract already verified on [Sourcify](https://sourcify.dev/), it will automatically fetch the data from the [repo](https://repo.sourcify.dev/select-contract/)
+- otherwise you will be asked to upload source files and JSON metadata file(s).
+
+### Verification of Vyper contract
+
+[Example](https://explorer.mainnet.aurora.dev/address/0x9c821E39610376E755D903AEBfB0c5713A651622/contract_verifications/new)
+
+<ThemedImage
+  alt="Conract verification"
+  sources={{
+    light: useBaseUrl('/img/contract_verification_explorer_vyper_contract.png'),
+    dark: useBaseUrl('/img/contract_verification_explorer_vyper_contract_dark_mode.png'),
+  }}
+/>
