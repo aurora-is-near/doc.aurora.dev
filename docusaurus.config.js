@@ -42,6 +42,10 @@ const config = {
             from: ['/develop/start/hardhat'],
           },
           {
+            to: '/interact/aurorascan',
+            from: ['/interact/block-explorer'],
+          },
+          {
             to: '/compat/rpc',
             from: ['/develop/compat/rpc'],
           },
