@@ -19,16 +19,10 @@ So, if you want your token to trade on three networks, then deploy it on Ethereu
 
 ## Bridging ETH Balances
 
-:::note
+If you need Goerli ETH to transfer, you can get some from faucets such as [MetaMask's](https://faucet.metamask.io/) or [GOERLI FAUCET](https://goerlifaucet.com/).
+For this tutorial, you should have (at least) 2 Goerli ETH already on your account.
 
-Bridging ETH is currently only enabled for Ropsten Testnet to Aurora Testnet.
-
-:::
-
-If you need Ropsten ETH to transfer, you can get some from faucets such as [MetaMask's](https://faucet.metamask.io/) or [DeFi Karen's](https://faucet.ropsten.be/).
-For this tutorial, you should have (at least) 2 Ropsten ETH already on your account.
-
-![metamask-two-ropsten-eth](/img/metamask_two_ropsten_eth.png)
+![metamask-two-goerli-eth](/img/metamask_two_goerli_eth.png)
 
 Go to the [Bridge UI](https://testnet.aurora.dev/bridge).
 Enter the amount of ETH to transfer in the `Amount` box (in this example we send 1 ETH) then click `Continue`.
@@ -41,10 +35,10 @@ Click `Confirm`, then confirm the transaction in the MetaMask pop-up.
 
 ![bridge-send-one-eth-to-aurora-metamask-confirm](/img/bridge_send_one_eth_to_aurora_metamask_confirm.png)
 
-After a minute or two the transaction on the Ropsten network will confirm in MetaMask.
-At this point the ETH is locked on the Ropsten side in a contract, and it has emitted a `Deposit` event.
+After a minute or two the transaction on the Goerli network will confirm in MetaMask.
+At this point the ETH is locked on the Goerli side in a contract, and it has emitted a `Deposit` event.
 The Aurora relayers watch for such events and automatically forward a transaction to the NEAR network (where Aurora runs).
-This takes some time because we must wait for multiple block confirmations on Ropsten to be sure it will not revert.
+This takes some time because we must wait for multiple block confirmations on Goerli to be sure it will not revert.
 While this is happening you will see an intermediate message in the Bridge UI.
 
 ![bridge-send-one-eth-to-aurora-waiting](/img/bridge_send_one_eth_to_aurora_waiting.png)
