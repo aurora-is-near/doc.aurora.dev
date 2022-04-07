@@ -35,7 +35,7 @@ the following tools on you machine:
 Clone the graph node source code
 
 ```bash
-git clone https://github.com/graphprotocol/graph-node/
+git clone https://github.com/graphprotocol/graph-node.git
 cd graph-node
 ```
 
