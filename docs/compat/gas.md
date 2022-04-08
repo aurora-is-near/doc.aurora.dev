@@ -8,18 +8,7 @@ Aurora runs on top of NEAR, so in some sense [NEAR gas] is the real measure of c
 However, for compatibility with Ethereum we want our users to be able to pay for transactions with ether (ETH).
 To enable this, the Aurora infrastructure includes relayers which encapsulate ordinary EVM transactions into NEAR transactions, submit them on-chain, and return the transaction result.
 
-In the future, these relayers will charge ETH to the address that sent the transaction based on the amount of NEAR that was spent on the NEAR gas to complete the transaction.
-However, in this early-release phase, this logic is not implemented and therefore no ETH is actually charged for the gas spent.
-The main takeaway from this discussion is to _set the gas price of Aurora transactions to zero for the time being_.
-
-## Gas limits
-
-Even though no ETH is charged, Aurora still respects gas limits. That is to say, even with a gas price of zero,
-if a transaction spends more gas than its limit, it will fail with an _out of gas_ error.
-
-Therefore, developers must still consider what the gas limit of a transaction should be even when the gas price is zero.
-The amount of EVM gas spent by a transaction is computed using the standard Ethereum rules.
-Therefore, developers can still estimate the cost of transactions as if it were running on any other EVM-compatible network.
+Transaction cost ~$0.02
 
 ## Compatibility limitations
 
