@@ -23,8 +23,6 @@ MD044:        # proper-names
     - JavaScript
     - Hardhat
     - MetaMask
-    - Testnet
-    - Mainnet
   code_blocks: false
 MD046: false  # code-block-style
 MD048:        # code-fence-style

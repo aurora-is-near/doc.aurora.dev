@@ -22,7 +22,7 @@ So, if you want your token to trade on three networks, then deploy it on Ethereu
 If you need Goerli ETH to transfer, you can get some from faucets such as [MetaMask's](https://faucet.metamask.io/) or [GOERLI FAUCET](https://goerlifaucet.com/).
 For this tutorial, you should have (at least) 2 Goerli ETH already on your account.
 
-![metamask-two-goerli-eth](/img/metamask_two_goerli_eth.png)
+![MetaMask-two-goerli-eth](/img/metamask_two_goerli_eth.png)
 
 Go to the [Bridge UI](https://testnet.aurora.dev/bridge).
 Enter the amount of ETH to transfer in the `Amount` box (in this example we send 1 ETH) then click `Continue`.
@@ -33,7 +33,7 @@ Click `Confirm`, then confirm the transaction in the MetaMask pop-up.
 
 ![bridge-send-one-eth-to-aurora-confirm](/img/bridge_send_one_eth_to_aurora_confirm.png)
 
-![bridge-send-one-eth-to-aurora-metamask-confirm](/img/bridge_send_one_eth_to_aurora_metamask_confirm.png)
+![bridge-send-one-eth-to-aurora-MetaMask-confirm](/img/bridge_send_one_eth_to_aurora_metamask_confirm.png)
 
 After a minute or two the transaction on the Goerli network will confirm in MetaMask.
 At this point the ETH is locked on the Goerli side in a contract, and it has emitted a `Deposit` event.
@@ -51,6 +51,6 @@ After the transaction is complete (several minutes later) it will appear as "Com
 
 You can now see your balance in MetaMask by switching to the Aurora Testnet.
 
-![metamask-aurora-testnet-with-one-eth](/img/metamask_aurora_testnet_with_one_eth.png)
+![MetaMask-aurora-testnet-with-one-eth](/img/metamask_aurora_testnet_with_one_eth.png)
 
 ## Mint on Ethereum → Bridge to Near & Aurora

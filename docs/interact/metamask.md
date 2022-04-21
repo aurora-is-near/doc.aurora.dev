@@ -80,7 +80,7 @@ In the `ENVIRONMENT` drop-down select `Injected Web3`.
 You will see a MetaMask pop-up window asking you to give the Remix IDE permission to access it.
 Click `Next` and then `Connect` to grant access.
 
-![Remix-connect-metamask](/img/remix_connect_with_metamask.png)
+![Remix-connect-MetaMask](/img/remix_connect_with_metamask.png)
 
 Back in the Remix interface, click the arrow next to the `DEPLOY` section of the left panel.
 Fill in the token details with whatever you like (`MyToken` and `MT` in the example), and click `transact`.
@@ -90,7 +90,7 @@ Fill in the token details with whatever you like (`MyToken` and `MT` in the exam
 Another MetaMask pop-up will appear asking you to confirm the transaction.
 Click `Confirm`.
 
-![Remix-deploy-contract-metamask-confirm](/img/remix_deploy_contract_metamask_confirm.png)
+![Remix-deploy-contract-MetaMask-confirm](/img/remix_deploy_contract_metamask_confirm.png)
 
 :::note
 Transaction cost ~$0.02
