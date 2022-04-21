@@ -66,7 +66,7 @@ const config = {
             from: ['/develop/indexers/thegraph'],
           },
           {
-            to: '/bridge/rainbow-bridge',
+            to: '/bridge/bridge-overview',
             from: ['/learn/bridge/eth'],
           },
           {
