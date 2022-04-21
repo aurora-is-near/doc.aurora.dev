@@ -11,7 +11,7 @@ Transfers to Ethereum are probably the most confusing for our users so far.
 If you have trouble connecting networks, please refer to the [Bridge Overview](bridge-overview) section.
 :::
 
-![bridge-31](/img/31.png)
+![rainbow_bridge_31](/img/rainbow_bridge_31.png)
 
 2. Choose the “ETH” token to send, and enter the amount you want to transfer. Click “Continue”.
 We show token balance on the destination network, as this is often useful in calculating how much needs to be transferred.
@@ -22,7 +22,7 @@ We also provide a one-click helper to allow you to send the full token balance i
 If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](transfer-overview) chapter for more information.
 :::
 
-![bridge-32](/img/32.png)
+![rainbow_bridge_32](/img/rainbow_bridge_32.png)
 
 :::danger VERY IMPORTANT
 * **ALL** transfers to Ethereum require **TWO** transactions, with one of them required **after** the **first** one has been **completed**, which means that you’ll have to return to the bridge page and manually initiate the second transaction.
@@ -33,19 +33,19 @@ If you are wondering why you only see specific tokens, please refer to the [Tran
 On the next screen, check the transfer details, and click “Confirm Transfer”. 
 NOTE Along with the confirmation option, we also inform you that the transfer can take up to 16 hours and needs to be finalized.
 
-![bridge-33](/img/33.png)
+![rainbow_bridge_33](/img/rainbow_bridge_33.png)
 
 4. On the next screen, we inform you of the cost of the second transaction and warn that the transfer cannot be canceled.
 
-![bridge-34](/img/34.png)
+![rainbow_bridge_34](/img/rainbow_bridge_34.png)
 
 5. Once you are done on the bridge page, Metamask will open so you can confirm the transfer there.
 
-![bridge-35](/img/35.png)
+![rainbow_bridge_35](/img/rainbow_bridge_35.png)
 
 6. Once done, you’ll see the message informing you that the transfer has started.
 
-![bridge-36](/img/36.png)
+![rainbow_bridge_36](/img/rainbow_bridge_36.png)
 
 Again, note that transfers from Aurora to Ethereum take on average 16 hours and need to be finalized to receive assets on Ethereum.
  
@@ -53,11 +53,11 @@ Again, note that transfers from Aurora to Ethereum take on average 16 hours and 
 If you want to make sure that the transfer has started, you can go to the My Transfers page. If you have just confirmed it, you’ll see the message Processing Transfer – Transaction Pending.
 :::
 
-![bridge-37](/img/37.png)
+![rainbow_bridge_37](/img/rainbow_bridge_37.png)
 
 Approximately 1-2 minutes after the confirmation, the bridge will say Processing Transfer—Estimated to complete in about 16 hours.
 
-![bridge-38](/img/38.png)
+![rainbow_bridge_38](/img/rainbow_bridge_38.png)
 
 :::tip
 While you are waiting for the first transaction to go through, you can close the browser, turn off your PC and get back to the transfer at your convenience.
@@ -65,11 +65,11 @@ While you are waiting for the first transaction to go through, you can close the
 
 7. Once the first transaction has been processed, get back to the bridge page and click “Finalize Transfer”.
 
-![bridge-39](/img/39.png)
+![rainbow_bridge_39](/img/rainbow_bridge_39.png)
 
 8. You’ll be redirected to MetaMask. The wallet will prompt the fee that Ethereum will charge for the second transaction. Check the amount and click “Confirm”.
 
-![bridge-40](/img/40.png)
+![rainbow_bridge_40](/img/rainbow_bridge_40.png)
 
 :::note
 Fees for the second transaction depend on the congestion of the Ethereum network. You can wait for lower gas fees and finalize the transfer at any time. Funds are never lost. You may want to use special software to track ETH gas fees 24/7.

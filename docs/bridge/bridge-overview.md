@@ -15,16 +15,16 @@ In the lower left corner you’ll find several menus.
 
 The **About** menu gives you a short description of the bridge, the networks it can be used with and the explanation of why our bridge is unique. Yes, we can proudly say that it is unique, indeed! :)
 
-![bridge-01](/img/01.png)
+![rainbow_bridge_01](/img/rainbow_bridge_01.png)
 
 We absolutely suggest that you pay attention to the **FAQ** page. It’s **very very short** yet it answers most common questions that often confuse users.
 
-![bridge-02](/img/02.png)
+![rainbow_bridge_02](/img/rainbow_bridge_02.png)
 
 If you experience issues at any time during the transfer, there is the **Support** link that opens a contact help form. The same form can be easily accessed through the green icon **Questions** in the lower right corner.
 Note that the button is yet another source of common questions. They pop up when you click the button. If you still need assistance, just click the **Ask** bubble at the top of the form.
 
-![bridge-03](/img/03.png)
+![rainbow_bridge_03](/img/rainbow_bridge_03.png)
 
 Now let’s move to the upper right corner.
 
@@ -33,11 +33,11 @@ First, there is the **three dots** button. The very first option would be **Dark
 Another feature is **Scan Transfer History**.
 It is useful if you still happen to have transactions completed on bridge Version 1.0 ([ethereum.bridgetonear.org](https://ethereum.bridgetonear.org) and [aurora.bridgetonear.org](https://aurora.bridgetonear.org)) but don’t see them in the list—this option will help you recover them.
 
-![bridge-04](/img/04.png)
+![rainbow_bridge_04](/img/rainbow_bridge_04.png)
 
 Then there is the **down arrow**. Once clicked, the list of supported networks expands. This is a shortcut allowing you to connect necessary networks before you start a transfer.
 
-![bridge-05](/img/05.png)
+![rainbow_bridge_05](/img/rainbow_bridge_05.png)
 
 :::tip
 There are two other ways to **connect networks**
@@ -45,12 +45,12 @@ There are two other ways to **connect networks**
 
 1. If you don't have the Aurora/Ethereum as your default network in MetaMask, the bridge will initiate a prompt in MetaMask to pre-configure and confirm adding Aurora or switching to Aurora/Ethereum, and then you can switch to the respective network as the default network.
 
-![bridge-06](/img/06.png)
+![rainbow_bridge_06](/img/rainbow_bridge_06.png)
 
 2. Alternatively, to add Aurora to MetaMask, visit the Aurora Start page https://aurora.dev/start.
 Then click “Add Network” (Mainnet) to add the Aurora network to MetaMask.
 
-![bridge-07](/img/07.png)
+![rainbow_bridge_07](/img/rainbow_bridge_07.png)
 
 We’ll touch upon the remaining **Security** and **Deploy Token** options in the [Advanced Features](advanced-features).
 The **Restore Transfer** option is covered in the [Transfers TO Ethereum](transfer-to-ethereum)

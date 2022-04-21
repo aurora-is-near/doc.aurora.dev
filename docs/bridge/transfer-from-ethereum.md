@@ -11,7 +11,7 @@ Transfers from the Ethereum network are similar to those between Aurora/NEAR yet
 If you have trouble connecting networks, please refer to the [Bridge Overview](bridge-overview) section.
 :::
 
-![bridge-20](/img/20.png)
+![rainbow_bridge_20](/img/rainbow_bridge_20.png)
 
 2. Choose tokens you want to transfer, “Enter Amount” and “Click Continue”.
 We show token balance on the destination network, as this is often useful in calculating how much needs to be transferred.
@@ -22,15 +22,15 @@ We also provide a one-click helper to allow you to send the full token balance i
 If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](transfer-overview) chapter for more information.
 :::
 
-![bridge-21](/img/21.png)
+![rainbow_bridge_21](/img/rainbow_bridge_21.png)
 
 3. On the next screen, check the transfer details, and click “Confirm Transfer”.
 
-![bridge-22](/img/22.png)
+![rainbow_bridge_22](/img/rainbow_bridge_22.png)
 
 4. Check the total amount that will be spent during the transfer (Amount + Gas) and click “Confirm” in MetaMask.
 
-![bridge-23](/img/23.png)
+![rainbow_bridge_23](/img/rainbow_bridge_23.png)
 
 5. Voila! The transfer has started.
 
@@ -38,7 +38,7 @@ If you are wondering why you only see specific tokens, please refer to the [Tran
 The bridge informs you that the transfer may take up to 10 minutes.
 :::
 
-![bridge-24](/img/24.png)
+![rainbow_bridge_24](/img/rainbow_bridge_24.png)
 
 From here, you can either click “Go To My Transfers” or close the page.
 If you choose to go to the list of your transfers, please refer to the [Pending and Completed Transfers](pending-and-completed-transfers) section for more information about what details you can get from this page.
@@ -50,23 +50,23 @@ This is different from a transfer from Aurora TO Ethereum where you need to conf
 
 1. First you “Approve Transfer” on the bridge page.
 
-![bridge-25](/img/25.png)
+![rainbow_bridge_25](/img/rainbow_bridge_25.png)
 
 2. Then you approve it in MetaMask.
 
-![bridge-26](/img/26.png)
+![rainbow_bridge_26](/img/rainbow_bridge_26.png)
 
 3. … And wait for the approval to be processed.
 
-![bridge-27](/img/27.png)
+![rainbow_bridge_27](/img/rainbow_bridge_27.png)
 
 4. Once the approval step is over, you’ll have to “Confirm Transfer” on the bridge page…
 
-![bridge-28](/img/28.png)
+![rainbow_bridge_28](/img/rainbow_bridge_28.png)
 
 5. … And in Metamask.
 
-![bridge-29](/img/29.png)
+![rainbow_bridge_29](/img/rainbow_bridge_29.png)
 
 6. Phew! Finally your transfer is under way. Again, the bridge will prompt you that transfers from Ethereum to Aurora take about 10 minutes.
 
@@ -77,4 +77,4 @@ If you have issues **accessing your funds** after the transfer or the transfer l
 
 And… on a different **NOTE **Let’s make sure to check out the Security option that is directly relevant to ERC-20 tokens. You’ll find detailed information in the [Advanced Features](advanced-features) chapter.
 
-![bridge-30](/img/30.png)
+![rainbow_bridge_30](/img/rainbow_bridge_30.png)

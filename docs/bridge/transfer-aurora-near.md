@@ -21,19 +21,19 @@ We also provide a one-click helper to allow you to send the full token balance i
 If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](transfer-overview) chapter for more information.
 :::
 
-![bridge-15](/img/15.png)
+![rainbow_bridge_15](/img/rainbow_bridge_15.png)
 
 3. On the next screen, check the transfer details, and click “Confirm Transfer”.
 
-![bridge-16](/img/16.png)
+![rainbow_bridge_16](/img/rainbow_bridge_16.png)
 
 4. At this point, you'll be redirected to your NEAR wallet for authorization, which you should  approve.
 
-![bridge-17](/img/17.png)
+![rainbow_bridge_17](/img/rainbow_bridge_17.png)
 
 5. After approving the transfer in your NEAR wallet, you'll be redirected to the Rainbow Bridge, and your transfer will succeed almost immediately. You'll see your completed transfer in the Completed Transfers list.
 
-![bridge-18](/img/18.png)
+![rainbow_bridge_18](/img/rainbow_bridge_18.png)
 
 :::note
 Since sometimes tokens are moved to a non-native network (e.g. if you move NEAR tokens from NEAR to Aurora network), they get wrapped (e.g. wNEAR), so you should add the wNEAR token address to your wallet in order to see the tokens transferred.
@@ -41,4 +41,4 @@ Since sometimes tokens are moved to a non-native network (e.g. if you move NEAR 
 To do this, click the three dots on the right, and “Add NEAR to MetaMask” (the respective token name will be prompted by the bridge). Once the NEAR token has been added to MetaMask, you can click the “Assets” tab in MetaMask, and see the NEAR tokens you sent from Near to Aurora.
 The screenshot below is for illustrative purposes and does not reflect the example with NEAR above.
 
-![bridge-19](/img/19.png)
+![rainbow_bridge_19](/img/rainbow_bridge_19.png)

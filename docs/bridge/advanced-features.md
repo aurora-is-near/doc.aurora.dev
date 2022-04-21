@@ -14,38 +14,38 @@ completed. More often than not it means that the bridge interface hasn't been up
 
 1. To access the option, either click “Restore Transfer” in the upper right corner on the bridge page or enter it manually as rainbowbridge.app/restore.
 
-![bridge-46](/img/46.png)
+![rainbow_bridge_46](/img/rainbow_bridge_46.png)
 
 2. Paste the first transaction ID into the field on the page below to get access to the transfer.
 
 The system will automatically locate it, you just need to click “Restore Transfer”. You’ll then get redirected to the bridge page where you can see the transaction and click “Finalize Transfer” in order to get access to your funds, if needed.
 
-![bridge-47](/img/47.png)
+![rainbow_bridge_47](/img/rainbow_bridge_47.png)
 
 ### Security
 As its name suggests, this option helps you understand how to secure your assets. This applies to transfers of ERC-20 tokens like USDC **FROM** Ethereum.
 
-![bridge-48](/img/48.png)
+![rainbow_bridge_48](/img/rainbow_bridge_48.png)
 
 It explains the difference between limited and unlimited approval in MetaMask. Approval in this case refers to the amount of assets that you are allowed to transfer before the bridge asks you for approval again (in case the amount is set to limited).
 
 The page provides a pretty elaborate explanation and examples. If you still have questions, feel free to use the Questions button or our public channels to obtain clarification.
 
-![bridge-49](/img/49.png)
+![rainbow_bridge_49](/img/rainbow_bridge_49.png)
 
 ### Deploy Token
 This feature is useful if you want to transfer a token that has not been added to the bridge yet.
 
-![bridge-50](/img/50.png)
+![rainbow_bridge_50](/img/rainbow_bridge_50.png)
 
 Once you paste the token address, you’ll be redirected to the page with detailed instructions on how to deploy the token and have it fully integrated into the bridge.
 
-![bridge-51](/img/51.png)
+![rainbow_bridge_51](/img/rainbow_bridge_51.png)
 
 **Status communications** — https://rainbowbridge.app/status
 Sometimes issues come up that interrupt the smooth operation of the bridge, such as DDoS attacks. In order to keep the users up to date, we implemented a status page driven by the CMS, on which we display the full-text of the latest update, and zipped-up (but expandable) summaries of all past updates.
 
-![bridge-52](/img/52.png)
+![rainbow_bridge_52](/img/rainbow_bridge_52.png)
 
 Whenever there's a status alert—which can be red (alert), yellow (warning) or green (all good)—we display a colored banner in the header throughout the entire bridge interface.
 
