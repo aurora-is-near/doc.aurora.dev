@@ -17,6 +17,7 @@ We always ensure making a new transaction is readily available in the upper left
 ![rainbow_bridge_43](/img/rainbow_bridge_43.png)
 
 If you navigate to the **three dots next to a transfer**, you’ll be able to:
+
 * View the source transaction in an explorer.
 * Copy the transaction ID of the source transaction.
 Copy the contract address of the token on the destination network.
@@ -27,7 +28,10 @@ Copy the contract address of the token on the destination network.
 
 ### Transaction filters
 
-For a multi-chain product like Rainbow Bridge 2.0, that allows transfers with up to six different direction combinations, you're going to need some filters to quickly find that historical transaction you're after. On that, we've got you covered!
+For a multi-chain product like Rainbow Bridge 2.0,
+that allows transfers with up to six different direction combinations,
+you're going to need some filters to quickly find that historical transaction you're after.
+On that, we've got you covered!
 There are checkboxes that allow you to choose transfers based on from and/or to what network they were made.
 
 ![rainbow_bridge_45](/img/rainbow_bridge_45.png)

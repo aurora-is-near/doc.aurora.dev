@@ -46,7 +46,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Bridges',
+      label: 'Bridge',
       collapsible: true,
       collapsed: false,
       items: [
