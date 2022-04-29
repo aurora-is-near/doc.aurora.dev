@@ -17,6 +17,7 @@ MD025:        # single-title/single-h1
   front_matter_title: ""
 MD026:        # no-trailing-punctuation
   punctuation: ".,;:!。，；:"
+MD029: false # ol-prefix
 MD033: false  # no-inline-html
 MD044:        # proper-names
   names:
