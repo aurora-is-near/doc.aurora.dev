@@ -19,7 +19,7 @@ Method | Status | Notes
 [net_version] | ✅ |
 [eth_accounts] | ✅ |
 [eth_blockNumber] | ✅ |
-[eth_call] | 🚧 |
+[eth_call] | ✅ |
 [eth_chainId] | ✅ |
 [eth_coinbase] | ✅ |
 [eth_compileLLL] | ❌ | Unsupported
@@ -53,14 +53,14 @@ Method | Status | Notes
 [eth_mining] | ✅ |
 [eth_newBlockFilter] | 🚧 |
 [eth_newFilter] | 🚧 |
-[eth_newPendingTransactionFilter] | 🚧 |
+[eth_newPendingTransactionFilter] | ✅ |
 [eth_pendingTransactions] | ✅ | [Undocumented](https://github.com/ethereum/go-ethereum/issues/1648#issuecomment-130591933)
 [eth_protocolVersion] | ✅ |
-[eth_sendRawTransaction] | 🚧 |
-[eth_sendTransaction] | 🚧 |
-[eth_sign] | 🚧 |
-[eth_signTransaction] | 🚧 |
-[eth_signTypedData] | 🚧 | EIP-712
+[eth_sendRawTransaction] | ✅ |
+[eth_sendTransaction] | ❌ | Unsupported
+[eth_sign] | ❌ | Unsupported
+[eth_signTransaction] | ❌ | Unsupported
+[eth_signTypedData] | ❌ | Unsupported
 [eth_submitHashrate] | ❌ | Unsupported
 [eth_submitWork] | ❌ | Unsupported
 [eth_syncing] | ✅ |
@@ -79,6 +79,10 @@ Method | Status | Notes
 [shh_post] | ❌ | Discontinued
 [shh_uninstallFilter] | ❌ | Discontinued
 [shh_version] | ❌ | Discontinued
+[txpool_content] | ✅ | Geth extension
+[txpool_inspect] | ✅ | Geth extension
+[txpool_status] | ✅ | Geth extension
+[parity_pendingTransactions] | ✅ | Parity extension
 
 **Legend**: ❌ = not supported. 🚧 = work in progress. ✅ = supported.
 
@@ -196,5 +200,9 @@ The Aurora Relayer source code repository is at:
 [shh_post]: https://eth.wiki/json-rpc/API#shh_post
 [shh_uninstallFilter]: https://eth.wiki/json-rpc/API#shh_uninstallFilter
 [shh_version]: https://eth.wiki/json-rpc/API#shh_version
+[txpool_content]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_content
+[txpool_inspect]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_inspect
+[txpool_status]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_status
+[parity_pendingTransactions]: https://openethereum.github.io/JSONRPC-parity-module#parity_pendingtransactions
 
 [EIP-1186]: https://eips.ethereum.org/EIPS/eip-1186
