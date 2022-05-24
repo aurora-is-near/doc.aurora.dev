@@ -50,7 +50,7 @@ To deploy the `ERC-20` token contract, use the following command:
 
 ```bash
 $ make deploy NETWORK=testnet_aurora
-yarn hardat run scripts/deploy.js --network testnet_aurora
+yarn hardhat run scripts/deploy.js --network testnet_aurora
 yarn run v1.22.10
 Deploying contracts with the account: 0x6A33382de9f73B846878a57500d055B981229ac4
 Account balance: 2210010200000000000
