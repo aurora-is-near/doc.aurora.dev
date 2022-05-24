@@ -66,6 +66,10 @@ const config = {
             from: ['/develop/indexers/thegraph'],
           },
           {
+            to: '/integrate/indexers/covalent',
+            from: ['/develop/indexers/covalent'],
+          },
+          {
             to: '/bridge/bridge-overview',
             from: ['/learn/bridge/eth'],
           },
