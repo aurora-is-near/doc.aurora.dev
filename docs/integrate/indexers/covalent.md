@@ -24,8 +24,8 @@ The Covalent API is RESTful and offers the following out-of-the-box for *Aurora*
 | **Request volume limit** | None |
 | **Request rate limit** | 5 requests per second |
 | **Base URL** | <https://api.covalenthq.com/v1/> |
-| **Networks & `chain_id`** | Mainnet - `1313161554`<br> Testnet: - `1313161556`|
-| **Supported Endpoints** | **Class A Universal** <br>- [Balances](https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1313161554)
+| **Networks & `chain_id`** | Mainnet - `1313161554`<br /> Testnet: - `1313161556`|
+| **Supported Endpoints** | **Class A Universal** <br />[Balances](https://www.covalenthq.com/docs/api/#/0/Get%20token%20balances%20for%20address/USD/1313161554)
 
 - [Transactions](https://www.covalenthq.com/docs/api/#/0/Get%20transactions%20for%20address/USD/1313161554)
 - [Transfers](https://www.covalenthq.com/docs/api/#/0/Get%20ERC20%20token%20transfers%20for%20address/USD/1313161554)
