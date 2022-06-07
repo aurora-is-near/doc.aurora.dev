@@ -15,7 +15,7 @@ $ git clone https://github.com/aurora-is-near/doc.aurora.dev.git
 
 $ cd doc.aurora.dev
 
-$ corepack enable && corepack prepare pnpm@6.25.1 --activate
+$ curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 $ pnpm i
 

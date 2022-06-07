@@ -113,7 +113,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       image: 'img/og_image.png',
-      hideableSidebar: true,
+      sidebar: {
+        hideable: true,
+      },
       navbar: {
         logo: {
           alt: 'Aurora logo',
