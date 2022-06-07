@@ -1,14 +1,13 @@
 ---
-name: Build docs
+name: Publish docs via GitHub Pages
 on:
   push:
     branches:
       - master
-  pull_request:
 
 jobs:
   build:
-    name: Build
+    name: Deploy docs
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -31,3 +30,10 @@ jobs:
 
       - name: Build the docs
         run: pnpm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
