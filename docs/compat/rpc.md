@@ -22,9 +22,9 @@ Method | Status | Notes
 [eth_call] | ✅ |
 [eth_chainId] | ✅ |
 [eth_coinbase] | ✅ |
-[eth_compileLLL] | ❌ | Unsupported
-[eth_compileSerpent] | ❌ | Unsupported
-[eth_compileSolidity] | ❌ | Unsupported
+eth_compileLLL | ❌ | Unsupported
+eth_compileSerpent | ❌ | Unsupported
+eth_compileSolidity | ❌ | Unsupported
 [eth_estimateGas] | ✅ |
 [eth_gasPrice] | ✅ |
 [eth_getBalance] | ✅ |
@@ -33,7 +33,7 @@ Method | Status | Notes
 [eth_getBlockTransactionCountByHash] | ✅ |
 [eth_getBlockTransactionCountByNumber] | ✅ |
 [eth_getCode] | ✅ |
-[eth_getCompilers] | ✅ |
+eth_getCompilers | ✅ |
 [eth_getFilterChanges] | 🚧 |
 [eth_getFilterLogs] | 🚧 |
 [eth_getLogs] | 🚧 |
@@ -65,20 +65,20 @@ Method | Status | Notes
 [eth_submitWork] | ❌ | Unsupported
 [eth_syncing] | ✅ |
 [eth_uninstallFilter] | 🚧 |
-[db_getHex] | ❌ | Deprecated
-[db_getString] | ❌ | Deprecated
-[db_putHex] | ❌ | Deprecated
-[db_putString] | ❌ | Deprecated
-[shh_addToGroup] | ❌ | Discontinued
-[shh_getFilterChanges] | ❌ | Discontinued
-[shh_getMessages] | ❌ | Discontinued
-[shh_hasIdentity] | ❌ | Discontinued
-[shh_newFilter] | ❌ | Discontinued
-[shh_newGroup] | ❌ | Discontinued
-[shh_newIdentity] | ❌ | Discontinued
-[shh_post] | ❌ | Discontinued
-[shh_uninstallFilter] | ❌ | Discontinued
-[shh_version] | ❌ | Discontinued
+db_getHex | ❌ | Deprecated
+db_getString | ❌ | Deprecated
+db_putHex | ❌ | Deprecated
+db_putString | ❌ | Deprecated
+shh_addToGroup | ❌ | Discontinued
+shh_getFilterChanges | ❌ | Discontinued
+shh_getMessages | ❌ | Discontinued
+shh_hasIdentity | ❌ | Discontinued
+shh_newFilter | ❌ | Discontinued
+shh_newGroup | ❌ | Discontinued
+shh_newIdentity | ❌ | Discontinued
+shh_post | ❌ | Discontinued
+shh_uninstallFilter | ❌ | Discontinued
+shh_version | ❌ | Discontinued
 [txpool_content] | ✅ | Geth extension
 [txpool_inspect] | ✅ | Geth extension
 [txpool_status] | ✅ | Geth extension
@@ -128,78 +128,63 @@ Method | Status | Notes
   have plans to implement them going forward.
   ([#13](https://github.com/aurora-is-near/aurora-relayer/issues/13))
 
+- The `eth_getFilterChanges` only returns logs since the filter was created,
+  regardless of the block passed in to create the filter.
+
 ## Source Code
 
 The Aurora Relayer source code repository is at:
 [github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
 
-[web3_clientVersion]: https://eth.wiki/json-rpc/API#web3_clientVersion
-[web3_sha3]: https://eth.wiki/json-rpc/API#web3_sha3
-[net_listening]: https://eth.wiki/json-rpc/API#net_listening
-[net_peerCount]: https://eth.wiki/json-rpc/API#net_peerCount
-[net_version]: https://eth.wiki/json-rpc/API#net_version
-[eth_accounts]: https://eth.wiki/json-rpc/API#eth_accounts
-[eth_blockNumber]: https://eth.wiki/json-rpc/API#eth_blockNumber
-[eth_call]: https://eth.wiki/json-rpc/API#eth_call
+[web3_clientVersion]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/web3_clientversion
+[web3_sha3]: https://openethereum.github.io/JSONRPC-web3-module#web3_sha3
+[net_listening]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/net_listening
+[net_peerCount]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/net_peercount
+[net_version]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/net_version
+[eth_accounts]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_accounts
+[eth_blockNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_accounts
+[eth_call]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_call
 [eth_chainId]: https://eips.ethereum.org/EIPS/eip-695
-[eth_coinbase]: https://eth.wiki/json-rpc/API#eth_coinbase
-[eth_compileLLL]: https://eth.wiki/json-rpc/API#eth_compileLLL
-[eth_compileSerpent]: https://eth.wiki/json-rpc/API#eth_compileSerpent
-[eth_compileSolidity]: https://eth.wiki/json-rpc/API#eth_compileSolidity
-[eth_estimateGas]: https://eth.wiki/json-rpc/API#eth_estimateGas
-[eth_gasPrice]: https://eth.wiki/json-rpc/API#eth_gasPrice
-[eth_getBalance]: https://eth.wiki/json-rpc/API#eth_getBalance
-[eth_getBlockByHash]: https://eth.wiki/json-rpc/API#eth_getBlockByHash
-[eth_getBlockByNumber]: https://eth.wiki/json-rpc/API#eth_getBlockByNumber
-[eth_getBlockTransactionCountByHash]: https://eth.wiki/json-rpc/API#eth_getBlockTransactionCountByHash
-[eth_getBlockTransactionCountByNumber]: https://eth.wiki/json-rpc/API#eth_getBlockTransactionCountByNumber
-[eth_getCode]: https://eth.wiki/json-rpc/API#eth_getCode
-[eth_getCompilers]: https://eth.wiki/json-rpc/API#eth_getCompilers
-[eth_getFilterChanges]: https://eth.wiki/json-rpc/API#eth_getFilterChanges
-[eth_getFilterLogs]: https://eth.wiki/json-rpc/API#eth_getFilterLogs
-[eth_getLogs]: https://eth.wiki/json-rpc/API#eth_getLogs
+[eth_coinbase]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_coinbase
+[eth_estimateGas]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_estimategas
+[eth_gasPrice]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gasprice
+[eth_getBalance]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getbalance
+[eth_getBlockByHash]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getblockbyhash
+[eth_getBlockByNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getblockbynumber
+[eth_getBlockTransactionCountByHash]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getblocktransactioncountbyhash
+[eth_getBlockTransactionCountByNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getblocktransactioncountbynumber
+[eth_getCode]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getcode
+[eth_getFilterChanges]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/filter-methods/eth_getfilterchanges
+[eth_getFilterLogs]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/filter-methods/eth_getfilterlogs
+[eth_getLogs]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getlogs
 [eth_getProof]: https://eips.ethereum.org/EIPS/eip-1186
-[eth_getStorageAt]: https://eth.wiki/json-rpc/API#eth_getStorageAt
-[eth_getTransactionByBlockHashAndIndex]: https://eth.wiki/json-rpc/API#eth_getTransactionByBlockHashAndIndex
-[eth_getTransactionByBlockNumberAndIndex]: https://eth.wiki/json-rpc/API#eth_getTransactionByBlockNumberAndIndex
-[eth_getTransactionByHash]: https://eth.wiki/json-rpc/API#eth_getTransactionByHash
-[eth_getTransactionCount]: https://eth.wiki/json-rpc/API#eth_getTransactionCount
-[eth_getTransactionReceipt]: https://eth.wiki/json-rpc/API#eth_getTransactionReceipt
-[eth_getUncleByBlockHashAndIndex]: https://eth.wiki/json-rpc/API#eth_getUncleByBlockHashAndIndex
-[eth_getUncleByBlockNumberAndIndex]: https://eth.wiki/json-rpc/API#eth_getUncleByBlockNumberAndIndex
-[eth_getUncleCountByBlockHash]: https://eth.wiki/json-rpc/API#eth_getUncleCountByBlockHash
-[eth_getUncleCountByBlockNumber]: https://eth.wiki/json-rpc/API#eth_getUncleCountByBlockNumber
-[eth_getWork]: https://eth.wiki/json-rpc/API#eth_getWork
-[eth_hashrate]: https://eth.wiki/json-rpc/API#eth_hashrate
-[eth_mining]: https://eth.wiki/json-rpc/API#eth_mining
-[eth_newBlockFilter]: https://eth.wiki/json-rpc/API#eth_newBlockFilter
-[eth_newFilter]: https://eth.wiki/json-rpc/API#eth_newFilter
-[eth_newPendingTransactionFilter]: https://eth.wiki/json-rpc/API#eth_newPendingTransactionFilter
+[eth_getStorageAt]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getstorageat
+[eth_getTransactionByBlockHashAndIndex]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gettransactionbyblockhashandindex
+[eth_getTransactionByBlockNumberAndIndex]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gettransactionbyblocknumberandindex
+[eth_getTransactionByHash]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gettransactionbyhash
+[eth_getTransactionCount]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gettransactioncount
+[eth_getTransactionReceipt]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_gettransactionreceipt
+[eth_getUncleByBlockHashAndIndex]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getunclebyblockhashandindex
+[eth_getUncleByBlockNumberAndIndex]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getunclebyblocknumberandindex
+[eth_getUncleCountByBlockHash]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getunclecountbyblockhash
+[eth_getUncleCountByBlockNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getunclecountbyblocknumber
+[eth_getWork]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_getwork
+[eth_hashrate]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_hashrate
+[eth_mining]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_mining
+[eth_newBlockFilter]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/filter-methods/eth_newblockfilter
+[eth_newFilter]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/filter-methods/eth_newfilter
+[eth_newPendingTransactionFilter]: https://openethereum.github.io/JSONRPC-eth-module.html#eth_newpendingtransactionfilter
 [eth_pendingTransactions]: https://github.com/ethereum/wiki/issues/685
-[eth_protocolVersion]: https://eth.wiki/json-rpc/API#eth_protocolVersion
-[eth_sendRawTransaction]: https://eth.wiki/json-rpc/API#eth_sendRawTransaction
-[eth_sendTransaction]: https://eth.wiki/json-rpc/API#eth_sendTransaction
-[eth_sign]: https://eth.wiki/json-rpc/API#eth_sign
-[eth_signTransaction]: https://eth.wiki/json-rpc/API#eth_signTransaction
+[eth_protocolVersion]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_protocolversion
+[eth_sendRawTransaction]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_sendrawtransaction
+[eth_sendTransaction]: https://openethereum.github.io/JSONRPC-eth-module.html#eth_sendtransaction
+[eth_sign]: https://openethereum.github.io/JSONRPC-eth-module.html#eth_sign
+[eth_signTransaction]: https://openethereum.github.io/JSONRPC-eth-module.html#eth_signtransaction
 [eth_signTypedData]: https://eips.ethereum.org/EIPS/eip-712
-[eth_submitHashrate]: https://eth.wiki/json-rpc/API#eth_submitHashrate
-[eth_submitWork]: https://eth.wiki/json-rpc/API#eth_submitWork
-[eth_syncing]: https://eth.wiki/json-rpc/API#eth_syncing
-[eth_uninstallFilter]: https://eth.wiki/json-rpc/API#eth_uninstallFilter
-[db_getHex]: https://eth.wiki/json-rpc/API#db_getHex
-[db_getString]: https://eth.wiki/json-rpc/API#db_getString
-[db_putHex]: https://eth.wiki/json-rpc/API#db_putHex
-[db_putString]: https://eth.wiki/json-rpc/API#db_putString
-[shh_addToGroup]: https://eth.wiki/json-rpc/API#shh_addToGroup
-[shh_getFilterChanges]: https://eth.wiki/json-rpc/API#shh_getFilterChanges
-[shh_getMessages]: https://eth.wiki/json-rpc/API#shh_getMessages
-[shh_hasIdentity]: https://eth.wiki/json-rpc/API#shh_hasIdentity
-[shh_newFilter]: https://eth.wiki/json-rpc/API#shh_newFilter
-[shh_newGroup]: https://eth.wiki/json-rpc/API#shh_newGroup
-[shh_newIdentity]: https://eth.wiki/json-rpc/API#shh_newIdentity
-[shh_post]: https://eth.wiki/json-rpc/API#shh_post
-[shh_uninstallFilter]: https://eth.wiki/json-rpc/API#shh_uninstallFilter
-[shh_version]: https://eth.wiki/json-rpc/API#shh_version
+[eth_submitHashrate]: https://openethereum.github.io/JSONRPC-eth-module.html#eth_submithashrate
+[eth_submitWork]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_submitwork
+[eth_syncing]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_syncing
+[eth_uninstallFilter]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/filter-methods/eth_uninstallfilter
 [txpool_content]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_content
 [txpool_inspect]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_inspect
 [txpool_status]: https://geth.ethereum.org/docs/rpc/ns-txpool#txpool_status
