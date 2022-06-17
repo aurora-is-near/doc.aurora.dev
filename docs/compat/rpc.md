@@ -142,7 +142,7 @@ The Aurora Relayer source code repository is at:
 [net_peerCount]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/net_peercount
 [net_version]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/net_version
 [eth_accounts]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_accounts
-[eth_blockNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_accounts
+[eth_blockNumber]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_blocknumber
 [eth_call]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_call
 [eth_chainId]: https://eips.ethereum.org/EIPS/eip-695
 [eth_coinbase]: https://docs.infura.io/infura/networks/ethereum/json-rpc-methods/eth_coinbase
