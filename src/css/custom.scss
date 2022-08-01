@@ -107,7 +107,9 @@ h6 {
 .footer__items.is-custom-links {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  padding: 0;
+  margin: 0 0 25px 0;
+  list-style: none;
 
   li {
     margin-left: 15px;
