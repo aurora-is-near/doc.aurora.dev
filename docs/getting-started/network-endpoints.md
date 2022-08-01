@@ -41,6 +41,3 @@ The Testnet Webscoket endpoint is at: `wss://testnet.aurora.dev`
 
 [aurora@Mainnet]: https://explorer.near.org/accounts/aurora
 [aurora@Testnet]: https://explorer.testnet.near.org/accounts/aurora
-
-[mainnet.aurora.dev]: https://mainnet.aurora.dev
-[testnet.aurora.dev]: https://testnet.aurora.dev
