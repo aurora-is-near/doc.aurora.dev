@@ -16,6 +16,6 @@ For this reason, Aurora uses ETH as a base token—the token in which the transa
 However, protocol-level/API compatibility is not everything. It is quite important for users and developers to have the same infrastructure projects in place to feel comfortable.
 
 Etherscan is the most well-known block explorer for Ethereum,
-capable of delivering statistics, token transfers and lists,smart contract source code verification, and issuing read & write calls directly from the UI.
+capable of delivering statistics, token transfers and lists, smart contract source code verification, and issuing read & write calls directly from the UI.
 Users will be able to view transactions, addresses, and blocks.
 Developers will also be able to see a wide range of charts and statistics related to smart contract execution, collator data, specific transfers between tokens, and a list of ERC-20 tokens on Aurora.
