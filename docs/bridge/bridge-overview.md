@@ -25,7 +25,7 @@ We absolutely suggest that you pay attention to the **FAQ** page. It’s **very 
 
 ![rainbow_bridge_02](/img/rainbow_bridge_02.png)
 
-If you experience issues at any time during the transfer,there is the **Support** link that opens a contact help form.
+If you experience issues at any time during the transfer, there is the **Support** link that opens a contact help form.
 The same form can be easily accessed through the green icon **Questions** in the lower right corner.
 Note that the button is yet another source of common questions. They pop up when you click the button. If you still need assistance, just click the **Ask** bubble at the top of the form.
 

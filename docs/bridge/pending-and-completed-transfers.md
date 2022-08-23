@@ -20,9 +20,9 @@ If you navigate to the **three dots next to a transfer**, you’ll be able to:
 
 * View the source transaction in an explorer.
 * Copy the transaction ID of the source transaction.
-Copy the contract address of the token on the destination network.
+* Copy the contract address of the token on the destination network.
 * Add the destination token to MetaMask, so that it appears in the asset list.
-* Finally, hide a transfer. Sometimes there are transactions that will forever appear pending on the blockchain, and I'd like to simply remove them from the bridge interface.
+* Finally, hide a transfer. Sometimes there are transactions that will forever appear pending on the blockchain, and you'd like to simply remove them from the bridge interface.
 
 ![rainbow_bridge_44](/img/rainbow_bridge_44.png)
 
