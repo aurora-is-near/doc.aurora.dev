@@ -135,6 +135,9 @@ Method | Status | Notes
 
 The Aurora Relayer source code repository is at:
 [github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
+> ⚠ WARNING: aurora-relayer repository in its current state will be gradually deprecated. Deprecation will happen in 2 steps:
+> 1. Replacing current “Indexer” with a different implementation written in go-lang/rust.
+> 2. Replacing “JSON-RPC Endpoint” with an implementation in go-lang.
 
 [web3_clientVersion]: https://ethereum.org/en/developers/docs/apis/json-rpc/#web3_clientversion
 [web3_sha3]: https://ethereum.org/en/developers/docs/apis/json-rpc/#web3_sha3
