@@ -31,7 +31,7 @@ const config = {
           },
           {
             to: '/getting-started/network-endpoints',
-            from: ['/develop/networks'],
+            from: ['/develop/networks', '/develop/compat/gas', `/compat/gas`],
           },
           {
             to: '/interact/metamask',
@@ -46,16 +46,12 @@ const config = {
             from: ['/interact/block-explorer'],
           },
           {
-            to: '/compat/rpc',
-            from: ['/develop/compat/rpc'],
+            to: '/evm/rpc',
+            from: ['/compact/rpc', '/develop/compat/rpc']
           },
           {
-            to: '/compat/gas',
-            from: ['/develop/compat/gas'],
-          },
-          {
-            to: '/compat/evm',
-            from: ['/develop/compat/evm'],
+            to: '/evm/evm-overview',
+            from: ['/develop/compat/evm', '/compat/evm'],
           },
           {
             to: '/faq',
