@@ -31,6 +31,7 @@ the `deploy_erc20_token` function.
 | [0x07](#bn256-multiply)                                               | ecMul                    | 6000        | `x1, y1, s`                     | `x, y`          | Scalar multiplication (MUL) on the elliptic curve `alt_bn128`                   |
 | [0x08](#bn256-pairing)                                                | ecPairing                | 45000       | `x1, y1, x2, y2, ..., xk, yk`   | `success`       | Bilinear function on groups on the elliptic curve `alt_bn128`                   |
 | [0x09](#blake2-f)                                                     | blake2f                  | 0           | `rounds, h, m, t, f`            | `h`             | Compression function F used in the BLAKE2 cryptographic hashing algorithm       |
+| [0xc104f4840573bed437190daf5d2898c2bdf928ac](#random-seed)            | randomSeed               | 0           | `.`                             | `hash`          | Returns a hash from a per block entropy source from NEAR                        |
 | [0x723ffbaba940e75e7bf5f6d61dcbf8d9a4de0fd7](#predecessor-account-id) | **predecessorAccountId** | 0           | `.`                             | `accountId`     | Returns the NEAR predecessor account ID                                         |
 | [0x0a3540f79be10ef14890e87c1a0040a68cc6af71](#get-promise-results)    | **getPromiseResults**    | 125         | `.`                             | `data`          | Returns a Borsh serialized vector of PromiseResult                              |
 | [0x536822d27de53629ef1f84c60555689e9488609f](#prepaid-gas)            | **prepaidGas**           | 0           | `.`                             | `value`         | Returns the prepaid gas in NEAR                                                 |
@@ -252,6 +253,22 @@ The Blake2 F compression algorithm is defined in this [RFC], section 3.2.
 | `[0; 63]` (64 bytes) |  h   | State vector (8 8-byte little-endian unsigned integer) |
 
 If the input is not valid, or if not enough gas was given, then there is no return data.
+
+## Random Seed
+
+**Spec**: Pending AIP
+
+A random seed generated per block from NEAR.
+
+### Inputs
+
+No input is required.
+
+### Output
+
+| Byte range           | Name | Description       |
+|:---------------------|:----:|:------------------|
+| `[0; 31]` (32 bytes) | hash | Random seed bytes |
 
 ## Predecessor Account ID
 
