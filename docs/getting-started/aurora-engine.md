@@ -10,7 +10,7 @@ that provides a solution for developers to deploy their apps on an Ethereum-comp
 with low transaction costs for their users. Besides the EVM, Aurora developed the Rainbow Bridge which allows users to transfer assets between Ethereum, NEAR, and Aurora.
 Aurora is backed by top VCs such as Pantera Capital, Electric Capital, Dragonfly Capital, Three Arrows Capital, and Alameda Research.
 
-Thanks to Aurora’s EVM, Ethereum native applications can seamlessly be ported to Near’s L2-like network that is built as a smart contract on NEAR.
+Thanks to Aurora’s EVM, Ethereum native applications can seamlessly be ported to NEAR’s L2-like network that is built as a smart contract on NEAR.
 Developers may enjoy familiar Ethereum tooling when working with their Solidity smart contracts on Aurora.
 The base fee of Aurora is ETH, which provides a smooth experience for dapps’ users.
 
