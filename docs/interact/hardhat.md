@@ -41,7 +41,7 @@ yarn install
 
 ## Deploy ERC-20
 
-The ERC-20 example is about a naive Watermelon token 🍉. You can exchange
+The ERC-20 example is about a native Watermelon token 🍉. You can exchange
 them into actual Watermelons 🍉🍉🍉. The total supply is `1000000`, the
 minter is the contract deployer address, and the decimals are `0`
 (One token --> One watermelon).
