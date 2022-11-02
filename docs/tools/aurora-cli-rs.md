@@ -226,7 +226,7 @@ SUBCOMMANDS:
     transfer-from
 ```
 
-### engine-xcc-dry-run
+### engine-xcc-dry-run {#engine-xcc-dry-run}
 
 > Dry-run cross compile contract between NEAR and Aurora
 
@@ -240,7 +240,7 @@ USAGE:
     aurora-cli-rs near read engine-xcc-dry-run [OPTIONS] --sender-address-hex <SENDER_ADDRESS_HEX> --target-near-account <TARGET_NEAR_ACCOUNT> --method-name <METHOD_NAME>
 ```
 
-### ft-balance-of
+### ft-balance-of {#ft-balance-of}
 
 > Get balance of an fungible token(NEP-141)
 
@@ -254,7 +254,7 @@ USAGE:
     aurora-cli-rs near read ft-balance-of <ACCOUNT_ID>
 ```
 
-### ft-balance-of-eth
+### ft-balance-of-eth {#ft-balance-of-eth}
 
 > Get balance ETH fungible token(NEP-141)
 
@@ -268,7 +268,7 @@ USAGE:
     aurora-cli-rs near read ft-balance-of-eth <ACCOUNT_ID>
 ```
 
-### ft-metadata
+### ft-metadata {#ft-metadata}
 
 > Get metadata for a fungible token
 
@@ -282,7 +282,7 @@ USAGE:
     aurora-cli-rs near read ft-metadata
 ```
 
-### ft-total-eth-supply-on-aurora
+### ft-total-eth-supply-on-aurora {#ft-total-eth-supply-on-aurora}
 
 > Get total ETH supply on Aurora (ETH in Aurora EVM)
 
@@ -296,7 +296,7 @@ USAGE:
     aurora-cli-rs near read ft-total-eth-supply-on-aurora
 ```
 
-### ft-total-supply
+### ft-total-supply {#ft-total-supply}
 
 > Get total ETH supply on Aurora (ETH in Aurora EVM)
 
@@ -310,7 +310,7 @@ USAGE:
     aurora-cli-rs near read ft-total-supply
 ```
 
-### ft-total-supply-on-near
+### ft-total-supply-on-near {#ft-total-supply-on-near}
 
 > Get total ETH supply on NEAR (nETH as NEP-141 token)
 
@@ -324,7 +324,7 @@ USAGE:
     aurora-cli-rs near read ft-total-supply-on-near
 ```
 
-### get-accounts-counter
+### get-accounts-counter {#get-accounts-counter}
 
 > Get total number of accounts for statistics
 
@@ -338,7 +338,7 @@ USAGE:
     aurora-cli-rs near read get-accounts-counter
 ```
 
-### get-aurora-erc20
+### get-aurora-erc20 {#get-aurora-erc20}
 
 > Get connected Aurora ERC20 token address from NEP-141 account id
 
@@ -352,7 +352,7 @@ USAGE:
     aurora-cli-rs near read get-aurora-erc20 <NEP_141_ACCOUNT>
 ```
 
-### get-balance
+### get-balance {#get-balance}
 
 > Get NEP-141 balance from ERC20 address
 
@@ -368,7 +368,7 @@ USAGE:
 
 #### borsh input problem
 
-### get-block-hash
+### get-block-hash {#get-block-hash}
 
 > Get block hash from a block number
 
@@ -382,7 +382,7 @@ USAGE:
     aurora-cli-rs near read get-block-hash <BLOCK_NUMBER>
 ```
 
-### get-bridged-nep141
+### get-bridged-nep141 {#get-bridged-nep141}
 
 > Get bridged NEP141 from ERC20 token address
 
@@ -396,7 +396,7 @@ USAGE:
     aurora-cli-rs near read get-bridged-nep141 <ERC_20_ADDRESS_HEX>
 ```
 
-### get-chain-id
+### get-chain-id {#get-chain-id}
 
 > Get chain id
 
@@ -410,7 +410,7 @@ USAGE:
     aurora-cli-rs near read get-chain-id
 ```
 
-### get-code
+### get-code {#get-code}
 
 > Get code
 
@@ -424,7 +424,7 @@ USAGE:
     aurora-cli-rs near read get-code <ADDRESS_HEX>
 ```
 
-### get-engine-bridge-prover
+### get-engine-bridge-prover {#get-engine-bridge-prover}
 
 > Get engine bridge prover account id
 
@@ -438,7 +438,7 @@ USAGE:
     aurora-cli-rs near read get-engine-bridge-prover
 ```
 
-### get-nonce
+### get-nonce {#get-nonce}
 
 > Get nonce of an account from an ethereum address
 
@@ -452,7 +452,7 @@ USAGE:
     aurora-cli-rs near read get-nonce <ADDRESS_HEX>
 ```
 
-### get-paused-flags
+### get-paused-flags {#get-paused-flags}
 
 > Get paused flag to see if the state is paused
 
@@ -466,7 +466,7 @@ USAGE:
     aurora-cli-rs near read get-paused-flags <ADDRESS_HEX>
 ```
 
-### get-receipt-result
+### get-receipt-result {#get-receipt-result}
 
 > Get NEAR receipt result from receipt id with base58 encoding
 
@@ -480,7 +480,7 @@ USAGE:
     aurora-cli-rs near read get-receipt-result <RECEIPT_ID_B58>
 ```
 
-### get-storage-at
+### get-storage-at {#get-storage-at}
 
 > Get storage data at an Ethereum address and a key
 
@@ -496,7 +496,7 @@ USAGE:
 
 #### deprecated
 
-### get-upgrade-index
+### get-upgrade-index {#get-upgrade-index}
 
 > Get upgrade index
 
@@ -510,7 +510,7 @@ USAGE:
     aurora-cli-rs near read get-upgrade-index
 ```
 
-### solidity
+### solidity {#solidity}
 
 > Send ABI encoded query input in a solidity contract
 
@@ -537,7 +537,7 @@ SUBCOMMANDS:
     unary-call
 ```
 
-### storage-balance-of
+### storage-balance-of {#storage-balance-of}
 
 > Get NEAR storage balance of an NEAR account id
 
@@ -553,7 +553,7 @@ USAGE:
 
 ## Near write {#near-write}
 
-### begin-block
+### begin-block {#begin-block}
 
 > Begin block at Engine EVM state
 
@@ -567,7 +567,7 @@ USAGE:
     aurora-cli-rs near write begin-block <HASH> <COINBASE> <TIMESTAMP> <NUMBER> <DIFFICULTY> <GASLIMIT>
 ```
 
-### begin-chain
+### begin-chain {#begin-chain}
 
 > Begin Aurora EVM state
 
@@ -581,7 +581,7 @@ USAGE:
     aurora-cli-rs near write begin-chain <CHAIN_ID> <GENESIS_ALLOC>
 ```
 
-### call
+### call {#call}
 
 > Execute raw ethereum transaction with 'call' method in Aurora EVM state
 
@@ -595,7 +595,7 @@ USAGE:
     aurora-cli-rs near write call <CALL_BYTE_HEX>
 ```
 
-### deploy-code
+### deploy-code {#deploy-code}
 
 > Deploy a code at Aurora EVM state with raw transaction
 
@@ -609,7 +609,7 @@ USAGE:
     aurora-cli-rs near write deploy-code <CODE_BYTE_HEX>
 ```
 
-### deploy-erc20-token
+### deploy-erc20-token {#deploy-erc20-token}
 
 > Deploy bridged ERC20 token from NEP-141
 
@@ -623,7 +623,7 @@ USAGE:
     aurora-cli-rs near write deploy-erc20-token <NEP141>
 ```
 
-### engine-call
+### engine-call {#engine-call}
 
 > Call a smart contract at an Ethereum address with inputs
 
@@ -637,7 +637,7 @@ USAGE:
     aurora-cli-rs near write engine-call [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> --input-data-hex <INPUT_DATA_HEX>
 ```
 
-### engine-erc20
+### engine-erc20 {#engine-erc20}
 
 > Transfer from to an ERC20 at an Ethereum address
 
@@ -665,7 +665,7 @@ SUBCOMMANDS:
     transfer-from
 ```
 
-### engine-xcc
+### engine-xcc {#engine-xcc}
 
 > Execute cross contract call precompiles between NEAR and EVM
 
@@ -679,7 +679,7 @@ USAGE:
     aurora-cli-rs near write engine-xcc [OPTIONS] --target-near-account <TARGET_NEAR_ACCOUNT> --method-name <METHOD_NAME>
 ```
 
-### factory-update
+### factory-update {#factory-update}
 
 > Update to Factory setting of Aurora EVM state
 
@@ -693,7 +693,7 @@ USAGE:
     aurora-cli-rs near write factory-update <WASM_BYTES_PATH>
 ```
 
-### ft-on-transfer
+### ft-on-transfer {#ft-on-transfer}
 
 > Callback function to execute on fungible token transfer on bridge
 
@@ -707,7 +707,7 @@ USAGE:
     aurora-cli-rs near write ft-on-transfer <SENDER_NEAR_ID> <AMOUNT> <MSG>
 ```
 
-### ft-transfer
+### ft-transfer {#ft-transfer}
 
 > Transfer fungible token to receiver NEAR account id
 
@@ -721,8 +721,8 @@ USAGE:
     aurora-cli-rs near write ft-transfer <RECEIVER_ID> <AMOUNT> <MEMO>
 ```
 
-### ft-transfer-call
-
+### ft-transfer-call {#ft-transfer-call}
+ 
 > Transfer fungible token to receiver NEAR account id
 
 - arguments: `<RECEIVER_ID>`, `<AMOUNT>`, `<MEMO>`, `<MSG>`
@@ -735,7 +735,7 @@ USAGE:
     aurora-cli-rs near write ft-transfer-call <RECEIVER_ID> <AMOUNT> <MEMO> <MSG>
 ```
 
-### register-relayer
+### register-relayer {#register-relayer}
 
 > Register relayer with an Ethereum address
 
@@ -749,7 +749,7 @@ USAGE:
     aurora-cli-rs near write register-relayer <RELAYER_ETH_ADDRESS_HEX>
 ```
 
-### set-paused-flags
+### set-paused-flags {#set-paused-flags}
 
 > Set EVM state in Aurora as paused or not
 
@@ -762,7 +762,7 @@ USAGE:
     aurora-cli-rs near write set-paused-flags <PAUSED_MASK>
 ```
 
-### solidity
+### solidity {#solidity}
 
 > Send ABI encoded call input in a solidity contract
 
@@ -789,7 +789,7 @@ SUBCOMMANDS:
     unary-call
 ```
 
-### storage-deposit
+### storage-deposit {#storage-deposit}
 
 > Deposit NEAR on engine for storage balance 
 
@@ -802,7 +802,7 @@ USAGE:
     aurora-cli-rs near write storage-deposit <ACCOUNT_ID> [REGISTRATION_ONLY]
 ```
 
-### storage-unregister
+### storage-unregister {#storage-unregister}
 
 > Unregister storage for Aurora Engine     
 
@@ -815,7 +815,7 @@ USAGE:
     aurora-cli-rs near write storage-deposit <FORCE> [REGISTRATION_ONLY]
 ```
 
-### storage-withdraw
+### storage-withdraw {#storage-withdraw}
 
 > Withdraw NEAR from storage balance of Aurora Engine contract
 
@@ -828,7 +828,7 @@ USAGE:
     aurora-cli-rs near write storage-withdraw <AMOUNT>
 ```
 
-### withdraw
+### withdraw {#withdraw}
 
 > Withdraw wrapped NEAR to  
 
@@ -841,9 +841,9 @@ USAGE:
     aurora-cli-rs near write withdraw <RECIPIENT_ADDRESS> <AMOUNT>
 ```
 
-## Aurora read
+## Aurora read {#aurora-read}
 
-### get-result
+### get-result {#get-result}
 
 > Get eth transaction result from transaction hash 
 
@@ -856,9 +856,9 @@ USAGE:
     aurora-cli-rs aurora read get-result <TX_HASH_HEX>
 ```
 
-## Aurora write
+## Aurora write {#aurora-write}
 
-### call
+### call {#call}
 
 > Call Ethereum smart contract  
 
@@ -870,7 +870,7 @@ USAGE:
     aurora-cli-rs aurora write call [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> --input-data-hex <INPUT_DATA_HEX>
 ```
 
-### deploy
+### deploy {#deploy}
 
 > Deploy Ethereum smart contract
 
@@ -883,7 +883,7 @@ USAGE:
     aurora-cli-rs aurora write deploy <INPUT_DATA_HEX>
 ```
 
-### transfer
+### transfer {#transfer}
 
 > Transfer ETH from coinbase to 
 
