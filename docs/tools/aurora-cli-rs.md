@@ -5,10 +5,10 @@ title: Aurora CLI
 The Aurora Command Line Interface (CLI) is a tool that enables to interact with the Aurora engine directly from the shell. Among other things, the Aurora CLI enables you to:
 
 - Deploy Aurora blockspace on NEAR networks
-- Send EVM transactions 
+- Send EVM transactions
 - Interact and test Aurora engine
 
-:::tip 
+:::tip
 Under the hood, Aurora CLI utilizes the [`Aurora Engine Rust API`](https://github.com/aurora-is-near/aurora-engine)
 :::
 
@@ -23,8 +23,8 @@ _Click on a command for more information and examples._
 **Read methods**
 
 | Command                       | Description                                          |
-|-------------------------------|------------------------------------------------------|
-| engine-call                   | Dry-run EVM call transaction                            |
+| ----------------------------- | ---------------------------------------------------- |
+| engine-call                   | Dry-run EVM call transaction                         |
 | engine-erc20                  | Look up an ERC20 token in Aurora engine              |
 | engine-xcc-dry-run            | Dry run precompiled contract results                 |
 | ft-balance-of                 | Get balance of an fungible token                     |
@@ -36,7 +36,7 @@ _Click on a command for more information and examples._
 | get-accounts-counter          | Get accounts counter for statistics                  |
 | get-aurora-erc20              | Get ERC20 balance of from NEP-141 account id         |
 | get-balance                   | Get NEP-141 balance from ERC20 address               |
-| get-block-hash                | Get current block hash                               |
+| get-block-hash                | Get block hash from a block number                   |
 | get-bridged-nep141            | Get bridged NEP-141 account id from ERC20 address    |
 | get-chain-id                  | Get chain id                                         |
 | get-code                      | Get code of account storage from an Ethereum address |
@@ -47,13 +47,13 @@ _Click on a command for more information and examples._
 | get-storage-at                | Get storage data at an Ethereum address and a key    |
 | get-upgrade-index             | Get upgrade index                                    |
 | solidity                      | Send ABI encoded query input in a solidity contract  |
-| storage-balance-of            | Get NEAR storage balance of Aurora engine contract   |
+| storage-balance-of            | Get NEAR storage balance of an NEAR account id       |
 
 **Write methods**
 
 | Command            | Description                                                             |
-|--------------------|-------------------------------------------------------------------------|
-| begin-block        | Begin block at Engine EVM state                                         |
+| ------------------ | ----------------------------------------------------------------------- |
+| begin-block        | Begin genesis block at Engine EVM state                                 |
 | begin-chain        | Initialize EVM state in Engine                                          |
 | call               | Execute raw ethereum transaction with 'call' method in Aurora EVM state |
 | deploy-code        | Deploy a code at Aurora EVM state with raw transaction                  |
@@ -63,8 +63,8 @@ _Click on a command for more information and examples._
 | engine-xcc         | Execute cross contract call precompiles between NEAR and EVM            |
 | factory-update     | Update to Factory setting of Aurora EVM state                           |
 | ft-on-transfer     | Callback function to execute on fungible token transfer on bridge       |
-| ft-transfer        | Bridge transfer                                                         |
-| ft-transfer-call   | Get NEP-141 balance from ERC20 address                                  |
+| ft-transfer        | Transfer fungible token to receiver NEAR account id                     |
+| ft-transfer-call   | Transfer fungible token to receiver NEAR account id                     |
 | register-relayer   | Register relayer with an Ethereum address                               |
 | set-paused-flags   | Set EVM state in Aurora as paused or not                                |
 | solidity           | Send ABI encoded call input in a solidity contract                      |
@@ -73,19 +73,18 @@ _Click on a command for more information and examples._
 | storage-withdraw   | Withdraw storage balance of Aurora engine                               |
 | withdraw           | Withdraw wrapped NEAR to                                                |
 
-
 **Aurora**
 
 **Read methods**
 
 | Command    | Description                                      |
-|------------|--------------------------------------------------|
+| ---------- | ------------------------------------------------ |
 | get-result | Get eth transaction result from transaction hash |
 
 **Write methods**
 
 | Command  | Description                    |
-|----------|--------------------------------|
+| -------- | ------------------------------ |
 | call     | Call Ethereum smart contract   |
 | deploy   | Deploy Ethereum smart contract |
 | transfer | Transfer ETH from coinbase to  |
@@ -127,7 +126,6 @@ Copy/pasting can be a bit odd using `WSL`.
 - "Quick Edit Mode" will allow right-click pasting.
 - Depending on your version there may be another checkbox allowing `Ctrl` + `V` pasting as well.
 
-
 </blockquote>
 
 ---
@@ -135,7 +133,6 @@ Copy/pasting can be a bit odd using `WSL`.
 ### Update `aurora-cli-rs` {#update-near-cli-rs}
 
 > If a `aurora-cli-rs` update is available, you will be notified in the terminal after running any command. _(see example below)_
-
 
 - Follow the instructions to update by running:
 
@@ -180,6 +177,7 @@ cargo install aurora-cli-rs
 ```
 
 Save the modified JSON file as `default-config.json` then run `aurora-cli-rs` in the same directory of the file.
+Key paths are required to be filled to execute each write commands.
 
 ---
 
@@ -213,73 +211,687 @@ USAGE:
     aurora-cli-rs near read engine-erc20 [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> <SUBCOMMAND>
 
 OPTIONS:
-    -a, --amount <AMOUNT>                      
+    -a, --amount <AMOUNT>
     -h, --help                                 Print help information
-    -s, --sender-addr-hex <SENDER_ADDR_HEX>    
-    -t, --target-addr-hex <TARGET_ADDR_HEX>    
+    -s, --sender-addr-hex <SENDER_ADDR_HEX>
+    -t, --target-addr-hex <TARGET_ADDR_HEX>
 
 SUBCOMMANDS:
-    allowance        
-    approve          
-    balance-of       
+    allowance
+    approve
+    balance-of
     help             Print this message or the help of the given subcommand(s)
-    total-supply     
-    transfer         
-    transfer-from    
+    total-supply
+    transfer
+    transfer-from
 ```
 
 ### engine-xcc-dry-run
 
+> Dry-run cross compile contract between NEAR and Aurora
+
+- arguments: `none`
+- options: `--sender-address-hex <SENDER_ADDRESS_HEX>`, `--sender-address-hex <SENDER_ADDRESS_HEX>`, `--target-near-account <TARGET_NEAR_ACCOUNT>`, `--method-name <METHOD_NAME>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read engine-xcc-dry-run [OPTIONS] --sender-address-hex <SENDER_ADDRESS_HEX> --target-near-account <TARGET_NEAR_ACCOUNT> --method-name <METHOD_NAME>
+```
+
 ### ft-balance-of
+
+> Get balance of an fungible token(NEP-141)
+
+- arguments: `ACCOUNT_ID`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-balance-of <ACCOUNT_ID>
+```
+
 ### ft-balance-of-eth
+
+> Get balance ETH fungible token(NEP-141)
+
+- arguments: `ACCOUNT_ID`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-balance-of-eth <ACCOUNT_ID>
+```
+
 ### ft-metadata
+
+> Get metadata for a fungible token
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-metadata
+```
+
 ### ft-total-eth-supply-on-aurora
+
+> Get total ETH supply on Aurora (ETH in Aurora EVM)
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-total-eth-supply-on-aurora
+```
+
 ### ft-total-supply
+
+> Get total ETH supply on Aurora (ETH in Aurora EVM)
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-total-supply
+```
+
 ### ft-total-supply-on-near
+
+> Get total ETH supply on NEAR (nETH as NEP-141 token)
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read ft-total-supply-on-near
+```
+
 ### get-accounts-counter
+
+> Get total number of accounts for statistics
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-accounts-counter
+```
+
 ### get-aurora-erc20
+
+> Get connected Aurora ERC20 token address from NEP-141 account id
+
+- arguments: `NEP_141_ACCOUNT`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-aurora-erc20 <NEP_141_ACCOUNT>
+```
+
 ### get-balance
+
+> Get NEP-141 balance from ERC20 address
+
+- arguments: `ADDRESS_HEX`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-balance <ADDRESS_HEX>
+```
+
+#### borsh input problem
+
 ### get-block-hash
+
+> Get block hash from a block number
+
+- arguments: `BLOCK_NUMBER`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-block-hash <BLOCK_NUMBER>
+```
+
 ### get-bridged-nep141
+
+> Get bridged NEP141 from ERC20 token address
+
+- arguments: `ERC_20_ADDRESS_HEX`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-bridged-nep141 <ERC_20_ADDRESS_HEX>
+```
+
 ### get-chain-id
+
+> Get chain id
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-chain-id
+```
+
 ### get-code
+
+> Get code
+
+- arguments: `ADDRESS_HEX`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-code <ADDRESS_HEX>
+```
+
 ### get-engine-bridge-prover
+
+> Get engine bridge prover account id
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-engine-bridge-prover
+```
+
 ### get-nonce
+
+> Get nonce of an account from an ethereum address
+
+- arguments: `ADDRESS_HEX`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-nonce <ADDRESS_HEX>
+```
+
 ### get-paused-flags
+
+> Get paused flag to see if the state is paused
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-paused-flags <ADDRESS_HEX>
+```
+
 ### get-receipt-result
+
+> Get NEAR receipt result from receipt id with base58 encoding
+
+- arguments: `RECIPT_ID_B58`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-receipt-result <RECEIPT_ID_B58>
+```
+
 ### get-storage-at
+
+> Get storage data at an Ethereum address and a key
+
+- arguments: `ADDRESS_HEX`, `KEY_HEX`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-storage-at <ADDRESS_HEX> <KEY_HEX>
+```
+
+#### deprecated
+
 ### get-upgrade-index
+
+> Get upgrade index
+
+- arguments: `none`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read get-upgrade-index
+```
+
 ### solidity
+
+> Send ABI encoded query input in a solidity contract
+
+- arguments: `call-args-by-name`, `unary-call`
+- options: `--amount <AMOUNT>`, `--sender-addr-hex <SENDER_ADDR_HEX>`, `--target-addr-hex <TARGET_ADDR_HEX>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read solidity [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> <SUBCOMMAND>
+
+OPTIONS:
+    -a, --amount <AMOUNT>
+    -h, --help                                 Print help information
+    -s, --sender-addr-hex <SENDER_ADDR_HEX>
+    -t, --target-addr-hex <TARGET_ADDR_HEX>
+
+SUBCOMMANDS:
+    call-args-by-name    Allows invoking a solidity functions by passing in a JSON object. The
+                             names of the fields are the argument names of the function, and the
+                             values are strings that can be parsed into the correct types
+    help                 Print this message or the help of the given subcommand(s)
+    unary-call
+```
+
 ### storage-balance-of
+
+> Get NEAR storage balance of an NEAR account id
+
+- arguments: `account_id`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near read storage-balance-of <ACCOUNT_ID>
+```
 
 ## Near write {#near-write}
 
 ### begin-block
+
+> Begin block at Engine EVM state
+
+- arguments: `<HASH>`, `<COINBASE>`, `<TIMESTAMP>`, `<NUMBER>`, `<DIFFICULTY>`, `<GASLIMIT>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write begin-block <HASH> <COINBASE> <TIMESTAMP> <NUMBER> <DIFFICULTY> <GASLIMIT>
+```
+
 ### begin-chain
+
+> Begin Aurora EVM state
+
+- arguments: `<CHAIN_ID>`, `<GENESIS_ALLOC>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write begin-chain <CHAIN_ID> <GENESIS_ALLOC>
+```
+
 ### call
+
+> Execute raw ethereum transaction with 'call' method in Aurora EVM state
+
+- arguments: `<CALL_BYTE_HEX>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write call <CALL_BYTE_HEX>
+```
+
 ### deploy-code
+
+> Deploy a code at Aurora EVM state with raw transaction
+
+- arguments: `<CODE_BYTE_HEX>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write deploy-code <CODE_BYTE_HEX>
+```
+
 ### deploy-erc20-token
+
+> Deploy bridged ERC20 token from NEP-141
+
+- arguments: `<NEP141>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write deploy-erc20-token <NEP141>
+```
+
 ### engine-call
+
+> Call a smart contract at an Ethereum address with inputs
+
+- arguments: `none`
+- options: `--target-addr-hex <TARGET_ADDR_HEX>`, `--input-data-hex <INPUT_DATA_HEX>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write engine-call [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> --input-data-hex <INPUT_DATA_HEX>
+```
+
 ### engine-erc20
+
+> Transfer from to an ERC20 at an Ethereum address
+
+- arguments: `allowance`, `approve`, `balance-of`, `total-supply`, `transfer`, `transfer-from`
+- options: `--amount <AMOUNT>`, `--target-addr-hex <TARGET_ADDR_HEX>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write engine-erc20 [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> <SUBCOMMAND>
+
+OPTIONS:
+    -a, --amount <AMOUNT>
+    -h, --help                                 Print help information
+    -t, --target-addr-hex <TARGET_ADDR_HEX>
+
+SUBCOMMANDS:
+    allowance
+    approve
+    balance-of
+    help             Print this message or the help of the given subcommand(s)
+    total-supply
+    transfer
+    transfer-from
+```
+
 ### engine-xcc
+
+> Execute cross contract call precompiles between NEAR and EVM
+
+- arguments: `none`
+- options: `--target-near-account <TARGET_NEAR_ACCOUNT>`, `--method-name <METHOD_NAME>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write engine-xcc [OPTIONS] --target-near-account <TARGET_NEAR_ACCOUNT> --method-name <METHOD_NAME>
+```
+
 ### factory-update
+
+> Update to Factory setting of Aurora EVM state
+
+- arguments: `<WASM_BYTES_PATH>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write factory-update <WASM_BYTES_PATH>
+```
+
 ### ft-on-transfer
+
+> Callback function to execute on fungible token transfer on bridge
+
+- arguments: `<SENDER_NEAR_ID>`, `<AMOUNT>`, `<MSG>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write ft-on-transfer <SENDER_NEAR_ID> <AMOUNT> <MSG>
+```
+
 ### ft-transfer
+
+> Transfer fungible token to receiver NEAR account id
+
+- arguments: `<RECEIVER_ID>`, `<AMOUNT>`, `<MEMO>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write ft-transfer <RECEIVER_ID> <AMOUNT> <MEMO>
+```
+
 ### ft-transfer-call
+
+> Transfer fungible token to receiver NEAR account id
+
+- arguments: `<RECEIVER_ID>`, `<AMOUNT>`, `<MEMO>`, `<MSG>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write ft-transfer-call <RECEIVER_ID> <AMOUNT> <MEMO> <MSG>
+```
+
 ### register-relayer
+
+> Register relayer with an Ethereum address
+
+- arguments: `<RELAYER_ETH_ADDRESS_HEX>`
+- options: `default`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write register-relayer <RELAYER_ETH_ADDRESS_HEX>
+```
+
 ### set-paused-flags
+
+> Set EVM state in Aurora as paused or not
+
+- arguments: `<PAUSED_MASK>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs near write set-paused-flags <PAUSED_MASK>
+```
+
 ### solidity
+
+> Send ABI encoded call input in a solidity contract
+
+- arguments: `call-args-by-name`, `unary-call`
+- options: `--amount <AMOUNT>`, `--sender-addr-hex <SENDER_ADDR_HEX>`, `--target-addr-hex <TARGET_ADDR_HEX>`
+
+**Example**
+
+```bash
+USAGE:
+    aurora-cli-rs near write solidity [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> <SUBCOMMAND>
+
+OPTIONS:
+    -a, --amount <AMOUNT>
+    -h, --help                                 Print help information
+    -s, --sender-addr-hex <SENDER_ADDR_HEX>
+    -t, --target-addr-hex <TARGET_ADDR_HEX>
+
+SUBCOMMANDS:
+    call-args-by-name    Allows invoking a solidity functions by passing in a JSON object. The
+                             names of the fields are the argument names of the function, and the
+                             values are strings that can be parsed into the correct types
+    help                 Print this message or the help of the given subcommand(s)
+    unary-call
+```
+
 ### storage-deposit
+
+> Deposit NEAR on engine for storage balance 
+
+- arguments: `<ACCOUNT_ID>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs near write storage-deposit <ACCOUNT_ID> [REGISTRATION_ONLY]
+```
+
 ### storage-unregister
+
+> Unregister storage for Aurora Engine     
+
+- arguments: `<FORCE>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs near write storage-deposit <FORCE> [REGISTRATION_ONLY]
+```
+
 ### storage-withdraw
+
+> Withdraw NEAR from storage balance of Aurora Engine contract
+
+- arguments: `<AMOUNT>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs near write storage-withdraw <AMOUNT>
+```
+
 ### withdraw
+
+> Withdraw wrapped NEAR to  
+
+- arguments: `<RECIPIENT_ADDRESS>`, `<AMOUNT>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs near write withdraw <RECIPIENT_ADDRESS> <AMOUNT>
+```
 
 ## Aurora read
 
 ### get-result
 
+> Get eth transaction result from transaction hash 
+
+- arguments: `<TX_HASH_HEX>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs aurora read get-result <TX_HASH_HEX>
+```
+
 ## Aurora write
 
 ### call
+
+> Call Ethereum smart contract  
+
+- arguments: `none`
+- options: `--target-addr-hex <TARGET_ADDR_HEX>`, `--input-data-hex <INPUT_DATA_HEX>`
+
+```bash
+USAGE:
+    aurora-cli-rs aurora write call [OPTIONS] --target-addr-hex <TARGET_ADDR_HEX> --input-data-hex <INPUT_DATA_HEX>
+```
+
 ### deploy
+
+> Deploy Ethereum smart contract
+
+- arguments: `<INPUT_DATA_HEX>`
+- options: `default`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs aurora write deploy <INPUT_DATA_HEX>
+```
+
 ### transfer
+
+> Transfer ETH from coinbase to 
+
+- arguments: `none`
+- options: `--target-addr-hex <TARGET_ADDR_HEX>`, `--amount <AMOUNT>`
+
+**Example**
+```bash
+USAGE:
+    aurora-cli-rs aurora write transfer --target-addr-hex <TARGET_ADDR_HEX> --amount <AMOUNT>
+```
