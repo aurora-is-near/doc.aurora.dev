@@ -22,72 +22,72 @@ _Click on a command for more information and examples._
 
 **Read methods**
 
-| Command                       | Description                                          |
-| ----------------------------- | ---------------------------------------------------- |
-| engine-call                   | Dry-run EVM call transaction                         |
-| engine-erc20                  | Look up an ERC20 token in Aurora engine              |
-| engine-xcc-dry-run            | Dry run precompiled contract results                 |
-| ft-balance-of                 | Get balance of an fungible token                     |
-| ft-balance-of-eth             | Get balance of ETH of an Aurora EVM                  |
-| ft-metadata                   | Get metadata of Fungible token contract              |
-| ft-total-eth-supply-on-aurora | Get total ETH supply on Aurora (ETH in Aurora EVM)   |
-| ft-total-supply               | Get total ETH supply on Aurora (ETH in Aurora EVM)   |
-| ft-total-supply-on-near       | Get total ETH supply on NEAR (nETH as NEP-141 token) |
-| get-accounts-counter          | Get accounts counter for statistics                  |
-| get-aurora-erc20              | Get ERC20 balance of from NEP-141 account id         |
-| get-balance                   | Get NEP-141 balance from ERC20 address               |
-| get-block-hash                | Get block hash from a block number                   |
-| get-bridged-nep141            | Get bridged NEP-141 account id from ERC20 address    |
-| get-chain-id                  | Get chain id                                         |
-| get-code                      | Get code of account storage from an Ethereum address |
-| get-engine-bridge-prover      | Get bridge prover address                            |
-| get-nonce                     | Get nonce of an account from an Ethereum address     |
-| get-paused-flags              | Get paused flag to see if the state is paused        |
-| get-receipt-result            | Get NEAR receipt result from receipt id              |
-| get-storage-at                | Get storage data at an Ethereum address and a key    |
-| get-upgrade-index             | Get upgrade index                                    |
-| solidity                      | Send ABI encoded query input in a solidity contract  |
-| storage-balance-of            | Get NEAR storage balance of an NEAR account id       |
+| Command                                                           | Description                                          |
+| ----------------------------------------------------------------- | ---------------------------------------------------- |
+| [`engine-call`](#engine-call)                                     | Dry-run EVM call transaction                         |
+| [`engine-erc20`](#engine-erc20)                                   | Look up an ERC20 token in Aurora engine              |
+| [`engine-xcc-dry-run`](#engine-xcc-dry-run)                       | Dry run precompiled contract results                 |
+| [`ft-balance-of`](#ft-balance-of)                                 | Get balance of an fungible token                     |
+| [`ft-balance-of-eth`](#ft-balance-of-eth)                         | Get balance of ETH of an Aurora EVM                  |
+| [`ft-metadata`](#ft-metadata)                                     | Get metadata of Fungible token contract              |
+| [`ft-total-eth-supply-on-aurora`](#ft-total-eth-supply-on-aurora) | Get total ETH supply on Aurora (ETH in Aurora EVM)   |
+| [`ft-total-supply`](#ft-total-supply)                             | Get total ETH supply on Aurora (ETH in Aurora EVM)   |
+| [`ft-total-supply-on-near`](#ft-total-supply-on-near)             | Get total ETH supply on NEAR (nETH as NEP-141 token) |
+| [`get-accounts-counter`](#get-accounts-counter)                   | Get accounts counter for statistics                  |
+| [`get-aurora-erc20`](#get-aurora-erc20)                           | Get ERC20 balance of from NEP-141 account id         |
+| [`get-balance`](#get-balance)                                     | Get NEP-141 balance from ERC20 address               |
+| [`get-block-hash`](#get-block-hash)                               | Get block hash from a block number                   |
+| [`get-bridged-nep141`](#get-bridged-nep141)                       | Get bridged NEP-141 account id from ERC20 address    |
+| [`get-chain-id`](#get-chain-id)                                   | Get chain id                                         |
+| [`get-code`](#get-code)                                           | Get code of account storage from an Ethereum address |
+| [`get-engine-bridge-prover`](#get-engine-bridge-prover)           | Get bridge prover address                            |
+| [`get-nonce`](#get-nonce)                                         | Get nonce of an account from an Ethereum address     |
+| [`get-paused-flags`](#get-paused-flags)                           | Get paused flag to see if the state is paused        |
+| [`get-receipt-result`](#get-receipt-result)                       | Get NEAR receipt result from receipt id              |
+| [`get-storage-at`](#get-storage-at)                               | Get storage data at an Ethereum address and a key    |
+| [`get-upgrade-index`](#get-upgrade-index)                         | Get upgrade index                                    |
+| [`solidity`](#solidity)                                           | Send ABI encoded query input in a solidity contract  |
+| [`storage-balance-of`](#storage-balance-of)                       | Get NEAR storage balance of an NEAR account id       |
 
 **Write methods**
 
-| Command            | Description                                                             |
-| ------------------ | ----------------------------------------------------------------------- |
-| begin-block        | Begin genesis block at Engine EVM state                                 |
-| begin-chain        | Initialize EVM state in Engine                                          |
-| call               | Execute raw ethereum transaction with 'call' method in Aurora EVM state |
-| deploy-code        | Deploy a code at Aurora EVM state with raw transaction                  |
-| deploy-erc20-token | Deploy bridged ERC20 token from NEP-141                                 |
-| engine-call        | Call a smart contract at an Ethereum address with inputs                |
-| engine-erc20       | Transfer from to an ERC20 at an Ethereum address                        |
-| engine-xcc         | Execute cross contract call precompiles between NEAR and EVM            |
-| factory-update     | Update to Factory setting of Aurora EVM state                           |
-| ft-on-transfer     | Callback function to execute on fungible token transfer on bridge       |
-| ft-transfer        | Transfer fungible token to receiver NEAR account id                     |
-| ft-transfer-call   | Transfer fungible token to receiver NEAR account id                     |
-| register-relayer   | Register relayer with an Ethereum address                               |
-| set-paused-flags   | Set EVM state in Aurora as paused or not                                |
-| solidity           | Send ABI encoded call input in a solidity contract                      |
-| storage-deposit    | Deposit NEAR on engine for storage balance                              |
-| storage-unregister | Unregister storage for Aurora Engine                                    |
-| storage-withdraw   | Withdraw storage balance of Aurora engine                               |
-| withdraw           | Withdraw wrapped NEAR to                                                |
+| Command                                     | Description                                                             |
+| ------------------------------------------- | ----------------------------------------------------------------------- |
+| [`begin-block`](#begin-block)               | Begin genesis block at Engine EVM state                                 |
+| [`begin-chain`](#begin-chain)               | Initialize EVM state in Engine                                          |
+| [`call`](#call)                             | Execute raw ethereum transaction with 'call' method in Aurora EVM state |
+| [`deploy-code`](#deploy-code)               | Deploy a code at Aurora EVM state with raw transaction                  |
+| [`deploy-erc20-token`](#deploy-erc20-token) | Deploy bridged ERC20 token from NEP-141                                 |
+| [`engine-call`](#engine-call)               | Call a smart contract at an Ethereum address with inputs                |
+| [`engine-erc20`](#engine-erc20)             | Transfer from to an ERC20 at an Ethereum address                        |
+| [`engine-xcc`](#engine-xcc)                 | Execute cross contract call precompiles between NEAR and EVM            |
+| [`factory-update`](#factory-update)         | Update to Factory setting of Aurora EVM state                           |
+| [`ft-on-transfer`](#ft-on-transfer)         | Callback function to execute on fungible token transfer on bridge       |
+| [`ft-transfer`](#ft-transfer)               | Transfer fungible token to receiver NEAR account id                     |
+| [`ft-transfer-call`](#ft-transfer-call)     | Transfer fungible token to receiver NEAR account id                     |
+| [`register-relayer`](#register-relayer)     | Register relayer with an Ethereum address                               |
+| [`set-paused-flags`](#set-paused-flags)     | Set EVM state in Aurora as paused or not                                |
+| [`solidity`](#solidity)                     | Send ABI encoded call input in a solidity contract                      |
+| [`storage-deposit`](#storage-deposit)       | Deposit NEAR on engine for storage balance                              |
+| [`storage-unregister`](#storage-unregister) | Unregister storage for Aurora Engine                                    |
+| [`storage-withdraw`](#storage-withdraw)     | Withdraw storage balance of Aurora engine                               |
+| [`withdraw`](#withdraw)                     | Withdraw wrapped NEAR to                                                |
 
 **Aurora**
 
 **Read methods**
 
-| Command    | Description                                      |
-| ---------- | ------------------------------------------------ |
-| get-result | Get eth transaction result from transaction hash |
+| Command                     | Description                                      |
+| --------------------------- | ------------------------------------------------ |
+| [`get-result`](#get-result) | Get eth transaction result from transaction hash |
 
 **Write methods**
 
-| Command  | Description                    |
-| -------- | ------------------------------ |
-| call     | Call Ethereum smart contract   |
-| deploy   | Deploy Ethereum smart contract |
-| transfer | Transfer ETH from coinbase to  |
+| Command                 | Description                    |
+| ----------------------- | ------------------------------ |
+| [`call`](#call)         | Call Ethereum smart contract   |
+| [`deploy`](#deploy)     | Deploy Ethereum smart contract |
+| [`transfer`](#transfer) | Transfer ETH from coinbase to  |
 
 ---
 
@@ -722,7 +722,7 @@ USAGE:
 ```
 
 ### ft-transfer-call {#ft-transfer-call}
- 
+
 > Transfer fungible token to receiver NEAR account id
 
 - arguments: `<RECEIVER_ID>`, `<AMOUNT>`, `<MEMO>`, `<MSG>`
@@ -757,6 +757,7 @@ USAGE:
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs near write set-paused-flags <PAUSED_MASK>
@@ -791,12 +792,13 @@ SUBCOMMANDS:
 
 ### storage-deposit {#storage-deposit}
 
-> Deposit NEAR on engine for storage balance 
+> Deposit NEAR on engine for storage balance
 
 - arguments: `<ACCOUNT_ID>`
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs near write storage-deposit <ACCOUNT_ID> [REGISTRATION_ONLY]
@@ -804,12 +806,13 @@ USAGE:
 
 ### storage-unregister {#storage-unregister}
 
-> Unregister storage for Aurora Engine     
+> Unregister storage for Aurora Engine
 
 - arguments: `<FORCE>`
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs near write storage-deposit <FORCE> [REGISTRATION_ONLY]
@@ -823,6 +826,7 @@ USAGE:
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs near write storage-withdraw <AMOUNT>
@@ -830,12 +834,13 @@ USAGE:
 
 ### withdraw {#withdraw}
 
-> Withdraw wrapped NEAR to  
+> Withdraw wrapped NEAR to
 
 - arguments: `<RECIPIENT_ADDRESS>`, `<AMOUNT>`
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs near write withdraw <RECIPIENT_ADDRESS> <AMOUNT>
@@ -845,12 +850,13 @@ USAGE:
 
 ### get-result {#get-result}
 
-> Get eth transaction result from transaction hash 
+> Get eth transaction result from transaction hash
 
 - arguments: `<TX_HASH_HEX>`
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs aurora read get-result <TX_HASH_HEX>
@@ -860,7 +866,7 @@ USAGE:
 
 ### call {#call}
 
-> Call Ethereum smart contract  
+> Call Ethereum smart contract
 
 - arguments: `none`
 - options: `--target-addr-hex <TARGET_ADDR_HEX>`, `--input-data-hex <INPUT_DATA_HEX>`
@@ -878,6 +884,7 @@ USAGE:
 - options: `default`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs aurora write deploy <INPUT_DATA_HEX>
@@ -885,12 +892,13 @@ USAGE:
 
 ### transfer {#transfer}
 
-> Transfer ETH from coinbase to 
+> Transfer ETH from coinbase to
 
 - arguments: `none`
 - options: `--target-addr-hex <TARGET_ADDR_HEX>`, `--amount <AMOUNT>`
 
 **Example**
+
 ```bash
 USAGE:
     aurora-cli-rs aurora write transfer --target-addr-hex <TARGET_ADDR_HEX> --amount <AMOUNT>
