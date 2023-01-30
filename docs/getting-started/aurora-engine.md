@@ -8,7 +8,7 @@ title: "Aurora Engine"
 [NEAR Protocol](https://medium.com/dia-insights/hello-near-protocol-dia-oracles-now-available-natively-on-near-3bbef5b3f13),
 that provides a solution for developers to deploy their apps on an Ethereum-compatible, high-throughput, scalable and future-safe platform,
 with low transaction costs for their users. Besides the EVM, Aurora developed the Rainbow Bridge which allows users to transfer assets between Ethereum, NEAR, and Aurora.
-Aurora is backed by top VCs such as Pantera Capital, Electric Capital, Dragonfly Capital, Three Arrows Capital, and Alameda Research.
+Aurora is backed by top VCs such as Pantera Capital, Electric Capital, Dragonfly Capital.
 
 Thanks to Aurora’s EVM, Ethereum native applications can seamlessly be ported to NEAR’s L2-like network that is built as a smart contract on NEAR.
 Developers may enjoy familiar Ethereum tooling when working with their Solidity smart contracts on Aurora.
