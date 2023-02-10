@@ -42,8 +42,8 @@ const config = {
             from: ['/develop/start/hardhat'],
           },
           {
-            to: '/interact/blockscout',
-            from: ['/interact/block-explorer', '/interact/aurorascan'],
+            to: '/interact/block-explorer',
+            from: ['/interact/aurorascan'],
           },
           {
             to: '/evm/rpc',
