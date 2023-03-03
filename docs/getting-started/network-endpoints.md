@@ -38,6 +38,8 @@ observations).
 
 The Mainnet Web3 endpoint is at: `https://mainnet.aurora.dev` (port 443)
 
+The Privacy-Oriented Omnia Mainnet endpoint is at: `https://endpoints.omniatech.io/v1/aurora/mainnet/public` (port 443)
+
 #### WSS
 
 The Mainnet Websocket endpoint is at: `wss://mainnet.aurora.dev`
@@ -45,6 +47,8 @@ The Mainnet Websocket endpoint is at: `wss://mainnet.aurora.dev`
 ### Testnet
 
 The Testnet Web3 endpoint is at: `https://testnet.aurora.dev` (port 443)
+
+The Privacy-Oriented Omnia Testnet endpoint is at: `https://endpoints.omniatech.io/v1/aurora/testnet/public` (port 443)
 
 #### WSS
 
