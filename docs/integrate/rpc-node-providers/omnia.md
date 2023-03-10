@@ -10,7 +10,9 @@ sidebar_position: 1
 ## Privacy and Consumer Protection
 
 Transactions can be tracked even before they are validated and added to the blockchain, compromising privacy in the face of malicious actors who track your behavior.
-OMNIA prevents this by obfuscating your off-chain data, thus safeguarding you against scams, hacks, and front-running attacks. All the data and metadata remain private to the users. No third party is able to access, analyze or track it.
+OMNIA prevents this by obfuscating your off-chain data, thus safeguarding you against scams, hacks, and front-running attacks.
+
+All the data and metadata remain private to the users. No third party is able to access, analyze or track it.
 OMNIA leverages different technologies and approaches to guarantee the privacy of their users, from front-running protection and private mempools, to obfuscation and random dispatching.
 
 ## Sanctions and Crypto Compliance
