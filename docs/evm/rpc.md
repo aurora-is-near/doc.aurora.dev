@@ -4,7 +4,7 @@ title: "JSON-RPC"
 
 # Compatibility with the Web3 JSON-RPC Protocol
 
-The Aurora Relayer implements the Web3 JSON-RPC protocol.
+The [Aurora Relayer](https://github.com/aurora-is-near/relayer2-public) implements the Web3 JSON-RPC protocol.
 
 ## Methods
 
@@ -134,10 +134,9 @@ Method | Status | Notes
 ## Source Code
 
 The Aurora Relayer source code repository is at:
-[github.com/aurora-is-near/aurora-relayer](https://github.com/aurora-is-near/aurora-relayer).
+[github.com/aurora-is-near/relayer2-public](https://github.com/aurora-is-near/relayer2-public).
 
-> ⚠ WARNING: aurora-relayer repository in its current state will be gradually deprecated.
-> Deprecation will happen in 2 steps:
+> NOTE: Old [aurora-relayer](https://github.com/aurora-is-near/aurora-relayer) repository has been deprecated in 2 steps:
 >
 > 1. Replacing current “Indexer” with a different implementation written in go-lang/rust.
 > 2. Replacing “JSON-RPC Endpoint” with an implementation in go-lang.
