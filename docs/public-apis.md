@@ -1,6 +1,6 @@
 ---
-title: Other API supports
-sidebar_position: 2
+title: Other APIs support
+sidebar_position: 1
 ---
 
 In the effort to support more community APIs some projects are underway to support these APIs
