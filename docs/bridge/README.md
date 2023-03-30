@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Intro
 
 For bridging the origin chain of the token matters. It is not possible to mint a token on Aurora and move it to Ethereum.
 
