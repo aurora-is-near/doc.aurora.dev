@@ -40,6 +40,8 @@ If you see `"error": "wasm execution failed with error: FunctionCallError(HostEr
 It's often possible to optimise the contract to overcome the issue (reducing transaction batch sizes, optimising big transactions).
 We're working hard on making the issue non-existent, but it's important to know it's present at the moment.
 
+The transaction gas limit on Near (no such concept exists on Ethereum, there is only the block gas limit) is 300 Tgas, which implies that this edge case described in the documentation arises for EVM transactions exceeding approximately 2.5 x 10^6 EVM gas, read more [EVM gas vs. Near gas on Aurora](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
+
 ### Running your own Aurora Node
 If you feel like you need to run an Aurora Node yourself, please use [this setup](https://github.com/aurora-is-near/standalone-rpc/).
 The hardware requirements for the node are the same as for [NEAR RPC Node](https://docs.near.org/docs/develop/node/rpc/hardware-rpc#recommended-hardware-specifications) though we recommend having 20-30% more storage.
