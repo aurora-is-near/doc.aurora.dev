@@ -4,28 +4,33 @@ sidebar_position: 1
 ---
 
 
-# Aurora Chain – Dedicated Blockchain
+# Aurora Chains
 
-Aurora Chain is a dedicated EVM-compatible blockchain built on top the NEAR Protocol. It is your own instance of Aurora – every Aurora Chain is based upon the Aurora smart contract, also called [Aurora Engine](/getting-started/aurora-engine). You can use it as a dedicated blockchain environment.
+Aurora Chain is a dedicated EVM-compatible blockchain built on top the NEAR Protocol. It is your own instance of Aurora – every Aurora Chain is based upon the Aurora smart contract,
+also called [Aurora Engine](/getting-started/aurora-engine). You can use it as a dedicated blockchain environment.
 
 Main benefits of it comparing to other competitors (e.g., Polygon's Supernets, Avalanche Subnets) are:
+
 - **No need in validators**: Near Blockchain validators will do that job for all of the Aurora Chains.
 - **Flexible configuration**: whitelists, custom token and gas mechanics, KYC.
 - **Easy Aurora Ecosystem Migration**: Rainbow Bridge, on-ramps, indexers, oracles, DEXes, etc. could be deployed to your chain.
 - **Focus on your business**: Tech side of the integration and support are fully on the [Aurora Labs](https://auroralabs.dev/) team's shoulders.
-- **Seamless interoperability** with Aurora, NEAR, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls (XCC). There is no disjointness in-between. You can call any smart contract in any other Aurora Chain or NEAR and interact with them freely.
+- **Seamless interoperability** with Aurora, NEAR, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls (XCC).
+There is no disjointness in-between. You can call any smart contract in any other Aurora Chain or NEAR and interact with them freely.
 - **Top-notch TPS** – we can provide you with dozens of millions of transactions daily for your ecosystem. 1k+ transactions per second.
-
 
 ## What can be configured?
 To make Aurora Chain work in the best possible way for your business, we will help you to configure your setup. Among the features to configure are:
 
 - custom token & fee mechanics: e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.
-- custom access control: public vs private chain, whitelists usage - who can transact, who can deploy contracts? You can learn about how to operate Aurora Chain Whitelists from your dApp [here](/aurora-cloud/chain#whitelist-management). The private chain can be built by using a private NEAR shard – [Calimero](https://www.calimero.network/).
+- custom access control: public vs private chain, whitelists usage - who can transact, who can deploy contracts? You can learn about how to operate
+Aurora Chain Whitelists from your dApp [here](/aurora-cloud/chain#whitelist-management). The private chain can be built by using a private NEAR shard – [Calimero](https://www.calimero.network/).
 
 ## How to get one?
 
-To get a Aurora Chain for your business, please contact the AuroraLabs team via the *'Contact Us'* popup at [Aurora Cloud website](https://auroracloud.dev/). We will schedule a call with you to determine the initial configuration of a Aurora Chain (e.g., public access, gas mechanics, token, services, whitelists usage), and after that we will deploy one for you.
+To get a Aurora Chain for your business, please contact the AuroraLabs team via the *'Contact Us'* popup at [Aurora Cloud website](https://auroracloud.dev/).
+We will schedule a call with you to determine the initial configuration of a Aurora Chain
+(e.g., public access, gas mechanics, token, services, whitelists usage), and after that we will deploy one for you.
 
 After the deployment, we start enriching it with services you need (e.g., bridge configuration, oracles, on-ramps, block explorer etc.). Following that, your Aurora Chain will be ready to be used.
 
@@ -39,8 +44,6 @@ You will be able to manage and track the information about the configured Aurora
 ![silo_config](/img/silo_config.png)
 
 As you can see, note the `RPC URL` field above, the RPC endpoint will look similar to [the one Aurora is using](/getting-started/network-endpoints), and will have a format like [https://your-chain.aurora.dev](https://your-chain.aurora.dev).
-
-
 
 Talking about the RPC nodes, we will provide a scalable cluster of those for you hiding just behind that link. But if you want to manage RPCs by yourself there are two options for you:
 
@@ -58,11 +61,9 @@ If not, you will need to manage them. And the easiest way will be to do this wit
 
 ![silo_permissions](/img/silo_permissions.png)
 
-
 or Cloud Console API, which is described in detail in the table below.
 
 >*Note:* you still will be able to do this via the direct contract calls on Near blockchain, if needed. But we discourage you from using those, because it is not as convinient as Cloud Console UI or Cloud Console API.
-
 
 ### Aurora Cloud Console: Aurora Chain API
 
