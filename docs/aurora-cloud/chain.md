@@ -66,7 +66,7 @@ If not, you will need to manage them. And the easiest way will be to do this wit
 or Cloud Console API, which is described in detail in the table below.
 
 >*Note:* you still will be able to do this via the direct contract calls on Near blockchain, if needed. But we discourage you from using those,
-because it is not as convinient as Cloud Console UI or Cloud Console API.
+because it is not as convenient as Cloud Console UI or Cloud Console API.
 
 ### Aurora Cloud Console: Aurora Chain API
 
