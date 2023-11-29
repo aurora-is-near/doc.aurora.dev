@@ -48,11 +48,13 @@ As you can see, note the `RPC URL` field above, the RPC endpoint will look simil
 Talking about the RPC nodes, we will provide a scalable cluster of those for you hiding just behind that link. But if you want to manage RPCs by yourself there are two options for you:
 
 1. Either using our docker images on your instances. And running our optimized infrastructure on your hardware. With us supporting it.
-2. Or creating a [Standalone RPC nodes](https://github.com/aurora-is-near/standalone-rpc) by yourself and allowing other people from community to scale the network. You can read more about spinning your own Aurora node in [this DevPortal article](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node).
+2. Or creating a [Standalone RPC nodes](https://github.com/aurora-is-near/standalone-rpc) by yourself and allowing other people from community to scale the network.
+You can read more about spinning your own Aurora node in [this DevPortal article](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node).
 
 ## Whitelist Management
 
 Every Aurora Chain has 2 types of whitelists for you to operate on:
+
 - Transaction Access Whitelist: for the user accounts (EOAs) who are allowed to execute transactions in your chain.
 - Deployment Access Whitelist: for the EOAs who are allowed to deploy the contracts to your chain.
 
@@ -63,7 +65,8 @@ If not, you will need to manage them. And the easiest way will be to do this wit
 
 or Cloud Console API, which is described in detail in the table below.
 
->*Note:* you still will be able to do this via the direct contract calls on Near blockchain, if needed. But we discourage you from using those, because it is not as convinient as Cloud Console UI or Cloud Console API.
+>*Note:* you still will be able to do this via the direct contract calls on Near blockchain, if needed. But we discourage you from using those,
+because it is not as convinient as Cloud Console UI or Cloud Console API.
 
 ### Aurora Cloud Console: Aurora Chain API
 
@@ -73,7 +76,7 @@ or Cloud Console API, which is described in detail in the table below.
 | **method**                     | `POST`|
 | **required request headers**   | Content-Type: application/json <br/>Authorization: Bearer [**ACC API Token**]|
 | **required request params**    | *op_type*: `add_entry` and `remove_entry` are supported <br/>*kind*: Type of whitelist. `developer` or `user` are supported. <br/> *entry*: EOA address to add or remove.|
-| **response code**              | On success: `200 OK`<br/>On Error:<br/> - `400 BadRequest`: if request body is empty or could not be parsed or number of operations is greater than	RequestConfig.MaxBatchLen<br/> - `401 Unauthorized`: if authorization header does not satisfy the [conditions](401 Conditions)<br/> - `403 Forbidden`: if caller is [not authorized](403 Conditions) to perform all updates in request array (i.e.: partial updates are not allowed), see acl.json<br/> - `408 RequestTimeout`: with partial response, if not all responses from storage node are received before RequestConfig.TimeoutMs or `Timeout` header in request<br/> - `500 InternalServerError`: if fails to send update request to storage node, or fails to parse response from storage node |
+| **response code**              | On success: `200 OK`<br/>On Error:<br/> - `400 BadRequest`: if request body is empty or could not be parsed or number of operations is greater than RequestConfig.MaxBatchLen<br/> - `401 Unauthorized`: if authorization header does not satisfy the [conditions](401 Conditions)<br/> - `403 Forbidden`: if caller is [not authorized](403 Conditions) to perform all updates in request array (i.e.: partial updates are not allowed), see acl.json<br/> - `408 RequestTimeout`: with partial response, if not all responses from storage node are received before RequestConfig.TimeoutMs or `Timeout` header in request<br/> - `500 InternalServerError`: if fails to send update request to storage node, or fails to parse response from storage node |
 | **request example**            | <pre lang="shell">curl --location --request POST '[API ENDPOINT]/chain/whitelists/' --header 'Authorization: Bearer [YOUR_ACC_API_KEY]' --header 'Content-Type: application/json' --data-raw '<br/>[<br/>  {<br/>    "op_type":"add_entry",<br/>    "kind":"developer", <br/>    "entry":"0xe93685f3bBA03016F02bD1828BaDD6195988D951"<br/>  }<br/>]'</pre>|
 | **response example - success** | <pre lang="json">[<br/> "The entry: 0xe93685f3bBA03016F02bD1828BaDD6195988D951 has been added to the Developers whitelist successfully"<br/>]</pre>|
 | **response examples - error**  | Response Code: 400 Bad Request <pre lang="json">{<br/>  "errorMessage":"engine request at index [1] is not authorized",<br/>  "error":""<br/>}</pre>Note: not all error responses contains response body, but if response body exists it has the above format.<br/>|
@@ -86,4 +89,4 @@ Here are some in-depth articles to discover details about how Aurora Chain works
 - [Aurora Chain: Code Overview](https://dev.aurora.dev/posts/aurora-chain-tech-overview)
 
 ## Contact Us
-If you feel your business could benefit from having its own blockchain instance, please do not hesitate to contact us at hello@auroracloud.dev. You will find out that Aurora Aurora Chain is a great solution for achieving this!
+If you feel your business could benefit from having its own blockchain instance, please do not hesitate to contact us at hello@auroracloud.dev.
