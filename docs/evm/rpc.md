@@ -96,13 +96,11 @@ Method | Status | Notes
 - For now, the `eth_estimateGas` method returns a fixed value (6,721,975,
   matching Truffle's default gas limit).
 
-- Ethereum is a proof-of-work (PoW) network, and NEAR is a proof-of-stake (PoS)
+- Ethereum is a proof-of-stake (PoS) network, and NEAR is a proof-of-stake (PoS)
   network.
   Therefore with Aurora all mining-related methods such as `eth_getWork`,
   `eth_submitHashrate`, and `eth_submitWork` are not supported and return
   an error code.
-  Additionally, PoW-related block metadata such as `nonce` and `difficulty`
-  contain all zeroes.
 
 - The `eth_coinbase` method returns the EVM address of the Aurora Engine.
   For example, for the Aurora Engine deployment on the `aurora` account,
