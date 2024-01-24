@@ -14,7 +14,7 @@ Benefits include:
 1. *No need for additional validators:* when your Aurora Chain is deployed, it automatically gets all the Near Blockchain validators, which are above 300.
 2. *Configuration*: create whitelists, choose your own custom token, gas mechanics, integrate KYC, and much more.
 3. *Complete ecosystem*: the Rainbow Bridge, on-ramps, indexers, oracles, DEXes, etc., Aurora Cloud provides a selection of integrations that can be deployed to your chain in order to speed up development
-4. *Focus on your business*: the tech side of the integration and support are entirely on the [Aurora Labs](https://auroralabs.dev/) team's shoulders.
+4. *Focus on your business*: [Aurora Labs](https://auroralabs.dev/) team is available to support each step of the integration.
 5. *Seamless interoperability* with Aurora, Near, and any other Aurora Chains: you can freely move your assets using the Rainbow Bridge and call contracts via cross-contract calls (XCC).
 There is no disjointness in between. You can call any smart contract in any other Aurora Chain or NEAR and interact with them freely.
 6. *Top-notch TPS*: we can provide you dozens of millions of transactions daily for your ecosystem – 1k+ transactions per second.
