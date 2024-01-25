@@ -253,7 +253,7 @@ Now, we can try connecting our wallet, via the QR code:
 
 ![wc_ap_qr](/img/wc_ap_qr.png)
 
-But we won't see if the connection was succesful yet, because we don't have anything to display that. The popup will just close and we will see the App's initial screen:
+But we won't see if the connection was successful yet, because we don't have anything to display that. The popup will just close and we will see the App's initial screen:
 
 ![wc_ap_connected_no_ui](/img/wc_ap_connected_no_ui.png)
 
