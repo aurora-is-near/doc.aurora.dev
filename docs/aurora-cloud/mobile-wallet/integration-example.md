@@ -8,17 +8,19 @@ In this article, we will go through a development of a simple [Web3Modal](https:
 
 ## Create a simple React app
 
-To start, let's create a React application by using `create-react-app`. Of course, you can just use your already existing codebase instead, we're doing this just for the demonstration purposes. You will need to run in your terminal:
+To start, let's create a React application by using `create-react-app`. Of course, you can just use your already existing codebase instead, we're doing this just for the demonstration purposes.
+You will need to run in your terminal:
 
-```
+```bash
 npx create-react-app aurora-pass-example
 cd aurora-pass-example
 npm start
 ```
 
-Your React app will be running now at `http://localhost:3000`, just open that link in you browser to see the UI. You can read more about the `create-react-app` [here](https://create-react-app.dev/docs/getting-started/), in the case you want to learn more details.
+Your React app will be running now at `http://localhost:3000`, just open that link in you browser to see the UI.
+You can read more about the `create-react-app` [here](https://create-react-app.dev/docs/getting-started/), in the case you want to learn more details.
 
-## Add Aurora Promo Widget 
+## Add Aurora Promo Widget
 
 We have talked about the Promo Widget [before](/aurora-cloud/mobile-wallet/promo-widget), but now it is time to try it in practice.
 
@@ -60,7 +62,8 @@ const openWidget = () => {
 ...
 ```
 
-Now, we can set the `onClick` attribute of the already existing `App-link` element to use `openWidget` function: 
+Now, we can set the `onClick` attribute of the already existing `App-link` element to use `openWidget` function:
+
 ```jsx title="aurora-pass-example/src/App.js"
 
 function App() {
@@ -97,7 +100,7 @@ We will follow the [Web3Model Wagmi v2 documentation](https://docs.walletconnect
 
 1). First, let's add some new packages to the project:
 
-```
+```bash
 npm install @web3modal/wagmi@4.0.0-alpha.0 wagmi viem @tanstack/react-query
 ```
 
@@ -183,7 +186,8 @@ function App() {
 
 But we haven't displayed the popup yet. How can we do it?
 
-5). To open the popup, let's use `useWeb3Modal` hook inside the App component, to be more specific – the `open` function it provides. We also need to edit a bit our old `openWidget` function to accept `onComplete` argument, and pass there the `open` function:
+5). To open the popup, let's use `useWeb3Modal` hook inside the App component, to be more specific – the `open` function it provides.
+We also need to edit a bit our old `openWidget` function to accept `onComplete` argument, and pass there the `open` function:
 
 ```jsx title="aurora-pass-example/src/App.js"
 import { useWeb3Modal } from '@web3modal/wagmi/react';
@@ -227,6 +231,7 @@ If you will go into your App now, you will be able to see the WalletConnect popu
 But, it won't contain the AuroraPass yet. Let's add it there.
 
 6). To do this, we need to modify the `Web3Modal.js` file a bit and add some options to it:
+
 ```jsx title="aurora-pass-example/src/Web3Modal.js
 let options = {
     defaultChain: aurora, // we can set it to make sure we are using Aurora mainnet by default
@@ -239,6 +244,7 @@ let options = {
 createWeb3Modal({ wagmiConfig, projectId, chains, ...options})
 
 ```
+
 If we re-open the Web3Modal now, we will see AuroraPass wallet there:
 
 ![wc_ap_visible](/img/wc_ap_visible.png)
@@ -251,7 +257,8 @@ But we won't see if the connection was succesful yet, because we don't have anyt
 
 ![wc_ap_connected_no_ui](/img/wc_ap_connected_no_ui.png)
 
-7). Let's fix it by replacing the 'Edit src/App.js and save to reload' label with a simple `Account` component showing us if we have connected to the dApp already. We can do that inside the App component file right away by using `useAccount` wagmi hook:
+7). Let's fix it by replacing the 'Edit src/App.js and save to reload' label with a simple `Account` component showing us if we have connected to the dApp already.
+We can do that inside the App component file right away by using `useAccount` wagmi hook:
 
 ```jsx title="aurora-pass-example/src/App.js
 ...
@@ -266,8 +273,8 @@ function Account () {
 }
 
 function App() {
-	...
-	return (
+   ...
+   return (
     <div className="App">
       <Web3Modal>
         <header className="App-header">

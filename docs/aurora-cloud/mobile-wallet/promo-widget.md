@@ -11,12 +11,12 @@ We have already created a widget to ease the onboarding of users for your dApp. 
 
 ![ap_widget_qr](/img/ap_widget_qr.png)
 
-You download the code for the widget and find the instructions here: https://pass.auroracloud.dev/
+You download the code for the widget and find the instructions [here](https://pass.auroracloud.dev/).
 For your convenience, we will also place the instructions below.
 
 ## Quick integration guide
 
-1. Load the script from https://pass.auroracloud.dev/promo.js
+1. Load a script from this [link](https://pass.auroracloud.dev/promo.js).
 2. When the script is ready, it adds a function to the window called `openPromo`.
 3. To open the widget, call `window.openPromo` and pass the `onComplete` function as a parameter `window.openPromo({ onComplete: function })`
 4. You can also check if the function is available before calling it `window.openPromo ? window.openPromo({ onComplete: function }) : function()`
@@ -27,8 +27,9 @@ You can also take a look at the [integration example here](/aurora-cloud/mobile-
 ## Examples of integration
 
 To see the widget in use, visit one of the projects on the list:
- - [Aurora+](https://aurora.plus/)
- - [Pipeflare](https://pipeflare.io/flare2-token/spin)
+
+- [Aurora+](https://aurora.plus/)
+- [Pipeflare](https://pipeflare.io/flare2-token/spin)
 
 ## What should be called in onComplete function?
 
