@@ -1,7 +1,6 @@
 import React from "react";
 import { useCookies } from "react-cookie";
 import CookieBanner from "./CookieBanner";
-import { useEffect } from "react";
 
 const COOKIES_CONSENT_NAME = "cookie-consent-given";
 const COOKIES_CONSENT_VALUE = 1;
