@@ -23,17 +23,17 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
+html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 code,
 pre {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
 }
 
 h1 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
 }
 
@@ -171,24 +171,24 @@ h6 {
   font-weight: 600;
 }
 
-html[data-theme="dark"] .cookie-consent__confirm {
+html[data-theme='dark'] .cookie-consent__confirm {
   background: white;
   color: rgb(0, 0, 0, 0.8);
 }
-html[data-theme="dark"] .cookie-consent__confirm:hover {
+html[data-theme='dark'] .cookie-consent__confirm:hover {
   background: rgb(255, 255, 255, 0.9);
 }
-html[data-theme="dark"] .cookie-consent__confirm:active {
+html[data-theme='dark'] .cookie-consent__confirm:active {
   outline: 2px solid rgb(255, 255, 255, 0.6);
 }
 
-html[data-theme="light"] .cookie-consent__confirm {
+html[data-theme='light'] .cookie-consent__confirm {
   background: black;
   color: rgb(255, 255, 255);
 }
-html[data-theme="light"] .cookie-consent__confirm:hover {
+html[data-theme='light'] .cookie-consent__confirm:hover {
   background: rgb(0, 0, 0, 0.8);
 }
-html[data-theme="light"] .cookie-consent__confirm:active {
+html[data-theme='light'] .cookie-consent__confirm:active {
   outline: 2px solid rgb(0, 0, 0, 0.6);
 }
