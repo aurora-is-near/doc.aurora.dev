@@ -1,11 +1,13 @@
 import React from "react";
 import { useCookies } from "react-cookie";
 import CookieBanner from "./CookieBanner";
+import { useEffect } from "react";
 
 const COOKIES_CONSENT_NAME = "cookie-consent-given";
 const COOKIES_CONSENT_VALUE = 1;
 
 export default function CookiesConsent() {
+  if (typeof window === "undefined") return null;
   const [cookies, setCookie] = useCookies();
   const [consentGiven, setIsConsentGiven] = React.useState(
     cookies?.[COOKIES_CONSENT_NAME] === COOKIES_CONSENT_VALUE
