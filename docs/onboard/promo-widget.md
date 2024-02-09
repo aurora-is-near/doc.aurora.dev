@@ -116,3 +116,4 @@ To see the widget in use, visit one of the projects on the list:
 
 Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
  on Discord and open a support ticket there.
+ 

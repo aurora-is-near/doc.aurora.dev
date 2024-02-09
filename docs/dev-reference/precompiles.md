@@ -1,9 +1,6 @@
 ---
 title: Precompiles
-sidebar_position: 2
 ---
-
-# Precompiles
 
 The Aurora EVM supports all Ethereum precompiles as well as extra precompiles designed to interact
 with the NEAR blockchain. The ones denoted in **bold** are extra.

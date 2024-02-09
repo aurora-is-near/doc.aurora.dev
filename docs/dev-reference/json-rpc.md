@@ -1,10 +1,9 @@
 ---
-title: "JSON-RPC"
+sidebar_label: 	Relayer JSON-RPC Methods
+title: "Relayer JSON-RPC Methods"
 ---
 
-# Compatibility with the Web3 JSON-RPC Protocol
-
-The [Aurora Relayer](https://github.com/aurora-is-near/relayer2-public) implements the Web3 JSON-RPC protocol.
+The [Aurora Relayer](https://github.com/aurora-is-near/relayer2-public) implements the Web3 JSON-RPC protocol. Below you can consult all of the methods we do support.
 
 ## Methods
 

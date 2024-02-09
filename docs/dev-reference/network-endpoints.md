@@ -2,8 +2,6 @@
 title: "Networks Endpoints"
 ---
 
-# Networks
-
 Ethereum Virtual Machine (EVM) support is currently available on the
 following networks:
 

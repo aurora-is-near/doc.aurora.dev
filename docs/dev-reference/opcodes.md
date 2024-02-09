@@ -1,9 +1,6 @@
 ---
 title: Opcodes
-sidebar_position: 2
 ---
-
-# Opcodes
 
 All Ethereum opcodes are represented however the opcodes in **bold** are altered
 from Ethereum. A short description is on the right hand side but an longer one
