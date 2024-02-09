@@ -49,10 +49,10 @@ const config = {
             to: '/dev-reference/json-rpc',
             from: ['/compact/rpc', '/develop/compat/rpc', '/evm/rpc']
           },
-          {
-            to: '/evm/evm-overview',
-            from: ['/develop/compat/evm', '/compat/evm'],
-          },
+          // {
+          //   to: '/evm/evm-overview',
+          //   from: ['/develop/compat/evm', '/compat/evm'],
+          // },
           {
             to: '/getting-started/faq',
             from: ['/develop/faq', '/faq'],
