@@ -189,9 +189,9 @@ big endian encoding.
 The leading zero byte in the concatenation is a version byte which may change if a new blockhash
 scheme is introduced in the future.
 The `chain_id` depends on the network the Aurora Engine contract is deployed to (
-see [networks table](../getting-started/network-endpoints)).
+see [networks table](/dev-reference/network-endpoints)).
 The `account_id` is the name of the NEAR account where the contract is deployed (see the Engine ID
-column in the [networks table](../getting-started/network-endpoints)).
+column in the [networks table](/dev-reference/network-endpoints)).
 
 ### `COINBASE` {#coinbase}
 

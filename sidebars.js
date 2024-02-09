@@ -257,6 +257,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'dev-reference/network-endpoints',
+        'dev-reference/aurora-engine',
         'dev-reference/json-rpc',
         'dev-reference/precompiles',
         'dev-reference/opcodes',
