@@ -358,7 +358,7 @@ There is no output except for log emissions which will trigger the transfer of N
 **Spec**: Pending AIP
 
 Transfers either ETH or a NEP-141 mapped ERC-20 token from the Aurora EVM to Ethereum over
-the [Rainbow Bridge](../bridge/bridge-overview.md).
+the [Rainbow Bridge](/bridge/introduction).
 
 This can only be invoked through Engine self-deployed NEP-141 mapped ERC-20
 contracts using the `deploy_erc20_token` method on the EVM.
