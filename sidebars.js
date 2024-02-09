@@ -47,7 +47,7 @@ const sidebars = {
       type: 'category',
       label: 'Bridge your assets',
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         'bridge/introduction',
         'bridge/forwarder',
