@@ -77,15 +77,7 @@ const sidebars = {
         // },
       ]
     },
-    {
-      type: 'category',
-      label: 'Aurora Cloud',
-      collapsible: true,
-      collapsed: false,
-      items: [
-        'aurora-cloud/chain',
-      ]
-    },
+    'aurora-cloud/chain',
     {
       type: 'category',
       label: 'Bridge',

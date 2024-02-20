@@ -4,7 +4,8 @@ title: "Introduction"
 
 # Aurora Pass
 
-Aurora Pass is a mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora Mainnet and Aurora Chain assets, and use any DApps across these chains. It helps also to onboard your users, even if they are not familiar with Web3 ecosystem yet.
+Aurora Pass is a mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora Mainnet and Aurora Chain assets, and use any DApps across these chains.
+It helps also to onboard your users, even if they are not familiar with Web3 ecosystem yet.
 
 ## Key Features
 
@@ -24,9 +25,11 @@ You can follow the step-by-step [integration example](/onboard/integration-examp
 
 ## Promo Widget
 
-To allow new users to install Aurora Pass quickly, you can add a [promo widget](/onboard/promo-widget) to your DApp. It will direct a user to download Aurora Pass application on a mobile phone in the most convinient way.
+To allow new users to install Aurora Pass quickly, you can add a [promo widget](/onboard/promo-widget) to your DApp.
+It will direct a user to download Aurora Pass application on a mobile phone in the most convinient way.
 
-It is optional to add it to your DApp. But otherwise, you will need to implement some other way to lead user to the installation of the wallet. So, we advice everyone to use it as an onboarding entrypoint in their DApps.
+It is optional to add it to your DApp. But otherwise, you will need to implement some other way to lead user to the installation of the wallet.
+So, we advice everyone to use it as an onboarding entrypoint in their DApps.
 
 ## Free transactions
 

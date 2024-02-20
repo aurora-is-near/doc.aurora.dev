@@ -4,8 +4,7 @@ title: "Integrate Wallet Connect"
 
 # Wallet Connect Integration
 
-Aurora Pass is meant to be used with [WalletConnect v2](https://docs.walletconnect.com/).
-It is an industry standard to create an encrypted connection between a DApp and EVM wallet,
+Aurora Pass is meant to be used with [WalletConnect v2](https://docs.walletconnect.com/). It is an industry standard to create an encrypted connection between a DApp and EVM wallet,
 initialized by scanning a QR code, or via [deeplink](https://docs.walletconnect.com/web3wallet/mobileLinking) for mobile apps and browsers.
 
 ## Integration Guide

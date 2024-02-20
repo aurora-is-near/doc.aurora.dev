@@ -11,7 +11,7 @@ It allows you to integrate more wallets comparing to the [Web3Modal](/onboard/wa
 ## Integrate RainbowKit
 
 This tutorial video explains quickly the process of setting up your RainbowKit modal:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5dv7qv08Fw?si=yNCb14jjHo33sKMW" 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5dv7qv08Fw?si=yNCb14jjHo33sKMW"
 style={{display:"block", margin: "auto"}} title="YouTube video player" frameborder="auto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Quick start
@@ -43,6 +43,7 @@ After that you will need to Import your libraries and Configure your installatio
 ### UI Configuration
 
 You can configure a lot of parameters for UI in RainbowKit, for example:
+
 1. [Modal Sizes](https://www.rainbowkit.com/docs/modal-sizes)
 2. [Connect Button](https://www.rainbowkit.com/docs/connect-button)
 3. [Themes](https://www.rainbowkit.com/docs/theming)
@@ -57,6 +58,7 @@ You will need to get Wallet ID from WalletConnect for the Aurora Pass wallet fir
 ```bash
 76260019aec5a3c44dd2421bf78e80f71a6c090d932c413a287193ed79450694
 ```
+
 You can now add Aurora Pass as a recommended wallet to your RainbowKit WalletList by:
 
 1. Use `walletConnectWallet` from `@rainbow-me/rainbowkit/wallets` in your [wallet connectors](https://www.rainbowkit.com/docs/custom-wallet-list):
@@ -98,7 +100,8 @@ walletConnectWallet(options: {
 });
 ```
 
-3. So now, just use the `explorerRecommendedWalletIds` option (documentated [here](https://docs.walletconnect.com/web3modal/v2/react/wagmi/options#explorerrecommendedwalletids-optional)) and paste Aurora Pass ID to it: 
+3. So now, just use the `explorerRecommendedWalletIds` option
+ (documentated [here](https://docs.walletconnect.com/web3modal/v2/react/wagmi/options#explorerrecommendedwalletids-optional)) and paste Aurora Pass ID to it:
 
 ```tsx
 let options = {
@@ -109,12 +112,9 @@ let options = {
 
 // pass the 'options' here as the last argument
 const connectors = connectorsForWallets([ ...
-	walletConnectWallet({projectId, options})
-	...
+   walletConnectWallet({projectId, options})
+   ...
 ]);
 ```
 
-That is it. Now you can use Aurora Pass from your RainbowKit popup.
-
-
-
+That is it. Now, you can use Aurora Pass from your RainbowKit popup.

@@ -1,12 +1,12 @@
 ---
-title: "Dedicated Blockchains"
+sidebar_label: Launch your chain (Aurora Chain)
 sidebar_position: 1
 ---
 
 
-# Aurora Chains
+# Aurora Chain
 
-Aurora Chains are dedicated EVM-compatible blockchains built on top of the NEAR Protocol. They are your own instance of Aurora – every Aurora Chain is based upon the Aurora smart contract,
+Aurora Chain is a dedicated EVM-compatible blockchain built on top of the NEAR Protocol. It is your own instance of Aurora – every Aurora Chain is based upon the Aurora smart contract,
 also called [Aurora Engine](/getting-started/aurora-engine). It provides you with a customized and dedicated blockchain environment.
 
 Benefits include:

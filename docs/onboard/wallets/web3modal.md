@@ -3,7 +3,8 @@ sidebar_label: 	Web3Modal
 title: Web3Modal
 ---
 
-The [Web3Modal](https://docs.walletconnect.com/web3modal/about) allows you to easily connect your DApp with wallets. It provides a simple and intuitive interface for DApps to request actions such as signing transactions and interacting with smart contracts on the blockchain.
+The [Web3Modal](https://docs.walletconnect.com/web3modal/about) allows you to easily connect your DApp with wallets.
+ It provides a simple and intuitive interface for DApps to request actions such as signing transactions and interacting with smart contracts on the blockchain.
 
 ![web3modal](/img/web3modal.png)
 

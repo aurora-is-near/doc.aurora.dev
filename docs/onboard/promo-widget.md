@@ -4,7 +4,8 @@ title: "Promo Widget"
 
 # Promo Widget
 
-If you develop a DApp – you will need a way to get your users to install Aurora Pass application to their phone. We have created a widget to simplify this step. This modal leads a user to download the wallet application for iOS or Android by scanning a QR code:
+If you develop a DApp – you will need a way to get your users to install Aurora Pass application to their phone. We have created a widget to simplify this step.
+This modal leads a user to download the wallet application for iOS or Android by scanning a QR code:
 
 ![ap_widget_qr_and_main](/img/ap_widget_qr_and_main.png)
 
@@ -95,7 +96,8 @@ If you click on `Open Promo` link, you will be able to see the Promo Widget now:
 And then, if you click further on the 'Skip, I have a wallet' button, you will see the placeholder message about Web3Modal:
 ![ap_widget_example_1](/img/ap_widget_example_2.png)
 
-Now, you can also take a look at the bigger [integration example here](/onboard/integration-example) to learn how to add Web3Modal to your project. Or go directly to the section of [adding the Web3Modal](/onboard/integration-example#adding-web3modal) if you came here from that page.
+Now, you can also take a look at the bigger [integration example here](/onboard/integration-example) to learn how to add Web3Modal to your project.
+Or go directly to the section of [adding the Web3Modal](/onboard/integration-example#adding-web3modal) if you came here from that page.
 
 ### What should be called in onComplete function?
 
