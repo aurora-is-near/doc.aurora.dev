@@ -25,7 +25,7 @@ To make Aurora Chain work in the best possible way for your business, we will he
 1. *Base token* of your Aurora Chain.
 2. *Gas mechanics* within your chain, such as fixed fee or percentage-based fees, gasless transactions, paying for gas with a custom token, etc.
 3. *Permission levels*: whitelist usage - who can transact or deploy contracts?
-You can learn about how to operate Aurora Chain Whitelists from your dApp [here](/aurora-cloud/chain#whitelist-management).
+You can learn about how to operate Aurora Chain Whitelists from your DApp [here](/aurora-cloud/chain#whitelist-management).
 4. *Private chain*: can be built using a private NEAR shard [Calimero](https://www.calimero.network/).
 
 ## How do I create my Aurora Chain?

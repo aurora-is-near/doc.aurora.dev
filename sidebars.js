@@ -46,20 +46,44 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Onboard users (Aurora Pass)',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'onboard/introduction',
+        'onboard/wallet-connect',
+        {
+          type: 'category',
+          collapsible: true,
+          collapsed: true,
+          label: "Add your wallets",
+          items: [
+            'onboard/wallets/web3modal',
+            'onboard/wallets/rainbowkit',
+          ]
+        },
+        'onboard/promo-widget',
+        'onboard/integration-example',
+        //'onboard/own-wallet',
+        'onboard/troubleshooting',
+        //  {
+        //   type: 'category',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   label: "Reference",
+        //   items: [
+        //     'onboard/reference/api',
+        //   ]
+        // },
+      ]
+    },
+    {
+      type: 'category',
       label: 'Aurora Cloud',
       collapsible: true,
       collapsed: false,
       items: [
         'aurora-cloud/chain',
-        {
-          type: 'category',
-          label: 'Mobile Wallet',
-          link: {type: 'doc', id: 'aurora-cloud/mobile-wallet/introduction'},
-          items: [
-            'aurora-cloud/mobile-wallet/promo-widget',
-            'aurora-cloud/mobile-wallet/wallet-connect',
-            'aurora-cloud/mobile-wallet/integration-example',]
-        }
       ]
     },
     {
