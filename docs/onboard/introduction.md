@@ -26,7 +26,7 @@ You can follow the step-by-step [integration example](/onboard/integration-examp
 ## Promo Widget
 
 To allow new users to install Aurora Pass quickly, you can add a [promo widget](/onboard/promo-widget) to your DApp.
-It will direct a user to download Aurora Pass application on a mobile phone in the most convinient way.
+It will direct a user to download Aurora Pass application on a mobile phone in the most convenient way.
 
 It is optional to add it to your DApp. But otherwise, you will need to implement some other way to lead user to the installation of the wallet.
 So, we advice everyone to use it as an onboarding entrypoint in their DApps.
