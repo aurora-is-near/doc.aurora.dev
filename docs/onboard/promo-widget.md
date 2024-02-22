@@ -4,12 +4,12 @@ title: "Promo Widget"
 
 # Promo Widget
 
-If you develop a DApp – you will need a way to get your users to install Aurora Pass application to their phone. We have created a widget to simplify this step.
+If you develop a DApp – you will need a way to get your users to install the Aurora Pass application on their phone. We have created a widget to simplify this step.
 This modal leads a user to download the wallet application for iOS or Android by scanning a QR code:
 
 ![ap_widget_qr_and_main](/img/ap_widget_qr_and_main.png)
 
-User can always say that they already have the wallet installed and this popup won't be shown for them next time.
+Users can always say that they already have the wallet installed and this popup won't be shown for them next time.
 
 ## Quick integration guide
 
@@ -20,11 +20,11 @@ User can always say that they already have the wallet installed and this popup w
 5. Optionally, you can hide the _Update your app_ header by passing the `hideUpdateAppBlock` variable via `config` argument: `window.openPromo({ onComplete: () => {...}, config: {hideUpdateAppBlock: true}})`
 
 You can also find the same instructions [here](https://pass.auroracloud.dev/).
-The more detailed example of integration is below.
+A more detailed example of integration is below.
 
 ## Detailed integration guide
 
-In a case of building a React app, you can add the `promo.js` script to it by using the `useEffect` hook like this:
+In the case of building a React app, you can add the `promo.js` script to it by using the `useEffect` hook like this:
 
 ```jsx title="aurora-pass-example/src/App.js"
 ...
@@ -66,7 +66,7 @@ const openWidget = () => {
 ...
 ```
 
-Now, we can set the `onClick` attribute of some UI component to display the modal. We can just re-use the already existing `App-link` element to use `openWidget` function:
+Now, we can set the `onClick` attribute of one of our UI components to display the modal. We can just re-use the already existing `App-link` element to use `openWidget` function:
 
 ```jsx title="aurora-pass-example/src/App.js"
 

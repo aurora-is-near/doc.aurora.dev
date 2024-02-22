@@ -4,8 +4,8 @@ title: "Introduction"
 
 # Aurora Pass
 
-Aurora Pass is a mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora Mainnet and Aurora Chain assets, and use any DApps across these chains.
-It helps also to onboard your users, even if they are not familiar with Web3 ecosystem yet.
+Aurora Pass is a mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora Mainnet and Aurora Chain assets and use any DApps across these chains.
+It helps also to onboard your users, even if they are not familiar with the Web3 ecosystem yet.
 
 ## Key Features
 
@@ -26,19 +26,19 @@ You can follow the step-by-step [integration example](/onboard/integration-examp
 ## Promo Widget
 
 To allow new users to install Aurora Pass quickly, you can add a [promo widget](/onboard/promo-widget) to your DApp.
-It will direct a user to download Aurora Pass application on a mobile phone in the most convenient way.
+It will direct a user to download the Aurora Pass application on a mobile phone in the most convenient way.
 
-It is optional to add it to your DApp. But otherwise, you will need to implement some other way to lead user to the installation of the wallet.
-So, we advice everyone to use it as an onboarding entrypoint in their DApps.
+It is optional to add it to your DApp. Otherwise, you will need to implement some other way to lead users to the installation of the wallet.
+So, we advise everyone to use it as an onboarding entry point in their DApps.
 
 ## Free transactions
 
 Aurora Pass requires a login with an email or Apple/Google auth which will provide them with free transactions on Aurora Mainnet.
-The basic plan for Aurora Pass users is 50 free transactions per month. This feature is achieved by using Gasless Management feature of Aurora Chains.
-In parallel, DApps can also pay for their user’s EOA transaction fees by getting their own gasless deal for their users or contracts.
+The basic plan for Aurora Pass users is 50 free transactions per month. This feature is achieved by using the Gasless Management feature of Aurora Chains.
+At the same time, DApps can also pay for their users’ EOA transaction fees by getting their own gasless deal using the same mechanism.
 
 If the monthly free transaction limit is reached or the transaction is not sponsored by a DApp, a pack of transactions can be purchased from within the Aurora Pass app.
-Right now, there is only one transaction pack available: 500 free transactions for a price around $4.99.
+Right now, there is only one transaction pack available: 500 free transactions for a price of around $4.99.
 
 ## Security
 
@@ -49,7 +49,7 @@ This provides better onboarding while providing them with the ownership of their
 
 The seed phrase is the only way to recover access to the wallet in case of loss or when installing the wallet on a new device.
 
-Using the wallet requires biometric authentication (e.g., faceID or touchID). In a case it is absent, the PIN code for a device will be used.
+Using the wallet requires biometric authentication (e.g., faceID or touchID). In case it is absent, the PIN code for a device will be used.
 The seed phrase is stored using [expo-secure-store](https://docs.expo.dev/versions/latest/sdk/securestore/):
 
 - on Android, values are stored in SharedPreferences, encrypted with Android’s Keystore system;

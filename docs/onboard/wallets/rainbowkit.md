@@ -3,8 +3,8 @@ sidebar_label: 	RainbowKit
 title: RainbowKit
 ---
 
-The [RainbowKit](https://www.rainbowkit.com/docs/introduction) is a React library that makes it easy to add wallet connection to your dapp. It's intuitive, responsive and customizable.
-It allows you to integrate more wallets comparing to the [Web3Modal](/onboard/wallets/web3modal) solution.
+The [RainbowKit](https://www.rainbowkit.com/docs/introduction) is a React library that makes it easy to add wallet connections to your Dapp. It's intuitive, responsive and customizable.
+It allows you to integrate more wallets compared to the [Web3Modal](/onboard/wallets/web3modal) solution.
 
 ![rainbowkit](/img/rainbowkit.png)
 
@@ -38,7 +38,7 @@ Install RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/), [viem]
 npm install @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query
 ```
 
-After that you will need to Import your libraries and Configure your installation. You can read more about this [here](https://www.rainbowkit.com/docs/installation#import).
+After that, you will need to Import your libraries and Configure your installation. You can read more about this [here](https://www.rainbowkit.com/docs/installation#import).
 
 ### UI Configuration
 
@@ -53,7 +53,7 @@ You can read more about advanced customizing these components [here](https://www
 
 ## Adding Aurora Pass
 
-You will need to get Wallet ID from WalletConnect for the Aurora Pass wallet first from [here](https://explorer.walletconnect.com/aurora-pass) or copy it directly below:
+You will need to get a Wallet ID from WalletConnect for the Aurora Pass wallet first from [here](https://explorer.walletconnect.com/aurora-pass) or copy it directly below:
 
 ```bash
 76260019aec5a3c44dd2421bf78e80f71a6c090d932c413a287193ed79450694
@@ -101,7 +101,7 @@ walletConnectWallet(options: {
 ```
 
 3. So now, just use the `explorerRecommendedWalletIds` option
- (documentated [here](https://docs.walletconnect.com/web3modal/v2/react/wagmi/options#explorerrecommendedwalletids-optional)) and paste Aurora Pass ID to it:
+ (documented [here](https://docs.walletconnect.com/web3modal/v2/react/wagmi/options#explorerrecommendedwalletids-optional)) and paste Aurora Pass ID to it:
 
 ```tsx
 let options = {
