@@ -1,10 +1,10 @@
 ---
-sidebar_label: 	RainbowKit
+sidebar_label:  RainbowKit
 title: RainbowKit
 ---
 
-The [RainbowKit](https://www.rainbowkit.com/docs/introduction) is a React library that makes it easy to add wallet connections to your Dapp. It's intuitive, responsive and customizable.
-It allows you to integrate more wallets compared to the [Web3Modal](/onboard/wallets/web3modal) solution.
+The [RainbowKit](https://www.rainbowkit.com/docs/introduction) is a React library that easily adds wallet connections to your Dapp. It's intuitive, responsive and customizable.
+It allows you to integrate even more wallets than the [Web3Modal](/onboard/wallets/web3modal) solution.
 
 ![rainbowkit](/img/rainbowkit.png)
 
@@ -26,7 +26,7 @@ pnpm create @rainbow-me/rainbowkit@latest
 yarn create @rainbow-me/rainbowkit
 ```
 
-This will prompt you for a project name, generate a new directory containing a boilerplate project, and install all required dependencies.
+These commands will prompt you for a project name, generate a new directory containing a boilerplate project, and install all required dependencies.
 
 Alternatively, you can manually integrate RainbowKit into your existing project.
 
@@ -38,7 +38,7 @@ Install RainbowKit and its peer dependencies, [wagmi](https://wagmi.sh/), [viem]
 npm install @rainbow-me/rainbowkit wagmi viem@2.x @tanstack/react-query
 ```
 
-After that, you will need to Import your libraries and Configure your installation. You can read more about this [here](https://www.rainbowkit.com/docs/installation#import).
+After that, you must import your libraries and configure your installation. You can read more about this [here](https://www.rainbowkit.com/docs/installation#import).
 
 ### UI Configuration
 
@@ -85,8 +85,8 @@ const connectors = connectorsForWallets(
 );
 ```
 
-2. Now you can configure your `walletConnectWallet` via the `qrModalOptions` variable which is secretly just WalletConnect options,
-find the [full list of them here](https://docs.walletconnect.com/advanced/walletconnectmodal/options):
+2. Now you can configure your `walletConnectWallet` via the `qrModalOptions` variable, which is secretly just WalletConnect options,
+find the [complete list of them here](https://docs.walletconnect.com/advanced/walletconnectmodal/options):
 
 ```tsx
 walletConnectWallet(options: {
@@ -100,7 +100,7 @@ walletConnectWallet(options: {
 });
 ```
 
-3. So now, just use the `explorerRecommendedWalletIds` option
+3. So now, use the `explorerRecommendedWalletIds` option
  (documented [here](https://docs.walletconnect.com/web3modal/v2/react/wagmi/options#explorerrecommendedwalletids-optional)) and paste Aurora Pass ID to it:
 
 ```tsx

@@ -4,12 +4,12 @@ title: "Promo Widget"
 
 # Promo Widget
 
-If you develop a DApp – you will need a way to get your users to install the Aurora Pass application on their phone. We have created a widget to simplify this step.
+If you develop a DApp, you will need a way to get your users to install the Aurora Pass application on their phones. We have created a widget to simplify this step.
 This modal leads a user to download the wallet application for iOS or Android by scanning a QR code:
 
 ![ap_widget_qr_and_main](/img/ap_widget_qr_and_main.png)
 
-Users can always say that they already have the wallet installed and this popup won't be shown for them next time.
+Users can always say they already have the wallet installed, and this popup won't be shown for them next time.
 
 ## Quick integration guide
 
@@ -17,7 +17,8 @@ Users can always say that they already have the wallet installed and this popup 
 2. This adds a function to the `window` object called `openPromo`.
 3. To open the widget, call `window.openPromo` and pass the `onComplete` function as a parameter `window.openPromo({ onComplete: function })`
 4. You can also check if the function is available before calling it `window.openPromo ? window.openPromo({ onComplete: function }) : function()`
-5. Optionally, you can hide the _Update your app_ header by passing the `hideUpdateAppBlock` variable via `config` argument: `window.openPromo({ onComplete: () => {...}, config: {hideUpdateAppBlock: true}})`
+5. Optionally, you can hide the _Update your app_ header by passing the `hideUpdateAppBlock` variable via the `config` argument:
+ `window.openPromo({ onComplete: () => {...}, config: {hideUpdateAppBlock: true}})`
 
 You can also find the same instructions [here](https://pass.auroracloud.dev/).
 A more detailed example of integration is below.
@@ -47,7 +48,7 @@ function App() {
 ```
 
 :::note
-We assume that the project we're working on here is a default `create-react-app` application to simplify things. You can read more about it [here](https://create-react-app.dev/docs/getting-started/).
+We assume the project we're working on here is a default `create-react-app` application to simplify things. You can read more about it [here](https://create-react-app.dev/docs/getting-started/).
 :::
 
 Then, let's add a function `openModal` to display our Promo Widget just after the imports somewhere:
@@ -66,7 +67,7 @@ const openWidget = () => {
 ...
 ```
 
-Now, we can set the `onClick` attribute of one of our UI components to display the modal. We can just re-use the already existing `App-link` element to use `openWidget` function:
+Now, we can set the `onClick` attribute of one of our UI components to display the modal. We can re-use the already existing `App-link` element to use the `openWidget` function:
 
 ```jsx title="aurora-pass-example/src/App.js"
 
@@ -90,19 +91,19 @@ function App() {
 }
 ```
 
-If you click on `Open Promo` link, you will be able to see the Promo Widget now:
+If you click on the `Open Promo` link, you will be able to see the Promo Widget now:
 ![ap_widget_example_1](/img/ap_widget_example_1.png)
 
 And then, if you click further on the 'Skip, I have a wallet' button, you will see the placeholder message about Web3Modal:
 ![ap_widget_example_1](/img/ap_widget_example_2.png)
 
-Now, you can also take a look at the bigger [integration example here](/onboard/integration-example) to learn how to add Web3Modal to your project.
+You can also look at the more extensive [integration example here](/onboard/integration-example) to learn how to add Web3Modal to your project.
 Or go directly to the section of [adding the Web3Modal](/onboard/integration-example#adding-web3modal) if you came here from that page.
 
-### What should be called in onComplete function?
+### What should be called in the `onComplete` function?
 
 The widget calls any function you pass to it. So you could pass anything to it, whether that’s opening Web3Modal or RainbowKit popups or any other function.
-But, it works best and is meant to be used with WebModal v3 since the modal is styled in the same style.
+But it works best and is meant to be used with WebModal v3 since the modal is styled similarly.
 
 ## Examples of integration
 

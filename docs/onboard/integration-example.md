@@ -7,7 +7,7 @@ In this article, we will go through the development of a simple [Web3Modal](http
 
 ### Create a simple React app
 
-To start, let's create a React application by using `create-react-app`. Of course, you can just use your already existing codebase instead, we're doing this just for demonstration purposes.
+To start, let's create a React application by using `create-react-app`. Of course, you can use your existing codebase instead. We're doing this just for demonstration purposes.
 You will need to run in your terminal:
 
 ```bash
@@ -16,18 +16,18 @@ cd aurora-pass-example
 npm start
 ```
 
-Your React app will be running now at `http://localhost:3000`, just open that link in your browser to see the UI.
-You can read more about the `create-react-app` [here](https://create-react-app.dev/docs/getting-started/), in case you want to learn more details.
+Your React app will be running now at `http://localhost:3000`. Just open that link in your browser to see the UI.
+You can read more about the `create-react-app` [here](https://create-react-app.dev/docs/getting-started/) for more details.
 
 ### Add Aurora Promo Widget
 
-We have talked about the Promo Widget [before](/onboard/promo-widget), but now it is time to try it in practice.
-You need to follow the code [here](/onboard/promo-widget) to add the Promo Widget popup to your DApp.
+We have discussed the Promo Widget [before](/onboard/promo-widget), but now it is time to try it in practice.
+You need to look at the code [here](/onboard/promo-widget) to add the Promo Widget popup to your DApp.
 After this, we can add Web3Modal to the project.
 
 ### Adding Web3Modal
 
-We will follow the [Web3Model Wagmi v2 documentation](https://docs.walletconnect.com/web3modal/react/about?platform=wagmi) closely here.
+We will closely follow the [Web3Model Wagmi v2 documentation](https://docs.walletconnect.com/web3modal/react/about?platform=wagmi) here.
 
 #### Import libraries and get projectId
 
@@ -37,7 +37,7 @@ First, let's add some new packages to the project:
 npm install @web3modal/wagmi@4.0.0-alpha.0 wagmi viem @tanstack/react-query
 ```
 
-Let's sign up now at [WalletConnect Cloud](https://cloud.walletconnect.com/sign-in) to get a WalletConnect `projectId`. You will get some random string like `4aee871f7a80f1ff5c7892226bd3ascd`.
+Now, sign up at [WalletConnect Cloud](https://cloud.walletconnect.com/sign-in) to get a WalletConnect `projectId`. You will get some random string like `4aee871f7a80f1ff5c7892226bd3ascd`.
 
 #### Add Web3Modal component
 
@@ -84,7 +84,7 @@ export default function Web3Modal({ children }) {
 }
 ```
 
-Now, we can use the Web3Modal component in our App. First of all, notice that we need to wrap into it the part of the App using the `wagmi` hooks. In this case, we wrapping it fully into it:
+Now, we can use the Web3Modal component in our app. First, notice that we need to wrap the part of the app into it using the `wagmi` hooks. In this case, we are wrapping it fully into it:
 
 ```jsx title="aurora-pass-example/src/App.js"
 
@@ -103,12 +103,12 @@ function App() {
 }
 ```
 
-But we haven't displayed the popup yet. How can we do it?
+But we still need to display the popup. How can we do it?
 
 #### Displaying Web3Modal
 
-To open the wallets popup, let's use `useWeb3Modal` hook inside the App component, to be more specific – the `open` function it provides.
-We also need to edit a bit our old `openWidget` function to accept `onComplete` argument, and pass there the `open` function:
+To open the wallets popup, let's use the `useWeb3Modal` hook inside the App component, to be more specific – the `open` function it provides.
+We also need to edit a bit our old `openWidget` function to accept the `onComplete` argument and pass there the `open` function:
 
 ```jsx title="aurora-pass-example/src/App.js"
 import { useWeb3Modal } from '@web3modal/wagmi/react';
@@ -143,13 +143,13 @@ function App() {
 }
 ```
 
-You can also safely remove the `openWeb3Modal` function we have had previously with just a placeholder alert in there.
+You can also safely remove the `openWeb3Modal` function we previously had with just a placeholder alert.
 
-If you go into your App now, you will be able to see the WalletConnect popup appearing after you click 'Skip' button in the AuroraPass widget:
+If you go into your App now, you will be able to see the WalletConnect popup appearing after you click the 'Skip' button in the AuroraPass widget:
 
 ![wc_default_modal](/img/wc_default_modal.png)
 
-But, it won't contain the AuroraPass yet. Let's add it there.
+But it will still need to contain the AuroraPass. Let's add it there.
 
 ### Add AuroraPass to your wallet list
 
@@ -172,11 +172,11 @@ If we re-open the Web3Modal now, we will see the AuroraPass wallet there:
 
 ![wc_ap_visible](/img/wc_ap_visible.png)
 
-Now, we can try connecting our wallet, via the QR code:
+Now, we can try connecting our wallet via the QR code:
 
 ![wc_ap_qr](/img/wc_ap_qr.png)
 
-But we won't see if the connection was successful yet, because we don't have anything to display that. The popup will just close and we will see the App's initial screen:
+But we won't see if the connection was successful yet because we need something to display that. The popup will close, and we will see the App's initial screen:
 
 ![wc_ap_connected_no_ui](/img/wc_ap_connected_no_ui.png)
 
@@ -228,4 +228,4 @@ And the corresponding account after we've connected via the Web3Modal to the DAp
 
 Congratulations on completing your first AuroraPass integration!
 
-If you still have some questions, please contact our team via [Discord](https://discord.com/invite/dEFJBz8HQV) by opening a support ticket there.
+If you still have questions, please get in touch with our [Support Team](https://discord.com/invite/dEFJBz8HQV) by opening a support ticket there.
