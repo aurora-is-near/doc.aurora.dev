@@ -97,8 +97,8 @@ If you click on the `Open Promo` link, you will be able to see the Promo Widget 
 And then, if you click further on the 'Skip, I have a wallet' button, you will see the placeholder message about Web3Modal:
 ![ap_widget_example_1](/img/ap_widget_example_2.png)
 
-You can also look at the more extensive [integration example here](/onboard/integration-example) to learn how to add Web3Modal to your project.
-Or go directly to the section of [adding the Web3Modal](/onboard/integration-example#adding-web3modal) if you came here from that page.
+You can also look at the more extensive [integration example here](/onboard/wallets/web3modal#integrate-web3modal) to learn how to add Web3Modal to your project,
+ particular section describing it is [here](/onboard/wallets/web3modal#add-web3modal).
 
 ### What should be called in the `onComplete` function?
 
@@ -111,3 +111,8 @@ To see the widget in use, visit one of the projects on the list:
 
 - [Aurora+](https://aurora.plus/)
 - [Pipeflare](https://pipeflare.io/flare2-token/spin)
+
+## Troubleshooting
+
+Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
+ on Discord and open a support ticket there.

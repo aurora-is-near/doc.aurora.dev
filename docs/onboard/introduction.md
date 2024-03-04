@@ -21,7 +21,12 @@ It also helps onboard your users, even ones unfamiliar with the Web3 ecosystem.
 Connecting Aurora Pass to a DApp is done like every other EVM wallet implementing a [WalletConnect v2](https://docs.walletconnect.com/).
 See more info on configuring or adding WalletConnect [here](/onboard/wallet-connect).
 
-You can follow the step-by-step [integration example](/onboard/integration-example) to understand better how different components work together.
+We propose two options for displaying the wallets for your users: Web3Modal or Rainbow Kit. You can follow the step-by-step integration examples here:
+
+- [Web3Modal Example](/onboard/wallets/web3modal#integrate-web3modal)
+- [RainbowKit Example](/onboard/wallets/rainbowkit#integrate-rainbowkit)
+
+That will help you to understand better how the different components work together. E.g., wallet modals, promo widgets and UI frameworks.
 
 ## Promo Widget
 
@@ -58,3 +63,5 @@ The seed phrase is stored using [expo-secure-store](https://docs.expo.dev/versio
 ## Troubleshooting
 
 If you encounter any issues, please visit our [Troubleshooting Page](/onboard/troubleshooting) to find a solution.
+In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
+ on Discord and open a support ticket there.

@@ -17,11 +17,11 @@ If you have transferred them to a CEX address, you can only recover these tokens
 ### I can't find the token [XYZ] in my wallet – can I add it somehow?
 
 - If you are a developer, please add a PR to [this repository](https://github.com/aurora-is-near/bridge-assets) following [this example](https://github.com/aurora-is-near/bridge-assets/pull/273/files).
-- If you are a user, don't hesitate to get in touch with our [Support Team](https://discord.gg/dEFJBz8HQV) via Discord, and we will help you resolve this issue.
+- If you are a user, don't hesitate to get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT) via Discord, and we will help you resolve this issue.
 
 ### I have paid for my transaction pack but got no transactions added
 
-Please get in touch with our [Support Team](https://discord.gg/dEFJBz8HQV), and we will help you get your transaction pack.
+Please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT), and we will help you get your transaction pack.
 
 ### I can't see my balances in Aurora Pass
 
@@ -39,11 +39,11 @@ To fix it, please try to follow the next steps:
 1. Try to disconnect all previously connected wallets from that DApp.
 2. Re-connect with your AuroraPass wallet to a DApp.
 
-If the problem persists, please get in touch with our [Support Team](https://discord.gg/dEFJBz8HQV).
+If the problem persists, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT).
 
 ### I see symbols like 0xab4... while signing a DApp transaction in Aurora Pass - what do they mean?
 
-If you are a user, don't hesitate to get in touch with either the DApp support team or the [Aurora Support Team](https://discord.gg/dEFJBz8HQV) and ask them to verify the contracts used in that DApp.
+If you are a user, don't hesitate to get in touch with either the DApp support team or the [Aurora Support Team](https://discord.gg/WXfbGsSUbT) and ask them to verify the contracts used in that DApp.
 
 If you are a developer, verify your DApp contracts in [Aurora Explorer](https://explorer.aurora.dev/). We're using Blockscout
  so that you can read more about it [here](https://docs.blockscout.com/for-users/verifying-a-smart-contract).
@@ -55,4 +55,4 @@ We advise you to verify all (or most) of your contracts, which gives your users 
 
 ### I have a problem which is not on the list
 
-Please get in touch with our [Support Team](https://discord.gg/dEFJBz8HQV) on Discord and open a ticket describing your problem.
+Please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT) on Discord and open a ticket describing your problem.

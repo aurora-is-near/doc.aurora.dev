@@ -55,7 +55,7 @@ const sidebars = {
         {
           type: 'category',
           collapsible: true,
-          collapsed: true,
+          collapsed: false,
           label: "Add your wallets",
           items: [
             'onboard/wallets/web3modal',
@@ -63,7 +63,6 @@ const sidebars = {
           ]
         },
         'onboard/promo-widget',
-        'onboard/integration-example',
         //'onboard/own-wallet',
         'onboard/troubleshooting',
         //  {
