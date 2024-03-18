@@ -1,6 +1,6 @@
 ---
-title: Transfers from Ethereum
-sidebar_position: 4
+sidebar_label: 	From Ethereum
+title: Bridge from Ethereum
 ---
 
 Transfers from the Ethereum network are similar to those between Aurora/NEAR yet a little more complex when it comes to moving ERC-20 tokens.
@@ -10,7 +10,7 @@ from Ethereum to Aurora.
 Select Ethereum as the “From” network, and Aurora as the “To” network. “Connect” both wallets, and click “Continue”.
 
 :::tip
-If you have trouble connecting networks, please refer to the [Bridge Overview](bridge-overview) section.
+If you have trouble connecting networks, please refer to the [Bridge Overview](introduction) section.
 :::
 
 ![rainbow_bridge_20](/img/rainbow_bridge_20.png)
@@ -23,7 +23,7 @@ We also provide a one-click helper to allow you to send the full token balance i
 ...and in the case that you’ve chosen ETH, we show you a warning that you may want to keep a bit around for gas fees!
 
 :::tip
-If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](transfer-overview) chapter for more information.
+If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](introduction) chapter for more information.
 :::
 
 ![rainbow_bridge_21](/img/rainbow_bridge_21.png)
@@ -46,7 +46,7 @@ The bridge informs you that the transfer may take up to 10 minutes.
 
 From here, you can either click “Go To My Transfers” or close the page.
 If you choose to go to the list of your transfers,
-please refer to the [Pending and Completed Transfers](pending-and-completed-transfers) section for more information about what details you can get from this page.
+please refer to the [Pending and Completed Transfers](introduction) section for more information about what details you can get from this page.
 
 Just when you thought we were about to finish this chapter, there is one **IMPORTANT** point that we want to draw your attention to. Yes—with regard to **ERC-20** tokens transfer mentioned above.
 
@@ -82,6 +82,6 @@ If you have issues **accessing your funds** after the transfer or the transfer l
 :::
 
 And… on a different
-**NOTE** Let’s make sure to check out the **Security** option that is directly relevant to ERC-20 tokens. You’ll find detailed information in the [Advanced Features](advanced-features) chapter.
+**NOTE** Let’s make sure to check out the **Security** option that is directly relevant to ERC-20 tokens. You’ll find detailed information in the [Advanced Features](advanced) chapter.
 
 ![rainbow_bridge_30](/img/rainbow_bridge_30.png)

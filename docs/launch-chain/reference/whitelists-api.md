@@ -1,3 +1,15 @@
 ---
 sidebar_label: 	Whitelists API
+title: Whitelists API
 ---
+
+|                                |                                                                               |
+|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **API path**                       | `/chain/whitelists/`|
+| **method**                     | `POST`|
+| **required request headers**   | Content-Type: application/json <br/>Authorization: Bearer [**ACC API Token**]|
+| **required request params**    | *op_type*: `add_entry` and `remove_entry` are supported <br/>*kind*: Type of whitelist. `developer` or `user` are supported. <br/> *entry*: EOA address to add or remove.|
+| **response code**              | On success: `200 OK`<br/>On Error:<br/> - `400 BadRequest`: if a request body is empty or could not be parsed or a number of operations is greater than RequestConfig.MaxBatchLen<br/> - `401 Unauthorized`: if authorization header does not satisfy the [conditions](401 Conditions)<br/> - `403 Forbidden`: if a caller is [not authorized](403 Conditions) to perform all updates in request array (i.e., partial updates are not allowed)<br/> - `408 RequestTimeout`: with partial response, if not all responses from storage node are received before RequestConfig.TimeoutMs or `Timeout` header in request<br/> - `500 InternalServerError`: if fails to send an update request to the storage node, or fails to parse a response from the storage node |
+| **request example**            | <pre lang="shell">curl --location --request POST '[API ENDPOINT]/chain/whitelists/' --header 'Authorization: Bearer [YOUR_ACC_API_KEY]' --header 'Content-Type: application/json' --data-raw '<br/>[<br/>  {<br/>    "op_type":"add_entry",<br/>    "kind":"developer", <br/>    "entry":"0xe93685f3bBA03016F02bD1828BaDD6195988D951"<br/>  }<br/>]'</pre>|
+| **response example - success** | <pre lang="json">[<br/> "The entry: 0xe93685f3bBA03016F02bD1828BaDD6195988D951 has been added to the Developers whitelist successfully"<br/>]</pre>|
+| **response examples - error**  | Response Code: 400 Bad Request <pre lang="json">{<br/>  "errorMessage":"engine request at index [1] is not authorized",<br/>  "error":""<br/>}</pre>Note: not all error responses contain response body, but if response body exists it has the above format.<br/>|

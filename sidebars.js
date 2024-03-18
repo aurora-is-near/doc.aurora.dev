@@ -32,7 +32,7 @@ const sidebars = {
       ]
     },
 
-    {
+    /*{
       type: 'category',
       label: 'Build a dapp (Solidity)',
       collapsible: true,
@@ -42,7 +42,7 @@ const sidebars = {
         'build-a-dapp/quickstart',
         'build-a-dapp/troubleshooting',
       ]
-    },
+    },*/
     {
       type: 'category',
       label: 'Bridge your assets',
@@ -50,29 +50,23 @@ const sidebars = {
       collapsed: false,
       items: [
         'bridge/introduction',
-        'bridge/forwarder',
-        'bridge/on-ramp',
-        {
+        //'bridge/forwarder',
+        //'bridge/on-ramp',
+        /*{
           type: 'category',
           collapsible: true,
           collapsed: true,
           label: "With Rainbow Bridge",
           items: [
-            'bridge/aurora-near',
-            {
-              type: 'category',
-              collapsible: true,
-              collapsed: true,
-              label: "From/to Ethereum",
-              items: [
-                'bridge/ethereum/bridge-assets',
-                'bridge/ethereum/speed-up',
-              ]
-            },
-          'bridge/aurora-chains',
-          'bridge/advanced',
+            // put items from below here later
          ]
-        },
+        },*/
+        'bridge/aurora-near',
+        'bridge/to-ethereum',
+        'bridge/from-ethereum',
+        'bridge/fast-bridge',
+        //'bridge/aurora-chains',
+        'bridge/advanced',
         'bridge/troubleshooting',
       ]
     },
@@ -85,23 +79,23 @@ const sidebars = {
         'launch-chain/introduction',
         {
           type: 'category',
-          collapsible: true,
-          collapsed: true,
+          collapsible: false,
+          collapsed: false,
           label: "Configure your chain",
           items: [
             'launch-chain/configuration/initialize',
             'launch-chain/configuration/whitelists',
-            'launch-chain/configuration/ecosystem-tools',
-            'launch-chain/configuration/deploy-tokens',
-            'launch-chain/configuration/kyc',
+            //'launch-chain/configuration/ecosystem-tools',
+            //'launch-chain/configuration/deploy-tokens',
+            //'launch-chain/configuration/kyc',
           ]
         },
-        'launch-chain/stats',
-        'launch-chain/troubleshooting',
+        //'launch-chain/stats',
+        //'launch-chain/troubleshooting',
          {
           type: 'category',
-          collapsible: true,
-          collapsed: true,
+          collapsible: false,
+          collapsed: false,
           label: "Reference",
           items: [
             'launch-chain/reference/whitelists-api',
@@ -115,21 +109,11 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        'xcc/quickstart',
+        //'xcc/quickstart',
         {
           type: 'category',
-          collapsible: true,
-          collapsed: true,
-          label: "Near to Aurora",
-          items: [
-            'xcc/near-to-aurora/introduction',
-            'xcc/near-to-aurora/usage-examples',
-          ]
-        },
-        {
-          type: 'category',
-          collapsible: true,
-          collapsed: true,
+          collapsible: false,
+          collapsed: false,
           label: "Aurora to Near",
           items: [
             'xcc/aurora-to-near/introduction',
@@ -138,6 +122,16 @@ const sidebars = {
         },
         {
           type: 'category',
+          collapsible: false,
+          collapsed: false,
+          label: "Near to Aurora",
+          items: [
+            'xcc/near-to-aurora/introduction',
+            'xcc/near-to-aurora/usage-examples',
+          ]
+        },
+        /*{
+          type: 'category',
           collapsible: true,
           collapsed: true,
           label: "LayerZero",
@@ -145,7 +139,7 @@ const sidebars = {
             'xcc/layerzero/introduction',
             'xcc/layerzero/usage-examples',
           ]
-        },
+        },*/
         ]
     },
     {
@@ -180,8 +174,8 @@ const sidebars = {
         // },
       ]
     },
-    'aurora-cloud/chain',
-    {
+    //'aurora-cloud/chain',
+    /*{
       type: 'category',
       label: 'Cover user gas fees (Aurora Control)',
       collapsible: true,
@@ -212,8 +206,8 @@ const sidebars = {
         },
         'gas/troubleshooting',
       ]
-    },
-    {
+    },*/
+    /*{
       type: 'category',
       label: 'Run a node (Standalone RPC)',
       collapsible: true,
@@ -249,24 +243,24 @@ const sidebars = {
         //   ]
         // },
       ]
-    },
+    },*/
     {
       type: 'category',
       label: 'Developer Reference',
       collapsible: true,
       collapsed: false,
       items: [
-        'dev-reference/network-endpoints',
         'dev-reference/aurora-engine',
+        'dev-reference/network-endpoints',
         'dev-reference/json-rpc',
         'dev-reference/precompiles',
         'dev-reference/opcodes',
         'dev-reference/contracts',
       ]
     },
-    'audits',
-    'contact-us',
-    'contribute'
+    //'audits',
+    //'contact-us',
+    //'contribute'
     // {
     //   type: 'category',
     //   label: 'EVM',

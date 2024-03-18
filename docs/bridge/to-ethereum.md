@@ -1,6 +1,6 @@
 ---
-title: Transfers to Ethereum
-sidebar_position: 5
+sidebar_label: 	To Ethereum
+title: Bridge to Ethereum
 ---
 
 Transfers to Ethereum are probably the most confusing for our users so far.
@@ -9,7 +9,7 @@ Transfers to Ethereum are probably the most confusing for our users so far.
 and Ethereum as the “To” network. “Connect” both wallets, and click “Continue”.
 
 :::tip
-If you have trouble connecting networks, please refer to the [Bridge Overview](bridge-overview) section.
+If you have trouble connecting networks, please refer to the [Bridge Overview](introduction) section.
 :::
 
 ![rainbow_bridge_31](/img/rainbow_bridge_31.png)
@@ -22,7 +22,7 @@ We also provide a one-click helper to allow you to send the full token balance i
 ...and in the case that you’ve chosen ETH, we show you a warning that you may want to keep a bit around for gas fees!
 
 :::tip
-If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](transfer-overview) chapter for more information.
+If you are wondering why you only see specific tokens, please refer to the [Transfer Overview](introduction) chapter for more information.
 :::
 
 ![rainbow_bridge_32](/img/rainbow_bridge_32.png)
@@ -83,5 +83,5 @@ You can wait for lower gas fees and finalize the transfer at any time. Funds are
 
 :::tip
 In case you can’t access the transfer from the bridge interface after 16 hours (e.g. if you clicked “Hide This Transfer” button before), there is this useful option Restore Transfer. You
-can find more information on it in the [Advanced Features](advanced-features) chapter.
+can find more information on it in the [Advanced Features](advanced) chapter.
 :::
