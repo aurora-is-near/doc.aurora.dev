@@ -191,3 +191,27 @@ html[data-theme='light'] .cookie-consent__confirm:hover {
 html[data-theme='light'] .cookie-consent__confirm:active {
   outline: 2px solid rgb(0, 0, 0, 0.6);
 }
+
+.theme-doc-sidebar-container>div>div>nav>ul>.theme-doc-sidebar-item-category>div>a {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: var(--ifm-menu-color);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 11.5px!important;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 12px 8px 12px 8px;
+}
+
+.theme-doc-sidebar-container>div>div>nav>ul>.theme-doc-sidebar-item-category.menu__list-item--collapsed>div>a {
+  padding: 12px 8px 12px 8px;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container>div>div>nav>ul>.theme-doc-sidebar-item-category>div>a {
+  color: var(--ifm-menu-color);
+}
+
+.menu__list:last-child:has(.theme-doc-sidebar-item-link-level-2) {
+  margin-bottom: 24px;
+}
