@@ -3,11 +3,12 @@ sidebar_label: Tokenomics
 title: Tokenomics
 ---
 
-The Aurora DAO approved the creation of the official project governance token, AURORA, with a total supply of 1 billion. The token was deployed on Ethereum as non-upgradable ERC-20 with a fixed supply, and then bridged to NEAR and AURORA using the trustless Rainbow Bridge. Here are respective links to the token on Near and Aurora protocols.
+The Aurora DAO approved the creation of the official project governance token, AURORA, with a total supply of 1 billion. The token was deployed on Ethereum as non-upgradable ERC-20
+with a fixed supply and then bridged to NEAR and AURORA using the trustless Rainbow Bridge. Here are respective links to the token on Near and Aurora protocols.
 
 There were 1,000,000,000 Aurora tokens (AURORA) created at Genesis on October 7, 2021.
 
-The article has been updated at the end of June, 2023 which is the 19th month since the Token Generation Event on November 18, 2021 (TGE).
+The article has been updated at the end of June, 2023 which is the 19th month since the Token Generation Event on November 18, 2021.
 
 ## Token allocation
 
@@ -20,7 +21,8 @@ The current development of the allocation consists of:
 - 16% (160 million) – Aurora Labs long-term incentives. Tokens are subjected to a vesting scheme determined by Aurora Labs.
 - 9% (90 million) – Aurora Labs private round investors. These tokens are subjected to the unlocking scheme.
 - 3% (30 million) – Allocated to Aurora validator delegators.
-- 2% (20 million) – Early AURORA contributors. Allocations should be provided by Near Foundation. These tokens should be subjected to the unlocking scheme. Near Foundation may implement a vesting scheme for these tokens.
+- 2% (20 million) – Early AURORA contributors. Allocations should be provided by Near Foundation. These tokens should be subjected to the unlocking scheme.
+Near Foundation may implement a vesting scheme for these tokens.
 - 1% (10 million) – Allocated to Aurora Labs to be used as incentives for project advisors
 - 1% (10 million) – Allocated for bootstrapping the AURORA ecosystem.
 - 3% (30 million) – Allocated for Aurora Labs growth round
@@ -32,7 +34,8 @@ As the Protocol grows and new initiatives are approved, the allocation changes: 
 
 ## Planning circulating supply
 
-“Circulating Supply” is every token that isn’t subject to a lockup at a particular time. The vast majority of the AURORA supply is subject to long-term lockups. Based on the current estimation 99.05% of the total supply is planned to be unlocked by month 132 from the Token Generation Event on November 18, 2021 (TGE).
+“Circulating Supply” is every token that isn’t subject to a lockup at a particular time. The vast majority of the AURORA supply is subject to long-term lockups.
+Based on the current estimation 99.05% of the total supply is planned to be unlocked by month 132 from the Token Generation Event on November 18, 2021.
 
 The chart below shows the increase in circulating supply as tokens unlock:
 
@@ -47,6 +50,7 @@ You can read more details about AURORA token distribution in this [article](http
 ## Burning of AURORA tokens
 
 In modern L1 protocols base tokens usually have two use cases:
+
 1. Consumption: users need to pay for gas in these tokens.
 2. Governance/protection: users need to stake tokens to be able to process transactions and perform hard forks.
 

@@ -17,6 +17,7 @@ The overall flow can be described by this picture:
 
 ![forwarder_tech](/img/forwarder_tech.png)
 
-We have simplified the moment with how the transfer to the Aurora Chain happens here. In reality, we have the Aurora Engine contract on Near for every Aurora Chain. E.g., for the Aurora Mainnet it is `aurora`, and to forward the assets we need to interact with it on the Near blockchain.
+We have simplified the moment with how the transfer to the Aurora Chain happens here. In reality, we have the Aurora Engine contract on Near for every Aurora Chain.
+E.g., for the Aurora Mainnet it is `aurora`, and to forward the assets we need to interact with it on the Near blockchain.
 
 You can find the source code for all of the Forwarder Contracts [here](https://github.com/aurora-is-near/aurora-forwarder-contracts/tree/main).

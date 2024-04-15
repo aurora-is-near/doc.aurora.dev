@@ -1,9 +1,9 @@
 ---
-title:  Transfer from KuCoin
+title:  Deposit from KuCoin
 sidebar_title: KuCoin
 ---
 
-1). Go to https://aurora.plus/forwarder and connect your wallet.
+1). Go to [https://aurora.plus/forwarder](https://aurora.plus/forwarder) and connect your wallet.
 
 2). Click the “Generate my deposit address” button to create your Deposit Address:
 

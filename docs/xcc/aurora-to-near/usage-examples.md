@@ -5,10 +5,12 @@ title: Usage Examples
 
 ## Tic-Tac-Toe XCC Example
 
-In this example the dApp is a tic-tac-toe game where the board state and game management are handled in Solidity, while the Computer opponent logic is in Rust.
-The purpose of this example is to illustrate how you can use the strengths of both Aurora and Near to build one unified dApp, in the same way that a single Web 2.0 application can consist of both JavaScrip and WebAssembly components.
+In this example, the dApp is a tic-tac-toe game where the board state and game management are handled in Solidity, while the Computer opponent logic is in Rust.
+The purpose of this example is to illustrate how you can use the strengths of both Aurora and Near to build one unified dApp, in the same way that a single Web 2.0 application
+can consist of both JavaScript and WebAssembly components.
 In this particular case the whole thing could have been written for either platform.
-But you can imagine how a real use-case might involve solutions to multiple problems, some of which are easier to solve in Solidity (for example maybe there is a convenient OpenZepillin library) and others easier in Rust or in the Near ecosystem in general (for example maybe you want to take advantage of the protocol-level account abstraction).
+But you can imagine how a real use-case might involve solutions to multiple problems, some of which are easier to solve in Solidity (for example maybe there is a convenient OpenZepillin library)
+and others easier in Rust or in the Near ecosystem in general (for example maybe you want to take advantage of the protocol-level account abstraction).
 
 This project has been deployed to testnet!
 You can interact with it [live on the Blockchain Operating System (BOS)](https://bos.gg/#/nearcon.birchmd.near/widget/Aurora-Tic-Tac-Toe).
@@ -24,7 +26,8 @@ And also find the repo by this [link](https://github.com/aurora-is-near/aurora-c
 It is realised as a smart contract on the Near blockchain.
 
 In this example we show how to interact with `social-db` from the Aurora EVM using the XCC feature.
-In particular, we expose the [set method](https://github.com/NearSocial/social-db/tree/39016e654739b0a3e8cb7ffaea4b03157c4aea6e#storing-data) of the SocialDB contract to allow storing data in the DB from Aurora:
+In particular, we expose the [set method](https://github.com/NearSocial/social-db/tree/39016e654739b0a3e8cb7ffaea4b03157c4aea6e#storing-data)
+of the SocialDB contract to allow storing data in the DB from Aurora:
 
 ```solidity
     // Exposes the [set interface](https://github.com/NearSocial/social-db/tree/39016e654739b0a3e8cb7ffaea4b03157c4aea6e#storing-data)

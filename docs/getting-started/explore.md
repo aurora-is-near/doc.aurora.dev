@@ -30,11 +30,14 @@ Aurora Staking can be integrated into your projects by following this [integrati
 
 ### On-ramp with CEX (Forwarder)
 
-Our [Forwarder product](/launch-chain/forwarder/introduction) is a component designed to facilitate asset transfers across Aurora Chains and Aurora Mainnet from centralised exchanges, even if the exchange does not support a specific chain.
+Our [Forwarder product](/launch-chain/forwarder/introduction) is a component designed to facilitate asset transfers across Aurora Chains and Aurora Mainnet from CEXes,
+even if the exchange does not support a specific chain.
 
 ![forwarder_main](/img/forwarder_main.png)
 
-This means that users can for instance withdraw USDT from Binance to Aurora Mainnet or any Aurora Chain. The Forwarder leverages the Near blockchain as a base layer on top of which Aurora is deployed to seamlessly move assets, making it more accessible for users to bring assets into Aurora, thus supporting the ecosystem's growth and user engagement.
+This means that users can for instance withdraw USDT from Binance to Aurora Mainnet or any Aurora Chain.
+The Forwarder leverages the Near blockchain as a base layer on top of which Aurora is deployed to seamlessly move assets,
+making it more accessible for users to bring assets into Aurora, thus supporting the ecosystem's growth and user engagement.
 
 ### On-ramp (Transak)
 
@@ -43,6 +46,7 @@ Users can purchase AURORA tokens directly from Aurora+ interface with their debi
 ![aplus_onramp](/img/aplus_onramp.png)
 
 We are leveraging the Transak integration here and will soon add support for Munzen, another onramp partner. Assets supported for direct purchase include:
+
 - $AURORA
 - $USDT
 - $USDC
@@ -63,9 +67,10 @@ Introducing a new dimension to the Aurora ecosystem, Aurora+ now includes [lendi
 
 ![aplus_lend](/img/aplus_lend.png)
 
-This addition opens up possibilities for passive income and financial flexibility, allowing users to lend their assets to earn interest or borrow against their holdings for liquidity without selling their investments.
+This addition opens up possibilities for passive income and financial flexibility, allowing users to lend their assets to earn interest or borrow against
+their holdings for liquidity without selling their investments.
 
-The interface for lending and borrowing is using the Aurigami contracts in the background, which is the leading lending & borrowing platform on Aurora.
+The interface for lending and borrowing uses the [Aurigami](https://www.aurigami.finance/) contracts in the background, which is the leading lending & borrowing platform on Aurora.
 
 ## Future development
 
@@ -73,7 +78,8 @@ Aurora+ will welcome in Q2 2024 the addition of new features, completing its rol
 
 ### Bridge to Aurora Chains
 
-Similarly to Hyperdrive, the Aurora Chains bridge enables a seamless transfer of assets between Aurora Chains. It uses the same underlying concept and it will be available through the Aurora+ interface, reinforcing its central place in the Aurora ecosystem.
+Similarly to Hyperdrive, the Aurora Chains bridge enables a seamless transfer of assets between Aurora Chains.
+It uses the same underlying concept and it will be available through the Aurora+ interface, reinforcing its central place in the Aurora ecosystem.
 
 [Aurora+]: https://aurora.plus/
 [integration guide]: https://github.com/aurora-is-near/aurora-staking-contracts/blob/main/docs/integration-guide.md

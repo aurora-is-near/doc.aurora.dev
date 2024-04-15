@@ -51,7 +51,9 @@ on which we display the full-text of the latest update, and zipped-up (but expan
 
 ![rainbow_bridge_52](/img/rainbow_bridge_52.png)
 
-Whenever there's a status alert—which can be <span style={{color: 'red', fontWeight: 'bold'}}>red</span> (alert), <span style={{color: '#F9DA78', fontWeight: 'bold'}}>yellow</span> (warning) or <span style={{color: 'green', fontWeight: 'bold'}}>green</span> (all good)—we display a colored banner in the header throughout the entire bridge interface.
+Whenever there's a status alert—which can be <span style={{color: 'red', fontWeight: 'bold'}}>red</span> (alert),
+ <span style={{color: '#F9DA78', fontWeight: 'bold'}}>yellow</span> (warning)
+ or <span style={{color: 'green', fontWeight: 'bold'}}>green</span> (all good)—we display a colored banner in the header throughout the entire bridge interface.
 
 Green banners are displayed only for 24 hours, and then disappear from the main page (but remain on the historical status page).
 
@@ -60,4 +62,3 @@ That is all, friends! We hope you found this manual useful. Happy bridging!
 P.S. If you happen to be interested in what’s going on behind the scenes while you are flowing through a transfer, please read [this](https://aurora.dev/blog/2021-how-the-rainbow-bridge-works).
 
 If you just want more detailed information on bridge features, please reference our [user knowledge base](https://help.aurora.dev).
-

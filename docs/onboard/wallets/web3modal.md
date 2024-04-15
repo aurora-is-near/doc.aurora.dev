@@ -256,4 +256,3 @@ Congratulations on completing your AuroraPass integration using Web3Modal!
 
 Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
  on Discord and open a support ticket there.
- 

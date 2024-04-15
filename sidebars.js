@@ -50,7 +50,6 @@ const sidebars = {
       collapsed: false,
       items: [
         'bridge/introduction',
-        //'bridge/forwarder',
         //'bridge/on-ramp',
         /*{
           type: 'category',

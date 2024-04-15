@@ -11,7 +11,7 @@ But for example they may be interested in integrating their dapp with liquidity 
 
 ## Architecture
 
-Schematically we can represent Near to Aurora XCC flow with the next picture:
+Schematically we can represent Aurora to Near XCC flow with the next picture:
 
 ![aurora-near-xcc](/img/aurora-near-xcc.avif)
 
@@ -34,7 +34,6 @@ In order to use XCC, the address making the NEAR call must have a wrapped NEAR (
 The reason for this is discussed in the following section.
 The address must also have approved (in the ERC-20 sense) the XCC precompile address to spend that wNEAR.
 The 2 wNEAR cost is only for the first usage of XCC, after that no further wNEAR is needed (unless the contracts being interacted with require it).
-
 
 ## How XCC works
 
@@ -159,4 +158,3 @@ pub enum PromiseAction {
 
 For most applications the `PromiseWithCallbackArgs` should be sufficient.
 If your application needs the more general `NearPromise` then see the [NEAR documentation](https://nomicon.io/RuntimeSpec/Components/BindingsSpec/PromisesAPI) for more information.
-

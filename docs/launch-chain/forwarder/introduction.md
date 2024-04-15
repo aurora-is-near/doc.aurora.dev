@@ -6,9 +6,10 @@ title: Introduction
 Centralized exchanges play a pivotal role in the cryptocurrency ecosystem, offering a straightforward and accessible platform for users to trade cryptocurrencies.
 These platforms are particularly valued for their user-friendly interfaces and the security they provide, making them the go-to option for both newcomers and seasoned traders.
 
-Despite these benefits, CEXs have a notable limitation that impacts the user experience: they restrict the transfer of assets to blockchain networks not directly supported by the exchange. Integrating CEX for such networks takes a lot of time and resources.
+Despite these benefits, CEXes have a notable limitation that impacts the user experience: they restrict the transfer of assets to blockchain networks not directly supported by the exchange.
+Integrating CEX for such networks takes a lot of time and resources.
 
-The consequence for app chains, subnets or similar, is the isolation from the liquidity provided by CEXs. 
+The consequence for app chains, subnets or similar, is the isolation from the liquidity provided by CEXes.
 
 The Forwarder solves this issue by providing instant  CEX support for [Aurora Mainnet](/) and all [Aurora Chains](/launch-chain/introduction) from day one.
 

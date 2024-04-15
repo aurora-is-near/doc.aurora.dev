@@ -46,7 +46,7 @@ The input and output are both [Borsh-encoded](https://borsh.io/).
 The input is a versioned enum due to allowing it to evolve in a backwards compatible way.
 The current version looks like
 
-```
+```rust
 #[derive(BorshSerialize, BorshDeserialize, Debug, PartialEq, Eq, Clone)]
 pub struct FunctionCallArgsV2 {
     pub contract: Address,
@@ -57,7 +57,7 @@ pub struct FunctionCallArgsV2 {
 ```
 
 where `contract` is the address of the EVM contract you are calling, `value` is the amount of Wei (1 ETH = 10^18 Wei) the implicit address will spend on the call
- (encoded as a 256-bit big endian unsigned integer), and `input` is the data passed to the contract. The attached `value` wil be deducted from the implicit EVM address corresponding
+ (encoded as a 256-bit big endian unsigned integer), and `input` is the data passed to the contract. The attached `value` will be deducted from the implicit EVM address corresponding
   to the Near account ID that invokes `call`.
 The input data will generally be encoded using the Solidity ABI, again a library like [ethabi](https://crates.io/crates/ethabi) can be helpful here.
 Note that the EVM will not charge any ETH for gas because the transaction is still running on Near (the EVM is just another Near smart contract) so the computational cost is covered
