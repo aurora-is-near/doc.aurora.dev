@@ -27,7 +27,7 @@ const sidebars = {
       items: [
         'getting-started/overview',
         'getting-started/tokenomics',
-        'getting-started/stake',
+        'getting-started/explore',
         'getting-started/faq',    
       ]
     },
@@ -90,6 +90,31 @@ const sidebars = {
             //'launch-chain/configuration/kyc',
           ]
         },
+        {
+          type: 'category',
+          collapsible: false,
+          collapsed: false,
+          label: "On-ramp from CEX (Forwarder)",
+          items: [
+            'launch-chain/forwarder/introduction',
+            //'launch-chain/forwarder/how-to-use',
+            {
+              type: 'category',
+              collapsible: true,
+              collapsed: false,
+              label: "How to use",
+              items: [
+                'launch-chain/forwarder/how-to-use/general',
+                'launch-chain/forwarder/how-to-use/binance',
+                'launch-chain/forwarder/how-to-use/kucoin',
+                'launch-chain/forwarder/how-to-use/bitfinex',
+              ]
+            },
+            'launch-chain/forwarder/tech-details',
+            'launch-chain/forwarder/troubleshooting',
+          ]
+        },
+        //'launch-chain/forwarder',
         //'launch-chain/stats',
         //'launch-chain/troubleshooting',
          {

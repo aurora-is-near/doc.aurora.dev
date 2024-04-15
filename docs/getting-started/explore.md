@@ -1,5 +1,5 @@
 ---
-sidebar_label: 	Stake your tokens (Aurora+)
+sidebar_label: 	Explore ecosystem (Aurora+)
 title: Aurora+
 ---
 
@@ -28,7 +28,15 @@ This means that when users stake or unstake AURORA tokens, they are not required
 
 Aurora Staking can be integrated into your projects by following this [integration guide].
 
-### Onramp
+### On-ramp with CEX (Forwarder)
+
+Our [Forwarder product](/launch-chain/forwarder/introduction) is a component designed to facilitate asset transfers across Aurora Chains and Aurora Mainnet from centralised exchanges, even if the exchange does not support a specific chain.
+
+![forwarder_main](/img/forwarder_main.png)
+
+This means that users can for instance withdraw USDT from Binance to Aurora Mainnet or any Aurora Chain. The Forwarder leverages the Near blockchain as a base layer on top of which Aurora is deployed to seamlessly move assets, making it more accessible for users to bring assets into Aurora, thus supporting the ecosystem's growth and user engagement.
+
+### On-ramp (Transak)
 
 Users can purchase AURORA tokens directly from Aurora+ interface with their debit/credit card:
 
@@ -41,7 +49,7 @@ We are leveraging the Transak integration here and will soon add support for Mun
 
 Users are looking for multiple options when purchasing crypto, and having several choices means we can cater to everyone’s needs.
 
-### Swapping
+### Swapping (1inch)
 
 [Swapping] is facilitated through the integration with [1inch DEX] (decentralised exchange). 1inch is a leading DEX aggregator operating on all major networks.
 
@@ -49,7 +57,7 @@ Users are looking for multiple options when purchasing crypto, and having severa
 
 It enables users to smoothly swap tokens directly from Aurora+. This supports portfolio diversification, catering to the dynamic needs of users in their investment journey.
 
-### Lending & Borrowing
+### Lending & Borrowing (Aurigami)
 
 Introducing a new dimension to the Aurora ecosystem, Aurora+ now includes [lending and borrowing] features:
 
@@ -61,13 +69,7 @@ The interface for lending and borrowing is using the Aurigami contracts in the b
 
 ## Future development
 
-Aurora+ will welcome in Q1 2024 the addition of new features, completing its role of gateway to the ecosystem.
-
-### Forwarder (Hyperdrive)
-
-Our Forwarder product is a component designed to facilitate asset transfers across Aurora Chains from centralised exchanges, even if the exchange does not support a specific Aurora Chain.
-
-This means that users can for instance withdraw USDT from Binance to any Aurora Chain, even if Binance does not support Aurora Mainnet or any Aurora Chain. Hyperdrive leverages the base layer Near on top of which Aurora is deployed to seamlessly move assets in a user-friendly journey, making it more accessible for users to bring assets into Aurora, thus supporting the ecosystem's growth and user engagement.
+Aurora+ will welcome in Q2 2024 the addition of new features, completing its role of gateway to the ecosystem.
 
 ### Bridge to Aurora Chains
 

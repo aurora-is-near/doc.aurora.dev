@@ -30,8 +30,8 @@ You can learn about how to operate Aurora Chain Whitelists from your DApp [here]
 Here are some in-depth articles to discover details about how Aurora Chain works and how it has been developed:
 
 - [Aurora Cloud Website](https://auroracloud.dev/)
-- [Aurora Chain: Demo Walkthrough](https://dev.aurora.dev/posts/aurora-chain-demo)
-- [Aurora Chain: Code Overview](https://dev.aurora.dev/posts/aurora-chain-tech-overview)
+- [Aurora Chain: Demo Walkthrough](https://dev.aurora.dev/posts/aurora-chains-demo)
+- [Aurora Chain: Code Overview](https://dev.aurora.dev/posts/aurora-chains-code-overview)
 
 ## Contact Us
 If you feel your business could benefit from Aurora Cloud, please do not hesitate to contact us at hello@auroracloud.dev.
