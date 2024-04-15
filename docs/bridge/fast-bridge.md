@@ -40,7 +40,10 @@ Now let's assume that some Provider already has the target tokens on the Ethereu
 
 In this scenario, the User should not wait for any NEAR Light Client on Ethereum update and gets tokens on the Ethereum side extremely fast.
 
-The Fast Bridge solution is decentralized and trustless. This is achieved because the Fast Bridge allows multiple relayers (P to provide liquidity, thus allowing a competitive market for fast transfers. Users, on the other hand, may claim their tokens back if their transfer was not completed (for example, in case the relayer is down or the provided fee is too low) within the max transfer time window (currently equals to 4 hours). Moreover, to claim tokens back on the NEAR side, the relayer must provide proof of the finalized bridge transaction from the Ethereum side.
+The Fast Bridge solution is decentralized and trustless. This is achieved because the Fast Bridge allows multiple relayers to provide liquidity, thus allowing a competitive market for fast transfers.
+Users, on the other hand, may claim their tokens back if their transfer was not completed (for example, in case the relayer is down or the provided fee is too low)
+within the max transfer time window (currently equals to 4 hours).
+Moreover, to claim tokens back on the NEAR side, the relayer must provide proof of the finalized bridge transaction from the Ethereum side.
 
 ## Architecture
 

@@ -6,7 +6,8 @@ title: Troubleshooting
 ### How bridging tokens between Ethereum and Aurora work?
 
 You need to select the direction of transfer, the token you want to transfer, and the amount.
-Your address on Aurora will be the same as your Ethereum address. The Rainbow Bridge could be used with MetaMask, Aurora Pass or any other WalletConnect compatible wallet. You can add Aurora as an network to MetaMask [here](https://aurora.dev/start).
+Your address on Aurora will be the same as your Ethereum address. The Rainbow Bridge could be used with MetaMask, Aurora Pass or any other WalletConnect compatible wallet.
+You can add Aurora as an network to MetaMask [here](https://aurora.dev/start).
 
 ### Which tokens are supported with Rainbow Bridge?
 

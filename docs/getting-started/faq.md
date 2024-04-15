@@ -7,7 +7,7 @@ title: "FAQs"
 ### How do I get started with Aurora as a user?
 
 Add Aurora Mainnet network to your Metamask wallet [here](https://aurora.dev/start). Or [download Aurora Pass wallet](https://auroracloud.dev/pass) to get 50 free transaction every month.
-And just start exploring the ecosystem around. Take a look at [Aurora+](/getting-started/stake), RainbowBridge(https://rainbowbridge.app/) and [explore ecosystem](https://aurora.dev/ecosystem).
+And just start exploring the ecosystem around. Take a look at [Aurora+](/getting-started/explore), RainbowBridge(https://rainbowbridge.app/) and [explore ecosystem](https://aurora.dev/ecosystem).
 
 ### How do I get started with Aurora as a developer?
 
