@@ -30,8 +30,8 @@ const config = {
             from: ['/develop/start/truffle'],
           },
           {
-            to: '/getting-started/network-endpoints',
-            from: ['/develop/networks', '/develop/compat/gas', `/compat/gas`],
+            to: '/dev-reference/network-endpoints',
+            from: ['/develop/networks', '/develop/compat/gas', `/compat/gas`, '/getting-started/network-endpoints'],
           },
           {
             to: '/interact/metamask',
@@ -46,16 +46,16 @@ const config = {
             from: ['/interact/aurorascan'],
           },
           {
-            to: '/evm/rpc',
-            from: ['/compact/rpc', '/develop/compat/rpc']
+            to: '/dev-reference/json-rpc',
+            from: ['/compact/rpc', '/develop/compat/rpc', '/evm/rpc']
           },
+          // {
+          //   to: '/evm/evm-overview',
+          //   from: ['/develop/compat/evm', '/compat/evm'],
+          // },
           {
-            to: '/evm/evm-overview',
-            from: ['/develop/compat/evm', '/compat/evm'],
-          },
-          {
-            to: '/faq',
-            from: ['/develop/faq'],
+            to: '/getting-started/faq',
+            from: ['/develop/faq', '/faq'],
           },
           {
             to: '/integrate/indexers/the-graph',
@@ -66,8 +66,8 @@ const config = {
             from: ['/develop/indexers/covalent'],
           },
           {
-            to: '/bridge/bridge-overview',
-            from: ['/learn/bridge/eth'],
+            to: '/bridge/introduction',
+            from: ['/learn/bridge/eth', '/bridge/bridge-overview'],
           },
           {
             to: '/',

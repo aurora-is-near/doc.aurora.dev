@@ -1,0 +1,66 @@
+---
+sidebar_position: 1
+sidebar_label: What is Aurora?
+id: overview
+slug: /
+---
+
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+# What is Aurora?
+
+Aurora is an EVM (Ethereum Virtual Machine) compatible blockchain and ecosystem, running as a decentralised layer 2 on the NEAR Protocol. It powers innovations such as Aurora Cloud, the infrastructure solution to onboard web2 businesses onto web3.
+
+Aurora is an EVM implemented as a smart contract on NEAR Protocol which provides several advantages:
+
+- Aurora is fully compatible with Ethereum. Applications can be seamlessly deployed on Aurora without the need to re-write smart contracts.
+All you need is to [change the RPC endpoint] you interact with.
+- Aurora runs on the NEAR Protocol, one of the highest-performance third-generation L1 protocols.
+- Transaction fees in Aurora are paid in the base currency, ETH, and are constant ([gas price] is 0.07 GWei).
+- Aurora supports all the Ethereum ecosystem tools  — [MetaMask], [Foundry], [Truffle], [Hardhat], [Remix], etc. 
+- Aurora has protocol level meta transactions, which enables features such as gasless transactions for end users
+
+## How it works?
+
+Aurora architecture is a relayer-based one, therefore natively supporting meta-transactions. It could be demonstrated by the picture below:
+
+  <ThemedImage
+  alt="Docusaurus themed image"
+  sources={{
+    light: useBaseUrl('/img/scheme.svg'),
+    dark: useBaseUrl('/img/scheme_white.svg'),
+  }}
+/>
+
+Notice, user pays gas fees in ETH, but RPC node pays them in NEAR tokens and executes a corresponding Near transaction corresponding to the user's EVM transaction. Which just equals to calling the [Aurora Engine] contract.
+
+## Interoperability
+
+Aurora’s interoperability is completed by its integration of the Rainbow Bridge, enabling the seamless transfer of assets between Ethereum, NEAR, and Aurora blockchains. Aurora is integrated with [LayerZero] protocol, which allows communication between 40+ more EVM networks.
+
+Besides, Aurora supports the deployment of multiple instances of EVMs on NEAR (Aurora Chains), forming Aurora Cloud, a network of interconnected blockchains that communicate through XCC (cross contract calls) at the base layer. Each individual instance called Aurora Chain can have its own ACLs (access control lists) to manage which EOAs (Externally Owned Accounts) are allowed to transact, to deploy contracts or to perform XCC within this instance.
+
+By using [XCC library] you can also connect your Aurora contracts with the native Near Blockchain contracts, and also other way around. Here you can find more [examples].
+
+## Audits
+
+Aurora thrives to provide robust and quality products, and engage with third party audits for all its core components.
+See https://aurora.dev/audits
+
+[NEAR Protocol]: https://near.org
+[Aurora]: https://aurora.dev
+[MetaMask]: https://metamask.io
+[Truffle]: https://www.trufflesuite.com/truffle
+[Hardhat]: https://hardhat.org
+[Remix]: https://remix.ethereum.org
+[trustless bridge]: https://near.org/bridge
+[carbon neutral]: https://near.org/blog/near-climate-neutral-product
+[gas price]: https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora
+[change the RPC endpoint]: https://aurora.dev/start
+[Foundry]: https://github.com/foundry-rs
+[Aurora Engine]: https://github.com/aurora-is-near/aurora-engine
+[LayerZero]: https://layerzero.network/
+[XCC library]: https://github.com/aurora-is-near/aurora-contracts-sdk/
+[examples]: https://github.com/aurora-is-near/aurora-contracts-sdk/tree/main/examples
