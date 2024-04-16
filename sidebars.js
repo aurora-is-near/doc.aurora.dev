@@ -106,7 +106,8 @@ const sidebars = {
                 'launch-chain/forwarder/how-to-use/general',
                 'launch-chain/forwarder/how-to-use/binance',
                 'launch-chain/forwarder/how-to-use/kucoin',
-                'launch-chain/forwarder/how-to-use/bitfinex',
+                'launch-chain/forwarder/how-to-use/coinbase',
+                //'launch-chain/forwarder/how-to-use/bitfinex',
               ]
             },
             'launch-chain/forwarder/tech-details',
