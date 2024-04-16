@@ -13,6 +13,9 @@ The consequence for app chains, subnets or similar, is the isolation from the li
 
 The Forwarder solves this issue by providing instant  CEX support for [Aurora Mainnet](/) and all [Aurora Chains](/launch-chain/introduction) from day one.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-F63c6utx7I?si=gpNt4GFIF5SmTf2E" style={{display:"block", margin: "auto", padding: "0px 0px 20px 0px"}} title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## How it works
 
 The Forwarder automatically forwards any assets deposited on your Near deposit address to any Aurora address on any Aurora Chain, including Mainnet.
