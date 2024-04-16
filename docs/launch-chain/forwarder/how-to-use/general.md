@@ -11,7 +11,8 @@ sidebar_title: General
 
 Here is a video guiding you through all of the steps above:
 
-[EMBED THE VIDEO HERE](/)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-F63c6utx7I?si=gpNt4GFIF5SmTf2E" style={{display:"block", margin: "auto", padding: "0px 0px 10px 0px"}} title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can get more instructions about how to use the particular CEX to withdraw to your Forwarder Deposit Address here:
 
