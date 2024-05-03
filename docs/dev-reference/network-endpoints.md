@@ -51,3 +51,25 @@ The Testnet Websocket endpoint is at: `wss://testnet.aurora.dev`
 [aurora@Mainnet]: https://explorer.near.org/accounts/aurora
 
 [aurora@Testnet]: https://explorer.testnet.near.org/accounts/aurora
+
+## Commercial Endpoints
+
+### Mainnets
+
+#### HTTPS
+
+[dRPC](https://drpc.org/) Mainnet Web3 enpoint is at: `https://aurora.drpc.org` 
+
+#### WSS
+
+[dRPC](https://drpc.org/) Mainnet Websocket enpoint is at: `wss://aurora.drpc.org`
+
+### Testnets
+
+#### HTTPS
+
+[dRPC](https://drpc.org/) Testnet Web3 endpoint is at: `https://aurora-testnet.drpc.org` 
+
+#### WSS
+
+[dRPC](https://drpc.org/) Testnet Websocket enpoint is at: `wss://aurora-testnet.drpc.org`
