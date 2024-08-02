@@ -17,17 +17,18 @@ We will talk in detail about how you can build a simple Dapp using Hardhat, Reac
 
 But before doing that, let's list some resources that can help you learn more about developing on Aurora and Web3 development in general.
 
-
 ## Intro to EVM development
 
 We encourage developers, who want to onboard into web3 to try using the best Ethereum onboarding resources:
 
 - [CryptoZombies](https://cryptozombies.io/) is a great way to learn to write smart contracts for beginners.
 - [SolidityByExample](https://solidity-by-example.org/) one of the best way to learn Solidity contracts by example.
-- [Ethereum Speedrun](https://speedrunethereum.com/) based on [ScaffoldETH](https://scaffoldeth.io/): a bunch of tutorials explaining how to build Dapps - NFT, ERC-20, Staking, DEX, Multisigs, etc. It starts with simpler ones and moves forward gradually to more complex examples. 
+- [Ethereum Speedrun](https://speedrunethereum.com/) based on [ScaffoldETH](https://scaffoldeth.io/):
+a bunch of tutorials explaining how to build Dapps - NFT, ERC-20, Staking, DEX, Multisigs, etc. It starts with simpler ones and moves forward gradually to more complex examples.
 - [Viem](https://viem.sh/docs/introduction) and [Wagmi](https://wagmi.sh/react/why) are the tools you will want to use to communicate between your UI and the blockchain.
 
-To try all of the projects and tutorials mentioned above on Aurora all you need to do is to change your RPC URL and that is it! Or in other words, just add Aurora network to your project. You can find information about the RPC endpoints [here](/dev-reference/network-endpoints).
+To try all of the projects and tutorials mentioned above on Aurora all you need to do is to change your RPC URL and that is it!
+Or in other words, just add Aurora network to your project. You can find information about the RPC endpoints [here](/dev-reference/network-endpoints).
 
 ## Aurora Developer Portal
 
@@ -48,11 +49,24 @@ You can learn a lot from our [GitHub organization repositories](https://github.c
 
 ## Intro to Near Development
 
-Of course, you need to keep in mind the differences also, the main one is – you're running everything atop of Near blockchain here. Here are some materials to onboard yourself with Near:
+:::note
+Learning Near is not compulsory to develop on Aurora, but if you are curious or wanting to understand advance material (like XCC), you can read more about it here.
+:::
+
+You're running Aurora atop of Near blockchain, every Aurora transaction has a corresponding Near transaction.
+That is why two ecosystems are closely intertwined. Here are some materials to onboard yourself with Near:
 
 - [Near Documentation](https://docs.near.org/)
 - [Near Developers Portal](https://pages.near.org/developers/)
-- [Javascript Devs Near Onboarding](https://docs.near.org/build/web3-apps/quickstart)
+- [JavaScript Devs Near Onboarding](https://docs.near.org/build/web3-apps/quickstart)
 - [Rust Devs Near Onboarding](https://docs.near.org/sdk/rust/introduction)
 - [Near CLI RS](https://github.com/near/near-cli-rs)
 - [Near Plugins](https://github.com/Near-One/near-plugins) with a tutorial [here](https://dev.aurora.dev/posts/plugins-for-smart-contract-devs-building-on-near)
+
+The key to understanding on how Aurora is linked with Near is to know the next repos/articles:
+
+- [Aurora Engine](https://github.com/aurora-is-near/aurora-engine/)
+- [Refiner](https://github.com/aurora-is-near/borealis-engine-lib)
+- [Relayer](https://github.com/aurora-is-near/relayer2-public)
+- [Gas Price on Aurora and Near](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora)
+- [Aurora RPC Node Architecture](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node)

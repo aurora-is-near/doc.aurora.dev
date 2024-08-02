@@ -62,7 +62,8 @@ contract CovidVaccineToken is ERC721URIStorage {
 ```
 
 :::note
-You can find [a GitHub repo](https://github.com/aurora-is-near/aurora-examples/blob/main/truffle/erc721-example/) and [another version of this tutorial](https://dev.aurora.dev/ecosystem/truffle) on Aurora Developer Portal.
+You can find [a GitHub repo](https://github.com/aurora-is-near/aurora-examples/blob/main/truffle/erc721-example/)
+ and [another version of this tutorial](https://dev.aurora.dev/ecosystem/truffle) on Aurora Developer Portal.
 :::
 
 This example is originally forked from the [OpenZeppelin
@@ -107,9 +108,9 @@ yarn install
 
 ## Configure project
 
-Add your Mnemonic (from Metamask or other Web3 wallet) to the environment variable:
+Add your Mnemonic (from MetaMask or other Web3 wallet) to the environment variable:
 
-```bash 
+```bash
  export MNEMONIC='YOUR MNEMONIC HERE'
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: 	Send transactions
+title:   Send transactions
 ---
 
 In this article, we will teach you how to send transactions in Wagmi. We will re-use the project from the [Connect Wallet guide](/build-a-dapp/frontend/connect-wallet)
@@ -45,11 +45,11 @@ export function YourComponent() {
 
   ...
   return
-  	  //calling sendTransaction function onSubmit
-	  <form className="set" onSubmit={submit}>
-		  <input name="address" placeholder="Address" required />
-		  <input name="value" ... required/>
-	  </form>
+      //calling sendTransaction function onSubmit
+    <form className="set" onSubmit={submit}>
+      <input name="address" placeholder="Address" required />
+      <input name="value" ... required/>
+    </form>
 }
  ```
 
@@ -58,12 +58,14 @@ export function YourComponent() {
  Please read more about how to encode that field [in the official Ethereum docs](https://ethereum.org/en/developers/docs/transactions/#the-data-field).
 
 :::note
-You can read more about catching errors and using transaction statuses in the [official Wagmi guide](https://wagmi.sh/react/guides/send-transaction). Or just read the code example in StackBlitz widget above.
+You can read more about catching errors and using transaction statuses in the [official Wagmi guide](https://wagmi.sh/react/guides/send-transaction).
+Or just read the code example in StackBlitz widget above.
 :::
 
- ## useWaitForTransactionReceipt hook
+## useWaitForTransactionReceipt hook
 
-After sending a transaction - we need to wait to it to be finalized or, in other words, wait for the receipt. That is the moment we will want to use [useWaitForTransactionReceipt](https://wagmi.sh/react/api/hooks/useWaitForTransactionReceipt) hook.
+After sending a transaction - we need to wait to it to be finalized or, in other words, wait for the receipt.
+That is the moment we will want to use [useWaitForTransactionReceipt](https://wagmi.sh/react/api/hooks/useWaitForTransactionReceipt) hook.
 
 The usage example could look like this:
 
@@ -78,14 +80,14 @@ export function YourComponent() {
 
   const { data: receiptData, isLoading: isConfirming, isSuccess: isConfirmed } =
     useWaitForTransactionReceipt({
-      hash, // the hash from SendTrasaction hook is used here
+      hash, // the hash from SendTransaction hook is used here
     });
 
   ...
   return
-  	  //using isConfirming and isConfirmed statuses in UI to track progress
-  	  <>
-	    {isConfirming && <div>Waiting for confirmation...</div>}
+      //using isConfirming and isConfirmed statuses in UI to track progress
+      <>
+      {isConfirming && <div>Waiting for confirmation...</div>}
         {isConfirmed && <div>Transaction confirmed.</div>}
       </>
 }
@@ -104,4 +106,3 @@ If you [click on it](https://explorer.testnet.aurora.dev/tx/0x0b94a546ffc3754015
 ![dapp_explorer_sendtx](/img/dapp_explorer_sendtx.png)
 
 You will see all the info about the transaction there and can also track your activity there.
-

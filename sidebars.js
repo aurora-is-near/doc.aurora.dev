@@ -42,7 +42,7 @@ const sidebars = {
         {
           type: 'category',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           label: "Deploy contracts",
           items: [
             'build-a-dapp/contracts/counter',
@@ -53,7 +53,7 @@ const sidebars = {
         {
           type: 'category',
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           label: "Build frontend",
           items: [
             'build-a-dapp/frontend/connect-wallet',

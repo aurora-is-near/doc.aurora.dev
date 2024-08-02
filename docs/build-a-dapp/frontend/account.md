@@ -1,5 +1,5 @@
 ---
-title: 	Get account data
+title:   Get account data
 ---
 
 We can re-use the project from the [Connect Wallet](/build-a-dapp/frontend/connect-wallet) article to demonstrate how to get the basic account information about your user.
@@ -18,7 +18,7 @@ We will focus on the `Account` component code in this article:
  style={{display:"block", margin: "auto"}} title="Connect wallet" frameborder="auto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
  web-share" allowfullscreen></iframe>
 
- ## Account data
+## Account data
 
  To get the account data all you need is Wagmi's [useAccount](https://wagmi.sh/react/api/hooks/useAccount) hook:
 
@@ -29,22 +29,22 @@ We will focus on the `Account` component code in this article:
   const { address, connector, chain } = useAccount();
   ...
   <div className="stack">
-	  {address && <div className="text">{formattedAddress}</div>}
-	  <div className="subtext">
-	    Connector: {connector?.name}
-	    <br></br>
-	    {chain && <span> Chain: {chain.name} </span>}
-	    <br></br>
-	     ...
-	    </div>
-	</div>
+    {address && <div className="text">{formattedAddress}</div>}
+    <div className="subtext">
+      Connector: {connector?.name}
+      <br></br>
+      {chain && <span> Chain: {chain.name} </span>}
+      <br></br>
+       ...
+      </div>
+  </div>
 }
  ```
 
  You can get the user address, the connector they are using and the chain they are connected to.
  There are more fields go get from it, please read [the UseAccountReturnType object documentation here](https://wagmi.sh/react/api/hooks/useAccount#return-type) to learn more.
 
- ## Balance of native token
+## Balance of native token
 
 To get a balance of ETH (or any other native token), you need to use [useBalance](https://wagmi.sh/react/api/hooks/useBalance) hook:
 
@@ -54,8 +54,8 @@ To get a balance of ETH (or any other native token), you need to use [useBalance
  export function Account() {
   const balance = useBalance({ address: address });
   ...
-  //to display the value, you need to access the formated field via .data.formatted
-  	{balance && <span> Balance: {balance.data.formatted} ETH</span>}
+  //to display the value, you need to access the formatted field via .data.formatted
+    {balance && <span> Balance: {balance.data.formatted} ETH</span>}
   ...
  }
 ```

@@ -52,9 +52,9 @@ yarn install
 
 ## Configure project
 
-Add your Aurora Private key (from Metamask or other Web3 wallet) to `__.env__` file:
+Add your Aurora Private key (from MetaMask or other Web3 wallet) to `__.env__` file:
 
-```bash 
+```bash
 $ echo "AURORA_PRIVATE_KEY=YOUR_AURORA_PRIVATE_KEY_HERE" >> .env
 ```
 
@@ -87,7 +87,6 @@ You should also export your Token Address as an environment variable to re-use l
 # export the token address
 export TOKEN_ADDRESS='YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0A18D835809A07766)'
 ```
-
 
 ## Interact with contract
 
@@ -133,7 +132,7 @@ npx hardhat totalSupply --token $TOKEN_ADDRESS --network testnet_aurora
 ### Transfer tokens
 
 The `transfer` method allows anyone holding ERC-20 tokens to transfer
-them to any EVM address (user or contract one). 
+them to any EVM address (user or contract one).
 
 In the following script, the minter address
 will mint (implicitly) and transfer 10 WTM tokens to the spender address:
@@ -182,7 +181,7 @@ To get a balance, use the following command:
 npx hardhat balanceOf --token $TOKEN_ADDRESS --account $SPENDER_ADDRESS --network testnet_aurora
 ```
 
-### Approve and TrasferFrom
+### Approve and TransferFrom
 
 In some cases, instead of calling the `transfer` directly, a sender
 can approve a specific amount of tokens to be withdrawn from his account

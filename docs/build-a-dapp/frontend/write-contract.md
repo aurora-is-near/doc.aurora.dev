@@ -60,7 +60,8 @@ export function ERC20Transfer() {
 }
 ```
 
-You can also use [useWaitForTransactionReceipt](https://wagmi.sh/react/api/hooks/useWaitForTransactionReceipt) hook to get the receipt and track confirmation of the transaction as it was done in [Send Transaction](/build-a-dapp/frontend/transactions) article.
+You can also use [useWaitForTransactionReceipt](https://wagmi.sh/react/api/hooks/useWaitForTransactionReceipt) hook to get the receipt and track confirmation
+of the transaction as it was done in [Send Transaction](/build-a-dapp/frontend/transactions) article.
 
 :::note
 If you want to practice more, you can also read this [Wagmi tutorial](https://wagmi.sh/react/guides/write-to-contract) with minting NFTs.

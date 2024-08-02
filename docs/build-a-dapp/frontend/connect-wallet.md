@@ -4,7 +4,8 @@ title: 	Connect a wallet
 
 The ability for a user to connect their wallet is a core function for any Dapp. It allows users to perform tasks such as: writing to contracts, signing messages, or sending transactions.
 
-[Wagmi](https://wagmi.sh/react/guides/connect-wallet) contains everything you need to get started with building a Connect Wallet module. To get started, you can either use a [third-party library](#third-party-libraries) or [build your own](#build-your-own).
+[Wagmi](https://wagmi.sh/react/guides/connect-wallet) contains everything you need to get started with building a Connect Wallet module.
+To get started, you can either use a [third-party library](#third-party-libraries) or [build your own](#build-your-own).
 
 ## Third-party Libraries
 
@@ -25,7 +26,7 @@ The above libraries are all built on top of Wagmi, handle all the edge cases aro
 
 ## Build Your Own
 
-Wagmi provides you with the Hooks to get started building your own Connect Wallet module. 
+Wagmi provides you with the Hooks to get started building your own Connect Wallet module.
 Let's take a look at the code right away:
 
 <iframe width="700" height="500" src="https://stackblitz.com/edit/vitejs-vite-muf79v?embed=1&file=src%2FApp.tsx,src%2Fcomponents%2FConnect.tsx,src%2Fwagmi.tsx&view=editor"
@@ -33,6 +34,11 @@ Let's take a look at the code right away:
  web-share" allowfullscreen></iframe>
 
 <br></br>
+
+:::tip
+Click "Preview" button at the bottom right corner to interact with the UI of the project and to try connecting your wallet.
+You can also fork the project with the bottom left "Fork on StackBlitz" button to work with it in the fullscreen mode.
+:::
 
 :::note
 You can download the project locally from the widget above or fork it right away on StackBlitz platform. To run it, use: `pnpm install && pnpm run dev`
@@ -106,6 +112,6 @@ The detailed guide on how to write this project is [here, in official Wagmi docs
 
 The project above:
 
-1. Allows you to connect to your dApp via 4 different wallets: injected browser wallet, Metamask, Wallet Connect and Safe Wallet (`connectors` field of Wagmi config).
+1. Allows you to connect to your dApp via 4 different wallets: injected browser wallet, MetaMask, Wallet Connect and Safe Wallet (`connectors` field of Wagmi config).
 2. Configures Aurora and Aurora Testnet chains to be accessible via your dApp (`chains` and `transports` fields of Wagmi config).
 3. Displays account information if a user is connected by using Account component and Wagmi hooks.

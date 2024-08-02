@@ -2,7 +2,8 @@
 title: 	Simple Counter
 ---
 
-Let's start with the simplest contract possible is the one just storing an integer value and incrementing it. Here is what the code for it will look like:
+In this guide you will write one of the simplest smart contracts possible and learn how to deploy and interact with it.
+We will store just one integer value inside of it and will try incrementing it:
 
 ```solidity title="contracts/Incrementer.sol"
 // SPDX-License-Identifier: MIT
@@ -27,7 +28,7 @@ contract Incrementer {
 
 To deploy it to the Aurora Testnet you need to follow the steps below.
 
-:::note 
+:::note
 You can find the code of the whole project in [GitHub repository](https://github.com/aurora-is-near/aurora-examples/blob/main/hardhat/incrementer-example/).
 :::
 
@@ -42,9 +43,9 @@ cd hardhat/incrementer-example
 
 ## Configure project
 
-Add your Aurora Private key (from Metamask or other Web3 wallet) to `__.env__` file:
+Add your Aurora Private key (from MetaMask or other Web3 wallet) to `__.env__` file:
 
-```bash 
+```bash
 $ echo "AURORA_PRIVATE_KEY=YOUR_AURORA_PRIVATE_KEY_HERE" >> .env
 ```
 
@@ -72,7 +73,7 @@ $ make increment-counter INCREMENTER_ADDRESS=YOUR_INCREMENTER_ADDRESS_HERE
 
 You can observe your transactions by using [Aurora Block Explorer](https://dev.aurora.dev/ecosystem/block-explorer).
 
-## Choose a network
+## Switch a network
 
 Optionally you can specify any of the following networks for any command: __testnet_aurora__, __mainnet_aurora__, __ropsten__ like this:
 

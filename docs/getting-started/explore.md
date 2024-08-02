@@ -39,25 +39,26 @@ This means that users can for instance withdraw USDT from Binance to Aurora Main
 The Forwarder leverages the Near blockchain as a base layer on top of which Aurora is deployed to seamlessly move assets,
 making it more accessible for users to bring assets into Aurora, thus supporting the ecosystem's growth and user engagement.
 
-### On-ramp (Transak)
+### On-ramp (Munzen, Transak)
 
-Users can purchase AURORA tokens directly from Aurora+ interface with their debit/credit card:
+Users can purchase AURORA, USDT and USDC tokens directly from Aurora+ interface with their debit/credit card. We are leveraging the [Transak](https://transak.com/) and [Munzen](https://munzen.io/) services:
 
 ![aplus_onramp](/img/aplus_onramp.png)
 
-We are leveraging the Transak integration here and will soon add support for Munzen, another onramp partner. Assets supported for direct purchase include:
-
-- $AURORA
-- $USDT
-- $USDC
-
 Users are looking for multiple options when purchasing crypto, and having several choices means we can cater to everyone’s needs.
+
+On-ramp is also useful for the new accounts with no tokens on their balance at all, so they can swap the on-ramp tokens to ETH and be able to pay for the gas on the network.
+We will talk about swapping in the next section.
 
 ### Swapping (1inch)
 
 [Swapping] is facilitated through the integration with [1inch DEX] (decentralised exchange). 1inch is a leading DEX aggregator operating on all major networks.
 
 ![aplus_swap](/img/aplus_swap.png)
+
+:::note
+All swapping transactions are gas-free, so you don't need to worry about having ETH on your wallet.
+:::
 
 It enables users to smoothly swap tokens directly from Aurora+. This supports portfolio diversification, catering to the dynamic needs of users in their investment journey.
 
