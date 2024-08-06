@@ -3,7 +3,7 @@ title: 	Simple Counter
 ---
 
 In this guide you will write one of the simplest smart contracts possible and learn how to deploy and interact with it.
-We will store just one integer value inside of it and will try incrementing it:
+We will store just one integer value inside of it and increment it:
 
 ```solidity title="contracts/Incrementer.sol"
 // SPDX-License-Identifier: MIT

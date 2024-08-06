@@ -10,7 +10,7 @@ In case you are not familiar with a standard we advise you to read more about it
 [ERC-721 article](https://docs.openzeppelin.com/contracts/5.x/erc721) and [ERC-20 API](https://docs.openzeppelin.com/contracts/5.x/api/token/erc721).
 :::
 
-Here is the example of the contract right away below, in case you want to just use it:
+Here is the full contract code below:
 
 ```solidity
 
