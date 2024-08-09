@@ -28,7 +28,7 @@ contract Incrementer {
 
 To deploy it to the Aurora Testnet you need to follow the steps below.
 
-:::note
+:::tip
 You can find the code of the whole project in [GitHub repository](https://github.com/aurora-is-near/aurora-examples/blob/main/hardhat/incrementer-example/).
 :::
 
@@ -50,6 +50,11 @@ $ echo "AURORA_PRIVATE_KEY=YOUR_AURORA_PRIVATE_KEY_HERE" >> .env
 ```
 
 ## Interact with contract
+
+:::note
+To use the commands below you will need Node.js and `yarn` to be installed. Please follow the [instructions here](https://nodejs.org/en/download/package-manager) to install Node.js.
+Then, install `yarn` with `npm install --global yarn` or read more [here](https://classic.yarnpkg.com/lang/en/docs/install/).
+:::
 
 To deploy the contract to Testnet run:
 

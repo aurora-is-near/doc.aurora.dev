@@ -63,6 +63,11 @@ $ echo "AURORA_PRIVATE_KEY=YOUR_AURORA_PRIVATE_KEY_HERE" >> .env
 This example is about a naive Watermelon token 🍉. The total supply is 1,000,000, the
 minter is the contract deployer address, and the decimals are 0, so one token is one non-divisible watermelon.
 
+:::note
+To use the commands below you will need Node.js and `yarn` to be installed. Please follow the [instructions here](https://nodejs.org/en/download/package-manager) to install Node.js.
+Then, install `yarn` with `npm install --global yarn` or read more [here](https://classic.yarnpkg.com/lang/en/docs/install/).
+:::
+
 To deploy the token contract, use the following command:
 
 ```bash

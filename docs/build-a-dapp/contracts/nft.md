@@ -133,6 +133,11 @@ transactions on the Aurora network.
 
 ## Deploy contract
 
+:::note
+To use the commands below you will need Node.js and `yarn` to be installed. Please follow the [instructions here](https://nodejs.org/en/download/package-manager) to install Node.js.
+Then, install `yarn` with `npm install --global yarn` or read more [here](https://classic.yarnpkg.com/lang/en/docs/install/).
+:::
+
 To deploy the `CovidVaccineToken` contract, you can run the `yarn` command as
 follows:
 
