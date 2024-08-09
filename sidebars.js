@@ -31,18 +31,42 @@ const sidebars = {
         'getting-started/faq',    
       ]
     },
-
-    /*{
+    {
       type: 'category',
-      label: 'Build a dapp (Solidity)',
+      label: 'Build a dapp',
       collapsible: true,
       collapsed: false,
       items: [
         'build-a-dapp/introduction',
-        'build-a-dapp/quickstart',
-        'build-a-dapp/troubleshooting',
+        'build-a-dapp/getting-eth',
+        {
+          type: 'category',
+          collapsible: true,
+          collapsed: true,
+          label: "Deploy contracts",
+          items: [
+            'build-a-dapp/contracts/counter',
+            'build-a-dapp/contracts/erc-20',
+            'build-a-dapp/contracts/nft',
+          ]
+        },
+        {
+          type: 'category',
+          collapsible: true,
+          collapsed: true,
+          label: "Build frontend",
+          items: [
+            'build-a-dapp/frontend/connect-wallet',
+            'build-a-dapp/frontend/account',
+            'build-a-dapp/frontend/transactions',
+            'build-a-dapp/frontend/read-contract',
+            'build-a-dapp/frontend/write-contract'
+          ]
+        },
+        //'build-a-dapp/quickstart',
+        //'build-a-dapp/troubleshooting',
       ]
-    },*/
+    },
     {
       type: 'category',
       label: 'Bridge your assets',
