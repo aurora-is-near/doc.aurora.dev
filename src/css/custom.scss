@@ -107,7 +107,7 @@ h6 {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 5px 0;
   list-style: none;
 
   li {
@@ -116,6 +116,16 @@ h6 {
     &:first-child {
       margin-left: 0;
     }
+  }
+}
+
+.footer {
+  padding: 0.5rem;
+}
+
+@media (max-width: 996px) {
+  .footer__col {
+      margin-bottom: 10px;
   }
 }
 

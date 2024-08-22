@@ -18,19 +18,7 @@ const sidebars = {
 
   // But you can create a sidebar manually
 
-  tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Getting Started',
-      collapsible: true,
-      collapsed: false,
-      items: [
-        'getting-started/overview',
-        'getting-started/tokenomics',
-        'getting-started/explore',
-        'getting-started/faq',    
-      ]
-    },
+  developers: [
     {
       type: 'category',
       label: 'Build a dapp',
@@ -69,30 +57,59 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Bridge your assets',
+      label: 'Build a cross-chain application (XCC)',
       collapsible: true,
       collapsed: false,
       items: [
-        'bridge/introduction',
-        //'bridge/on-ramp',
+        //'xcc/quickstart',
+        {
+          type: 'category',
+          collapsible: false,
+          collapsed: false,
+          label: "Aurora to Near",
+          items: [
+            'xcc/aurora-to-near/introduction',
+            'xcc/aurora-to-near/usage-examples',
+          ]
+        },
+        {
+          type: 'category',
+          collapsible: false,
+          collapsed: false,
+          label: "Near to Aurora",
+          items: [
+            'xcc/near-to-aurora/introduction',
+            'xcc/near-to-aurora/usage-examples',
+          ]
+        },
         /*{
           type: 'category',
           collapsible: true,
           collapsed: true,
-          label: "With Rainbow Bridge",
+          label: "LayerZero",
           items: [
-            // put items from below here later
-         ]
+            'xcc/layerzero/introduction',
+            'xcc/layerzero/usage-examples',
+          ]
         },*/
-        'bridge/aurora-near',
-        'bridge/to-ethereum',
-        'bridge/from-ethereum',
-        'bridge/fast-bridge',
-        //'bridge/aurora-chains',
-        'bridge/advanced',
-        'bridge/troubleshooting',
+        ]
+    },
+    {
+      type: 'category',
+      label: 'Developer Reference',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'dev-reference/aurora-engine',
+        'dev-reference/network-endpoints',
+        'dev-reference/json-rpc',
+        'dev-reference/precompiles',
+        'dev-reference/opcodes',
+        'dev-reference/contracts',
       ]
     },
+  ],
+  auroraCloud: [
     {
       type: 'category',
       label: 'Launch your chain (Aurora Chain)',
@@ -152,45 +169,6 @@ const sidebars = {
         },
       ]
     },
-     {
-      type: 'category',
-      label: 'Build a cross-chain application (XCC)',
-      collapsible: true,
-      collapsed: false,
-      items: [
-        //'xcc/quickstart',
-        {
-          type: 'category',
-          collapsible: false,
-          collapsed: false,
-          label: "Aurora to Near",
-          items: [
-            'xcc/aurora-to-near/introduction',
-            'xcc/aurora-to-near/usage-examples',
-          ]
-        },
-        {
-          type: 'category',
-          collapsible: false,
-          collapsed: false,
-          label: "Near to Aurora",
-          items: [
-            'xcc/near-to-aurora/introduction',
-            'xcc/near-to-aurora/usage-examples',
-          ]
-        },
-        /*{
-          type: 'category',
-          collapsible: true,
-          collapsed: true,
-          label: "LayerZero",
-          items: [
-            'xcc/layerzero/introduction',
-            'xcc/layerzero/usage-examples',
-          ]
-        },*/
-        ]
-    },
     {
       type: 'category',
       label: 'Onboard users (Aurora Pass)',
@@ -221,6 +199,46 @@ const sidebars = {
         //     'onboard/reference/api',
         //   ]
         // },
+      ]
+    }
+  ],
+  tutorialSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'getting-started/overview',
+        'getting-started/tokenomics',
+        'getting-started/explore',
+        'getting-started/faq',    
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Bridge your assets',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'bridge/introduction',
+        //'bridge/on-ramp',
+        /*{
+          type: 'category',
+          collapsible: true,
+          collapsed: true,
+          label: "With Rainbow Bridge",
+          items: [
+            // put items from below here later
+         ]
+        },*/
+        'bridge/aurora-near',
+        'bridge/to-ethereum',
+        'bridge/from-ethereum',
+        'bridge/fast-bridge',
+        //'bridge/aurora-chains',
+        'bridge/advanced',
+        'bridge/troubleshooting',
       ]
     },
     //'aurora-cloud/chain',
@@ -293,21 +311,6 @@ const sidebars = {
         // },
       ]
     },*/
-    {
-      type: 'category',
-      label: 'Developer Reference',
-      collapsible: true,
-      collapsed: false,
-      items: [
-        'dev-reference/aurora-engine',
-        'dev-reference/network-endpoints',
-        'dev-reference/json-rpc',
-        'dev-reference/precompiles',
-        'dev-reference/opcodes',
-        'dev-reference/contracts',
-        'dev-reference/eth-wallets',
-      ]
-    },
     //'audits',
     //'contact-us',
     //'contribute'

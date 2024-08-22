@@ -21,6 +21,7 @@ const config = {
   ],
 
   plugins: [
+    './src/plugins/webpack-plugin.js',
     [
       require.resolve('@docusaurus/plugin-client-redirects'),
       {
@@ -124,7 +125,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-        ],
+          {label: 'Users', position: 'left', href: '/getting-started/overview'},
+          {label: 'Partners', position: 'left', href: '/launch-chain/introduction'},
+          {label: 'Developers', position: 'left', href: '/build-a-dapp/introduction'},
+          {label: 'Blog', position: 'right', href: '/blog'}
+        ]
       },
       footer: {
         style: 'dark',
