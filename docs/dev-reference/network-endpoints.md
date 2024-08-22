@@ -9,9 +9,9 @@ following networks:
 
 | Network             | Engine ID                  | Chain ID                | Endpoint URL                 |
 |---------------------|----------------------------|-------------------------|------------------------------|
-| [Mainnet](#mainnet) | [`aurora`][aurora@Mainnet] | 1313161554 (0x4e454152) | <https://mainnet.aurora.dev> |
-| [Testnet](#testnet) | [`aurora`][aurora@Testnet] | 1313161555 (0x4e454153) | <https://testnet.aurora.dev> |
-| Localnet            | `aurora.test.near`         | 1313161556 (0x4e454154) | <http://localhost:8545>      |
+| [Mainnet](#mainnet) | [`aurora`][aurora@Mainnet] | 1313161554 (0x4e454152) | [https://mainnet.aurora.dev](https://mainnet.aurora.dev) |
+| [Testnet](#testnet) | [`aurora`][aurora@Testnet] | 1313161555 (0x4e454153) |[https://testnet.aurora.dev](https://testnet.aurora.dev) |
+| Localnet            | `aurora.test.near`         | 1313161556 (0x4e454154) | [http://localhost:8545](http://localhost:8545) |
 
 Find the status page and public incident log at
 [api.aurora.dev](https://api.aurora.dev).
