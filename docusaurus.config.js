@@ -23,6 +23,16 @@ const config = {
   plugins: [
     './src/plugins/webpack-plugin.js',
     [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+    [
       require.resolve('@docusaurus/plugin-client-redirects'),
       {
         redirects: [
@@ -120,15 +130,26 @@ const config = {
           srcDark: 'img/docs_logo_white.svg',
         },
         items: [
+          {label: 'Learn', position: 'left', href: '/getting-started/overview'},
+          {label: 'Build on Aurora', position: 'left', href: '/build-a-dapp/introduction'},
+          {label: 'Launch virtual chain', position: 'left', href: '/launch-chain/introduction'},
+          {label: 'Dev tools', position: 'left', href: '/build-a-dapp/introduction'},
           {
-            href: 'https://github.com/aurora-is-near/doc.aurora.dev',
-            label: 'GitHub',
+            type: 'dropdown',
+            label: 'Resources',
             position: 'right',
+            items: [
+              {label: 'Blog', href: '/blog'},
+              {
+                href: 'https://github.com/aurora-is-near/doc.aurora.dev',
+                label: 'GitHub',
+              },
+              {
+                href: 'https://discord.gg/RQetTRnMrC',
+                label: 'Discord',
+              },
+            ],
           },
-          {label: 'Users', position: 'left', href: '/getting-started/overview'},
-          {label: 'Partners', position: 'left', href: '/launch-chain/introduction'},
-          {label: 'Developers', position: 'left', href: '/build-a-dapp/introduction'},
-          {label: 'Blog', position: 'right', href: '/blog'}
         ]
       },
       footer: {
