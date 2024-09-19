@@ -247,3 +247,10 @@ h2 {
   text-overflow: unset;
   white-space: normal;
 }
+
+figure {
+    text-align: center;
+    display: table;
+    max-width: 100%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto;
+}

@@ -1,5 +1,5 @@
 ---
-title: Choose the tools category
+title: Choose a category
 ---
 
 import DocCardList from '@theme/DocCardList';
