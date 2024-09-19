@@ -1,0 +1,43 @@
+slava:
+  name: Slava Karkunov
+  title: DevRel 
+  image_url: https://www.datocms-assets.com/95026/1677167398-photo_2022-12-02-14-55-03.jpeg
+  socials:
+      x: apocnab
+      github: karkunow
+      linkedin: karkunov
+
+boris:
+  name: Boris Polania
+  title: DevRel
+  image_url: https://www.datocms-assets.com/95026/1678396869-twiter_profile_pic.png
+
+michael:
+  name: Michael Birch
+  title: Senior Research Engineer
+  image_url: https://www.datocms-assets.com/95026/1683043123-t025c6kc9px-u025f7t5npl-c56792be0091-512.jpeg
+
+olga:
+  name: Olga Kunyavskaya
+  title: Bridge Engineer
+  image_url: https://www.datocms-assets.com/95026/1683043237-t025c6kc9px-u03dl8hkg1w-fe48e17d7ba2-512.png
+
+joshua:
+  name: Joshua J. Bouw
+  title: Head of Engine Team
+  image_url: https://www.datocms-assets.com/95026/1683043303-screenshot-2023-05-02-at-17-01-33.png
+
+oleksii_krasynskyi:
+  name: Oleksii Krasynskyi
+  title: Head of Infrastructure
+  image_url: https://www.datocms-assets.com/95026/1726603153-screenshot-2024-09-17-at-20-59-04.png
+
+alex_lapitsky:
+  name: Alexey Lapitsky
+  title: Head of Engineering
+  image_url: https://www.datocms-assets.com/95026/1695381471-t025c6kc9px-u03al0nrv42-9c9729605d9f-192.jpeg
+
+moritz:
+  name: Moritz Zielke
+  title: Research Engineer
+  image_url: https://www.datocms-assets.com/95026/1705626473-screenshot-2024-01-19-at-01-07-40.png

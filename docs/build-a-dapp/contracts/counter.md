@@ -88,4 +88,4 @@ $ make deploy NETWORK=mainnet_aurora
 
 ## More materials
 
-You can find a more detailed tutorial with a similar Incrementer example in the [Getting Started with Aurora article](https://dev.aurora.dev/posts/getting-started-with-aurora).
+You can find a more detailed tutorial with a similar Incrementer example in the [Getting Started with Aurora article](/blog/getting-started-with-aurora).
