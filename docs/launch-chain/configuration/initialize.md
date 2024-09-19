@@ -18,11 +18,11 @@ You can manage and track the information about the configured Aurora Chain with 
 
 ![silo_config](/img/silo_config.png)
 
-Note the `RPC URL` field above. As you can see, the RPC endpoint looks similar to [the one Aurora Mainnet is using](/getting-started/network-endpoints), and has a format like [https://your-chain.aurora.dev](https://your-chain.aurora.dev).
+Note the `RPC URL` field above. As you can see, the RPC endpoint looks similar to [the one Aurora Mainnet is using](/dev-reference/network-endpoints), and has a format like [https://your-chain.aurora.dev](https://your-chain.aurora.dev).
 
 Talking about the RPC nodes, we will provide a scalable cluster of those for you, accessible by that link. But if you want to manage RPCs by yourself, there are two options for you:
 
 1. Either use our docker images on your instances. And run our optimized infrastructure on your hardware, with us supporting it.
 
 2. Or create a [Standalone RPC nodes](https://github.com/aurora-is-near/standalone-rpc) by yourself and allow the community to scale the network.
-You can read more about spinning your own Aurora node in [this DevPortal article](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node).
+You can read more about spinning your own Aurora node in [this DevPortal article](/blog/spinning-up-your-own-aurora-node).

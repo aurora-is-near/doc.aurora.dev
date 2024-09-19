@@ -34,7 +34,7 @@ in terms of EVM computation). Eventually, we hope to eliminate this entirely by 
 the [ETH block gas limit] on Aurora to be lower than the amount of Near which we could spend in one
 transaction.
 
-You can read more about this [here](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
+You can read more about this [here](/blog/evm-gas-near-gas-on-aurora).
 
 [ETH block gas limit]: https://ethereum.org/en/developers/docs/blocks/#block-size
 :::

@@ -16,7 +16,7 @@ This project has been deployed to testnet!
 You can interact with it [live on the Blockchain Operating System (BOS)](https://bos.gg/#/nearcon.birchmd.near/widget/Aurora-Tic-Tac-Toe).
 If you don't want to interact with it yourself you can [watch the demo on YouTube](https://youtu.be/_tSuGRN9Lok).
 
-You can read an article about this on our DevPortal [here](https://dev.aurora.dev/posts/building-a-game-using-near-aurora-and-bos).
+You can read an article about this on our DevPortal [here](/blog/building-a-game-using-near-aurora-and-bos).
 
 And also find the repo by this [link](https://github.com/aurora-is-near/aurora-contracts-sdk/tree/main/examples/tic-tac-toe).
 
@@ -57,7 +57,7 @@ More specifically, we have a Solidity contract `S` on Aurora which sends a fungi
 There is another receiving Near contract `R`, which denies the sent FT in its `ft_on_transfer` function, resulting in a refund from `T` to the XCC contract address.
 The XCC contract now needs to bridge back the FT to the signing EVM wallet by calling `ft_transfer_call` on the token again, this time sending the tokens to Aurora.
 
-If you want to read a detailed article on our DevPortal about this example, here is the [link](https://dev.aurora.dev/posts/contract-callbacks-in-xcc).
+If you want to read a detailed article on our DevPortal about this example, here is the [link](/blog/contract-callbacks-in-xcc).
 
 An overview is given in the following diagram:
 

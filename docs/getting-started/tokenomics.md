@@ -71,7 +71,7 @@ We use these NEAR tokens to buy back AURORA from the market and burn it. Here’
 - Aurora DAO Council to withdraw the bought AURORA, transfer it over Rainbow Bridge to Ethereum and burn it.
 
 You can read more about the connected DAO proposal [here](https://forum.aurora.dev/t/aurora-token-economy-2-0/2166).
-In this [article](https://dev.aurora.dev/posts/practical-erc20-burning), we describe how the ERC-20 tokens are burned.
+In this [article](/blog/practical-erc20-burning), we describe how the ERC-20 tokens are burned.
 Here are a few examples of the burns already executed:
 
 - 2648 AURORA in [Feb 2024](https://twitter.com/auroraisnear/status/1764622033600823800)
