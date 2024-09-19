@@ -1,0 +1,19 @@
+tips_and_tricks:
+  label: 'Tips & Tricks'
+  permalink: '/tips_and_tricks'
+  description: 'Short posts about tech for devs on Aurora'
+
+tutorials:
+  label: 'Tutorials'
+  permalink: '/tutorials'
+  description: 'Longer posts talking about the subject in detail'
+
+core_tech:
+  label: 'Core Tech'
+  permalink: '/core_tech'
+  description: 'Posts about core technologies on Aurora'
+
+aurora_cloud:
+  label: 'Aurora Cloud'
+  permalink: '/aurora_cloud'
+  description: 'Posts about Aurora Cloud and Virtual Chains'

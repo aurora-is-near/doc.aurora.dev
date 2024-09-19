@@ -25,4 +25,4 @@ Talking about the RPC nodes, we will provide a scalable cluster of those for you
 1. Either use our docker images on your instances. And run our optimized infrastructure on your hardware, with us supporting it.
 
 2. Or create a [Standalone RPC nodes](https://github.com/aurora-is-near/standalone-rpc) by yourself and allow the community to scale the network.
-You can read more about spinning your own Aurora node in [this DevPortal article](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node).
+You can read more about spinning your own Aurora node in [this DevPortal article](/blog/spinning-up-your-own-aurora-node).

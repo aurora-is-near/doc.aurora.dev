@@ -241,3 +241,9 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
+.text--truncate {
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}

@@ -51,4 +51,4 @@ The following diagram describes the whole flow of the Fast Bridge transfer:
 
 ![Fast Bridge Architecture](/img/fast-bridge-arch.avif)
 
-If you want to read more details about it, [here is the article](https://dev.aurora.dev/posts/fast-bridge) on Aurora Developer Portal.
+If you want to read more details about it, [here is the article](/blog/fast-bridge) on Aurora Developer Portal.

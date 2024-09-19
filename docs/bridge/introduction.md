@@ -28,6 +28,6 @@ Transfers 'from Ethereum' usually take up to 20 minutes, and 'to Ethereum' – u
 ## Learn more
 
 - [How the Rainbow Bridge Works?](https://aurora.dev/blog/2021-how-the-rainbow-bridge-works)
-- [Fast Bridge DevPortal Article](https://dev.aurora.dev/posts/fast-bridge)
+- [Fast Bridge DevPortal Article](/blog/fast-bridge)
 - [Fast Bridge Announcement](https://aurora.dev/blog/the-fast-rainbow-bridge-for-near-to-ethereum-token-transfers-is-live)
 - [RainbowBridge App](https://rainbowbridge.app/)

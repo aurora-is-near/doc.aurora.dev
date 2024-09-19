@@ -22,7 +22,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Build a dapp',
-      collapsible: true,
+      collapsible: false,
       collapsed: false,
       items: [
         'build-a-dapp/introduction',
@@ -58,14 +58,14 @@ const sidebars = {
     {
       type: 'category',
       label: 'Build a cross-chain application (XCC)',
-      collapsible: true,
+      collapsible: false,
       collapsed: false,
       items: [
         //'xcc/quickstart',
         {
           type: 'category',
-          collapsible: false,
-          collapsed: false,
+          collapsible: true,
+          collapsed: true,
           label: "Aurora to Near",
           items: [
             'xcc/aurora-to-near/introduction',
@@ -74,8 +74,8 @@ const sidebars = {
         },
         {
           type: 'category',
-          collapsible: false,
-          collapsed: false,
+          collapsible: true,
+          collapsed: true,
           label: "Near to Aurora",
           items: [
             'xcc/near-to-aurora/introduction',
@@ -96,8 +96,40 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Onboard users (Aurora Pass)',
+      collapsible: false,
+      collapsed: false,
+      items: [
+        'onboard/introduction',
+        'onboard/wallet-connect',
+        {
+          type: 'category',
+          collapsible: true,
+          collapsed: true,
+          label: "Add your wallets",
+          items: [
+            'onboard/wallets/web3modal',
+            'onboard/wallets/rainbowkit',
+          ]
+        },
+        'onboard/promo-widget',
+        //'onboard/own-wallet',
+        'onboard/troubleshooting',
+        //  {
+        //   type: 'category',
+        //   collapsible: true,
+        //   collapsed: true,
+        //   label: "Reference",
+        //   items: [
+        //     'onboard/reference/api',
+        //   ]
+        // },
+      ]
+    },
+    {
+      type: 'category',
       label: 'Developer Reference',
-      collapsible: true,
+      collapsible: false,
       collapsed: false,
       items: [
         'dev-reference/aurora-engine',
@@ -168,39 +200,71 @@ const sidebars = {
           ]
         },
       ]
-    },
-    {
+    }
+  ],
+  devToolsSidebar: [
+    { 
       type: 'category',
-      label: 'Onboard users (Aurora Pass)',
-      collapsible: true,
+      label: 'Quickstart',
+      link: {
+        type: 'doc',
+        id: 'dev-tools/quickstart',
+      },
+      collapsible: false,
       collapsed: false,
       items: [
-        'onboard/introduction',
-        'onboard/wallet-connect',
-        {
-          type: 'category',
-          collapsible: true,
-          collapsed: false,
-          label: "Add your wallets",
-          items: [
-            'onboard/wallets/web3modal',
-            'onboard/wallets/rainbowkit',
-          ]
-        },
-        'onboard/promo-widget',
-        //'onboard/own-wallet',
-        'onboard/troubleshooting',
-        //  {
-        //   type: 'category',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   label: "Reference",
-        //   items: [
-        //     'onboard/reference/api',
-        //   ]
-        // },
-      ]
-    }
+      {
+        type: 'category',
+        label: 'Dev Tools',
+        description:
+          "Developer tools to deploy, monitor and interact with smart contracts",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          'dev-tools/basics/block-explorer',
+          'dev-tools/basics/metamask',
+          'dev-tools/basics/hardhat',
+          'dev-tools/basics/truffle',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'RPC Providers',
+        collapsible: true,
+        collapsed: false,
+        description: "Choose one or more node providers here for your project to get a node for your project",
+        items: [
+          'dev-tools/rpc-providers/chainstack',
+          'dev-tools/rpc-providers/now-nodes',
+          'dev-tools/rpc-providers/omnia-protocol',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Indexers',
+        collapsible: true,
+        collapsed: false,
+        description: "React to the on-chain events emitted by smart contracts, store and analyze your data in a database by using indexers",
+        items: [
+          'dev-tools/indexers/covalent',
+          'dev-tools/indexers/flair',
+          'dev-tools/indexers/the-graph',
+        ]
+      },
+      {
+        type: 'category',
+        label: 'Oracles',
+        collapsible: true,
+        collapsed: false,
+        description: "Connect price feeds, random numbers and other data to your smart contracts by using oracles",
+        items: [
+          'dev-tools/oracles/pyth',
+          'dev-tools/oracles/redstone',
+          'dev-tools/oracles/dia',
+          'dev-tools/oracles/seda-network',
+        ]
+      },
+    ]},
   ],
   tutorialSidebar: [
     {
