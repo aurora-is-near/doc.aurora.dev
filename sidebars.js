@@ -305,6 +305,7 @@ const sidebars = {
         'dev-reference/precompiles',
         'dev-reference/opcodes',
         'dev-reference/contracts',
+        'dev-reference/eth-wallets',
       ]
     },
     //'audits',
