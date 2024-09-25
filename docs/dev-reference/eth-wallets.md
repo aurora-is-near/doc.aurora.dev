@@ -178,6 +178,9 @@ const metadata = {
 ...
 ```
 
+This tracks the app requesting the connection on the WalletConnect side. See more [here](https://wagmi.sh/core/api/connectors/walletConnect#metadata).
+It is crucial to display the correct information inside the EVM wallets, like MetaMask.
+
 ### Create `wagmiConfig`
 
 Now, we can use that `projectId` and `metadata` to instantiate the `wagmiConfig`:
