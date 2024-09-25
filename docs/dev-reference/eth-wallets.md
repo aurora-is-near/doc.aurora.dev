@@ -158,15 +158,12 @@ To do that you will need to:
 
 You can read more about the `projectId` and how it works [here](https://docs.reown.com/appkit/react/core/installation#cloud-configuration).
 
-### Create `wagmiConfig`
+### Prepare metadata
 
-Now, we can use that `projectId` to instantiate the `wagmiConfig`:
+Make sure to pass the correct hosting URL here of your project as `url` and create a `metadata` object:
 
 ```js title="source/wallets/web3modal.js"
-
 ...
-
-const reownProjectId = '5bb0fe33763b3bea40b8d69e4269b4ae';
 
 // get your host URL here
 const url = "http://localhost:3000";
@@ -177,6 +174,21 @@ const metadata = {
   url: url,
   icons: [`${url}/icon.svg`],
 };
+
+...
+```
+
+### Create `wagmiConfig`
+
+Now, we can use that `projectId` and `metadata` to instantiate the `wagmiConfig`:
+
+```js title="source/wallets/web3modal.js"
+
+...
+
+const reownProjectId = '5bb0fe33763b3bea40b8d69e4269b4ae';
+
+const metadata = { ... };
 
 export const wagmiConfig = createConfig({
   chains: [nearChain],
@@ -194,6 +206,10 @@ export const wagmiConfig = createConfig({
 reconnect(wagmiConfig);
 
 ```
+
+:::note
+Make sure you have `reconnect(wagmiConfig);` in your code.
+:::
 
 ### Create Web3Modal
 
