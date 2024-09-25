@@ -268,7 +268,7 @@ And after click to be able to choose the EVM wallet of your taste:
 
 1. [A fuller version of docs about integration](https://github.com/near/wallet-selector/blob/9a9f9535ec57633b949872bb51903e7802beb3e8/packages/ethereum-wallets/README.md)
 
-2. [Source code of the project above](https://github.com/near-examples/hello-near-examples/pull/21)
+2. [Source code of the project above](https://github.com/Karkunow/hello-near-examples/tree/1ceede7)
 
 3. [Example of the EVM account on the Near Testnet](https://testnet.nearblocks.io/address/0xe5acd26a443d2d62f6b3379c0a5b2c7ac65d9454) to see what happens in reality on-chain during the execution.
 
