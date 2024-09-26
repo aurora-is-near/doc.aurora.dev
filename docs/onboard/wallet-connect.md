@@ -16,7 +16,7 @@ To integrate WalletConnect into your DApp, follow these steps:
 3. If you already have WalletConnect v2, add the Aurora Pass wallet to your wallet modal:
 e.g., [Web3Modal](/onboard/wallets/web3modal#adding-aurora-pass) or [RainbowKit](/onboard/wallet-connect#add-your-wallets-modal)
 
-Please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT) if you need some help
+Please get in touch with our [Support Team](https://discord.gg/auroralabs) if you need some help
 
 ## Add your wallet modal
 

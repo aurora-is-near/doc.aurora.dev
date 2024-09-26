@@ -18,7 +18,7 @@ Users can always say they already have the wallet installed, and this popup won'
 3. To open the widget, call `window.openPromo` and pass the `onComplete` function as a parameter `window.openPromo({ onComplete: function })`
 4. You can also check if the function is available before calling it `window.openPromo ? window.openPromo({ onComplete: function }) : function()`
 5. Optionally, you can hide the _Update your app_ header by passing the `hideUpdateAppBlock` variable via the `config` argument:
- `window.openPromo({ onComplete: () => {...}, config: {hideUpdateAppBlock: true}})`
+   `window.openPromo({ onComplete: () => {...}, config: {hideUpdateAppBlock: true}})`
 
 You can also find the same instructions [here](https://pass.auroracloud.dev/).
 A more detailed example of integration is below.
@@ -98,7 +98,7 @@ And then, if you click further on the 'Skip, I have a wallet' button, you will s
 ![ap_widget_example_1](/img/ap_widget_example_2.png)
 
 You can also look at the more extensive [integration example here](/onboard/wallets/web3modal#integrate-web3modal) to learn how to add Web3Modal to your project,
- particular section describing it is [here](/onboard/wallets/web3modal#add-web3modal).
+particular section describing it is [here](/onboard/wallets/web3modal#add-web3modal).
 
 ### What should be called in the `onComplete` function?
 
@@ -114,5 +114,5 @@ To see the widget in use, visit one of the projects on the list:
 
 ## Troubleshooting
 
-Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
- on Discord and open a support ticket there.
+Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/auroralabs)
+on Discord and open a support ticket there.

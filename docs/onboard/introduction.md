@@ -63,5 +63,5 @@ The seed phrase is stored using [expo-secure-store](https://docs.expo.dev/versio
 ## Troubleshooting
 
 If you encounter any issues, please visit our [Troubleshooting Page](/onboard/troubleshooting) to find a solution.
-In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
- on Discord and open a support ticket there.
+In case you still have questions, please get in touch with our [Support Team](https://discord.gg/auroralabs)
+on Discord and open a support ticket there.
