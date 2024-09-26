@@ -1,5 +1,5 @@
 ---
-sidebar_label: 	FAQs
+sidebar_label: FAQs
 title: Frequently Asked Questions
 ---
 
@@ -18,12 +18,12 @@ The Forwarder has a curated list of tokens for which the transfer will be done a
 
 ### I have transferred an asset that is not on the list – can I return it?
 
-Yes, we can help you with that, just contact our [Support Team](https://discord.gg/WXfbGsSUbT), and we will help you to get these tokens back.
+Yes, we can help you with that, just contact our [Support Team](https://discord.gg/auroralabs), and we will help you to get these tokens back.
 
 ### How does the forwarder fulfill Aurora’s vision?
 
 The Forwarder is compatible with Aurora Mainnet and any Aurora Chain, which means that if a project is [deploying a dedicated Aurora Chain](/launch-chain/introduction) with Aurora Cloud,
- the Forwarder will automatically support it, offering a way for users to withdraw funds from Binance and other major exchanges directly into their Aurora Chain from day one.
+the Forwarder will automatically support it, offering a way for users to withdraw funds from Binance and other major exchanges directly into their Aurora Chain from day one.
 
 ### How fast will I receive my tokens?
 

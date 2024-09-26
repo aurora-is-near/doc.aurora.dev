@@ -33,5 +33,5 @@ Yes! Since confirmation of transfer can take a while, you’ll be able to initia
 For support and help with any questions, don't hesitate to reach out on Telegram channels: [official channel], [support in Discord], [development channel].
 
 [official channel]:    https://t.me/auroraisnear
-[support in Discord]:  https://discord.aurora.dev/
+[support in Discord]:  https://discord.gg/auroralabs
 [development channel]: https://t.me/auroraisneardev

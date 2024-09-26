@@ -85,7 +85,7 @@ function CustomFooterLinks() {
         <li className="footer__item">
           <Link
             className="footer__link-item"
-            href="https://discord.aurora.dev"
+            href="https://discord.gg/auroralabs"
             target="_blank"
             rel="nofollow noopener noreferrer"
             title="Aurora on Discord"

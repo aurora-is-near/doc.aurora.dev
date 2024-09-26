@@ -121,5 +121,5 @@ That is it. Now, you can use Aurora Pass from your RainbowKit popup.
 
 ## Troubleshooting
 
-Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/WXfbGsSUbT)
+Please, take a look at our [Troubleshooting Page](/onboard/troubleshooting). In case you still have questions, please get in touch with our [Support Team](https://discord.gg/auroralabs)
  on Discord and open a support ticket there.

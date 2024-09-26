@@ -1,5 +1,5 @@
 ---
-sidebar_label:  FAQs
+sidebar_label: FAQs
 title: Frequently Asked Questions
 ---
 
@@ -13,7 +13,7 @@ After that, you can start exploring the ecosystem:
 
 - Take a look at the [Aurora+](/getting-started/explore) and its possibilities: swapping, staking, on-ramping, lending, etc.
 - Try using [RainbowBridge](https://rainbowbridge.app/) to transfer your assets between Ethereum, Near and Aurora.
-- On-ramp using CEXes using [Forwarder](/   launch-chain/forwarder/how-to-use/general).
+- On-ramp using CEXes using [Forwarder](/launch-chain/forwarder/how-to-use/general).
 - Learn more about different projects on our [Ecosystem Page](https://aurora.dev/ecosystem).
 
 ### How do I get started with Aurora as a developer?
@@ -29,7 +29,7 @@ Explore the documentation on this site, and also visit our [DevPortal](https://d
 
 To request some ETH on Aurora Testnet, go to [Aurora Testnet Faucet](https://aurora.dev/faucet)
 For a regular development 0.001ETH is more than enough to start with, notice that the gas price is 0.07Gwei only.
-But if you will need a lot more - just let our [Support Team](https://discord.gg/WXfbGsSUbT) know.
+But if you will need a lot more - just let our [Support Team](https://discord.gg/auroralabs) know.
 
 ### How do transaction fees work on Aurora?
 
@@ -65,7 +65,7 @@ The specifics of Near Protocol is that it has a time-based limitation for the ga
 Or equivalently - 1 block. Every transaction on Near has a 300TGas limit and can not exceed it.
 
 Therefore, we do have the same limit on Aurora too. And we're constantly working on improving it. You can read more about how we tackle it
- and calculate the gas prices [here](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
+and calculate the gas prices [here](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
 
 If you see `"error": "wasm execution failed with error: FunctionCallError(HostError(GasLimitExceeded))"`, it means you've hit that limit.
 
@@ -76,6 +76,6 @@ Nowadays we have optimized our contracts so well that the issue is almost non-ex
 
 For support and help with any questions, don't hesitate to reach out on Telegram channels: [official channel], [support in Discord], [development channel].
 
-[official channel]:    https://t.me/auroraisnear
-[support in Discord]:  https://discord.aurora.dev/
+[official channel]: https://t.me/auroraisnear
+[support in Discord]: https://discord.gg/auroralabs
 [development channel]: https://t.me/auroraisneardev
