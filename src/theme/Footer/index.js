@@ -74,7 +74,7 @@ function CustomFooterLinks() {
         <li className="footer__item">
           <Link
             className="footer__link-item"
-            href="https://gov.near.org/c/dev/aurora/46"
+            href="https://forum.aurora.dev/"
             target="_blank"
             rel="nofollow noopener noreferrer"
             title="Aurora on Discourse"
@@ -102,17 +102,6 @@ function CustomFooterLinks() {
             title="Aurora on Telegram"
           >
             <FontAwesomeIcon icon={faTelegram} size="lg" />
-          </Link>
-        </li>
-        <li className="footer__item">
-          <Link
-            className="footer__link-item"
-            href="https://stackoverflow.com/questions/tagged/aurora+near"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            title="Aurora on Stack Overflow"
-          >
-            <FontAwesomeIcon icon={faStackOverflow} size="lg" />
           </Link>
         </li>
         <li className="footer__item">
