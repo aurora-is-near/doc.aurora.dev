@@ -6,7 +6,7 @@ Aurora Virtual Chains have gas abstraction enabled by default. This allows you t
 The Aurora Engine is paying gas in NEAR on the Near protocol, but inside the Virtual Chain, any token can be defined as the base token and hence be used as gas fee
 :::
 
-<figure><img src="/img/.gitbook/assets/Frame 827 (3).png" alt="" width="375"></img><figcaption></figcaption></figure>
+![frame827_3](/img/.gitbook/assets/Frame_827_(3).png)
 
 **Defining the gas mechanics**
 
@@ -32,5 +32,3 @@ Examples:
 1. **Promotional Offer**: I want that all users who interact with contract A will get 10 free transactions per month and per user. This will last until 10,000 transactions were subsidised or after 2 months after the beginning of the campaign.
 2. **User tiers**: I want that all my premium users (who are paying a subscription fee for instance) will get 50 free transactions per month when they interact with my set of 5 contracts as long as they are subscribed.
 3. **Black Friday offer**: I want that during the black friday weekend, users interacting with my DEX contracts will get 50,000 free transactions. There are no limits per user but the offer ends once the 50,000 limit is reached.
-
-&#x20;

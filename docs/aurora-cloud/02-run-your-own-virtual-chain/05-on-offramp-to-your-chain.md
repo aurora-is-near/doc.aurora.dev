@@ -12,7 +12,7 @@ But onramp services can be expensive, with steep setup costs (sometimes up to $1
 
 **Aurora Cloud solves this problem by providing a universal on/offramp solution, compatible with any Aurora Virtual Chain, enabling the deposit of assets from day 1 on your chain.**
 
-<figure><img src="/img/.gitbook/assets/Frame 827.jpg" alt="" width="375"></img><figcaption></figcaption></figure>
+![frame827_0](/img/.gitbook/assets/Frame_827.jpg)
 
 **How does it work?**
 
