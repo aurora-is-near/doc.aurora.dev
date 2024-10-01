@@ -4,7 +4,7 @@
 
 **The forwarder proposes another onramp solution to your users by enabling withdrawals from centralised exchanges directly onto your Virtual Chain.**
 
-<figure><img src="/img/.gitbook/assets/Frame 827 (5).png" alt="" width="375"></img><figcaption></figcaption></figure>
+![frame827_5](/img/.gitbook/assets/Frame_827_(5).png)
 
 :::info[Supported Exchanges include]
 
@@ -13,7 +13,7 @@
 
 The tool is currently available at [https://aurora.plus/forwarder](https://aurora.plus/forwarder) and supports all centralised exchanges that allow withdrawals to the _Near network_.
 
-<figure><img src="/img/.gitbook/assets/image (1).png" alt="" width="375"></img><figcaption></figcaption></figure>
+![image1](/img/.gitbook/assets/image_(1).png)
 
 **How does it work?**
 
@@ -31,9 +31,7 @@ The forwarder leverages the chain abstraction ability from Aurora and Near by ro
 
 In technical terms, the forwarder is a smart contract deployed on Near, and has the capacity to generate a unique Near address based on an Aurora address (one per Aurora network). When the contract receives tokens that are part of the curated token list, it will automatically send these assets to the address on the Aurora network selected.
 
-
-
-<figure><img src="/img/.gitbook/assets/image (2).png" alt="" width="563"></img><figcaption></figcaption></figure>
+![image2](/img/.gitbook/assets/image_(2).png)
 
 **Supported assets**
 
@@ -45,19 +43,4 @@ These assets will be automatically forwarded to the destination address.
 
 Any other assets sent to the deposit address will not be automatically be forwarded but **won't be lost** either.
 
-
-
 \-> [_Read more about the Forwarder release_](https://aurora.dev/blog/aurora-forwarder-is-live)_._
-
-
-
-
-
-
-
-
-
-
-
-
-

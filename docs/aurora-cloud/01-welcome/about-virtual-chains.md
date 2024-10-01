@@ -10,7 +10,7 @@ Each Virtual Chain is a copy of the **Aurora Engine** (the Aurora smart contract
 * 220+ validators from Near
 * \~$0.003 per transaction
 
-<figure><img src="/img/.gitbook/assets/image (5).png" alt=""></img><figcaption></figcaption></figure>
+![image5](/img/.gitbook/assets/image_(5).png)
 
 #### **How are Virtual Chains different from other appchains (Arbitrum, Avalanche, Polygon) ?**
 
