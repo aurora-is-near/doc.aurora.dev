@@ -137,7 +137,7 @@ const sidebars = {
         'dev-reference/json-rpc',
         'dev-reference/precompiles',
         'dev-reference/opcodes',
-        'dev-reference/contracts',
+        /*'dev-reference/contracts',*/
       ]
     },
   ],
