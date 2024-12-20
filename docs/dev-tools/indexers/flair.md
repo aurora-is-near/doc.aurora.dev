@@ -21,18 +21,18 @@ Compared to other alternatives the main reasons are:
 
 * ✅ Listen to **any EVM chain** with just an RPC URL.
 
-    * Free managed RPC URLs for +8 popular chains already included.
-    * Works with both websocket and https-only RPCs.
+  * Free managed RPC URLs for +8 popular chains already included.
+  * Works with both websocket and https-only RPCs.
 
 * ✅ Track and ingest **any contract** for **any event topic.**
 
-    * Auto-track new contracts deployed from factory contracts.
+  * Auto-track new contracts deployed from factory contracts.
 
 * ✅ **Custom processor scripts** with JavaScript runtime (with **Typescript** support)
 
-    * Make external API or Webhook calls to third-party or your backend.
-    * Get current or historical USD value of any ERC20 token amount of any contract address on any chain.
-    * Use any external NPM library.
+  * Make external API or Webhook calls to third-party or your backend.
+  * Get current or historical USD value of any ERC20 token amount of any contract address on any chain.
+  * Use any external NPM library.
 
 * ✅ **Stream** any stored data to your destination database (Postgres, MongoDB, MySQL, Kafka, Elasticsearch, Timescale, etc).
 
@@ -45,9 +45,9 @@ git clone https://github.com/flair-sdk/starter-boilerplate.git
 # ... follow instructions in README.md
 ```
 
-*Boilerplate instructions will create a ****new cluster****, generate ****an API Key****, and set up a manifest.yml to index your ****first contract**** with ****sample custom processor**** scripts.*
+Boilerplate instructions will create `a new cluster`, generate `an API Key`, and set up a `manifest.yml` to index your first contract with sample custom processor scripts.
 
-*Learn more about the *[*structure of manifest.yml*](https://docs.flair.dev/reference/manifest.yml)*.*
+Learn more about the [*structure of manifest.yml*](https://docs.flair.dev/reference/manifest.yml).
 
 2️⃣ Configure Aurora RPC nodes
 

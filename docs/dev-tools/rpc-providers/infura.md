@@ -3,7 +3,7 @@ title: Infura
 ---
 Infura helps Web3 developers build world-class applications on blockchain infrastructure. The Infura Web3 connections to common APIs provide easy, robust, and reliable access to Web3 networks, leaving developers to focus on what they do best: growing their products, services, and communities. Our [tutorial section](https://docs.infura.io/infura/tutorials) will teach you more about blockchain and crypto development fundamentals using Infura.
 
-> **​**[**Infura is free**](https://infura.io/welcome)**​: ***You get 100,000 daily requests to start with, *free [archive data](https://docs.infura.io/infura/features/archive-data) access within the limits of your subscription, *and the ability to scale up when necessary.*
+> **​**[**Infura is free**](https://infura.io/welcome)**​:** *You get 100,000 daily requests to start with, free [archive data](https://docs.infura.io/infura/features/archive-data) access within the limits of your subscription, and the ability to scale up when necessary.*
 
 Let's create an Infura project and send some requests to the Aurora network to try it out.
 
@@ -104,7 +104,9 @@ Optimize your app and better understand your users by [reviewing the dashboard](
 
 ### 6. Manage your account
 
-You can find additional settings in **Profile Settings** to manage your account. You can [set notifications for daily limits](https://docs.infura.io/infura/networks/ethereum/how-to/avoid-rate-limiting#tips-to-avoid-rate-limiting) in the **Accounts **tab. You can update your [usage limits](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/set-rate-limits) and [network add-ons](https://docs.infura.io/infura/networks/ethereum/how-to/add-a-network-add-on) in the **Manage Plan **tab**. **You can manage [shared projects](https://docs.infura.io/infura/features/project-sharing) in the **Project Sharing **tab.
+You can find additional settings in **Profile Settings** to manage your account. You can [set notifications for daily limits](https://docs.infura.io/infura/networks/ethereum/how-to/avoid-rate-limiting#tips-to-avoid-rate-limiting) in the **Accounts** tab.
+
+You can update your [usage limits](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/set-rate-limits) and [network add-ons](https://docs.infura.io/infura/networks/ethereum/how-to/add-a-network-add-on) in the **Manage Plan tab**. You can manage [shared projects](https://docs.infura.io/infura/features/project-sharing) in the **Project Sharing** tab.
 
 ![](https://www.datocms-assets.com/95026/1679606490-inf9.webp)
 

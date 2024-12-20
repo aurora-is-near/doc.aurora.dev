@@ -1,13 +1,13 @@
 ---
 title: NOW Nodes
 ---
-In this step-by-step guide, we will learn the most convenient and fast way of accessing [Aurora RPC nodes](https://nownodes.io/nodes/aurora-aurora) with the node provider NOWNodes. 
+In this step-by-step guide, we will learn the most convenient and fast way of accessing [Aurora RPC nodes](https://nownodes.io/nodes/aurora-aurora) with the node provider NOWNodes.
 
 ### **Accessing Aurora Mainnet RPC with NOWNodes**
 
-NOWNodes is a blockchain-as-a-service provider that offers crypto developers and Web3 businesses [access to full nodes](https://nownodes.io/nodes), block explorers, and WebSocket connections. 
+NOWNodes is a blockchain-as-a-service provider that offers crypto developers and Web3 businesses [access to full nodes](https://nownodes.io/nodes), block explorers, and WebSocket connections.
 
-With the node provider, you achieve a fast and secure connection to the Aurora mainnet RPC as the no-KYC service NOWNodes takes all the complexities for maintaining and updating nodes. This ensures that you can access the Aurora mainnet RPC and Aurora endpoint without any interruptions or delays, allowing you to interact with the Aurora ecosystem seamlessly. So the RPC node provider helps crypto businesses and individuals to save financial, technical, and human resources. 
+With the node provider, you achieve a fast and secure connection to the Aurora mainnet RPC as the no-KYC service NOWNodes takes all the complexities for maintaining and updating nodes. This ensures that you can access the Aurora mainnet RPC and Aurora endpoint without any interruptions or delays, allowing you to interact with the Aurora ecosystem seamlessly. So the RPC node provider helps crypto businesses and individuals to save financial, technical, and human resources.
 
 With a user-friendly interface and comprehensive documentation, your Aurora mainnet RPC connection experience is simple. Just follow the steps below:  
 
@@ -32,7 +32,7 @@ To access the Aurora RPC node and Aurora endpoint with NOWNodes, you can follow 
 
 Using the RPC node provider like NOWNodes to access the Aurora mainnet RPC offers a reliable, scalable, and user-friendly solution that allows you to interact with the blockchain efficiently. With NOWNodes developers can integrate the Aurora API key into their development workflow, allowing them to interact with the blockchain seamlessly.
 
-> NOWNodes offers a scalable infrastructure that can handle a high volume of requests. This is important when accessing the Aurora RPC node, as it allows you to perform various operations on the blockchain without experiencing any performance issues. With the Aurora endpoint, you can access block data, monitor transactions, track addresses, and perform other actions. 
+> NOWNodes offers a scalable infrastructure that can handle a high volume of requests. This is important when accessing the Aurora RPC node, as it allows you to perform various operations on the blockchain without experiencing any performance issues. With the Aurora endpoint, you can access block data, monitor transactions, track addresses, and perform other actions.
 
 Moreover, the node provider offers professional customer support and assistance. If you encounter any issues or have questions while accessing the Aurora mainnet RPC, the NOWNodes team will be readily available to help you resolve them and ensure a smooth experience.
 

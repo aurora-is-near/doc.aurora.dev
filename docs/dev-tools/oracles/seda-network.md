@@ -5,7 +5,9 @@ Going beyond today’s definition of an oracle, SEDA is a multichain-native data
 
 ### The SEDA network
 
-SEDA is a trustless data layer that acts as a bridge between the blockchain and the real world, making it possible for all integrated parties to carry out data requests, connect to any data source and query its data in a fully permissionless way.SEDA does not create data or ensure the data is correct. Rather, it ensures the data can pass through the system in a secure and trustless manner by providing a channel for external data and information to flow to and between any blockchain. SEDA is flexible and adaptable, able to fetch a wide variety of data from different sources and formats and provide it to the smart contract in a usable form.
+SEDA is a trustless data layer that acts as a bridge between the blockchain and the real world, making it possible for all integrated parties to carry out data requests, connect to any data source and query its data in a fully permissionless way.SEDA does not create data or ensure the data is correct.
+
+Rather, it ensures the data can pass through the system in a secure and trustless manner by providing a channel for external data and information to flow to and between any blockchain. SEDA is flexible and adaptable, able to fetch a wide variety of data from different sources and formats and provide it to the smart contract in a usable form.
 
 ### Goals
 

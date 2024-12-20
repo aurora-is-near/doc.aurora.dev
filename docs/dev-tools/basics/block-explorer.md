@@ -9,7 +9,7 @@ Blockscout is one of the most well-known block explorers for Ethereum, capable o
 
 Users are able to view transactions, addresses, and blocks. Developers can get a wide range of charts and statistics related to smart contract execution, collator data, specific transfers between tokens, and a list of [ERC-20 tokens on Aurora](https://explorer.mainnet.aurora.dev/tokens).\
 \
-You can also see all of the verified contracts[ here](https://explorer.mainnet.aurora.dev/verified-contracts), work with [API](https://explorer.mainnet.aurora.dev/api-docs) or [use GraphQL](https://explorer.mainnet.aurora.dev/graphiql) to query information about blocks or transactions.\
+You can also see all of the verified contracts[here](https://explorer.mainnet.aurora.dev/verified-contracts), work with [API](https://explorer.mainnet.aurora.dev/api-docs) or [use GraphQL](https://explorer.mainnet.aurora.dev/graphiql) to query information about blocks or transactions.\
 \
 As an example of the API usage, you can get your ERC-20 token balance by using this method:
 
