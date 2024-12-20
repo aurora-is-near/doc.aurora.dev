@@ -26,7 +26,7 @@ Let's do a walkthrough demo of Aurora Innovation Chain to see how it benefits yo
 
 ### Access Control
 
-Let's go to the [https://auroracloud.dev/demo](https://auroracloud.dev/demo) site first, connect the [Metamask wallet](https://dev.aurora.dev/ecosystem/metamask), and we'll be ready for our first step – Access Control demo:
+Let's go to the [https://auroracloud.dev/demo](https://auroracloud.dev/demo) site first, connect the [MetaMask wallet](https://dev.aurora.dev/ecosystem/MetaMask), and we'll be ready for our first step – Access Control demo:
 
 ![](https://www.datocms-assets.com/95026/1682424716-screenshot-2023-04-25-at-12-05-26.png)
 
@@ -63,7 +63,7 @@ Let's swap the tokens now and enter some amount of INNO into the widget:
 
 ![](https://www.datocms-assets.com/95026/1682455898-screenshot-2023-04-25-at-21-51-26.png)
 
-After clicking the Swap button we will see the following info about the transaction in Metamask:\
+After clicking the Swap button we will see the following info about the transaction in MetaMask:\
 
 
 ![](https://www.datocms-assets.com/95026/1682456030-screenshot-2023-04-25-at-21-53-11.png)
@@ -126,7 +126,7 @@ Now we can move to the easiest part of the demo, where we can just make sure tha
 
 ![](https://www.datocms-assets.com/95026/1682520005-screenshot-2023-04-26-at-15-34-16.png)
 
-This rule was also made simple for demonstration purposes, but of course, we can implement any other rule: e.g., having a whitelist of accounts that can deploy contracts. And actually, we have it! However we have only allowed the contract deployment to be done by some of our developers on the team. So let's deploy the contract anyway and push the button. We will receive the Metamask transaction popup:
+This rule was also made simple for demonstration purposes, but of course, we can implement any other rule: e.g., having a whitelist of accounts that can deploy contracts. And actually, we have it! However we have only allowed the contract deployment to be done by some of our developers on the team. So let's deploy the contract anyway and push the button. We will receive the MetaMask transaction popup:
 
 ![](https://www.datocms-assets.com/95026/1682520201-screenshot-2023-04-26-at-15-34-33.png)
 
@@ -134,7 +134,7 @@ Let's confirm it, and then we'll get this message:
 
 ![](https://www.datocms-assets.com/95026/1682520228-screenshot-2023-04-26-at-15-35-16.png)
 
-We can check the transaction history in Metamask to see that it has failed:
+We can check the transaction history in MetaMask to see that it has failed:
 
 ![](https://www.datocms-assets.com/95026/1682520426-screenshot-2023-04-26-at-15-45-58.png)
 

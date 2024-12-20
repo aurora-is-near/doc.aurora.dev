@@ -73,9 +73,9 @@ The node status will change from **Pending** to **Running** once deployed.
 
 How to interact with your Aurora RPC.
 
-#### Metamask
+#### MetaMask
 
-You can set your [MetaMask](https://metamask.io/)[ ](https://metamask.io/)to interact through your Aurora nodes deployed with Chainstack.
+You can set your [MetaMask](https://metamask.io/) to interact through your Aurora nodes deployed with Chainstack.
 
 1. Open your MetaMask and click the network selector.
 2. In the network selector, click **Custom RPC.**

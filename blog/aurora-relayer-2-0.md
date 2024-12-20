@@ -20,7 +20,7 @@ The Relayer had [its first version](https://github.com/aurora-is-near/aurora-rel
 
 ![](https://www.datocms-assets.com/95026/1680267251-relayer-10.png)
 
-Relayer 2.0 was motivated by the necessity of migrating from Javascript to a more reliable language like golang that is designed for concurrency and is particularly good at managing multiple connections and resource-intensive tasks, making it very well-suited for the type of high-performance RPC systems required in blockchains. Additionally, it required migrating to a more efficient database system, so it was migrated from `PostgreSQL` to ` badger-db  `an embedded key-value database. As a result, there is now a relayer with faster execution speed,  lower machine resource usage, and lower data latency that is easier to code, debug, optimize, and deploy. Now, let’s have a general overview of some of the internals of the Relayer.
+Relayer 2.0 was motivated by the necessity of migrating from JavaScript to a more reliable language like golang that is designed for concurrency and is particularly good at managing multiple connections and resource-intensive tasks, making it very well-suited for the type of high-performance RPC systems required in blockchains. Additionally, it required migrating to a more efficient database system, so it was migrated from `PostgreSQL` to ` badger-db  `an embedded key-value database. As a result, there is now a relayer with faster execution speed,  lower machine resource usage, and lower data latency that is easier to code, debug, optimize, and deploy. Now, let’s have a general overview of some of the internals of the Relayer.
 
 #### **The JSON-RPC**
 

@@ -28,7 +28,7 @@ Compared to other alternatives the main reasons are:
 
     * Auto-track new contracts deployed from factory contracts.
 
-* ✅ **Custom processor scripts** with Javascript runtime (with **Typescript** support)
+* ✅ **Custom processor scripts** with JavaScript runtime (with **Typescript** support)
 
     * Make external API or Webhook calls to third-party or your backend.
     * Get current or historical USD value of any ERC20 token amount of any contract address on any chain.
