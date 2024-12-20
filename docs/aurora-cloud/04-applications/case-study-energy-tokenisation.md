@@ -6,7 +6,9 @@ PowerGold, an Enpower affiliate, transforms renewable energy investment through 
 
 ### PowerGold: Transparent Renewable Energy Investment Through Tokenization <a href="#about" id="about"></a>
 
-PowerGold is an affiliate of Enpower based in Romania, dedicated to making renewable energy investment accessible and transparent through tokenization. Specializing in the production and sale of renewable energy, PowerGold acquires facilities across Europe, including photovoltaic parks and wind turbines, with plans for future expansion into hydropower plants and storage solutions. To this end, PowerGold launched the ENP token, to both achieve transparency and cultivate a mutually beneficial relationship with its investors. ENP will be sold to raise funds used to acquire energy facilities, and the profits will in turn be redistributed to the token through a buy back and burn mechanism.
+PowerGold is an affiliate of Enpower based in Romania, dedicated to making renewable energy investment accessible and transparent through tokenization. Specializing in the production and sale of renewable energy, PowerGold acquires facilities across Europe, including photovoltaic parks and wind turbines, with plans for future expansion into hydropower plants and storage solutions.
+
+To this end, PowerGold launched the ENP token, to both achieve transparency and cultivate a mutually beneficial relationship with its investors. ENP will be sold to raise funds used to acquire energy facilities, and the profits will in turn be redistributed to the token through a buy back and burn mechanism.
 
 ### The PowerGold Challenge <a href="#challenge" id="challenge"></a>
 

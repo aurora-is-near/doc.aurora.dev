@@ -4,7 +4,7 @@ Each Virtual Chain is automatically supported by the Rainbow Bridge technology s
 
 ![frame827_6](/img/.gitbook/assets/Frame_827_(6).png)
 
-**Embeddable bridge**
+## Embeddable bridge
 
 The bridge addon in Aurora Cloud allows you to configure your own bridge interface and embed it in your application.
 

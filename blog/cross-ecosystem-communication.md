@@ -90,7 +90,7 @@ use aurora_sdk::{
 };
 ```
 
-The Near contract works as a proxy with a method called `exact_output_single ` that takes the same input as Uniswap's `exactOutputSingle.` To work well in the Near ecosystem, the `exact_output_single` function takes the arguments as a JSON encoded object and then re-encodes it into the Solidity ABI. The `exact_output_single` function returns a promise because, under the hood, it is making a Near cross-contract call to the Aurora EVM where the Uniswap code is deployed.
+The Near contract works as a proxy with a method called `exact_output_single` that takes the same input as Uniswap's `exactOutputSingle.` To work well in the Near ecosystem, the `exact_output_single` function takes the arguments as a JSON encoded object and then re-encodes it into the Solidity ABI. The `exact_output_single` function returns a promise because, under the hood, it is making a Near cross-contract call to the Aurora EVM where the Uniswap code is deployed.
 
 ```rust
 pub fn exact_output_single(&self, params: SerializableExactOutputSingleParams) -> Promise {

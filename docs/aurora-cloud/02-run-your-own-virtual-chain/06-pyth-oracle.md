@@ -6,7 +6,7 @@ description: Access Pyth Oracle from any Virtual Chain
 
 Aurora Cloud partnered with Pyth to propose an access to its Oracle from all Virtual Chains.
 
-**How does it work?**
+## How does it work?
 
 Thanks to the communication between Virtual Chains, your Virtual Chain can call the Pyth Oracle deployed on Aurora Mainnet to retrieve price feeds required for your on-chain logic.
 
@@ -14,11 +14,11 @@ Pyth proposes more than x price feeds.
 
 ![frame827](/img/.gitbook/assets/Frame_827_(4).png)
 
-**Technical Overview**
+## Technical Overview
 
 Each Virtual Chain comes with the Cloud Oracle deployed on it. The Cloud Oracle proposes the same interface as the Pyth Oracle but leverages the cross contract call technology between your Virtual Chain and Aurora Mainnet to retrieve the price feed you need.
 
-**Why is this important?**
+## Why is this important?
 
 The Pyth Oracle strives for decentralisation where prices are collaboratively fed by the different actors in the network.
 
@@ -28,7 +28,7 @@ Besides, you get access from your Virtual Chain to all the other price feeds fro
 
 ![image3](/img/.gitbook/assets/image_(3).png)
 
-**Aurora Cloud addon**
+## Aurora Cloud addon
 
 The Cloud Oracle is configurable from the Aurora Cloud Console and also supports price feeds from CoinGecko, to offer an easy and instant solution to your Oracle needs.
 

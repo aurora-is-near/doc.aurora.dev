@@ -8,14 +8,14 @@ The Aurora Engine is paying gas in NEAR on the Near protocol, but inside the Vir
 
 ![frame827_3](/img/.gitbook/assets/Frame_827_(3).png)
 
-**Defining the gas mechanics**
+## Defining the gas mechanics
 
 Gas can be collected in different ways on a Virtual Chain:
 
 * Usage based: This is the most common method. Gas is calculated based on the transaction size and charged in the base token of the network
 * Fixed fee: To simplify user interactions, gas could be charged as a fixed fee on the Virtual Chain. For instance, the base token could be $USDT and each transaction could cost 0.01 $USDT
 
-**Advanced logic around free transactions**
+## Advanced logic around free transactions
 
 Free transactions are a great way to simplify onboarding of new users or to incentivise certain behaviours. But this should not be a on or off setting, and Aurora Cloud lets you define advanced ways of attributing free transactions, so that you can use it at your advantage.
 

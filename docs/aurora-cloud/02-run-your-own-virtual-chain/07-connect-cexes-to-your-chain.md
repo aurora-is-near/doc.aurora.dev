@@ -15,7 +15,7 @@ The tool is currently available at [https://aurora.plus/forwarder](https://auror
 
 ![image1](/img/.gitbook/assets/image_(1).png)
 
-**How does it work?**
+## How does it work?
 
 The forwarder, as its name suggests, forwards any assets sent to its Near deposit address to the recipient Aurora address.&#x20;
 
@@ -23,8 +23,7 @@ The forwarder, as its name suggests, forwards any assets sent to its Near deposi
 * When a user withdraws assets from Binance to this Near deposit address, a backend service automatically triggers a transfer from this Near deposit address to the target Virtual Chain.&#x20;
 * This process is invisible for the user who simply receives their assets on their address on your Virtual Chain.
 
-
-**Technical overview**
+## Technical overview
 
 The forwarder leverages the chain abstraction ability from Aurora and Near by routing assets to the target virtual chain.
 
@@ -32,7 +31,7 @@ In technical terms, the forwarder is a smart contract deployed on Near, and has 
 
 ![image2](/img/.gitbook/assets/image_(2).png)
 
-**Supported assets**
+## Supported assets
 
 These assets will be automatically forwarded to the destination address.
 
