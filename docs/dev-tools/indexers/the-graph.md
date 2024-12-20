@@ -199,7 +199,7 @@ $ yarn deploy-local
                 .. QmbK8QL1GWmsdTsgFYawvxFCjLEFwBsPjMGWpeRh6yaXEk
 ✔ Upload subgraph to IPFS
 
-Build completed: `QmUiu7NRW7Lc89rxfacqUViaFLYwftrGUn54segMFgWggu`
+Build completed: `Qmu7NRW7Lc89rxfacqUViaFLYwftrGUn54segMFgWggu`
 
 Deployed to http://127.0.0.1:8000/subgraphs/name/example/graphql
 
