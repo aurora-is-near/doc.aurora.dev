@@ -95,11 +95,11 @@ To interact with the contract, you have to obtain some AuroraEth in the Aurora `
 
 To directly obtain AuroraETH in the `testnet`, you can follow these steps:
 
-*   Go to the following link: [https://aurora.dev/faucet](https://aurora.dev/faucet)
-*   Select the Testnet.
-*   Connect to MetaMask. Click on "Connect to Aurora Testnet." This will likely open your MetaMask wallet and prompt you to perform a few simple instructions.
-*   Check the wallet address to which you have connected. If you have multiple accounts in MetaMask and it is not connected to the desired account, click on the MetaMask icon in your browser and select the account you want to connect to.
-*   Click on "Request 0.001 ETH from the faucet." This will initiate the process of receiving AuroraETH.
+* Go to the following link: [https://aurora.dev/faucet](https://aurora.dev/faucet)
+* Select the Testnet.
+* Connect to MetaMask. Click on "Connect to Aurora Testnet." This will likely open your MetaMask wallet and prompt you to perform a few simple instructions.
+* Check the wallet address to which you have connected. If you have multiple accounts in MetaMask and it is not connected to the desired account, click on the MetaMask icon in your browser and select the account you want to connect to.
+* Click on "Request 0.001 ETH from the faucet." This will initiate the process of receiving AuroraETH.
 
 Congratulations! You now have AuroraETH in your `testnet` wallet!
 
@@ -113,17 +113,17 @@ This method will take approximately 20 minutes. First, we will obtain ETH in Goe
 
 Obtain the Eth in Goerli testnet in Ethereum:
 
-*   Go to the following link:[ *https://goerli-faucet.pk910.de/*](https://goerli-faucet.pk910.de/). Of course, it is not the only option. But here, you can get the Eth without a daily limit.
-*   Enter the address where you want the Eth to be sent.
-*   Click “Start Mining” and wait…
-*   Finish the mining and receive Eth.
+* Go to the following link:[ *https://goerli-faucet.pk910.de/*](https://goerli-faucet.pk910.de/). Of course, it is not the only option. But here, you can get the Eth without a daily limit.
+* Enter the address where you want the Eth to be sent.
+* Click “Start Mining” and wait…
+* Finish the mining and receive Eth.
 
 Transfer the Eth to Aurora using the Rainbow Bridge:
 
-*   Visit[ *https://testnet.rainbowbridge.app/*](https://testnet.rainbowbridge.app/)
-*   Click “New Transfer” and select “Transfer from Ethereum” and “Transfer to Aurora”
-*   Connect to the desired address using MetaMask in both networks
-*   Wait for approximately 20 minutes for the transfer to complete
+* Visit[ *https://testnet.rainbowbridge.app/*](https://testnet.rainbowbridge.app/)
+* Click “New Transfer” and select “Transfer from Ethereum” and “Transfer to Aurora”
+* Connect to the desired address using MetaMask in both networks
+* Wait for approximately 20 minutes for the transfer to complete
 
 You get the AuroraEth! Now you are ready for contract deployment!
 
@@ -430,12 +430,12 @@ In this article, we have learned how to: (1) create accounts in Aurora, (2) get 
 
 ## References
 
-*   HardHat: [https://hardhat.org/tutorial](https://hardhat.org/tutorial)
-*   MetaMask: [https://metamask.io/](https://metamask.io/)
-*   Get AuroraETH: [https://aurora.dev/faucet](https://aurora.dev/faucet)
-*   Mining Goerli ETH: [https://goerli-faucet.pk910.de/](https://goerli-faucet.pk910.de/)
-*   Rainbow Bridge for testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
-*   Explorer for Aurora testnet: [explorer.testnet.aurora.dev](https://explorer.testnet.aurora.dev/)
-*   Explorer for Near testnet: [https://explorer.testnet.near.org](https://explorer.testnet.near.org)
-*   dApp for get Near tx from Aurora tx: [https://aurora-helpers.vercel.app/aurora_to_near](https://aurora-helpers.vercel.app/aurora_to_near)
-*   Demystifying Transaction Failures: [/blog/demystifying-transaction-failures](/blog/demystifying-transaction-failures)
+* HardHat: [https://hardhat.org/tutorial](https://hardhat.org/tutorial)
+* MetaMask: [https://metamask.io/](https://metamask.io/)
+* Get AuroraETH: [https://aurora.dev/faucet](https://aurora.dev/faucet)
+* Mining Goerli ETH: [https://goerli-faucet.pk910.de/](https://goerli-faucet.pk910.de/)
+* Rainbow Bridge for testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
+* Explorer for Aurora testnet: [explorer.testnet.aurora.dev](https://explorer.testnet.aurora.dev/)
+* Explorer for Near testnet: [https://explorer.testnet.near.org](https://explorer.testnet.near.org)
+* dApp for get Near tx from Aurora tx: [https://aurora-helpers.vercel.app/aurora_to_near](https://aurora-helpers.vercel.app/aurora_to_near)
+* Demystifying Transaction Failures: [/blog/demystifying-transaction-failures](/blog/demystifying-transaction-failures)

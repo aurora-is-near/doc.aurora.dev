@@ -7,11 +7,11 @@ With Aurora Pass, you can send and receive assets on the Aurora Mainnet and Silo
 
 ### Key Features
 
-*   Send and receive assets on Aurora Mainnet and Silo networks
-*   Connect to dApps via WalletConnect
-*   View your portfolio balances and recent transactions
-*   Simple and user-friendly interface
-*   Secure and non-custodial wallet
+* Send and receive assets on Aurora Mainnet and Silo networks
+* Connect to dApps via WalletConnect
+* View your portfolio balances and recent transactions
+* Simple and user-friendly interface
+* Secure and non-custodial wallet
 
 ### Security
 

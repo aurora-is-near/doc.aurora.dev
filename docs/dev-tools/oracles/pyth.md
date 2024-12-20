@@ -7,9 +7,9 @@ Pyth Network is an oracle that publishes financial market data to multiple block
 
 Price feeds are available on multiple blockchains and can also be used in off-chain applications. Pyth offers three different data products to support various applications:
 
-*   [Solana Price Feeds](https://docs.pyth.network/documentation/solana-price-feeds) provide real-time prices on Solana mainnet.
-*   [Pythnet Price Feeds](https://docs.pyth.network/documentation/pythnet-price-feeds) provide real-time prices for 20+ blockchain ecosystems. They are available in mainnet for most [EVM chains](https://docs.pyth.network/documentation/pythnet-price-feeds/evm) – including Ethereum, BNB, Avalanche, and more – several [Cosmos chains](https://docs.pyth.network/documentation/pythnet-price-feeds/cosmwasm), [Aptos](https://docs.pyth.network/documentation/pythnet-price-feeds/aptos), and [Sui](https://docs.pyth.network/documentation/pythnet-price-feeds/sui). More ecosystems are coming soon!
-*   [Benchmarks](https://docs.pyth.network/documentation/benchmarks) provides historical Pyth prices for both on- and off-chain use. These historical prices can be used for settlement or other similar applications.
+* [Solana Price Feeds](https://docs.pyth.network/documentation/solana-price-feeds) provide real-time prices on Solana mainnet.
+* [Pythnet Price Feeds](https://docs.pyth.network/documentation/pythnet-price-feeds) provide real-time prices for 20+ blockchain ecosystems. They are available in mainnet for most [EVM chains](https://docs.pyth.network/documentation/pythnet-price-feeds/evm) – including Ethereum, BNB, Avalanche, and more – several [Cosmos chains](https://docs.pyth.network/documentation/pythnet-price-feeds/cosmwasm), [Aptos](https://docs.pyth.network/documentation/pythnet-price-feeds/aptos), and [Sui](https://docs.pyth.network/documentation/pythnet-price-feeds/sui). More ecosystems are coming soon!
+* [Benchmarks](https://docs.pyth.network/documentation/benchmarks) provides historical Pyth prices for both on- and off-chain use. These historical prices can be used for settlement or other similar applications.
 
 Application developers can follow the links above to learn more about how to consume data from each product.
 

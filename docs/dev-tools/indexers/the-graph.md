@@ -5,19 +5,19 @@ title: The Graph
 
 This tutorial covers the following topics:
 
-*   Running a Graph node on Aurora.
-*   Creating and deploying a subgraph.
-*   Querying events from the subgraph.
+* Running a Graph node on Aurora.
+* Creating and deploying a subgraph.
+* Querying events from the subgraph.
 
 ## Prerequisites[​](https://doc.aurora.dev/integrate/indexers/the-graph#prerequisites "Direct link to heading")
 
 Before delving into the tutorial, you need to make sure that you have setup the following tools on you machine:
 
-*   [git](https://git-scm.com/downloads)
-*   [Docker](https://docs.docker.com/get-docker/)
-*   [Docker-Compose](https://docs.docker.com/compose/install/)
-*   [Node 12+](https://nodejs.org/en/download/)
-*   [jq](https://stedolan.github.io/jq/download/)
+* [git](https://git-scm.com/downloads)
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker-Compose](https://docs.docker.com/compose/install/)
+* [Node 12+](https://nodejs.org/en/download/)
+* [jq](https://stedolan.github.io/jq/download/)
 
 ## Running Graph Node[​](https://doc.aurora.dev/integrate/indexers/the-graph#running-graph-node "Direct link to heading")
 

@@ -25,15 +25,15 @@ Let’s see this setup process in more detail.
 
 As previously discussed, Deals consist of rules. Therefore, when a business engages with Aurora's engineering team, two key aspects need to be established:
 
-*   Which smart contracts will be part of a deal?
-*   What is the business logic around free transactions for users?\
+* Which smart contracts will be part of a deal?
+* What is the business logic around free transactions for users?\
 
 
 Typically, setting up a deal would initiate with specific parameters. These, however, are not strict boundaries but flexible starting points. Our adaptability allows us to fine-tune the operational rules by leveraging a wide range of resources. These could range from IP addresses and authentication tokens to the internal data embedded within each transaction. Nevertheless, right now, we propose using the following set of parameters:
 
-*   **FROM:** This parameter specifies the originator of the transaction, and it can take values such as ***All***, meaning that the rule engine will not filter any transactions based on their origin address (i.e., all origin addresses are valid for this deal) or ***EOA*** in which case the rule engine will only pick up transactions coming from a specific list of addresses (EOAs). We refer to this list as the whitelist, which must be populated by the businesses.
-*   **TO:** This parameter specifies the transaction's target, and it can take values such as an ***address*** so that the rule engine will pick up transactions directed to this specific contract address. If a transaction goes to another contract, it cannot be associated with this deal.
-*   **DEAL**: This parameter specifies the number of transactions that the beneficiaries of this deal can get. It can be set to UNLIMITED or a specific number.
+* **FROM:** This parameter specifies the originator of the transaction, and it can take values such as ***All***, meaning that the rule engine will not filter any transactions based on their origin address (i.e., all origin addresses are valid for this deal) or ***EOA*** in which case the rule engine will only pick up transactions coming from a specific list of addresses (EOAs). We refer to this list as the whitelist, which must be populated by the businesses.
+* **TO:** This parameter specifies the transaction's target, and it can take values such as an ***address*** so that the rule engine will pick up transactions directed to this specific contract address. If a transaction goes to another contract, it cannot be associated with this deal.
+* **DEAL**: This parameter specifies the number of transactions that the beneficiaries of this deal can get. It can be set to UNLIMITED or a specific number.
 
 Here are a few simple examples of Borealis Business deals: 
 
@@ -53,9 +53,9 @@ Here is an image describing how the AuroraPass (AP) Deal works:
 
 Businesses must define a list of approved addresses that can benefit from their deal. The whitelisted addresses are managed via a dedicated API to enable companies to: 
 
-*   Add an address. 
-*   Remove an address. 
-*   Check if an address is on the whitelist. 
+* Add an address. 
+* Remove an address. 
+* Check if an address is on the whitelist. 
 
 The Aurora team will provide businesses with the credentials for this API as part of the Borealis deal setup process.
 

@@ -9,14 +9,14 @@ The main objective of this tutorial is to show how to deploy and interact with t
 
 This tutorial assumes that you have Node.js 12+ and Yarn. Please refer to the [Yarn installation how-to](https://classic.yarnpkg.com/en/docs/install#mac-stable) if you don't yet have the yarn command installed locally.
 
-*   To install the prerequisite packages, clone the examples repository:
+* To install the prerequisite packages, clone the examples repository:
 
 ```shell
 git clone https://github.com/aurora-is-near/aurora-examples.git
 cd aurora-examples/hardhat/erc20/
 ```
 
-*   Add your Aurora Private key (from MetaMask) to **.env** file and then run yarn :\
+* Add your Aurora Private key (from MetaMask) to **.env** file and then run yarn :\
 
 
 ```shell

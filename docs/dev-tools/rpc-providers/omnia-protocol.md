@@ -19,8 +19,8 @@ OMNIA’s availability is guaranteed by thousands of nodes distributed worldwide
 
 ## Public RPC Endpoints[​](https://doc.aurora.dev/integrate/rpc-node-providers/omnia#public-rpc-endpoints "Direct link to heading")
 
-*   Aurora Mainnet: [https://endpoints.omniatech.io/v1/aurora/mainnet/public](https://endpoints.omniatech.io/v1/aurora/mainnet/public)
-*   Aurora Testnet: [https://endpoints.omniatech.io/v1/aurora/testnet/public](https://endpoints.omniatech.io/v1/aurora/testnet/public)
+* Aurora Mainnet: [https://endpoints.omniatech.io/v1/aurora/mainnet/public](https://endpoints.omniatech.io/v1/aurora/mainnet/public)
+* Aurora Testnet: [https://endpoints.omniatech.io/v1/aurora/testnet/public](https://endpoints.omniatech.io/v1/aurora/testnet/public)
 
 Easily create your own RPC Endpoints on our [Dapp](https://app.omniatech.io/)
 

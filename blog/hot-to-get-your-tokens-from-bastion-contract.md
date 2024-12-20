@@ -12,9 +12,9 @@ To formulate the problem more precisely, a user has some `cUSDCcUSDTLP` tokens a
 
 We will go through the next steps:
 
-*   What contracts should we call?
-*   What method should we call, and how?
-*   How to convert `cUSDC` and `cUSDT` into regular stables?
+* What contracts should we call?
+* What method should we call, and how?
+* How to convert `cUSDC` and `cUSDT` into regular stables?
 
 We will use the most convenient way for users to interact with smart contracts—the Explorer. However, devs can always write a script to perform the steps described in this article with Ethers or Web3.js.
 
@@ -66,8 +66,8 @@ We're unsure about the arguments here yet, so let's find out what values we shou
 
 You can see what exactly has happened here during the execution in terms of the token transfers:
 
-*   `cUSDCcUSDTLP` tokens were burned
-*   `cUSDT` and `cUSDC` tokens were transferred to the caller
+* `cUSDCcUSDTLP` tokens were burned
+* `cUSDT` and `cUSDC` tokens were transferred to the caller
 
 Now, let's scroll down a bit and click on "View details" link at the left bottom of the page, you will see the arguments of the method used there:
 
@@ -90,8 +90,8 @@ That is it! Now you got back your `cUSDC` and `cUSDT` tokens.
 
 To do this, we will need to point our attention to these contracts:
 
-*   cUSDT: [0x845E15A441CFC1871B7AC610b0E922019BaD9826](https://explorer.mainnet.aurora.dev/address/0x845E15A441CFC1871B7AC610b0E922019BaD9826)
-*   cUSDC:[ 0xe5308dc623101508952948b141fD9eaBd3337D99](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99)
+* cUSDT: [0x845E15A441CFC1871B7AC610b0E922019BaD9826](https://explorer.mainnet.aurora.dev/address/0x845E15A441CFC1871B7AC610b0E922019BaD9826)
+* cUSDC:[ 0xe5308dc623101508952948b141fD9eaBd3337D99](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99)
 
 For both of them, the process will look the same, so let's just talk about `cUSDT` case. To unwrap you need to call this method – \`redeem\`:
 

@@ -57,11 +57,11 @@ We have the Goerli Ethereum account and some GoerliETH. Let’s exchange some Et
 
 **2. Connect to Goerli Network.** It can look like it doesn’t support testnet network, but it actually support it, just it is not clear from the web interface.
 
-*   Click the `Connect` button. Choose MetaMask and connect to your account.
+* Click the `Connect` button. Choose MetaMask and connect to your account.
 
 ![](https://www.datocms-assets.com/95026/1689675168-uniswapconnect.jpg)
 
-*   Switch on `Show testnets` option on the Uniswap site:
+* Switch on `Show testnets` option on the Uniswap site:
 
 ![](https://www.datocms-assets.com/95026/1690544253-screenshot-2023-07-28-at-12-35-32.png)
 
@@ -69,13 +69,13 @@ We have the Goerli Ethereum account and some GoerliETH. Let’s exchange some Et
 
 ![](https://www.datocms-assets.com/95026/1690544274-screenshot-2023-07-28-at-12-35-54.png)
 
-*   Change the network to Goerli Testnet.
+* Change the network to Goerli Testnet.
 
 ![](https://www.datocms-assets.com/95026/1690544545-screenshot-2023-07-28-at-12-39-49.png)
 
 **3. Swap GoerliEth into USDC**
 
-*   Click `Select token`. Yes, you doesn’t see the USDC tokens in the list. It is Ok, don’t worry:
+* Click `Select token`. Yes, you doesn’t see the USDC tokens in the list. It is Ok, don’t worry:
 
 ![](https://www.datocms-assets.com/95026/1690544771-screenshot-2023-07-28-at-12-45-29.png)
 
@@ -85,11 +85,11 @@ In the search field write `USDC` and select the `USD Coin` from the list. For so
 
 ![](https://www.datocms-assets.com/95026/1690544794-screenshot-2023-07-28-at-12-45-57.png)
 
-*   Put some small amount of ETH in first line. 0.01 GöETH will be enough.
+* Put some small amount of ETH in first line. 0.01 GöETH will be enough.
 
 ![](https://www.datocms-assets.com/95026/1690544849-screenshot-2023-07-28-at-12-44-59.png)
 
-*   Click Swap
+* Click Swap
 
 ![](https://www.datocms-assets.com/95026/1690544873-screenshot-2023-07-28-at-12-45-06.png)
 
@@ -99,12 +99,12 @@ Congratulations! Now you get a lot of test USDC in your Ethereum account. You ca
 
 Now the easy part: transfer USDC tokens from Ethereum to Aurora.
 
-*   Open the Rainbow Bridge for testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
-*   Click New Transfer:
+* Open the Rainbow Bridge for testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
+* Click New Transfer:
 
 ![](https://www.datocms-assets.com/95026/1690544972-screenshot-2023-07-28-at-12-48-40.png)
 
-*   Connect to your accounts on Ethereum and on Aurora:
+* Connect to your accounts on Ethereum and on Aurora:
 
 ![](https://www.datocms-assets.com/95026/1690545004-screenshot-2023-07-28-at-12-48-57.png)
 
@@ -122,8 +122,8 @@ In this short article, we learned how to get a lot of USDC tokens on Ethereum, N
 
 ## References
 
-*   Article with instructions on how to install MetaMask and mint Ether: [/blog/getting-started-with-aurora](/blog/getting-started-with-aurora)
-*   USDC tokens address on Ethereum Goerli: [https://goerli.etherscan.io/address/0x07865c6e87b9f70255377e024ace6630c1eaa37f](https://goerli.etherscan.io/address/0x07865c6e87b9f70255377e024ace6630c1eaa37f)
-*   Uniswap: [https://app.uniswap.org/#/swap](https://app.uniswap.org/#/swap)
-*   Rainbow Bridge For Testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
-*   Checking the supported tokens for Rainbow Bridge on Testnet: [https://testnet.rainbowbridge.app/deploy](https://testnet.rainbowbridge.app/deploy)
+* Article with instructions on how to install MetaMask and mint Ether: [/blog/getting-started-with-aurora](/blog/getting-started-with-aurora)
+* USDC tokens address on Ethereum Goerli: [https://goerli.etherscan.io/address/0x07865c6e87b9f70255377e024ace6630c1eaa37f](https://goerli.etherscan.io/address/0x07865c6e87b9f70255377e024ace6630c1eaa37f)
+* Uniswap: [https://app.uniswap.org/#/swap](https://app.uniswap.org/#/swap)
+* Rainbow Bridge For Testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
+* Checking the supported tokens for Rainbow Bridge on Testnet: [https://testnet.rainbowbridge.app/deploy](https://testnet.rainbowbridge.app/deploy)

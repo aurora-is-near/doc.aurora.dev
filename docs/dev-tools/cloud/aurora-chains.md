@@ -17,22 +17,22 @@ We're sharing years of our expertise and technology by making available Aurora C
 
 To make Aurora Chain work in the best way possible for your business, we will help you to configure your setup. Among the features to configure are:
 
-*   ***custom token & fee mechanics*** (e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.);
-*   ***custom access control*** (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, the private chain can be built by using a private Near shard – [Calimero](https://www.calimero.network/)).
+* ***custom token & fee mechanics*** (e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.);
+* ***custom access control*** (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, the private chain can be built by using a private Near shard – [Calimero](https://www.calimero.network/)).
 
 ### Aurora Chains Advantages
 
 What makes Aurora Chains stand out is a set of top-notch technical solutions done on the level of blockchain architecture, ecosystem, and infrastructure:
 
-*   ***seamless interoperability*** with Aurora, Near, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls, etc.; This is the main difference between Aurora Chains and other solutions (like Avalanche or Cosmos). There is no disjointness in between. You can call any smart contract in any other Aurora Chain or Near and interact with it freely.
-*   ***tremendous transaction throughput**** – *we can provide you with dozens of millions of transactions daily for your ecosystem.
+* ***seamless interoperability*** with Aurora, Near, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls, etc.; This is the main difference between Aurora Chains and other solutions (like Avalanche or Cosmos). There is no disjointness in between. You can call any smart contract in any other Aurora Chain or Near and interact with it freely.
+* ***tremendous transaction throughput**** – *we can provide you with dozens of millions of transactions daily for your ecosystem.
 
 ### Learn more about Aurora Chains
 
 Here are some in-depth articles to discover details about how Aurora Chain work and how it has been developed:
 
-*   [Aurora Chains: Demo Walkthrough](/blog/aurora-chains-demo)
-*   [Aurora Chains: Code Overview](/blog/aurora-chains-code-overview)
+* [Aurora Chains: Demo Walkthrough](/blog/aurora-chains-demo)
+* [Aurora Chains: Code Overview](/blog/aurora-chains-code-overview)
 
 ### Contact Us
 

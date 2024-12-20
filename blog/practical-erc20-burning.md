@@ -23,10 +23,10 @@ Due to these constraints, projects seek alternative ways to approach token burns
 
 One often recommended way to burn tokens involves creating a contract that immediately self-destructs and sends tokens to its own address. However, this method comes with its set of challenges:
 
-*   The overhead of creating, deploying, and testing such contracts, especially if the burn needs to happen periodically
-*   Even if the contract uses `SELFDESTRUCT` it does not preclude the possibility of redeploying another contract at the same address. This has been successfully exploited in the infamous [Tornado Cash attack](https://forum.tornado.ws/t/full-governance-attack-description/62?ref=lapitsky.com) by using a metamorphic contract factory.
-*   There is a negative sentiment against `SELFDESTRUCT` opcode and (although stagnant) [EIP-4758](https://eips.ethereum.org/EIPS/eip-4758?ref=lapitsky.com) that highlights some security concerns.
-*   Token burns via this method aren't recognized on most analytics platforms.
+* The overhead of creating, deploying, and testing such contracts, especially if the burn needs to happen periodically
+* Even if the contract uses `SELFDESTRUCT` it does not preclude the possibility of redeploying another contract at the same address. This has been successfully exploited in the infamous [Tornado Cash attack](https://forum.tornado.ws/t/full-governance-attack-description/62?ref=lapitsky.com) by using a metamorphic contract factory.
+* There is a negative sentiment against `SELFDESTRUCT` opcode and (although stagnant) [EIP-4758](https://eips.ethereum.org/EIPS/eip-4758?ref=lapitsky.com) that highlights some security concerns.
+* Token burns via this method aren't recognized on most analytics platforms.
 
 Given the listed concerns, I advise against this approach and encourage the use of burn addresses.
 
@@ -46,8 +46,8 @@ The benefit of using well-known burn addresses over "contract burns" is that bur
 
 ## Bonus tips
 
-*   Ensure that your ERC20 contract is locked and immutable before initiating burns.
-*   For ERC20 tokens on multiple networks, execute burns on your primary network only, for unified tracking and analytics.
-*   For the first burn, refrain from using decentralized or ZK-bridges. If your contract unexpectedly rejects the transaction (like disallowing transfers to *null*) – it might muddle your analytics even though the tokens are technically burned.
+* Ensure that your ERC20 contract is locked and immutable before initiating burns.
+* For ERC20 tokens on multiple networks, execute burns on your primary network only, for unified tracking and analytics.
+* For the first burn, refrain from using decentralized or ZK-bridges. If your contract unexpectedly rejects the transaction (like disallowing transfers to *null*) – it might muddle your analytics even though the tokens are technically burned.
 
 Big thanks to [Lance Henderson](https://www.linkedin.com/in/lance-henderson/?ref=lapitsky.com) for technical insights and for reviewing this post!

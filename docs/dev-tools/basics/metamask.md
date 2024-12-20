@@ -17,10 +17,10 @@ In the top-right corner of the MetaMask interface, click the network selection d
 
 Fill in the form with the following information:
 
-*   Network Name: Aurora Testnet
-*   New RPC URL: `https://testnet.aurora.dev/`
-*   Chain ID: 1313161555
-*   Currency Symbol: ETH
+* Network Name: Aurora Testnet
+* New RPC URL: `https://testnet.aurora.dev/`
+* Chain ID: 1313161555
+* Currency Symbol: ETH
 
 ![](https://www.datocms-assets.com/95026/1679469198-metamask_create_aurora_rpc-e61eab72f8fa70386b43ed3c1d403d11.png)
 

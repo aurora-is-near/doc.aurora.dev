@@ -15,9 +15,9 @@ Chainstack makes sure you get access to robust and scalable infrastructure, read
 Elastic Aurora RPC nodes\* provide personal, and protected API endpoints you can immediately start using to interact with both [NEAR](https://chainstack.com/build-better-with-near/) networks through your Aurora RPC nodes, starting at $0 per month.\
 **Chainstack elastic Aurora RPC nodes**
 
-*   Unlimited requests, no rate limiting or throttling
-*   Rapid deployment through Bolt
-*   Secure HTTP
+* Unlimited requests, no rate limiting or throttling
+* Rapid deployment through Bolt
+* Secure HTTP
 
 ## Aurora RPC archive nodes
 
@@ -35,8 +35,8 @@ Chainstack’s dedicated nodes are a go-to for request-intensive workloads on [N
 
 **Chainstack dedicated Aurora RPC nodes**
 
-*   Unlimited requests, no rate limiting or throttling
-*   Rapid deployment through Bolt
+* Unlimited requests, no rate limiting or throttling
+* Rapid deployment through Bolt
 
 ## Chainstack Marketplace
 
@@ -60,8 +60,8 @@ Deploy an elastic or dedicated Aurora RPC node on testnet or mainnet
 
 6.  Under **Hosting**, select **Chainstack** or **Private**. See [Support hosting options](https://docs.chainstack.com/platform/supported-hosting-options).
 
-    *   For Chainstack hosting, select a cloud provider and a region.
-    *   For private hosting, select or add an integration. See [Manage your organization integrations](https://docs.chainstack.com/platform/manage-your-organization-integrations).
+    * For Chainstack hosting, select a cloud provider and a region.
+    * For private hosting, select or add an integration. See [Manage your organization integrations](https://docs.chainstack.com/platform/manage-your-organization-integrations).
 
 7.  Provide a node name. Click **Next**.
 
@@ -82,8 +82,8 @@ You can set your [MetaMask](https://metamask.io/)[ ](https://metamask.io/)to int
 3.  In the **New RPC URL** field, enter the endpoint.
 4.  In the **Chain ID** field, enter the ID of the network:
 
-*   Mainnet: `1313161554`
-*   Testnet: `1313161555`
+* Mainnet: `1313161554`
+* Testnet: `1313161555`
 
 ### Development Tools
 
@@ -132,8 +132,8 @@ module.exports = {
 
 where
 
-*   `ENDPOINT` — your node `HTTPS` or `WSS` endpoint.
-*   `PRIVATE_KEY` — the private key of the account that you use to deploy the contract.
+* `ENDPOINT` — your node `HTTPS` or `WSS` endpoint.
+* `PRIVATE_KEY` — the private key of the account that you use to deploy the contract.
 
 Example:
 
@@ -171,7 +171,7 @@ ja
 
 where
 
-*   ENDPOINT — your node HTTPS endpoint.
+* ENDPOINT — your node HTTPS endpoint.
 
 Example to get the latest block number:
 
@@ -195,7 +195,7 @@ const web3 = new Web3(new Web3.providers.WebsocketProvider('ENDPOINT'));
 
 where
 
-*   ENDPOINT — your node WSS endpoint.
+* ENDPOINT — your node WSS endpoint.
 
 Example to get the latest block number:
 
@@ -226,10 +226,10 @@ web3 = Web3(Web3.HTTPProvider('ENDPOINT'))
 
 where
 
-*   ENDPOINT — your node HTTPS endpoint.
-*   HOSTNAME — your node HTTPS endpoint hostname.
-*   USERNAME — your node access username.
-*   PASSWORD — your node access password.
+* ENDPOINT — your node HTTPS endpoint.
+* HOSTNAME — your node HTTPS endpoint hostname.
+* USERNAME — your node access username.
+* PASSWORD — your node access password.
 
 Example to get the latest block number:
 
@@ -252,10 +252,10 @@ web3 = Web3(Web3.WebsocketProvider('ENDPOINT'))
 
 where
 
-*   ENDPOINT — your node WSS endpoint.
-*   HOSTNAME — your node WSS endpoint hostname.
-*   USERNAME — your node access username.
-*   PASSWORD — your node access password.
+* ENDPOINT — your node WSS endpoint.
+* HOSTNAME — your node WSS endpoint hostname.
+* USERNAME — your node access username.
+* PASSWORD — your node access password.
 
 Example to get the latest block number:
 
@@ -333,16 +333,16 @@ var provider = new ethers.providers.JsonRpcProvider(urlInfo, NETWORK_ID);
 
 where
 
-*   ENDPOINT — your node HTTPS endpoint.
+* ENDPOINT — your node HTTPS endpoint.
 
-*   USERNAME — your node access username.
+* USERNAME — your node access username.
 
-*   PASSWORD — your node access password.
+* PASSWORD — your node access password.
 
-*   NETWORK_ID — Aurora network ID:
+* NETWORK_ID — Aurora network ID:
 
-    *   Mainnet: `1313161554`
-    *   Testnet: `1313161555`
+    * Mainnet: `1313161554`
+    * Testnet: `1313161555`
 
 Example to get the latest block number on mainnet:
 
@@ -369,12 +369,12 @@ const provider = new ethers.providers.WebSocketProvider('ENDPOINT', NETWORK_ID);
 
 where
 
-*   ENDPOINT — your node WSS endpoint.
+* ENDPOINT — your node WSS endpoint.
 
-*   NETWORK_ID — Aurora network ID:
+* NETWORK_ID — Aurora network ID:
 
-    *   Mainnet: `1313161554`
-    *   Testnet: `1313161555`
+    * Mainnet: `1313161554`
+    * Testnet: `1313161555`
 
 Example to get the latest block number on mainnet:
 
@@ -397,16 +397,16 @@ brownie networks add Aurora ID name="NETWORK_NAME" host=KEY_ENDPOINT chainid=NET
 
 where
 
-*   ID — any name that you will use as the network tag to run a deployment. For example, `chainstack-mainnet`.
+* ID — any name that you will use as the network tag to run a deployment. For example, `chainstack-mainnet`.
 
-*   NETWORK_NAME — any name that you want to identify the network by in the list of networks. For example, **Mainnet (Chainstack)**.
+* NETWORK_NAME — any name that you want to identify the network by in the list of networks. For example, **Mainnet (Chainstack)**.
 
-*   ENDPOINT — your node HTTPS or WSS endpoint.
+* ENDPOINT — your node HTTPS or WSS endpoint.
 
-*   NETWORK_ID — Aurora network ID:
+* NETWORK_ID — Aurora network ID:
 
-    *   Mainnet: `1313161554`
-    *   Testnet: `1313161555`
+    * Mainnet: `1313161554`
+    * Testnet: `1313161555`
 
 Example to add an Aurora mainnet node to the list of Brownie networks:
 
@@ -437,10 +437,10 @@ forge create CONTRACT_NAME --contracts CONTRACT_PATH --private-key PRIVATE_KEY -
 
 where
 
-*   CONTRACT_NAME — name of the contract in the Solidity source code.
-*   CONTRACT_PATH — path to your smart contract.
-*   PRIVATE_KEY — the private key to your funded account that you will use to deploy the contract.
-*   ENDPOINT — your node HTTPS endpoint.
+* CONTRACT_NAME — name of the contract in the Solidity source code.
+* CONTRACT_PATH — path to your smart contract.
+* PRIVATE_KEY — the private key to your funded account that you will use to deploy the contract.
+* ENDPOINT — your node HTTPS endpoint.
 
 Example to deploy the [simple storage ](https://docs.soliditylang.org/en/latest/introduction-to-smart-contracts.html)contract:
 

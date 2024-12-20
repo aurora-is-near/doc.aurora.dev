@@ -13,22 +13,22 @@ With a user-friendly interface and comprehensive documentation, your Aurora main
 
 To access the Aurora RPC node and Aurora endpoint with NOWNodes, you can follow these steps:
 
-*   Move on to the NOWNodes website at [https://nownodes.io/](https://nownodes.io/) for signing up for an account if you [haven’t done](https://account.nownodes.io/auth/signup) it already.
-*   Choose a tariff plan and select the network you want to access (in this case, Aurora mainnet). For example, you have an opportunity to pick up a **free** plan on a **START** plan and access 5 blockchains through a private API key:
+* Move on to the NOWNodes website at [https://nownodes.io/](https://nownodes.io/) for signing up for an account if you [haven’t done](https://account.nownodes.io/auth/signup) it already.
+* Choose a tariff plan and select the network you want to access (in this case, Aurora mainnet). For example, you have an opportunity to pick up a **free** plan on a **START** plan and access 5 blockchains through a private API key:
 
 ![](https://www.datocms-assets.com/95026/1695246607-aurora-nodes-768x398.jpg)
 
-*   Create your crypto API key in your NOWNodes account dashboard:
+* Create your crypto API key in your NOWNodes account dashboard:
 
 ![](https://www.datocms-assets.com/95026/1695246672-aurora-blockchain-768x442.jpg)
 
 ![](https://www.datocms-assets.com/95026/1695246688-aurora-api-768x433.jpg)
 
-*   Once your Aurora API key is generated, [explore the docs](https://documenter.getpostman.com/view/13630829/TVmFkLwy#0009132c-1d48-4c03-a891-fe57630776a4) and find the Aurora endpoint (aurora.nownodes.io):
+* Once your Aurora API key is generated, [explore the docs](https://documenter.getpostman.com/view/13630829/TVmFkLwy#0009132c-1d48-4c03-a891-fe57630776a4) and find the Aurora endpoint (aurora.nownodes.io):
 
 ![](https://www.datocms-assets.com/95026/1695246711-aurora-endpoint-768x416.jpg)
 
-*   Now, you can use the copied Aurora endpoint URL and Aurora API key to connect to the node in your application or development environment.
+* Now, you can use the copied Aurora endpoint URL and Aurora API key to connect to the node in your application or development environment.
 
 Using the RPC node provider like NOWNodes to access the Aurora mainnet RPC offers a reliable, scalable, and user-friendly solution that allows you to interact with the blockchain efficiently. With NOWNodes developers can integrate the Aurora API key into their development workflow, allowing them to interact with the blockchain seamlessly.
 
