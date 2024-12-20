@@ -1,7 +1,11 @@
 ---
 title: DIA
 ---
-DIA is an ecosystem for open financial data in a financial smart contract ecosystem. The target of DIA is to bring together data analysts, data providers and data users. In general, DIA provides a reliable and verifiable bridge between off-chain data from various sources and on-chain smart contracts that can be used to build a variety of financial dApps. DApp developers who want to leverage DIA oracles can access the published data on Aurora. DIA offers data about traditional financial assets and cryptocurrencies. [Read our documentation](https://docs.diadata.org/) to learn about our methodologies, API, oracles, and how to contribute.
+DIA is an ecosystem for open financial data in a financial smart contract ecosystem. 
+
+The target of DIA is to bring together data analysts, data providers and data users. In general, DIA provides a reliable and verifiable bridge between off-chain data from various sources and on-chain smart contracts that can be used to build a variety of financial Dapps.
+
+Developers who want to leverage DIA oracles can access the published data on Aurora. DIA offers data about traditional financial assets and cryptocurrencies. [Read our documentation](https://docs.diadata.org/) to learn about our methodologies, API, oracles, and how to contribute.
 
 ### Supported Assets
 
@@ -61,23 +65,23 @@ contract DIAOracle {
 }
 
 contract DiaAssetBtcOracle {
-	DIAOracle oracle;
-	address owner;
+    DIAOracle oracle;
+    address owner;
     
-	constructor() public {
-		owner = msg.sender;
-	}
+    constructor() public {
+        owner = msg.sender;
+    }
     
-	function setOracleAddress(address _address) public {
-		require(msg.sender == owner);
-		oracle = DIAOracle(_address);
-	}
+    function setOracleAddress(address _address) public {
+        require(msg.sender == owner);
+        oracle = DIAOracle(_address);
+    }
     
-	function getAssetBtcRate(string asset) constant public returns (uint256) {
-		(uint assetPrice,) = oracle.getValue(asset);
-		(uint btcPrice,) = oracle.getValue("BTC/USD");
-		return (assetPrice / btcPrice);
-	}
+    function getAssetBtcRate(string asset) constant public returns (uint256) {
+        (uint assetPrice,) = oracle.getValue(asset);
+        (uint btcPrice,) = oracle.getValue("BTC/USD");
+        return (assetPrice / btcPrice);
+    }
     
 }
 ```

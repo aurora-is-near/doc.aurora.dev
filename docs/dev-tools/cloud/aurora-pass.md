@@ -57,7 +57,7 @@ The Ethereum tooling is constantly evolving and improving so it is recommended t
 
 ### **A simple Web3Modal example to get started.**
 
-1.  Add packages:
+1. Add packages:
 
 ```shell
 yarn add @web3modal/ethereum @web3modal/react wagmi ethers@^5

@@ -30,9 +30,9 @@ The main actor of this article will be [`SwapFlashLoan` contract](https://explor
 
 The plan is:
 
-1.  Approve [cUSDCcUSDTLP token](https://explorer.aurora.dev/address/0x0039f0641156cac478b0DebAb086D78B66a69a01?tab=write_proxy) to be used by the `SwapFlashLoan` contract.
-2.  Get cUSDC and cUSDT from `SwapFlashLoan`.
-3.  Redeem [cUSDC](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99) and [cUSDT](https://explorer.mainnet.aurora.dev/address/0x845E15A441CFC1871B7AC610b0E922019BaD9826) from their contracts to get stables.
+1. Approve [cUSDCcUSDTLP token](https://explorer.aurora.dev/address/0x0039f0641156cac478b0DebAb086D78B66a69a01?tab=write_proxy) to be used by the `SwapFlashLoan` contract.
+2. Get cUSDC and cUSDT from `SwapFlashLoan`.
+3. Redeem [cUSDC](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99) and [cUSDT](https://explorer.mainnet.aurora.dev/address/0x845E15A441CFC1871B7AC610b0E922019BaD9826) from their contracts to get stables.
 
 ## Approve cUSDCcUSDTLP
 
@@ -75,9 +75,9 @@ Now, let's scroll down a bit and click on "View details" link at the left bottom
 
 We can conclude by looking at the both screenshots above that:
 
-1.  `amount` argument is equal to your `cUSDCcUSDTLP` tokens amount with 18 decimals added. E.g. in this case, the user has 2021.941835489438, so the correct value should be 2021294184354893800000. You can use [this tool](https://www.eth-to-wei.com/) to convert your values.
-2.  `deadline` is your time now, with 20 minutes added to it in a timestamp format. You can use [the EpochConverter](https://www.epochconverter.com/) tool to get the correct value. Just add 20 minutes to the datetime there and copy-paste the timestamp value.
-3.  The first value in `minAmounts` corresponds to the `cUSDT` token amount transferred back, and the second one is for the `cUSDC`. They have 8 decimals, and if you sum them up, you will get your amount of `cUSDCcUSDTLP` tokens. So you can just enter any values which in sum give you a value smaller or equal to the `amount`.
+1. `amount` argument is equal to your `cUSDCcUSDTLP` tokens amount with 18 decimals added. E.g. in this case, the user has 2021.941835489438, so the correct value should be 2021294184354893800000. You can use [this tool](https://www.eth-to-wei.com/) to convert your values.
+2. `deadline` is your time now, with 20 minutes added to it in a timestamp format. You can use [the EpochConverter](https://www.epochconverter.com/) tool to get the correct value. Just add 20 minutes to the datetime there and copy-paste the timestamp value.
+3. The first value in `minAmounts` corresponds to the `cUSDT` token amount transferred back, and the second one is for the `cUSDC`. They have 8 decimals, and if you sum them up, you will get your amount of `cUSDCcUSDTLP` tokens. So you can just enter any values which in sum give you a value smaller or equal to the `amount`.
 
 We're ready to execute the method now. Just enter the correct arguments to your Explorer tab, it should look like this:
 

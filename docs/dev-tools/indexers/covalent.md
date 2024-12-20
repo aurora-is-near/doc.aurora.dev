@@ -5,8 +5,8 @@ title: Covalent
 
 Covalent maintains a full archival copy of every supported blockchain, meaning every balance, transaction, log event, and NFT asset data is available from the genesis block. This data is available via:
 
-1.  [Unified API](https://dillinger.io/#unified-api) - Incorporate blockchain data into your app with a familiar REST API
-2.  [Increment](https://dillinger.io/#increment) - Create and embed custom charts with no-code analytics
+1. [Unified API](https://dillinger.io/#unified-api) - Incorporate blockchain data into your app with a familiar REST API
+2. [Increment](https://dillinger.io/#increment) - Create and embed custom charts with no-code analytics
 
 **Use Covalent if you need:**
 

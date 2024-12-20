@@ -37,11 +37,11 @@ This installation script is called [standalone-rpc](https://github.com/aurora-is
 
 First, we can split the whole process into a set of steps:
 
-1.  Generate NEAR account and signing key.
-2.  Generating configuration files for relayer, refiner, and nginx.
-3.  Download the latest database snapshot for relayer (optional, but recommended).
-4.  Download the latest NEAR Node Data Snapshot and configuration, that is required to correctly run the refiner in `nearcore` mode.
-5.  Set up AWS credentials if instead of `nearcore` mode you decided to run the refiner in `nearlake` mode.
+1. Generate NEAR account and signing key.
+2. Generating configuration files for relayer, refiner, and nginx.
+3. Download the latest database snapshot for relayer (optional, but recommended).
+4. Download the latest NEAR Node Data Snapshot and configuration, that is required to correctly run the refiner in `nearcore` mode.
+5. Set up AWS credentials if instead of `nearcore` mode you decided to run the refiner in `nearlake` mode.
 
 Download and start four docker containers: `relayer`, `refiner`, `watchtower`, and `nginx`.
 
@@ -55,8 +55,8 @@ When running your own relayer, if you intend to send a transaction via `eth_send
 
 Before diving into the configuration, let's discuss what are the different options to run the Relayer. It's pretty straightforward.
 
-1.  You can run `relayer` in mainnet or testnet mode.
-2.  You can use `nearlake` or `nearcore` as a source of data for the `refiner`.
+1. You can run `relayer` in mainnet or testnet mode.
+2. You can use `nearlake` or `nearcore` as a source of data for the `refiner`.
 
 Choosing to run the mainnet or testnet is quite self-explanatory. But the second option is not.
 
@@ -76,10 +76,10 @@ The `refiner` can also be run in `nearlake` mode. This mode does not require you
 
 The final step of the whole process is to download docker containers and start them. It will be done for you. The containers that will be running are:
 
-1.  `nearaurora/srpc2-relayer` – JSON RPC server and indexer.
-2.  `nearaurora/srpc2-refiner` – [Aurora Refiner](https://github.com/aurora-is-near/borealis-engine-lib) .
-3.  `nearaurora/reverseproxy` – Nginx (used to isolate backend server from the outer world, redirects requests to the relayer container).
-4.  `containerrr/watchtower` – service that will check on any updates, and will update images accordingly.
+1. `nearaurora/srpc2-relayer` – JSON RPC server and indexer.
+2. `nearaurora/srpc2-refiner` – [Aurora Refiner](https://github.com/aurora-is-near/borealis-engine-lib) .
+3. `nearaurora/reverseproxy` – Nginx (used to isolate backend server from the outer world, redirects requests to the relayer container).
+4. `containerrr/watchtower` – service that will check on any updates, and will update images accordingly.
 
 ### Conclusions
 

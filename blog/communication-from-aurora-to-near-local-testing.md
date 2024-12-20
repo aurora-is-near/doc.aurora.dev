@@ -8,10 +8,10 @@ image: https://www.datocms-assets.com/95026/1694085970-article-cover.png
 ---
 In this article, we will learn how to write local tests for the Aurora contracts, which use [XCC calls](/blog/cross-ecosystem-communication) to Near ecosystem. I will use a simple example to demonstrate it, step by step, we will write:
 
-1.  A simple counter contract for Near blockchain.
-2.  Contract on Aurora, which calls the contract on Near by using the XCC.
-3.  One integration test in the `sandbox`.
-4.  Setup the `git action` for running this test automatically.
+1. A simple counter contract for Near blockchain.
+2. Contract on Aurora, which calls the contract on Near by using the XCC.
+3. One integration test in the `sandbox`.
+4. Setup the `git action` for running this test automatically.
 
 The example described in this article: [https://github.com/olga24912/AuroraToNearXCCExample](https://github.com/olga24912/AuroraToNearXCCExample)
 

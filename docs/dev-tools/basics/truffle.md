@@ -11,11 +11,11 @@ This example is originally forked from the [OpenZeppelin examples](https://docs
 
 ![](https://www.datocms-assets.com/95026/1679442341-truffle_nft_example-a9d17b3f4f30477f3f6d67c4336f20e5.png)
 
-1.  The minter address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program.
-2.  When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token.
-3.  This means either burning the NFT token or sending it back to the minter address.
-4.  If the participant chooses to send it back then the minter can redistribute that token 🎫 to another participant in the line.
-5.  Then the new participant will have access to the same vaccine token that has been used by the previous participant.
+1. The minter address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program.
+2. When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token.
+3. This means either burning the NFT token or sending it back to the minter address.
+4. If the participant chooses to send it back then the minter can redistribute that token 🎫 to another participant in the line.
+5. Then the new participant will have access to the same vaccine token that has been used by the previous participant.
 
 ## Installing Prerequisites[​](https://doc.aurora.dev/interact/truffle#installing-prerequisites "Direct link to heading")
 

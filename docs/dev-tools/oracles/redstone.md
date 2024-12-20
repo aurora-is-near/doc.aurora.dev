@@ -37,8 +37,8 @@ RedStone Oracles can be integrated with EVM-compatible chains out of the box tha
 
 If you want to test your chain there is an example contract and script [here](https://github.com/redstone-finance/redstone-showroom/tree/main/example). You need to follow two steps:
 
-1.  Deploy integration example contract to your chain
-2.  Fill in missing parameters and run an example Typescript script that does the following things:
+1. Deploy integration example contract to your chain
+2. Fill in missing parameters and run an example Typescript script that does the following things:
 
 * fetches data from the decentralized cache layer,
 * adds signed price data to transaction data,

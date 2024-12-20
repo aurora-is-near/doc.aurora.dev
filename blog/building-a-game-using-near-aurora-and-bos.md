@@ -19,9 +19,9 @@ This post shows some code snippets to be self-contained pieces; however, not all
 
 This project consists of three components:
 
-1.  A stateless smart contract written in Rust and deployed to Near, which takes a Tic Tac Toe board state and input and returns an updated state as output.
-2.  A Solidity contract deployed to Aurora, which users interact with to start Tic Tac Toe games and make their moves. This contract uses the Near one to make a computer opponent, and it persists the users’ games in storage.
-3.  A front-end written in JavaScript that is powered by [*BOS*](https://near.org/blog/near-announces-the-blockchain-operating-system/). This is what the user interacts with directly, and it sends the transactions to the Solidity smart contract on Aurora.
+1. A stateless smart contract written in Rust and deployed to Near, which takes a Tic Tac Toe board state and input and returns an updated state as output.
+2. A Solidity contract deployed to Aurora, which users interact with to start Tic Tac Toe games and make their moves. This contract uses the Near one to make a computer opponent, and it persists the users’ games in storage.
+3. A front-end written in JavaScript that is powered by [*BOS*](https://near.org/blog/near-announces-the-blockchain-operating-system/). This is what the user interacts with directly, and it sends the transactions to the Solidity smart contract on Aurora.
 
 All of these components run on top of a blockchain platform; I did not need to acquire any hardware resources to deploy this dApp, and yet anyone can interact with it.
 

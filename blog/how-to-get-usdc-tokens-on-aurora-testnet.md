@@ -18,10 +18,10 @@ In this article, I will explain how to get official native Ethereum ERC-20 token
 
 For getting USDC tokens, we're going to use the following plan:
 
-1.  Create an account in MetaMask for the Ethereum Goerli network and Aurora testnet
-2.  Mint Ether for your Ethereum account
-3.  Swap Ether to the USDC tokens in the Ethereum network
-4.  Transfer USDC tokens from Ethereum to Aurora by using Rainbow Bridge
+1. Create an account in MetaMask for the Ethereum Goerli network and Aurora testnet
+2. Mint Ether for your Ethereum account
+3. Swap Ether to the USDC tokens in the Ethereum network
+4. Transfer USDC tokens from Ethereum to Aurora by using Rainbow Bridge
 
 The instructions for steps 1 and 2 you can find in article ["Getting started with Aurora"](/blog/getting-started-with-aurora), so I will not describe them here. For the 1 step see section "Creating an account on the Aurora testnet using MetaMask", for the 2 step see section "Obtaining AuroraEth on the testnet" -> "The second method: transfer from Ethereum".
 

@@ -74,14 +74,14 @@ Borealis Business’ user journey is seamless. Once a user signs into a dApp wit
 
 ### User Journey
 
-1.  A user signs into a Decentralized App (dApp).
-2.  This dApp has a Borealis deal.
-3.  The dApp checks whether this address was added to the whitelist.
-4.  If not, the dApp decides whether to send the address for whitelisting. This depends entirely on the business logic. For example, when requesting a transaction’s signature from a whitelisted wallet, the dApp must set gasPrice to 0 because regular wallets will use the default gas price.
-5.  The user makes a transaction within the app.
-6.  The user signs the transaction.
-7.  The transaction goes through Aurora’s infrastructure, and the Borealis rule engine checks for deal matches.
-8.  It finds a match with the business deal here, so it will report the gas fees to the business, leaving the transaction gas free for the user, and will let the transaction go through and be submitted to Aurora’s internal mempool.
+1. A user signs into a Decentralized App (dApp).
+2. This dApp has a Borealis deal.
+3. The dApp checks whether this address was added to the whitelist.
+4. If not, the dApp decides whether to send the address for whitelisting. This depends entirely on the business logic. For example, when requesting a transaction’s signature from a whitelisted wallet, the dApp must set gasPrice to 0 because regular wallets will use the default gas price.
+5. The user makes a transaction within the app.
+6. The user signs the transaction.
+7. The transaction goes through Aurora’s infrastructure, and the Borealis rule engine checks for deal matches.
+8. It finds a match with the business deal here, so it will report the gas fees to the business, leaving the transaction gas free for the user, and will let the transaction go through and be submitted to Aurora’s internal mempool.
 
 Here is a scheme describing the User Journey above:
 
