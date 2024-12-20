@@ -10,6 +10,8 @@ In the blockchain world, relayers are off-chain facilitators of data exchange an
 
 Initially developed in-house at NEAR, the Aurora EVM is the official EVM for the NEAR ecosystem. Powered by the SputnikVM, it accomplishes a 1:1 experience with the Ethereum protocol. This compatibility between Aurora and Ethereum is achieved by the **Aurora Relayer, **a** **JSON-RPC compatible server with Ethereum's [Web3 API](https://eth.wiki/json-rpc/API) for the [Aurora Engine. ](https://github.com/aurora-is-near/aurora-engine)It has its own internal database to serve multiple read methods and an indexer that is constantly following the head and indexing blocks, transactions and logs to that internal database
 
+<!-- truncate -->
+
 ### **Relayer 2.0**
 
 As mentioned above, the Aurora Relayer has two main components. First, an implementation of Ethereum’s JSON-RPC specification—a standard collection of methods that all clients must implement and the canonical interface between users and the Ethereum network—on Aurora’s Ethereum Virtual Machine (EVM), a.k.a. the Aurora Engine. Second, an indexer that continuously reads the NEAR network for blocks and other relevant information relevant to Aurora. 

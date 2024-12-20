@@ -15,6 +15,8 @@ In this article, we will learn how to write local tests for the Aurora contracts
 
 The example described in this article: [https://github.com/olga24912/AuroraToNearXCCExample](https://github.com/olga24912/AuroraToNearXCCExample)
 
+<!-- truncate -->
+
 ## Counter contract on Near
 
 I assume that you have already cloned a git repo locally or just created your own repo, in the case you want to add everything file by file to your project using this article.
