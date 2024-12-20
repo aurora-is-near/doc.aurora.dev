@@ -181,7 +181,7 @@ const config = {
           {label: 'Build on Aurora', position: 'left', href: '/build-a-dapp/introduction'},
           {label: 'Launch a Virtual Chain', position: 'left', href: '/aurora-cloud/welcome/introduction'},
           {label: 'Dev tools', position: 'left', href: '/dev-tools/quickstart'},
-          {label: 'Learn', position: 'left', href: '/getting-started/overview'},
+          {label: 'Learn', position: 'left', href: '/'}, /*getting-started/overview*/
           {label: 'Blog', position: 'right', href: '/blog'},
           {
             type: 'dropdown',
