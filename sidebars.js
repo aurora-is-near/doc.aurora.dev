@@ -303,7 +303,6 @@ const sidebars = {
         'bridge/aurora-near',
         'bridge/to-ethereum',
         'bridge/from-ethereum',
-        'bridge/fast-bridge',
         //'bridge/aurora-chains',
         'bridge/advanced',
         'bridge/troubleshooting',

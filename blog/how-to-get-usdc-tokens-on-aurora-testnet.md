@@ -8,7 +8,7 @@ image: https://www.datocms-assets.com/95026/1690542624-usdc.png
 ---
 When you develop a contract, quite often you need ERC-20 tokens for testing. If your contract is rather small and doesn't use cross-contract calls, most likely, you don't need official USDC tokens or any other specific tokens. In that case, the best solution is just to take the standard ERC-20 contract, deploy it, and mint as many test tokens as you wish.
 
-However, sometimes the easier solution for testing can be to get official testing tokens. For example, if your contract is use difficult cross-contract calls and dependencies contracts are already deployed on testnet and support only limited numbers of tokens. When I tested the [fast-bridge](/blog/fast-bridge) I use the USDC tokens on testnet. The fast-bridge is dependent on the classical rainbow bridge, which has a lot of components and is already deployed on the testnet. In this case it was much easier to use tokens, which are already supported by the classical rainbow bridge.
+However, sometimes the easier solution for testing can be to get official testing tokens. For example, if your contract is use difficult cross-contract calls and dependencies contracts are already deployed on testnet and support only limited numbers of tokens. When I am testing RainbowBridge during development I use the USDC tokens on testnet.
 
 In this article, I will explain how to get official native Ethereum ERC-20 tokens on your Aurora testnet account in the example of USDC tokens. This method will work with other popular native Ethereum ERC-20 as well, and it will be clear how to get these tokens also in Goerli Ethereum and in Near testnet.
 
