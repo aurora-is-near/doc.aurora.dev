@@ -6,7 +6,7 @@ MD013:        # line-length
   code_blocks: false
   tables: false
   headings: false
-  line_length: 200
+  line_length: 600
 MD014: false  # commands-show-output
 MD022:        # blanks-around-headings
   lines_above: 1
@@ -25,6 +25,7 @@ MD044:        # proper-names
     - Hardhat
     - MetaMask
   code_blocks: false
+MD045: false # disable alt for images
 MD046: false  # code-block-style
 MD048:        # code-fence-style
   style: backtick
