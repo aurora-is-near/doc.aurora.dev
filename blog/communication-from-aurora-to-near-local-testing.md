@@ -470,7 +470,9 @@ In this section, we will write a function that calls the `incrementXCC` method i
 
 Let's write `increment` function in our test now, which will call the `incrementXCC` from the Aurora's contract. We'll provide as input: (1) aurora engine contract deployed in the sandbox, (2) the near account of the user which will sign the transaction, (3) the counter contract deployed on aurora.
 
-Notice that we're going to call the method in the aurora contract, but in this function, the user account ID on Near is provided. We can do this because it is possible to call the aurora's counter contract method by using `call` method from the Aurora Engine contract. In that case, the near user will sign a transaction, but inside the Aurora Engine, there is [an implicit mapping](https://github.com/aurora-is-near/aurora-engine/blob/71980db92a9d4b95d4e1f53954b98e0e8f002a4b/engine-sdk/src/types.rs#L28) between the near account ID and aurora addresses. And it is precisely how we will communicate with the contract in our test.
+Notice that we're going to call the method in the aurora contract, but in this function, the user account ID on Near is provided. We can do this because it is possible to call the aurora's counter contract method by using `call` method from the Aurora Engine contract.
+
+In that case, the near user will sign a transaction, but inside the Aurora Engine, there is [an implicit mapping](https://github.com/aurora-is-near/aurora-engine/blob/71980db92a9d4b95d4e1f53954b98e0e8f002a4b/engine-sdk/src/types.rs#L28) between the near account ID and aurora addresses. And it is precisely how we will communicate with the contract in our test.
 
 Now, let's first encode the arguments for the `call` method in the `AuroraEngine` contract on Near and after that – submit a transaction and check its result:
 

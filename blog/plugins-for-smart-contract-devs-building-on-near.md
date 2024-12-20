@@ -46,7 +46,7 @@ impl Counter {
 }
 ```
 
-*The final version of the code is available *[*in this repository on github*](https://github.com/mooori/counter-acl-example)*. The *`Counter`* example is inspired by *[*near-examples/counter-rust*](https://github.com/near-examples/counter-rust)*.*
+The final version of the code is available [*in this repository on github*](https://github.com/mooori/counter-acl-example). The *`Counter`* example is inspired by [*near-examples/counter-rust*](https://github.com/near-examples/counter-rust).
 
 ### Permissions
 
@@ -157,7 +157,7 @@ acl_grant_role("Resetter", "alice.near");
 
 The `AccessControllable` trait provides many more methods to administer ACL permissions. After following the steps above, all of them are automatically implemented for a contract using the `AccessControllable` plugin.
 
-## Done!
+## Done
 
 The steps above are sufficient to add complex and configurable ACL permissions to a contract using `near-plugins`. At this point, `alice.near` is the only account which has been granted the `Resetter` role. This means that only `alice.near` may successfully call the contract’s `reset()` method.
 

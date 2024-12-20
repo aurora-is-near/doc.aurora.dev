@@ -45,7 +45,7 @@ As we can see from the image above, the address on the NEAR is: `07865c6e87b9f70
 
 And the address on the Aurora is: `0x901fb725c106e182614105335ad0e230c91b67c8`
 
-**WARNING: **Some sites can mint USDC tokens, but with a different address, so you need to double-check the address of minted tokens.
+**WARNING:** Some sites can mint USDC tokens, but with a different address, so you need to double-check the address of minted tokens.
 
 This [repo](https://github.com/aurora-is-near/bridge-assets/tree/master/tokens) also contains the list of tokens supported by the Rainbow Bridge, however this list is not full for the testnets, for example, the USDC tokens are not included.
 
@@ -73,7 +73,7 @@ We have the Goerli Ethereum account and some GoerliETH. Let’s exchange some Et
 
 ![](https://www.datocms-assets.com/95026/1690544545-screenshot-2023-07-28-at-12-39-49.png)
 
-**3. Swap GoerliEth into USDC**
+**3. Swap GoerliEth into USDC:**
 
 * Click `Select token`. Yes, you doesn’t see the USDC tokens in the list. It is Ok, don’t worry:
 

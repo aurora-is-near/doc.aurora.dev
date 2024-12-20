@@ -22,7 +22,7 @@ If you’re not interested in the code-solution, you can take a shortcut and use
 
 As developers, we’re eager to know how to get all that information in our code directly without using any third parties. So let’s disentangle that and find out how Aurora Helpers work underneath.
 
-First of all, let’s configure our [*web3.js*](https://web3js.readthedocs.io/en/v1.8.2/) provider to be Aurora's mainnet endpoint and set `tx`* *variable:
+First of all, let’s configure our [*web3.js*](https://web3js.readthedocs.io/en/v1.8.2/) provider to be Aurora's mainnet endpoint and set `tx` variable:
 
 ```javascript
 const mainnet = 'https://mainnet.aurora.dev';

@@ -12,7 +12,7 @@ The article assumes no prior knowledge of Ethereum or experience working with it
 
 <!-- truncate -->
 
-## How Aurora is related to Ethereum and Near.
+## How Aurora is related to Ethereum and Near
 
 While working with Aurora, you must often interact with first-layer blockchains such as Ethereum and NEAR. Ethereum is one of the most well-known and popular blockchains with a large ecosystem. Nevertheless, it exhibits some technological limitations, the most significant being the transaction cost. As a result, interacting with contracts on Ethereum often requires a considerable amount of money for transaction fees. Conversely, NEAR is a blockchain developed later with specific technical advantages over Ethereum, including significantly lower transaction costs.
 
@@ -20,7 +20,9 @@ Aurora is a second-layer blockchain built on NEAR and designed to be highly comp
 
 ### Connection with Ethereum
 
-Aurora uses AuroraEth as the payment currency for transactions. AuroraEth is essentially the same as Ether but operates within the Aurora network. You will notice that it is named just ETH everywhere: in Metamask, Explorer, etc., so there is no difference actually for the users and devs. Contracts in Aurora are written in Solidity and have the same structure and syntax as Ethereum contracts. The addressing system is also the same. Consequently, you can use tools such as MetaMask, Hardhat, and other applications to interact with Aurora. The general idea is that contracts developed for Ethereum can be easily transferred to Aurora, providing a seamless user experience and minimizing the need for modifications.
+Aurora uses AuroraEth as the payment currency for transactions. AuroraEth is essentially the same as Ether but operates within the Aurora network. You will notice that it is named just ETH everywhere: in MetaMask, Explorer, etc., so there is no difference actually for the users and devs.
+
+Contracts in Aurora are written in Solidity and have the same structure and syntax as Ethereum contracts. The addressing system is also the same. Consequently, you can use tools such as MetaMask, Hardhat, and other applications to interact with Aurora. The general idea is that contracts developed for Ethereum can be easily transferred to Aurora, providing a seamless user experience and minimizing the need for modifications.
 
 ### Connection with Near
 
@@ -47,7 +49,7 @@ npx hardhat
 
 After running the `npx hardhat` command, an interactive process will start. Select `Create JavaScript project`. It will ask a few questions. Enter the values you want to set, or you can just use the default values by pressing `Enter`. Following these steps, you'll have a basic Hardhat project set up and ready to be customized for your specific needs.
 
-In this article, we will not delve into the details of text editors for working with contracts. I use the Clion by myself, which supports plugins for Solidity. You can choose[ Remix](https://remix.ethereum.org/) or even a simple editor like Notepad or Vim.
+In this article, we will not delve into the details of text editors for working with contracts. I use the Clion by myself, which supports plugins for Solidity. You can choose [Remix](https://remix.ethereum.org/) or even a simple editor like Notepad or Vim.
 
 ## The Smart-Contract
 
@@ -73,7 +75,7 @@ contract Incrementer {
 }
 ```
 
-The contract is named `Incrementer`. It has one state variable ` counter  `of type `uint`. When the contract is deployed, the constructor `constructor(uint startValue)` is called. It initializes the `counter` with the `startValue` provided during deployment. The `increment()` function is a public function that increments the value of the `counter` by 1. The `getCounter()` function is a `public view` function that returns the current value of the `counter` without modifying the state of the contract.
+The contract is named `Incrementer`. It has one state variable `counter` of type `uint`. When the contract is deployed, the constructor `constructor(uint startValue)` is called. It initializes the `counter` with the `startValue` provided during deployment. The `increment()` function is a public function that increments the value of the `counter` by 1. The `getCounter()` function is a `public view` function that returns the current value of the `counter` without modifying the state of the contract.
 
 ## Creating an account on the Aurora testnet using MetaMask
 
@@ -113,14 +115,14 @@ This method will take approximately 20 minutes. First, we will obtain ETH in Goe
 
 Obtain the Eth in Goerli testnet in Ethereum:
 
-* Go to the following link:[ *https://goerli-faucet.pk910.de/*](https://goerli-faucet.pk910.de/). Of course, it is not the only option. But here, you can get the Eth without a daily limit.
+* Go to the following link:[*https://goerli-faucet.pk910.de/*](https://goerli-faucet.pk910.de/). Of course, it is not the only option. But here, you can get the Eth without a daily limit.
 * Enter the address where you want the Eth to be sent.
 * Click “Start Mining” and wait…
 * Finish the mining and receive Eth.
 
 Transfer the Eth to Aurora using the Rainbow Bridge:
 
-* Visit[ *https://testnet.rainbowbridge.app/*](https://testnet.rainbowbridge.app/)
+* Visit[*https://testnet.rainbowbridge.app/*](https://testnet.rainbowbridge.app/)
 * Click “New Transfer” and select “Transfer from Ethereum” and “Transfer to Aurora”
 * Connect to the desired address using MetaMask in both networks
 * Wait for approximately 20 minutes for the transfer to complete
@@ -214,7 +216,7 @@ Congratulations, your smart contract is deployed! You can find more details abou
 
 ![](https://www.datocms-assets.com/95026/1686009148-screenshot-2023-06-06-at-00-52-03.png)
 
-## Interaction with the contract by using HardHat.
+## Interaction with the contract by using Hardhat
 
 Now, we want to learn how to interact with our contract. The easiest way is to create tasks within the `hardhat.config.json` file. Inside each `task` we will write the code of the interaction with the contract.
 
@@ -412,7 +414,7 @@ yarn hardhat test --network testnet_aurora
 
 ## Aurora and Near Explorers
 
-After we submit the transaction, we can find it on the Aurora Explorer website:[ *https://explorer.testnet.aurora.dev/*](https://explorer.testnet.aurora.dev/)
+After we submit the transaction, we can find it on the Aurora Explorer website:[*https://explorer.testnet.aurora.dev/*](https://explorer.testnet.aurora.dev/)
 
 For example, here you can find information about one of the transactions in our Increment contract [here.](https://explorer.testnet.aurora.dev/tx/0x17f890b73366dd251d00f2df5b187ee9107b9c344d9cd02ab4bb683125916b58)
 
@@ -426,11 +428,11 @@ To find the correspondent transaction in Near Explorer, you can use [this dApp](
 
 Aurora, a blockchain practically identical to Ethereum, provides a similar experience in terms of how users interact. Smart contracts intended for Ethereum are generally compatible with Aurora, and many Ethereum-centric tools align well. Yet, it operates on the Near blockchain, allowing for interaction akin to a Near smart contract. Consequently, every transaction within this platform can be associated with corresponding activity within Near.
 
-In this article, we have learned how to: (1) create accounts in Aurora, (2) get AuroraETH, and (3) deploy and interact with Aurora contracts using HardHat.
+In this article, we have learned how to: (1) create accounts in Aurora, (2) get AuroraETH, and (3) deploy and interact with Aurora contracts using Hardhat.
 
 ## References
 
-* HardHat: [https://hardhat.org/tutorial](https://hardhat.org/tutorial)
+* Hardhat: [https://hardhat.org/tutorial](https://hardhat.org/tutorial)
 * MetaMask: [https://metamask.io/](https://metamask.io/)
 * Get AuroraETH: [https://aurora.dev/faucet](https://aurora.dev/faucet)
 * Mining Goerli ETH: [https://goerli-faucet.pk910.de/](https://goerli-faucet.pk910.de/)

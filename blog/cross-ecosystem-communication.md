@@ -10,13 +10,19 @@ Aurora’s infrastructure is built upon an innovative combination—our Ethereum
 
 <!-- truncate -->
 
-Embracing Aurora's dedication to exceptional user experiences, our team has crafted a Software Development Kit (SDK) tailored to provide developers with a seamless method for facilitating cross-blockchain transactions. Access the SDK in the dedicated [repository](https://github.com/aurora-is-near/aurora-contracts-sdk), or integrate it into your project effortlessly. Aurora's Solidity developers can install an npm package by executing `npm i @auroraisnear/aurora-sdk` in any terminal, while NEAR Rust developers can similarly incorporate a cargo package from our [repository](https://github.com/aurora-is-near/aurora-engine.git). For a more customized installation, or if you want to contribute to the project, you can also follow the installation instructions in the repository.
+Embracing Aurora's dedication to exceptional user experiences, our team has crafted a Software Development Kit (SDK) tailored to provide developers with a seamless method for facilitating cross-blockchain transactions. Access the SDK in the dedicated [repository](https://github.com/aurora-is-near/aurora-contracts-sdk), or integrate it into your project effortlessly.
+
+Aurora's Solidity developers can install an npm package by executing `npm i @auroraisnear/aurora-sdk` in any terminal, while NEAR Rust developers can similarly incorporate a cargo package from our [repository](https://github.com/aurora-is-near/aurora-engine.git). For a more customized installation, or if you want to contribute to the project, you can also follow the installation instructions in the repository.
 
 ![](https://www.datocms-assets.com/95026/1682019691-screen-shot-2023-04-20-at-12-41-15-pm.png)
 
-For this article, we have prepared two examples for developers to understand how to use the SDK. The first is a Solidity smart contract that connects the SocialDB contract, the storage layer that backs the [NEAR.social](https://near.social/#/) decentralized social media platform. Even though this integration would allow using MetaMask as an entry point into that social network, its importance extends further. SocialDB, initially designed to store various types of social data on the NEAR protocol, has evolved over time to become the foundation for a user-centric Open Web, where users maintain control over their data. This approach has ultimately led to the development of NEAR's Blockchain Operating System (BOS). As such, the seamless integration of SocialDB with BOS is crucial, as it provides Aurora developers with access to one of the most potent tools within the NEAR ecosystem .\
-\
-The second integration example involves calling the Uniswap contract deployed in Aurora from a Rust contract deployed in NEAR. This integration is vital because it allows NEAR users to access Uniswap's decentralized exchange platform, one of the most popular and widely used in the cryptocurrency space. By having access to Uniswap, NEAR users can benefit from its liquidity pools, token swaps, and other DeFi services, enhancing their ability to trade and interact with a diverse range of digital assets. This seamless connection between NEAR and Uniswap not only enriches the user experience but also fosters the growth of the broader decentralized finance ecosystem in both protocols.
+For this article, we have prepared two examples for developers to understand how to use the SDK. The first is a Solidity smart contract that connects the SocialDB contract, the storage layer that backs the [NEAR.social](https://near.social/#/) decentralized social media platform. Even though this integration would allow using MetaMask as an entry point into that social network, its importance extends further.
+
+SocialDB, initially designed to store various types of social data on the NEAR protocol, has evolved over time to become the foundation for a user-centric Open Web, where users maintain control over their data. This approach has ultimately led to the development of NEAR's Blockchain Operating System (BOS). As such, the seamless integration of SocialDB with BOS is crucial, as it provides Aurora developers with access to one of the most potent tools within the NEAR ecosystem .
+
+The second integration example involves calling the Uniswap contract deployed in Aurora from a Rust contract deployed in NEAR. This integration is vital because it allows NEAR users to access Uniswap's decentralized exchange platform, one of the most popular and widely used in the cryptocurrency space.
+
+By having access to Uniswap, NEAR users can benefit from its liquidity pools, token swaps, and other DeFi services, enhancing their ability to trade and interact with a diverse range of digital assets. This seamless connection between NEAR and Uniswap not only enriches the user experience but also fosters the growth of the broader decentralized finance ecosystem in both protocols.
 
 ### From Aurora to NEAR
 
@@ -84,7 +90,7 @@ use aurora_sdk::{
 };
 ```
 
-The Near contract works as a proxy with a method called ` exact_output_single  `that takes the same input as Uniswap's `exactOutputSingle.` To work well in the Near ecosystem, the `exact_output_single` function takes the arguments as a JSON encoded object and then re-encodes it into the Solidity ABI. The `exact_output_single` function returns a promise because, under the hood, it is making a Near cross-contract call to the Aurora EVM where the Uniswap code is deployed.
+The Near contract works as a proxy with a method called `exact_output_single ` that takes the same input as Uniswap's `exactOutputSingle.` To work well in the Near ecosystem, the `exact_output_single` function takes the arguments as a JSON encoded object and then re-encodes it into the Solidity ABI. The `exact_output_single` function returns a promise because, under the hood, it is making a Near cross-contract call to the Aurora EVM where the Uniswap code is deployed.
 
 ```rust
 pub fn exact_output_single(&self, params: SerializableExactOutputSingleParams) -> Promise {
@@ -143,9 +149,8 @@ pub fn parse_exact_output_single_result(
 
 Using the same paradigm as the solidity SDK, the NEAR version provides a way to wrap functions in Aurora contracts easily.
 
-\
-In conclusion, the cross-chain contract calls between Aurora and NEAR offer a powerful and flexible solution for developers and users who wish to access the benefits of both platforms. By leveraging the capabilities of Aurora and the NEAR Protocol, these communications enable seamless interaction between the two ecosystems.\
-\
+In conclusion, the cross-chain contract calls between Aurora and NEAR offer a powerful and flexible solution for developers and users who wish to access the benefits of both platforms. By leveraging the capabilities of Aurora and the NEAR Protocol, these communications enable seamless interaction between the two ecosystems.
+
 Moreover, cross-chain contracts facilitate greater interoperability and foster a more decentralized ecosystem. As more developers build innovative solutions utilizing cross-chain functionality, we can expect an even more vibrant and interconnected space, with enhanced opportunities for users to access a wider array of decentralized products and services.
 
 In the future, we anticipate an increasing number of cross-chain contracts and infrastructure solutions that will further unite Aurora and NEAR ecosystems. By continuing to develop and refine these cross-chain capabilities, we can unlock new levels of innovation, utility, and adoption across the blockchain industry, ultimately paving the way for a more decentralized and interconnected future.

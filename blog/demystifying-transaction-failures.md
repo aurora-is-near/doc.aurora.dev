@@ -8,7 +8,7 @@ image: https://www.datocms-assets.com/95026/1682082259-dtf-article-cover.png
 ---
 In this blog post, I want to discuss transaction failures on the Aurora blockchain and guide developers in understanding what exactly has happened with your transaction.
 
-*tl;dr: just use *[**Aurora Helpers dApp**](https://aurora-helpers.vercel.app/aurora_to_near)* and get the Near transaction error code there*
+*tl;dr: just use [**Aurora Helpers dApp**](https://aurora-helpers.vercel.app/aurora_to_near) and get the Near transaction error code there*
 
 <!-- truncate -->
 
@@ -40,7 +40,9 @@ That is it. The task is solved. You can see in Aurora Helpers directly what this
 
 ### Error Types
 
-Those `07 03` numbers correspond to the `status` field of the Aurora Engine's transaction. The First number indicates the[ Aurora Engine API version](https://github.com/aurora-is-near/aurora-engine/pull/299/files#diff-a0e4fe79c7aa101e4b4e969318e18bb3854f0f8607e4b56d5665e131f98fdfa8R116). And the second one corresponds to the [statuses](https://github.com/aurora-is-near/aurora-engine/blob/a00df8e7d83ae49c035348111cc89be28cb93dab/engine-types/src/parameters/engine.rs#L19-L26) which could transactions have inside the Engine after execution. Let's compile them into the list below:
+Those `07 03` numbers correspond to the `status` field of the Aurora Engine's transaction. The First number indicates the[Aurora Engine API version](https://github.com/aurora-is-near/aurora-engine/pull/299/files#diff-a0e4fe79c7aa101e4b4e969318e18bb3854f0f8607e4b56d5665e131f98fdfa8R116). And the second one corresponds to the [statuses](https://github.com/aurora-is-near/aurora-engine/blob/a00df8e7d83ae49c035348111cc89be28cb93dab/engine-types/src/parameters/engine.rs#L19-L26) which could transactions have inside the Engine after execution.
+
+Let's compile them into the list below:
 
 * 00 – Succeed: transaction has been executed successfully.
 * 01 – Revert: transaction has been reverted, most likely because of internal contract terms.

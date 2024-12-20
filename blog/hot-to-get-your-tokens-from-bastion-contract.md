@@ -91,7 +91,7 @@ That is it! Now you got back your `cUSDC` and `cUSDT` tokens.
 To do this, we will need to point our attention to these contracts:
 
 * cUSDT: [0x845E15A441CFC1871B7AC610b0E922019BaD9826](https://explorer.mainnet.aurora.dev/address/0x845E15A441CFC1871B7AC610b0E922019BaD9826)
-* cUSDC:[ 0xe5308dc623101508952948b141fD9eaBd3337D99](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99)
+* cUSDC: [0xe5308dc623101508952948b141fD9eaBd3337D99](https://explorer.aurora.dev/token/0xe5308dc623101508952948b141fD9eaBd3337D99)
 
 For both of them, the process will look the same, so let's just talk about `cUSDT` case. To unwrap you need to call this method – \`redeem\`:
 

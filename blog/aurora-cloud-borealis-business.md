@@ -16,7 +16,9 @@ Borealis Business is a transaction processing and accounting service that allows
 
 Aurora has a relaying architecture mapping Aurora to NEAR transactions, separating the origination and payment. At the core of the Borealis Business is the Rule Engine (BBRE), which oversees this transaction relaying to fulfill its cost management goals. It allows the transfer of transaction costs to a third party–typically a decentralized app (dApp)–that seeks to cover its users' fees. This way, businesses can make their users' experience friction-free by shouldering transaction fees.
 
-Companies can establish Customer Deals through the Rule Engine by setting specific rules determining who should pay for a transaction and under what conditions. E.g., incoming transactions to the Aurora+ staking contract are now made free in this way. The strategies which Rule Engine allows are particularly advantageous for companies seeking to offer region-specific or time-bound promotions. For instance, businesses can provide free transactions exclusively to their European customers around the clock while extending this offer to customers from other regions only on weekends. This level of customization empowers companies to accommodate diverse business models and opens up possibilities for novel concepts, including cross-business interactions.
+Companies can establish Customer Deals through the Rule Engine by setting specific rules determining who should pay for a transaction and under what conditions. E.g., incoming transactions to the Aurora+ staking contract are now made free in this way. The strategies which Rule Engine allows are particularly advantageous for companies seeking to offer region-specific or time-bound promotions.
+
+For instance, businesses can provide free transactions exclusively to their European customers around the clock while extending this offer to customers from other regions only on weekends. This level of customization empowers companies to accommodate diverse business models and opens up possibilities for novel concepts, including cross-business interactions.
 
 ## Setting Up a Deal
 

@@ -11,7 +11,7 @@ Aurora Chains are dedicated blockchains that go beyond mere Ethereum compatibili
 * *custom token & fee mechanics* (e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.);
 * *custom access control* (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, private chain can be built by using a private NEAR shard – [Calimero](https://www.calimero.network/));
 * *seamless interoperability* with Aurora, NEAR, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls, etc.; This is the main difference between Chains and other solutions (like Avalanche or Cosmos). There is no disjointness in between. You can call any smart contract in any other Chain or Near and interact with it freely.
-* *tremendous transaction throughput – *we can provide you with dozens of millions of transactions daily for your ecosystem.
+* *tremendous transaction throughput* – we can provide you with dozens of millions of transactions daily for your ecosystem.
 
 Every Aurora Chain is based upon the [Aurora smart contract.](https://github.com/aurora-is-near/aurora-engine/) Aurora Chain is just another instance of it that can be configured in way that will work in the best way possible to be aligned with your business model and goals. The Aurora Labs team will gladly help you maintain and support your chain.
 
@@ -112,7 +112,7 @@ We now notice that your Aurora Innovation balance has been topped up in the top-
 ![](https://www.datocms-assets.com/95026/1682519404-screenshot-2023-04-26-at-15-28-37.png)
 
 We will see there our bridge transfer which has been done using a call to the NEP-141 token:\
-*aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near *which represent AURORA token on NEAR. And that balance of the [aurora-silo-dev.near](https://nearblocks.io/address/aurora-silo-dev.near) has been topped up, which is our Aurora Chain contract on NEAR, the little brother of the [aurora.near,](https://nearblocks.io/address/aurora.near) but with the same capabilities in a nutshell.
+*aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near* which represent AURORA token on NEAR. And that balance of the [aurora-silo-dev.near](https://nearblocks.io/address/aurora-silo-dev.near) has been topped up, which is our Aurora Chain contract on NEAR, the little brother of the [aurora.near,](https://nearblocks.io/address/aurora.near) but with the same capabilities in a nutshell.
 
 ### Contract Deployment Rights
 

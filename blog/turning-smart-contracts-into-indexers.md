@@ -6,7 +6,9 @@ authors: [michael]
 tags: [tutorials]
 image: https://www.datocms-assets.com/95026/1692963087-tsci.png
 ---
-Recently, Michael Birch gave a [*talk at a virtual Rust conference*](https://www.conf42.com/Rustlang\_2023\_Michael_Birch_smart_contracts_indexers_crosscompilation) about some work we have done here at Aurora to enable our technology. In case you missed it, this blog post is a written version of the talk. That talk was aimed at a more general audience, giving background about Aurora, Near, and blockchain technology in general. However, this post assumes you are already familiar with most of the Aurora/Near/blockchain background (you are here on our website, after all) and instead focuses more on the Rust side of things.
+Recently, Michael Birch gave a [*talk at a virtual Rust conference*](https://www.conf42.com/Rustlang\_2023\_Michael_Birch_smart_contracts_indexers_crosscompilation) about some work we have done here at Aurora to enable our technology. In case you missed it, this blog post is a written version of the talk.
+
+That talk was aimed at a more general audience, giving background about Aurora, Near, and blockchain technology in general. However, this post assumes you are already familiar with most of the Aurora/Near/blockchain background (you are here on our website, after all) and instead focuses more on the Rust side of things.
 
 <!-- truncate -->
 
@@ -16,7 +18,9 @@ The goal of this post is to describe how you can use functional programming patt
 
 Indexers provide a specialized view of the blockchain state to enable low-latency responses to particular kinds of queries. For example, block explorers will use an indexer to show the balances of all the tokens held by a user. An indexer is required to accomplish this because the on-chain information about balances is indexed in the opposite way to how the block explorer displays the information. By which I mean that on-chain each token has information about all the addresses with a non-zero balance, but the block explorer shows all the non-zero balances for a single address.
 
-Generally, indexers are specialized to follow the state of a particular contract (or class of contracts). Therefore, the code for the indexer is closely related to the code for the smart contract it follows. Thus, it would be lower developer maintenance to have a common codebase for the smart contract and its associated indexer. Additionally, sharing a codebase makes it possible to create much more powerful indexers than simply something that can respond to queries. For example, an indexer with access to the smart contract logic can simulate whole transactions off-chain to provide free and low-latency feedback to users on potential errors.
+Generally, indexers are specialized to follow the state of a particular contract (or class of contracts). Therefore, the code for the indexer is closely related to the code for the smart contract it follows. Thus, it would be lower developer maintenance to have a common codebase for the smart contract and its associated indexer.
+
+Additionally, sharing a codebase makes it possible to create much more powerful indexers than simply something that can respond to queries. For example, an indexer with access to the smart contract logic can simulate whole transactions off-chain to provide free and low-latency feedback to users on potential errors.
 
 In the case of Aurora, the indexer we use for the Aurora Engine smart contract serves data that is used by [our RPC implementation.](/blog/spinning-up-your-own-aurora-node) The Ethereum RPC spec includes a few methods (e.g., `eth_estimateGas`) which require simulating transactions before submitting them to the chain. Therefore, we have a clear use for the extra indexer features that are enabled by having a shared codebase between the Aurora Engine and its indexer.
 
@@ -72,9 +76,13 @@ fn get_balance<I: IO>(io: &I, user: User) -> u128 {
 
 This example includes a trait with a (simplified) interface for interacting with state as well as a function with a generic type parameter. The syntax means “this function accepts any type so long as it implements `IO` the interface”. The benefit of coding in this style is that the `get_balance` function can now be reused in any program, regardless of what compilation target it uses, so long as there is an `IO` implementation for it. This is exactly what enables us to share a codebase between our smart contract and indexer.
 
-In this example above, it might seem like we are going through a lot of trouble to reuse one line of code in two different places. But this approach scales. The function we share does not need to be only a single line, it could have any amount of complexity. Moreover, state access is not the only target-specific effect. We can have traits for accessing environment variables (in the blockchain context, these would be variables like the current block height, the signer of the transaction, etc) and interacting with other processes (in the blockchain context, this corresponds to calling other smart contracts).
+In this example above, it might seem like we are going through a lot of trouble to reuse one line of code in two different places. But this approach scales. The function we share does not need to be only a single line, it could have any amount of complexity.
 
-Beyond reusability, there are other benefits to coding in this style. Code written in this way is easier to test because you can simulate the effects in-memory (for example, instead of actually reading and writing files). It is also easier to reason about this style of code. When there are no side-effects, the function signature gives you all the information you need about the function. If a function needs access to state, then you know it will include the `IO` trait bound, and conversely, if the state is not needed, then it will not include that bound. When you can learn so much about a function without reading its implementation body, it becomes much easier to navigate the codebase.
+Moreover, state access is not the only target-specific effect. We can have traits for accessing environment variables (in the blockchain context, these would be variables like the current block height, the signer of the transaction, etc) and interacting with other processes (in the blockchain context, this corresponds to calling other smart contracts).
+
+Beyond reusability, there are other benefits to coding in this style. Code written in this way is easier to test because you can simulate the effects in-memory (for example, instead of actually reading and writing files). It is also easier to reason about this style of code. When there are no side-effects, the function signature gives you all the information you need about the function.
+
+If a function needs access to state, then you know it will include the `IO` trait bound, and conversely, if the state is not needed, then it will not include that bound. When you can learn so much about a function without reading its implementation body, it becomes much easier to navigate the codebase.
 
 ## Application: Aurora Engine
 
@@ -107,7 +115,9 @@ pub fn add_balance<I: IO>(
 }
 ```
 
-You can see the implementation of the `IO` trait for both the [*Near Runtime*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-sdk/src/near_runtime.rs#L128), and the “[*standalone engine*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-standalone-storage/src/engine_state.rs#L82)” which uses a `rocksdb` instance to persist the state. The former is used in the Wasm artifact, which is deployed to Near as the Aurora Engine smart contract. The standalone engine is used to [*implement the eth_estimateGas RPC method*](https://github.com/aurora-is-near/borealis-engine-lib/blob/v0.23.4/refiner-app/src/socket.rs#L129), and the state is populated by [*consuming Near blocks*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-standalone-storage/src/sync/mod.rs#L229) (from [*Near data lake for example*](https://github.com/aurora-is-near/borealis-engine-lib/tree/v0.23.4#near-data-lake)).
+You can see the implementation of the `IO` trait for both the [*Near Runtime*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-sdk/src/near_runtime.rs#L128), and the “[*standalone engine*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-standalone-storage/src/engine_state.rs#L82)” which uses a `rocksdb` instance to persist the state.
+
+The former is used in the Wasm artifact, which is deployed to Near as the Aurora Engine smart contract. The standalone engine is used to [*implement the eth_estimateGas RPC method*](https://github.com/aurora-is-near/borealis-engine-lib/blob/v0.23.4/refiner-app/src/socket.rs#L129), and the state is populated by [*consuming Near blocks*](https://github.com/aurora-is-near/aurora-engine/blob/2.10.2/engine-standalone-storage/src/sync/mod.rs#L229) (from [*Near data lake for example*](https://github.com/aurora-is-near/borealis-engine-lib/tree/v0.23.4#near-data-lake)).
 
 ## Conclusion
 

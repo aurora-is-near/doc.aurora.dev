@@ -6,13 +6,17 @@ authors: [michael]
 tags: [tutorials]
 image: https://www.datocms-assets.com/95026/1700215626-xcc-cc.png
 ---
-In previous posts, we have written about the cross-contract calls (XCC) feature on Aurora. These include [*an overview*](/blog/cross-ecosystem-communication), [*an application*](/blog/building-a-game-using-near-aurora-and-bos), and a [*deep dive into writing tests*](/blog/communication-from-aurora-to-near-local-testing). In this post, we continue with the XCC technical deep dive by discussing in more detail handling XCC results using callbacks. In particular, we focus on the concrete example of needing to refund tokens to a user in the event of an error. Along the way, this example will reveal a bit of a “gotcha” which developers new to the XCC feature may come across, and we’ll discuss how to overcome it.
+In previous posts, we have written about the cross-contract calls (XCC) feature on Aurora. These include [*an overview*](/blog/cross-ecosystem-communication), [*an application*](/blog/building-a-game-using-near-aurora-and-bos), and a [*deep dive into writing tests*](/blog/communication-from-aurora-to-near-local-testing).
+
+In this post, we continue with the XCC technical deep dive by discussing in more detail handling XCC results using callbacks. In particular, we focus on the concrete example of needing to refund tokens to a user in the event of an error. Along the way, this example will reveal a bit of a “gotcha” which developers new to the XCC feature may come across, and we’ll discuss how to overcome it.
 
 <!-- truncate -->
 
 ## The Scenario
 
-This scenario comes from [*an example*](https://github.com/aurora-is-near/aurora-contracts-sdk/tree/76cb2f4f5932b5b9dd887834e1f7528cdeb1837c/examples/ft-refund) present in the Aurora Contracts SDK. In the example, we suppose there is a contract for some Near app, A, which works with a [*NEP-141*](https://nomicon.io/Standards/Tokens/FungibleToken/Core) token, T, that has also been bridged to Aurora. Our goal is to use XCC to allow Aurora users to interact with A using the ERC-20 version of T tokens they have on Aurora. We specifically want to handle the case where if there is an error in A, then the tokens are automatically returned to the user’s address on Aurora.
+This scenario comes from [*an example*](https://github.com/aurora-is-near/aurora-contracts-sdk/tree/76cb2f4f5932b5b9dd887834e1f7528cdeb1837c/examples/ft-refund) present in the Aurora Contracts SDK. In the example, we suppose there is a contract for some Near app, A, which works with a [*NEP-141*](https://nomicon.io/Standards/Tokens/FungibleToken/Core) token, T, that has also been bridged to Aurora.
+
+Our goal is to use XCC to allow Aurora users to interact with A using the ERC-20 version of T tokens they have on Aurora. We specifically want to handle the case where if there is an error in A, then the tokens are automatically returned to the user’s address on Aurora.
 
 ## The Contracts
 
@@ -184,7 +188,9 @@ function ftTransferCallCallback(
 
 ## The Trap
 
-So far so good, everything looks straightforward. But this is where we hit a small “gotcha”. The NEP-141 token standard requires attaching 1 yoctoNEAR to ft_transfer_call. This means not only is ftTransferCall spending 1 yoctoNEAR, but so is ftTransferCallCallback in the case that a refund is needed. Someone needs to pay for this cost, and the Aurora Contact SDK [*passes that cost on to the caller of the function*](https://github.com/aurora-is-near/aurora-contracts-sdk/blob/76cb2f4f5932b5b9dd887834e1f7528cdeb1837c/aurora-solidity-sdk/src/AuroraSdk.sol#L142). In the case of ftTransferCall, that caller is the user, no problem. But who is the caller in the case of ftTransferCallCallback? One hint comes from the permissions on ftTransferCallCallback. It can only be called by the `CALLBACK_ROLE`, which is only assigned to the address computed from `AuroraSdk.nearRepresentitiveImplicitAddress(address(this))`. Therefore this address must approve the Solidity contract to spend its wNEAR in order for it to cover the 1 yoctoNEAR cost in the callback.
+So far so good, everything looks straightforward. But this is where we hit a small “gotcha”. The NEP-141 token standard requires attaching 1 yoctoNEAR to ft_transfer_call. This means not only is ftTransferCall spending 1 yoctoNEAR, but so is ftTransferCallCallback in the case that a refund is needed. Someone needs to pay for this cost, and the Aurora Contact SDK [*passes that cost on to the caller of the function*](https://github.com/aurora-is-near/aurora-contracts-sdk/blob/76cb2f4f5932b5b9dd887834e1f7528cdeb1837c/aurora-solidity-sdk/src/AuroraSdk.sol#L142).
+
+In the case of ftTransferCall, that caller is the user, no problem. But who is the caller in the case of ftTransferCallCallback? One hint comes from the permissions on ftTransferCallCallback. It can only be called by the `CALLBACK_ROLE`, which is only assigned to the address computed from `AuroraSdk.nearRepresentitiveImplicitAddress(address(this))`. Therefore this address must approve the Solidity contract to spend its wNEAR in order for it to cover the 1 yoctoNEAR cost in the callback.
 
 This is the reason for the approveWNEAR function, which is also present in the Solidity contract. It does this approval so that wNEAR can be spent in the callback.
 

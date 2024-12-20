@@ -117,7 +117,9 @@ pub struct GetMoveResponse {
 }
 ```
 
-The nice thing about this being a stateless contract is that you can interact with it entirely using view calls (essentially using Near as a serverless computation platform). I wrote a [*front-end powered by BOS*](https://alpha.near.org/birchmd.near/widget/tic-tac-toe) to directly interact with this Near contract to illustrate this point. Since no transactions are actually sent to the chain, it’s much more responsive than the final product we’re building toward in this post. But stateless computing has limited applications, so committing transactions on-chain to access the state is still important in real-world use cases. For this, we are making use of Aurora.
+The nice thing about this being a stateless contract is that you can interact with it entirely using view calls (essentially using Near as a serverless computation platform).
+
+I wrote a [*front-end powered by BOS*](https://alpha.near.org/birchmd.near/widget/tic-tac-toe) to directly interact with this Near contract to illustrate this point. Since no transactions are actually sent to the chain, it’s much more responsive than the final product we’re building toward in this post. But stateless computing has limited applications, so committing transactions on-chain to access the state is still important in real-world use cases. For this, we are making use of Aurora.
 
 ### Aurora contract
 
