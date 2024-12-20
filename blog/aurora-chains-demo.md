@@ -9,7 +9,7 @@ image: https://www.datocms-assets.com/95026/1701394098-ac2.png
 Aurora Chains are dedicated blockchains that go beyond mere Ethereum compatibility through a set of industry-first innovations like:
 
 * *custom token & fee mechanics* (e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.);
-* *custom access control* (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, private chain can be built by using a private NEAR shard – [Calimero](https://www.calimero.network/));
+* *custom access control* (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, private chain can be built by using a private NEAR shard – [Calimero](https://www.calimero.network/));
 * *seamless interoperability* with Aurora, NEAR, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls, etc.; This is the main difference between Chains and other solutions (like Avalanche or Cosmos). There is no disjointness in between. You can call any smart contract in any other Chain or Near and interact with it freely.
 * *tremendous transaction throughput – *we can provide you with dozens of millions of transactions daily for your ecosystem.
 

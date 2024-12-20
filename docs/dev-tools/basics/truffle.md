@@ -1,13 +1,13 @@
 ---
 title: Truffle
 ---
-[​](https://doc.aurora.dev/interact/truffle#introduction "Direct link to heading")[Truffle](https://www.trufflesuite.com/) is a widely used development environment and testing framework for Ethereum smart contracts. In this tutorial, we will show by example how to use Truffle with the Aurora Testnet.
+[​](https://doc.aurora.dev/interact/truffle#introduction "Direct link to heading")[Truffle](https://www.trufflesuite.com/) is a widely used development environment and testing framework for Ethereum smart contracts. In this tutorial, we will show by example how to use Truffle with the Aurora Testnet.
 
-This tutorial assumes that you are familiar with Truffle and the non-fungible tokens (NFT) concept. For more details about the non-fungible token standard, please refer to the [ERC-721 Non-Fungible Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/) specification.
+This tutorial assumes that you are familiar with Truffle and the non-fungible tokens (NFT) concept. For more details about the non-fungible token standard, please refer to the [ERC-721 Non-Fungible Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/) specification.
 
 ## NFT Example[​](https://doc.aurora.dev/interact/truffle#nft-example "Direct link to heading")
 
-This example is originally forked from the [OpenZeppelin examples](https://docs.openzeppelin.com/contracts/4.x/erc721). However, the code has been changed to fit the use case of this tutorial. The use case is about how to deploy and manage the life cycle of a simple COVID-19 vaccine NFT token 💊💊 using Truffle on the Aurora Testnet.
+This example is originally forked from the [OpenZeppelin examples](https://docs.openzeppelin.com/contracts/4.x/erc721). However, the code has been changed to fit the use case of this tutorial. The use case is about how to deploy and manage the life cycle of a simple COVID-19 vaccine NFT token 💊💊 using Truffle on the Aurora Testnet.
 
 ![](https://www.datocms-assets.com/95026/1679442341-truffle_nft_example-a9d17b3f4f30477f3f6d67c4336f20e5.png)
 
@@ -19,9 +19,9 @@ This example is originally forked from the [OpenZeppelin examples](https://docs
 
 ## Installing Prerequisites[​](https://doc.aurora.dev/interact/truffle#installing-prerequisites "Direct link to heading")
 
-This tutorial assumes that you have Node.js 12+ and Yarn. Please refer to the [Yarn installation how-to](https://classic.yarnpkg.com/en/docs/install) if you don't yet have the `yarn` command installed locally.
+This tutorial assumes that you have Node.js 12+ and Yarn. Please refer to the [Yarn installation how-to](https://classic.yarnpkg.com/en/docs/install) if you don't yet have the `yarn` command installed locally.
 
-To install the prerequisite packages, clone the examples repository and then run `yarn`:
+To install the prerequisite packages, clone the examples repository and then run `yarn`:
 
 ### Install Truffle[​](https://doc.aurora.dev/interact/truffle#install-truffle "Direct link to heading")
 
@@ -41,13 +41,13 @@ yarn
 
 ## Connecting Truffle to Aurora[​](https://doc.aurora.dev/interact/truffle#connecting-truffle-to-aurora "Direct link to heading")
 
-Export your `MNEMONIC` as follows:
+Export your `MNEMONIC` as follows:
 
 ```shell
 export MNEMONIC='YOUR MNEMONIC HERE'
 ```
 
-Now in `truffle-config.js`, you will need to change the `from` address as shown below in the `aurora` network section:
+Now in `truffle-config.js`, you will need to change the `from` address as shown below in the `aurora` network section:
 
 ```javascript
 ...
@@ -59,11 +59,11 @@ aurora: {
 },
 ```
 
-The `truffle-config.js` configuration will pick up your `MNEMONIC` environment variable and recover the address that will be used for sending and signing transactions on the Aurora network.
+The `truffle-config.js` configuration will pick up your `MNEMONIC` environment variable and recover the address that will be used for sending and signing transactions on the Aurora network.
 
 ## Deploying the Contract[​](https://doc.aurora.dev/interact/truffle#deploying-the-contract "Direct link to heading")
 
-To deploy the `CovidVaccineToken` contract, you can run the `yarn` command as follows:
+To deploy the `CovidVaccineToken` contract, you can run the `yarn` command as follows:
 
 ```shell
 yarn deploy:aurora
@@ -89,13 +89,13 @@ _deploy_contracts.js
 
 ## Playing with the Truffle Console[​](https://doc.aurora.dev/interact/truffle#playing-with-the-truffle-console "Direct link to heading")
 
-Now you can test the flow as mentioned in the [NFT Example](https://doc.aurora.dev/interact/truffle#nft-example) section:
+Now you can test the flow as mentioned in the [NFT Example](https://doc.aurora.dev/interact/truffle#nft-example) section:
 
 ### Mint tokens[​](https://doc.aurora.dev/interact/truffle#mint-tokens "Direct link to heading")
 
-The minter mints and transfers NFT tokens for the vaccine program participant. In this example, the new participant address is `accounts[1]` and the minter address is `accounts[0]`.
+The minter mints and transfers NFT tokens for the vaccine program participant. In this example, the new participant address is `accounts[1]` and the minter address is `accounts[0]`.
 
-Please make sure that you are using the same deployer address as a minter address, otherwise the `mint` transaction will revert.
+Please make sure that you are using the same deployer address as a minter address, otherwise the `mint` transaction will revert.
 
 ```shell
 % truffle console --network aurora
@@ -109,7 +109,7 @@ truffle(aurora)> await cvt.mint(participant, {from: minter})
 
 You should notice that none of the participants are allowed to transfer their NFT tokens to anyone except back to the minter.
 
-So let's try to use any participant address to validate this. To do that, change the value of `from` to `accounts[1]`, so that the sender will be the first participant (e.g., the participant address `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe`).
+So let's try to use any participant address to validate this. To do that, change the value of `from` to `accounts[1]`, so that the sender will be the first participant (e.g., the participant address `0x2531a4D108619a20ACeE88C4354a50e9aC48ecfe`).
 
 In the Truffle console:
 
@@ -121,7 +121,7 @@ reason: 'Invalid Transfer',
   hijackedStack: 'Error: execution reverted:\n'
 ```
 
-This is exactly the same error message we have in our NFT contract in `safeTransferFrom`:
+This is exactly the same error message we have in our NFT contract in `safeTransferFrom`:
 
 ```javascript
 function safeTransferFrom(
@@ -156,7 +156,7 @@ true
 
 ### Burn tokens[​](https://doc.aurora.dev/interact/truffle#burn-tokens "Direct link to heading")
 
-This is an alternative scenario for the NFT token lifecycle. Instead of transferring the token back to the minter, the participant can decide to burn the NFT token by calling the `burn` function:
+This is an alternative scenario for the NFT token lifecycle. Instead of transferring the token back to the minter, the participant can decide to burn the NFT token by calling the `burn` function:
 
 ```shell
 truffle(aurora)> await cvt.burn(1, {from: participant}) // 1 is the tokenID

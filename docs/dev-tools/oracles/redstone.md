@@ -24,18 +24,18 @@ RedStone offers a radically different design of Oracles catering to the needs of
 
 ### Key facts[​](https://docs.redstone.finance/docs/introduction#key-facts "Direct link to Key facts")
 
-* The [modular architecture](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#data-flow) maintains [data integrity](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#data-format) from source to smart contracts
-* There are [3 different ways](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#3-ways-to-integrate) to integrate our service tailored to your needs
-* We provide feeds for more than [1000 assets](https://app.redstone.finance/#/app/tokens) integrating [~50 data sources](https://app.redstone.finance/#/app/sources)
-* We are present on [20+ chains](https://showroom.redstone.finance/)
+* The [modular architecture](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#data-flow) maintains [data integrity](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#data-format) from source to smart contracts
+* There are [3 different ways](https://docs.redstone.finance/docs/smart-contract-devs/how-it-works#3-ways-to-integrate) to integrate our service tailored to your needs
+* We provide feeds for more than [1000 assets](https://app.redstone.finance/#/app/tokens) integrating [~50 data sources](https://app.redstone.finance/#/app/sources)
+* We are present on [20+ chains](https://showroom.redstone.finance/)
 * RedStone has been live on mainnets since March 2022 with no downtime. Code was audited by ABDK, Packshield and L2Beat Co-Founder.
-* RedStone was a launch partner for [DeltaPrime](https://deltaprime.io/) on Avalanche and delivered data feeds not available anywhere else. Thanks to that DeltaPrime became the top 3 fastest growing dApps according to DefiLama.
+* RedStone was a launch partner for [DeltaPrime](https://deltaprime.io/) on Avalanche and delivered data feeds not available anywhere else. Thanks to that DeltaPrime became the top 3 fastest growing dApps according to DefiLama.
 
 ### EVM-compatible chains[​](https://docs.redstone.finance/docs/smart-contract-devs/chain-integration#evm-compatible-chains "Direct link to EVM-compatible chains") integration
 
-RedStone Oracles can be integrated with EVM-compatible chains out of the box thanks to the [evm-connector](https://docs.redstone.finance/docs/smart-contract-devs/getting-started#usage). Examples of the chains tested by our team can be found [here](https://showroom.redstone.finance/).
+RedStone Oracles can be integrated with EVM-compatible chains out of the box thanks to the [evm-connector](https://docs.redstone.finance/docs/smart-contract-devs/getting-started#usage). Examples of the chains tested by our team can be found [here](https://showroom.redstone.finance/).
 
-If you want to test your chain there is an example contract and script [here](https://github.com/redstone-finance/redstone-showroom/tree/main/example). You need to follow two steps:
+If you want to test your chain there is an example contract and script [here](https://github.com/redstone-finance/redstone-showroom/tree/main/example). You need to follow two steps:
 
 1. Deploy integration example contract to your chain
 2. Fill in missing parameters and run an example Typescript script that does the following things:

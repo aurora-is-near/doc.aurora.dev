@@ -1,7 +1,7 @@
 ---
 title: Omnia Protocol
 ---
-[​](https://doc.aurora.dev/integrate/rpc-node-providers/omnia#introduction "Direct link to heading")[OMNIA Protocol](https://omniatech.io/) is a blockchain infrastructure provider that delivers optimal performance without sacrificing privacy, security, or compliance.
+[​](https://doc.aurora.dev/integrate/rpc-node-providers/omnia#introduction "Direct link to heading")[OMNIA Protocol](https://omniatech.io/) is a blockchain infrastructure provider that delivers optimal performance without sacrificing privacy, security, or compliance.
 
 ## Privacy and Consumer Protection[​](https://doc.aurora.dev/integrate/rpc-node-providers/omnia#privacy-and-consumer-protection "Direct link to heading")
 
@@ -19,9 +19,9 @@ OMNIA’s availability is guaranteed by thousands of nodes distributed worldwide
 
 ## Public RPC Endpoints[​](https://doc.aurora.dev/integrate/rpc-node-providers/omnia#public-rpc-endpoints "Direct link to heading")
 
-* Aurora Mainnet: [https://endpoints.omniatech.io/v1/aurora/mainnet/public](https://endpoints.omniatech.io/v1/aurora/mainnet/public)
-* Aurora Testnet: [https://endpoints.omniatech.io/v1/aurora/testnet/public](https://endpoints.omniatech.io/v1/aurora/testnet/public)
+* Aurora Mainnet: [https://endpoints.omniatech.io/v1/aurora/mainnet/public](https://endpoints.omniatech.io/v1/aurora/mainnet/public)
+* Aurora Testnet: [https://endpoints.omniatech.io/v1/aurora/testnet/public](https://endpoints.omniatech.io/v1/aurora/testnet/public)
 
-Easily create your own RPC Endpoints on our [Dapp](https://app.omniatech.io/)
+Easily create your own RPC Endpoints on our [Dapp](https://app.omniatech.io/)
 
-[Website](https://omniatech.io/) | [Discord](https://discord.com/invite/omniaprotocol) | [Telegram](https://t.me/Omnia_protocol) | [Twitter](https://twitter.com/omnia_protocol) | [Medium](https://medium.com/omniaprotocol) | [GitHub](https://github.com/omniaprotocol) | [YouTube](https://www.youtube.com/@omniaprotocol)
+[Website](https://omniatech.io/) | [Discord](https://discord.com/invite/omniaprotocol) | [Telegram](https://t.me/Omnia_protocol) | [Twitter](https://twitter.com/omnia_protocol) | [Medium](https://medium.com/omniaprotocol) | [GitHub](https://github.com/omniaprotocol) | [YouTube](https://www.youtube.com/@omniaprotocol)

@@ -12,7 +12,7 @@ In this article, we will discuss how to manage your staking on the Aurora Valida
 
 In January 2023, we re-launched [*our validator*](https://aurora.dev/blog/aurora-relaunches-its-validator) with a new address, [*aurora.pool.near*](https://app.mynearwallet.com/staking/aurora.pool.near). What is curious about it is that it gives you the rewards in AURORA tokens directly on the Near network.
 
-Recently, the [*Near Wallet was deprecated*](https://near.org/blog/embracing-decentralization-whats-next-for-the-near-wallet) on the 1st of January, 2024. And that has driven users to other wallets. Unfortunately, many of these don’t support staking capabilities, especially with the non-standard validator as \`aurora.pool.near\` is. 
+Recently, the [*Near Wallet was deprecated*](https://near.org/blog/embracing-decentralization-whats-next-for-the-near-wallet) on the 1st of January, 2024. And that has driven users to other wallets. Unfortunately, many of these don’t support staking capabilities, especially with the non-standard validator as \`aurora.pool.near\` is.
 
 So, based on the recent support experience, we have decided to publish a guide on how to use your terminal on your laptop or PC to manage your staking on the Aurora’s Validator. Let’s look into the details now!
 

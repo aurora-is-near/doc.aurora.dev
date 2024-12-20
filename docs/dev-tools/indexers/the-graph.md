@@ -1,7 +1,7 @@
 ---
 title: The Graph
 ---
-[​](https://doc.aurora.dev/integrate/indexers/the-graph#introduction "Direct link to heading")[The Graph](https://thegraph.com/) is an indexing service which collects Ethereum events and exports them through GraphQL endpoints. It is widely used in the Ethereum ecosystem which supports fast and cheap queries for DApps.
+[​](https://doc.aurora.dev/integrate/indexers/the-graph#introduction "Direct link to heading")[The Graph](https://thegraph.com/) is an indexing service which collects Ethereum events and exports them through GraphQL endpoints. It is widely used in the Ethereum ecosystem which supports fast and cheap queries for DApps.
 
 This tutorial covers the following topics:
 
@@ -32,7 +32,7 @@ cd graph-node
 
 ### Configure[​](https://doc.aurora.dev/integrate/indexers/the-graph#configure "Direct link to heading")
 
-In order wire your local graph node with Aurora Testnet RPC, you should change the value of `ethereum` section in `docker/docker-compose.yaml` file from `mainnet:http://host.docker.internal:8545` to `'aurora:https://testnet.aurora.dev'`.
+In order wire your local graph node with Aurora Testnet RPC, you should change the value of `ethereum` section in `docker/docker-compose.yaml` file from `mainnet:http://host.docker.internal:8545` to `'aurora:https://testnet.aurora.dev'`.
 
 ```yaml
 ....
@@ -61,14 +61,14 @@ docker-compose up
 
 Now we are done with starting our graph node, the next step is to create and deploy a subgraph. The subgraph defines how the data on Ethereum will be indexed and stored on the graph node.
 
-In this tutorial, we are going to use the subgraph example called [GravatarRegistry](https://github.com/aurora-is-near/example-subgraph) (a simple on-chain Gravatar). The GravatarRegistry contract has two events:
+In this tutorial, we are going to use the subgraph example called [GravatarRegistry](https://github.com/aurora-is-near/example-subgraph) (a simple on-chain Gravatar). The GravatarRegistry contract has two events:
 
 ```solidity
 event NewGravatar(uint id, address owner, string displayName, string imageUrl);
 event UpdatedGravatar(uint id, address owner, string displayName, string imageUrl);
 ```
 
-The contract was already deployed on Aurora Testnet. The deployed `GravatarRegistry` contract address is `0x8773e6832f44b2C17AC78592ffCe407C62d8c36E` and the start block number is `74885768`.
+The contract was already deployed on Aurora Testnet. The deployed `GravatarRegistry` contract address is `0x8773e6832f44b2C17AC78592ffCe407C62d8c36E` and the start block number is `74885768`.
 
 ### Clone subgraph[​](https://doc.aurora.dev/integrate/indexers/the-graph#clone-subgraph "Direct link to heading")
 
@@ -87,7 +87,7 @@ yarn install
 
 ### Configure the Subgraph[​](https://doc.aurora.dev/integrate/indexers/the-graph#configure-the-subgraph "Direct link to heading")
 
-Update the `address` and (the `startBlock` optional) in `subgraph.yaml` as follows:
+Update the `address` and (the `startBlock` optional) in `subgraph.yaml` as follows:
 
 ```yaml
     ...
@@ -99,7 +99,7 @@ Update the `address` and (the `startBlock` optional) in `subgraph.yaml` as
     ...
 ```
 
-Also make sure you are pointing into `aurora` as a network.
+Also make sure you are pointing into `aurora` as a network.
 
 ### Generating types[​](https://doc.aurora.dev/integrate/indexers/the-graph#generating-types "Direct link to heading")
 
@@ -141,7 +141,7 @@ Types generated successfully
 
 ### Mappings[​](https://doc.aurora.dev/integrate/indexers/the-graph#mappings "Direct link to heading")
 
-Maps Ethereum event data to the data that has been defined in the `schema.graphql`. For example `handleNewGravatar` parses the new event parameters, and save them in `gravatar`.
+Maps Ethereum event data to the data that has been defined in the `schema.graphql`. For example `handleNewGravatar` parses the new event parameters, and save them in `gravatar`.
 
 ```typescript
 export function handleNewGravatar(event: NewGravatar): void {
@@ -155,7 +155,7 @@ export function handleNewGravatar(event: NewGravatar): void {
 
 ## Deploy the Subgraph[​](https://doc.aurora.dev/integrate/indexers/the-graph#deploy-the-subgraph "Direct link to heading")
 
-First, we need to register the subgraph name on the graph node. To do that run `yarn create-local`.
+First, we need to register the subgraph name on the graph node. To do that run `yarn create-local`.
 
 ```shell
 $ yarn create-local
@@ -210,15 +210,15 @@ Subscriptions (WS): http://127.0.0.1:8001/subgraphs/name/example
 ✨  Done in 10.23s.
 ```
 
-Now, you should be able to access your subgraph endpoint through `http://127.0.0.1:8000/subgraphs/name/example`.
+Now, you should be able to access your subgraph endpoint through `http://127.0.0.1:8000/subgraphs/name/example`.
 
 ## Publish Events (optional)[​](https://doc.aurora.dev/integrate/indexers/the-graph#publish-events-optional "Direct link to heading")
 
-There were already published events starting from block number `74885768`, So you can skip this step.
+There were already published events starting from block number `74885768`, So you can skip this step.
 
 ## Query Events[​](https://doc.aurora.dev/integrate/indexers/the-graph#query-events "Direct link to heading")
 
-To query events, TheGraph protocol provides a [GraphQL endpoint](http://127.0.0.1:8000/subgraphs/name/example) for your local graph node. Go to `http://127.0.0.1:8000/subgraphs/name/example`, it automatically will show up a predefined GraphQL query. Run this query to get the results as shown below:
+To query events, TheGraph protocol provides a [GraphQL endpoint](http://127.0.0.1:8000/subgraphs/name/example) for your local graph node. Go to `http://127.0.0.1:8000/subgraphs/name/example`, it automatically will show up a predefined GraphQL query. Run this query to get the results as shown below:
 
 ## Summary[​](https://doc.aurora.dev/integrate/indexers/the-graph#summary "Direct link to heading")
 

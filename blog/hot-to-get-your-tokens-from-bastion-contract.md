@@ -48,7 +48,7 @@ We recommend using [the Aurora Pass wallet](https://auroracloud.dev/pass), which
 
 After connecting it, we're ready to move further.\
 \
-If you scroll down, you will see the contract methods, and here is the one we need – `approve` and enter the arguments there with `spender` being the `swapFlashLoan` contract address and `amount` equal to the number of tokens you want to get back (probably all you have right now):
+If you scroll down, you will see the contract methods, and here is the one we need – `approve` and enter the arguments there with `spender` being the `swapFlashLoan` contract address and `amount` equal to the number of tokens you want to get back (probably all you have right now):
 
 ![](https://www.datocms-assets.com/95026/1715948641-screenshot-2024-05-17-at-13-22-10.png)
 
@@ -56,7 +56,7 @@ Now, we're ready to execute the transaction, just click the "Write" button on th
 
 ## Get cUSDC and cUSDT
 
-Let's open now the [`SwapFlashLoan` contract](https://explorer.aurora.dev/address/0x6287e912a9Ccd4D5874aE15d3c89556b2a05f080?tab=write_contract). Go to the Contract -> Write Contract tab. If you scroll down, you will see the contract methods, and here is the one we need – `removeLiquidity`:
+Let's open now the [`SwapFlashLoan` contract](https://explorer.aurora.dev/address/0x6287e912a9Ccd4D5874aE15d3c89556b2a05f080?tab=write_contract). Go to the Contract -> Write Contract tab. If you scroll down, you will see the contract methods, and here is the one we need – `removeLiquidity`:
 
 ![](https://www.datocms-assets.com/95026/1715903828-screenshot-2024-05-17-at-00-56-14.png)
 
@@ -101,4 +101,4 @@ It has only one argument, which is the amount of tokens to unwrap with 8 decimal
 
 ## Final thoughts
 
-That is it – you have successfully got your `cUSDCcUSDTLP` tokens converted back to stables. If you need any help or have a similar issue, please come [to our Discord](https://discord.com/invite/dEFJBz8HQV), and we will help you! Thank you for reading!\
+That is it – you have successfully got your `cUSDCcUSDTLP` tokens converted back to stables. If you need any help or have a similar issue, please come [to our Discord](https://discord.com/invite/dEFJBz8HQV), and we will help you! Thank you for reading!\

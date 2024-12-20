@@ -1,7 +1,7 @@
 ---
 title: Block Explorer
 ---
-While the Aurora Labs team works on the new Aurora block explorer - whose launch is expected to take place in the upcoming months (Q2'2023) — users will in the meantime be able to rely on our Blockscout-based interim solution to perform their usual tasks, located at [explorer.aurora.dev](https://explorer.aurora.dev/) for a Mainnet. Testnet one is located at [explorer.testnet.aurora.dev.](https://explorer.testnet.aurora.dev/)
+While the Aurora Labs team works on the new Aurora block explorer - whose launch is expected to take place in the upcoming months (Q2'2023) — users will in the meantime be able to rely on our Blockscout-based interim solution to perform their usual tasks, located at [explorer.aurora.dev](https://explorer.aurora.dev/) for a Mainnet. Testnet one is located at [explorer.testnet.aurora.dev.](https://explorer.testnet.aurora.dev/)
 
 By using Block Explorer, users and developers can get access to the developer tools and network statistics that provide extended insights into Aurora's EVM.
 

@@ -10,7 +10,7 @@ Aurora’s infrastructure is built upon an innovative combination—our Ethereum
 
 <!-- truncate -->
 
-Embracing Aurora's dedication to exceptional user experiences, our team has crafted a Software Development Kit (SDK) tailored to provide developers with a seamless method for facilitating cross-blockchain transactions. Access the SDK in the dedicated [repository](https://github.com/aurora-is-near/aurora-contracts-sdk), or integrate it into your project effortlessly. Aurora's Solidity developers can install an npm package by executing `npm i @auroraisnear/aurora-sdk` in any terminal, while NEAR Rust developers can similarly incorporate a cargo package from our [repository](https://github.com/aurora-is-near/aurora-engine.git). For a more customized installation, or if you want to contribute to the project, you can also follow the installation instructions in the repository.
+Embracing Aurora's dedication to exceptional user experiences, our team has crafted a Software Development Kit (SDK) tailored to provide developers with a seamless method for facilitating cross-blockchain transactions. Access the SDK in the dedicated [repository](https://github.com/aurora-is-near/aurora-contracts-sdk), or integrate it into your project effortlessly. Aurora's Solidity developers can install an npm package by executing `npm i @auroraisnear/aurora-sdk` in any terminal, while NEAR Rust developers can similarly incorporate a cargo package from our [repository](https://github.com/aurora-is-near/aurora-engine.git). For a more customized installation, or if you want to contribute to the project, you can also follow the installation instructions in the repository.
 
 ![](https://www.datocms-assets.com/95026/1682019691-screen-shot-2023-04-20-at-12-41-15-pm.png)
 
@@ -22,11 +22,11 @@ The second integration example involves calling the Uniswap contract deployed in
 
 In this example, a solidity contract called \`SocialDB.sol\` will call the \`set\` function–used to store data in the SocialDB rust contract deployed on NEAR and will implement a callback function that receives the result of the \`set\` call.\
 \
-In summary, this contract interacts with the SocialDB contract on the NEAR platform. It sends wNEAR tokens as a fee to cover the storage cost of data being persisted on NEAR and using promises to chain cross-contract calls and callbacks. This regular solidity contract implements common libraries such as OpenZeppelin's AccessControl. 
+In summary, this contract interacts with the SocialDB contract on the NEAR platform. It sends wNEAR tokens as a fee to cover the storage cost of data being persisted on NEAR and using promises to chain cross-contract calls and callbacks. This regular solidity contract implements common libraries such as OpenZeppelin's AccessControl.
 
 ![](https://www.datocms-assets.com/95026/1682019506-screen-shot-2023-04-20-at-12-37-46-pm.png)
 
-Now, to interact with the SocialDB contract, this contract imports the Aurora SDK. 
+Now, to interact with the SocialDB contract, this contract imports the Aurora SDK.
 
 ```solidity
 import "@aurora/sdk/solidity/AuroraSdk.sol";
@@ -47,7 +47,7 @@ uint64 constant SET_NEAR_GAS = 50_000_000_000_000;
 uint64 constant SET_CALLBACK_NEAR_GAS = 10_000_000_000_000;
 ```
 
-The core of the SocialDB contract, written in Solidity, comprises two primary functions. The first function, `set`, exposes the contract's interface for setting data within the SocialDB contract in NEAR. Access control is essential for this function to ensure that only authorized users can instruct keys to be set in the database. Additionally, an amount of `wNEAR` is necessary for this call to cover the storage cost of the data being saved on NEAR. 
+The core of the SocialDB contract, written in Solidity, comprises two primary functions. The first function, `set`, exposes the contract's interface for setting data within the SocialDB contract in NEAR. Access control is essential for this function to ensure that only authorized users can instruct keys to be set in the database. Additionally, an amount of `wNEAR` is necessary for this call to cover the storage cost of the data being saved on NEAR.
 
 ```solidity
 function set(uint128 attachedNear, bytes memory data) public onlyRole(SETTER_ROLE) {

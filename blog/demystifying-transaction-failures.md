@@ -84,7 +84,7 @@ function base64ToDecimal(str) {
  }
 ```
 
-We're ready to query the NEAR RPC node (you can get endpoints [here](https://docs.near.org/api/rpc/setup)) using the Axios HTTP client. Notice that we're using `archival-rpc` here to query also historical data (older than  [epochs](https://docs.near.org/concepts/basics/epoch) or ~2.5 days):
+We're ready to query the NEAR RPC node (you can get endpoints [here](https://docs.near.org/api/rpc/setup)) using the Axios HTTP client. Notice that we're using `archival-rpc` here to query also historical data (older than  [epochs](https://docs.near.org/concepts/basics/epoch) or ~2.5 days):
 
 ```javascript
 const getTransactionStatus = async () => {

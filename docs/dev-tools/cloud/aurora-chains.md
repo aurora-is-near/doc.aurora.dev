@@ -7,7 +7,7 @@ Aurora Chains are dedicated EVM-compatible blockchains built on top of the Near 
 
 ### What is Aurora Engine?
 
-Aurora Engine is an [Ethereum Virtual Machine (EVM)](https://doc.aurora.dev/evm/evm-overview) built on the [Near Protocol](https://medium.com/dia-insights/hello-near-protocol-dia-oracles-now-available-natively-on-near-3bbef5b3f13), that provides a solution for developers to deploy their apps on an Ethereum-compatible, high-throughput, scalable, and secure platform, with low transaction costs and fast finality for their users.
+Aurora Engine is an [Ethereum Virtual Machine (EVM)](https://doc.aurora.dev/evm/evm-overview) built on the [Near Protocol](https://medium.com/dia-insights/hello-near-protocol-dia-oracles-now-available-natively-on-near-3bbef5b3f13), that provides a solution for developers to deploy their apps on an Ethereum-compatible, high-throughput, scalable, and secure platform, with low transaction costs and fast finality for their users.
 
 ### Aurora Chains Support
 
@@ -18,7 +18,7 @@ We're sharing years of our expertise and technology by making available Aurora C
 To make Aurora Chain work in the best way possible for your business, we will help you to configure your setup. Among the features to configure are:
 
 * ***custom token & fee mechanics*** (e.g., gasless transactions; paying for gas with a custom token; some percentage of any transaction value to be stored in Aurora Chain Treasury, etc.);
-* ***custom access control*** (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, the private chain can be built by using a private Near shard – [Calimero](https://www.calimero.network/)).
+* ***custom access control*** (public vs private chain, who can transact, who can deploy contracts? e.g., NFT-based access to the blockchain, the private chain can be built by using a private Near shard – [Calimero](https://www.calimero.network/)).
 
 ### Aurora Chains Advantages
 

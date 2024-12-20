@@ -32,7 +32,7 @@ The first step to having our smart contract code also be used as an indexer is t
 
 ```shell
 $ rustup target add wasm32-unknown-unknown
-$ cargo build --release –-target wasm32-unknown-unknown
+$ cargo build --release –-target wasm32-unknown-unknown
 ```
 
 ### Conditional Compilation
@@ -43,11 +43,11 @@ In Rust, you can use conditional compilation to have different implementations d
 
 ```rust
 fn foo() {
-    #[cfg(target_arch = "wasm32")]
-    foo_for_wasm();
+    #[cfg(target_arch = "wasm32")]
+    foo_for_wasm();
 
-    #[cfg(not(target_arch = "wasm32"))]
-    foo_for_generic_arch();
+    #[cfg(not(target_arch = "wasm32"))]
+    foo_for_generic_arch();
 }
 ```
 
@@ -61,12 +61,12 @@ Rust’s trait defines an interface. It gives the type signatures of the methods
 
 ```rust
 trait IO {
-    fn read(&self, key: &[u8]) -> Vec<u8>;
-    fn write(&mut self, key: &[u8], value: &[u8]);
+    fn read(&self, key: &[u8]) -> Vec<u8>;
+    fn write(&mut self, key: &[u8], value: &[u8]);
 }
 
 fn get_balance<I: IO>(io: &I, user: User) -> u128 {
-    u128::from_be_bytes(&io.read(&user.id()))
+    u128::from_be_bytes(&io.read(&user.id()))
 }r
 ```
 

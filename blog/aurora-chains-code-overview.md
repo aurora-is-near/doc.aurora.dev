@@ -6,7 +6,7 @@ authors: [slava]
 tags: [core_tech]
 image: https://www.datocms-assets.com/95026/1701394771-ac4.png
 ---
-The main goal of this article is to understand the Aurora Chain code.  In a future post, we will discuss how it embellishes the Aurora Engine and how the advantages of an Aurora Chain correspond to different parts of code and Aurora architecture.
+The main goal of this article is to understand the Aurora Chain code. In a future post, we will discuss how it embellishes the Aurora Engine and how the advantages of an Aurora Chain correspond to different parts of code and Aurora architecture.
 
 <!-- truncate -->
 
@@ -14,7 +14,7 @@ For now, just recall that Aurora Chain is just the Aurora Engine with a couple o
 \
 The source code of Aurora Chain is inside the pull request (PR) [#746: feat: add possibility to use fixed gas cost (silo).](https://github.com/aurora-is-near/aurora-engine/pull/746) The first question that comes to mind is why it is called so? The clue is in the description right away and leads us to the first feature:
 
-> *The PR adds the possibility to set fixed gas cost per EVM transaction. The feature could be switched on by calling  *`set_fixed_gas_cost`*.*
+> *The PR adds the possibility to set fixed gas cost per EVM transaction. The feature could be switched on by calling `set_fixed_gas_cost`.*
 
 The second feature is access control, which is realized with the four types of whitelists to regulate the rights to deploy code and submit transactions.
 
@@ -127,7 +127,7 @@ pub struct WhitelistKindArgs {
 } // just another parametrization to track the kind.
 ```
 
-There is also one small test at the end of the file with the whitelist args[ borsh serialization](https://github.com/near/borsh-rs). I will skip [the code](https://github.com/aurora-is-near/aurora-engine/blob/0de3198c2d602a8f23d5ea9797a6ab4c921e6f52/engine/src/silo/parameters.rs#L60) for brevity.
+There is also one small test at the end of the file with the whitelist args [borsh serialization](https://github.com/near/borsh-rs). I will skip [the code](https://github.com/aurora-is-near/aurora-engine/blob/0de3198c2d602a8f23d5ea9797a6ab4c921e6f52/engine/src/silo/parameters.rs#L60) for brevity.
 
 ### Whitelists
 
