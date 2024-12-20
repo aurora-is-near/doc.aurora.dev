@@ -28,14 +28,13 @@ As previously discussed, Deals consist of rules. Therefore, when a business enga
 * Which smart contracts will be part of a deal?
 * What is the business logic around free transactions for users?\
 
-
 Typically, setting up a deal would initiate with specific parameters. These, however, are not strict boundaries but flexible starting points. Our adaptability allows us to fine-tune the operational rules by leveraging a wide range of resources. These could range from IP addresses and authentication tokens to the internal data embedded within each transaction. Nevertheless, right now, we propose using the following set of parameters:
 
 * **FROM:** This parameter specifies the originator of the transaction, and it can take values such as ***All***, meaning that the rule engine will not filter any transactions based on their origin address (i.e., all origin addresses are valid for this deal) or ***EOA*** in which case the rule engine will only pick up transactions coming from a specific list of addresses (EOAs). We refer to this list as the whitelist, which must be populated by the businesses.
 * **TO:** This parameter specifies the transaction's target, and it can take values such as an ***address*** so that the rule engine will pick up transactions directed to this specific contract address. If a transaction goes to another contract, it cannot be associated with this deal.
 * **DEAL**: This parameter specifies the number of transactions that the beneficiaries of this deal can get. It can be set to UNLIMITED or a specific number.
 
-Here are a few simple examples of Borealis Business deals: 
+Here are a few simple examples of Borealis Business deals:
 
 ![](https://www.datocms-assets.com/95026/1687255307-untitled-2023-06-12-1504.png)
 
@@ -51,17 +50,17 @@ Here is an image describing how the AuroraPass (AP) Deal works:
 
 ## Whitelisting
 
-Businesses must define a list of approved addresses that can benefit from their deal. The whitelisted addresses are managed via a dedicated API to enable companies to: 
+Businesses must define a list of approved addresses that can benefit from their deal. The whitelisted addresses are managed via a dedicated API to enable companies to:
 
-* Add an address. 
-* Remove an address. 
-* Check if an address is on the whitelist. 
+* Add an address.
+* Remove an address.
+* Check if an address is on the whitelist.
 
 The Aurora team will provide businesses with the credentials for this API as part of the Borealis deal setup process.
 
 However, it's important to note that the scope of this API will extend far beyond this whitelisting function. Future enhancements will see the addition of variables like gas price thresholds, among other rule-based parameters, and our partners will also be granted the ability to modify these parameters.
 
-## User Experience and User Journey 
+## User Experience and User Journey
 
 Borealis Business’ user journey is seamless. Once a user signs into a dApp with a Borealis deal, the dApp checks the whitelist status of the user's address. If approved, the user can make transactions within the app without bearing the transaction cost. This process is managed by the Borealis rule engine, which matches the transaction with the relevant deal.
 
@@ -94,7 +93,7 @@ The randomization process comes into play when some transaction matches multiple
 
 While the Aurora engineering team is responsible for crafting Customer Deals and the rules that regulate them, there are a few essential aspects that developers need to keep in mind, particularly when these deals are directed at smart contracts. For instance, a modular architecture might be required if the aim is to set up multiple contracts based on the varying benefits allocated to different users. Moreover, if the business model requires the dynamic deployment of contracts through contract factories, it might be necessary to whitelist users for all the contracts that require it.
 
-In conclusion, the  Borealis Business provides an innovative solution to a significant issue within the blockchain ecosystem: the cost of transactions. As a result, Aurora is paving the way for more user-friendly blockchain applications and potentially transformative business models, which developers should consider while creating new applications and products.
+In conclusion, the Borealis Business provides an innovative solution to a significant issue within the blockchain ecosystem: the cost of transactions. As a result, Aurora is paving the way for more user-friendly blockchain applications and potentially transformative business models, which developers should consider while creating new applications and products.
 
 ## What’s next?
 

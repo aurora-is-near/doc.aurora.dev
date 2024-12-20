@@ -65,7 +65,6 @@ Let's swap the tokens now and enter some amount of INNO into the widget:
 
 After clicking the Swap button we will see the following info about the transaction in MetaMask:\
 
-
 ![](https://www.datocms-assets.com/95026/1682456030-screenshot-2023-04-25-at-21-53-11.png)
 
 As expected, we will spend 1 INNO per gas fee on that transaction! After the swap is complete, you will notice that your Poodle balance has been updated, and you will be able to see the transaction on the Chain Explorer:
@@ -76,7 +75,6 @@ Chain Explorer is a dedicated instance of the [Block Explorer.](https://dev.auro
 \
 Let's open the following [link](https://explorer.innovation.aurora.dev/tx/0x729676bb7db14c0dd907d2398d2905d1f9286a0e0478cb6aa5375dde0d1bfb25), we will see the Aurora Innovation Explorer window with all the details of the transaction executed:\
 
-
 ![](https://www.datocms-assets.com/95026/1682516992-screenshot-2023-04-26-at-14-49-39.png)
 
 As you can see, the data exactly corresponds to our expectations: we have 1 INNO spent as a fee and 10 INNO swapped. And notice that transaction has been confirmed within 1.116 seconds, corresponding to the usual time on NEAR and Aurora.
@@ -85,16 +83,13 @@ As you can see, the data exactly corresponds to our expectations: we have 1 INNO
 
 Let's now move on to the next step and talk about the interoperability of the Aurora Chain:\
 
-
 ![](https://www.datocms-assets.com/95026/1682517331-screenshot-2023-04-26-at-14-54-31.png)
 
 Aurora Chains can transfer assets to and from Ethereum, NEAR, and Aurora, and in between any other Aurora Chains using the Rainbow Bridge technology. We will move AURORA tokens between NEAR and Aurora Innovation in this demo. Let's connect a NEAR wallet to do this:\
 
-
 ![](https://www.datocms-assets.com/95026/1682517522-screenshot-2023-04-26-at-14-58-15.png)
 
-After clicking the "Connect NEAR Wallet" button, you will need to choose your wallet:\
-
+After clicking the "Connect NEAR Wallet" button, you will need to choose your wallet:
 
 ![](https://www.datocms-assets.com/95026/1682518634-screenshot-2023-04-26-at-14-59-01.png)
 
@@ -105,7 +100,6 @@ I will continue by choosing the "NEAR Wallet" option. After that, you will be re
 Now you can transfer some Aurora tokens from NEAR to Aurora Innovation here. This transfer is possible to do with Rainbow Bridge (read more about how the bridge works [here](https://near.org/blog/eth-near-rainbow-bridge/) or [here)](https://aurora.dev/blog/2021-how-the-rainbow-bridge-works), which our developers have configured to process transactions between Aurora Innovation and NEAR. The abilities of this widget are limited due to the demo purposes, but you can bridge any ERC-20 token or ETH using it on your own Aurora Chain.
 
 Let's bridge the 0.48 AURORA we have in the wallet to Aurora Innovation now, let's enter the value and push the "Transfer tokens" button. You will need to confirm the transaction on NEAR now:\
-
 
 ![](https://www.datocms-assets.com/95026/1682519151-screenshot-2023-04-26-at-15-14-10.png)
 

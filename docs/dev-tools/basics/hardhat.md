@@ -18,7 +18,6 @@ cd aurora-examples/hardhat/erc20/
 
 * Add your Aurora Private key (from MetaMask) to **.env** file and then run yarn :\
 
-
 ```shell
 echo "AURORA_PRIVATE_KEY=YOUR_AURORA_PRIVATE_KEY_HERE" >> .env
 yarn install

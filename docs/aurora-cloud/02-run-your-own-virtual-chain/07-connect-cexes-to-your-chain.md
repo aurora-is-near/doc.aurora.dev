@@ -24,7 +24,6 @@ The forwarder, as its name suggests, forwards any assets sent to its Near deposi
 * This process is invisible for the user who simply receives their assets on their address on your Virtual Chain.
 
 
-
 **Technical overview**
 
 The forwarder leverages the chain abstraction ability from Aurora and Near by routing assets to the target virtual chain.

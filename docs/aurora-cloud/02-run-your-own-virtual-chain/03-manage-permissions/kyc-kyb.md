@@ -4,8 +4,6 @@ Permissionned chains can be combined with any KYC/KYB provider to ensure that an
 
 This is particularly useful for businesses operating in a compliant environment.
 
-
-
 **How to set up KYC for your virtual chain?**
 
 1. Create a permissioned Virtual Chain

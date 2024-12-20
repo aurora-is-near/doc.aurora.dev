@@ -1,7 +1,9 @@
 ---
 title: MetaMask
 ---
-MetaMask is a browser extension and mobile app that serves as a secure and user-friendly gateway to interact with the Ethereum blockchain. As a cryptocurrency wallet, it allows users to store, manage, and transact Ether (ETH) and various Ethereum-based tokens (ERC-20 and ERC-721). In addition, MetaMask simplifies access to decentralized applications (dApps) by enabling users to authenticate and execute transactions without the need for a separate blockchain client. By providing a seamless bridge between web browsers and the Ethereum network, MetaMask plays a vital role in the widespread adoption and use of blockchain-based applications.
+MetaMask is a browser extension and mobile app that serves as a secure and user-friendly gateway to interact with the Ethereum blockchain. As a cryptocurrency wallet, it allows users to store, manage, and transact Ether (ETH) and various Ethereum-based tokens (ERC-20 and ERC-721). 
+
+In addition, MetaMask simplifies access to decentralized applications (dApps) by enabling users to authenticate and execute transactions without the need for a separate blockchain client. By providing a seamless bridge between web browsers and the Ethereum network, MetaMask plays a vital role in the widespread adoption and use of blockchain-based applications.
 
 ### Introduction[​](https://doc.aurora.dev/interact/metamask#introduction "Direct link to heading")
 

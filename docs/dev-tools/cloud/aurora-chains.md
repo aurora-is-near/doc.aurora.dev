@@ -25,7 +25,7 @@ To make Aurora Chain work in the best way possible for your business, we will he
 What makes Aurora Chains stand out is a set of top-notch technical solutions done on the level of blockchain architecture, ecosystem, and infrastructure:
 
 * ***seamless interoperability*** with Aurora, Near, and any other Aurora Chains: you can freely move your assets using Rainbow Bridge, call contracts via cross-contract calls, etc.; This is the main difference between Aurora Chains and other solutions (like Avalanche or Cosmos). There is no disjointness in between. You can call any smart contract in any other Aurora Chain or Near and interact with it freely.
-* ***tremendous transaction throughput**** – *we can provide you with dozens of millions of transactions daily for your ecosystem.
+* ***tremendous transaction throughput*** – we can provide you with dozens of millions of transactions daily for your ecosystem.
 
 ### Learn more about Aurora Chains
 

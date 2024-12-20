@@ -11,8 +11,6 @@ You can select:
   * Alternatively gas can be removed for end users. The Virtual Chain owner will still need to settle transaction costs in NEAR but end users will not be required to pay gas fees.
   * [The Gas Abstraction](../enable-gas-abstraction) feature enables more advanced logic around free transactions, allowing you to define limits and whitelists.
 
-
-
 Examples:
 
 * I create a virtual chain with USDT as the base token, and decide that each transaction will cost 0.01 $USDT. This will be defined at the chain level and all users interacting with the chain will get this transaction cost.

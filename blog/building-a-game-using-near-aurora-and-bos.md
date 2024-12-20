@@ -140,7 +140,6 @@ contract TicTacToe is AccessControl {
 
     }
 
-
     // Start a new game where `player_preference = 0` means player goes second (plays O) and
     // `player_preference > 0` means the plater goes first (plays X).
     function newGame(uint256 player_preference) public {
@@ -231,7 +230,6 @@ const contract = new ethers.Contract(
   contractAbi.body,
   Ethers.provider().getSigner()
 );
-
 
 initState({
   board: {
@@ -324,7 +322,6 @@ const getGameState = () => {
       });
     });
 };
-
 
 return (
   <>

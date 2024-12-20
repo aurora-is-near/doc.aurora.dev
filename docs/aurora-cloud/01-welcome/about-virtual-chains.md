@@ -20,10 +20,8 @@ Usually, appchains are side chains or rollups, which are completely separate blo
 * Appchains come empty, meaning the team will need to redevelop all the tools they might have wanted to use, such as onramps, oracles, indexers, etc... This involves third parties and can be extremely costly and time consuming.
 
 
-
 * **Instead, each Virtual Chain automatically gets all the 220 validators from Near**
 * Because Virtual Chains are smart contracts on Near, this allowed us to build tools and services that automatically support all new Virtual Chain, such as **onramp, centralised exchange support, Oracle**, etc... so that you don't have to start from scratch.
-
 
 
 **How do I get my own Virtual Chain?**
@@ -31,6 +29,5 @@ Usually, appchains are side chains or rollups, which are completely separate blo
 Aurora has built a platform for this purpose:  [**Aurora Cloud**](https://auroracloud.dev/).
 
 Aurora Cloud proposes different plans to get your own chain, including **free transactions**, custom **professional services** and much more... in order to let you focus on **building your application**, not setting up infrastructure!
-
 
 

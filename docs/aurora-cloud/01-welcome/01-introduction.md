@@ -5,7 +5,6 @@
 Aurora is an **EVM** (Ethereum Virtual Machine) compatible blockchain layer 2 on top of **Near protocol**, combining the compatibility with the Ethereum ecosystem and the performance and scalability of Near.
 
 
-
 **How is Aurora different from other Ethereum layer 2s?**
 
 Aurora is not a rollup or a side chain. It is implemented as a **smart contract** on the NEAR Protocol. This means that Aurora inherits most of the features from Near protocol such as:

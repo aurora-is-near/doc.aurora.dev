@@ -287,7 +287,6 @@ mod tests {
     use aurora_sdk_integration_tests::workspaces::Contract;
     use std::path::Path;
 
-
     #[tokio::test]
     async fn counter_test() {
         let worker = workspaces::sandbox().await.unwrap();

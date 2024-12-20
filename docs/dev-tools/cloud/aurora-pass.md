@@ -1,7 +1,7 @@
 ---
 title: Aurora Pass
 ---
-Aurora Pass is the new mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora and Silo assets. 
+Aurora Pass is the new mobile cryptocurrency wallet that makes it easier than ever to manage your Aurora and Silo assets.
 
 With Aurora Pass, you can send and receive assets on the Aurora Mainnet and Silo networks, connect to dApps via WalletConnect version 2, and view your portfolio balances and recent transactions.
 
@@ -17,7 +17,7 @@ With Aurora Pass, you can send and receive assets on the Aurora Mainnet and Silo
 
 Aurora Pass is a non-custodial crypto wallet which means that the user will be given a 12-word recovery seed phrase that grants them access to their assets.
 
-Users won’t have to save that seed phrase on signup as it is securely saved on the device, but can choose to export it at any time. This provides better onboarding while providing them with the ownership of their assets in a non-custodial way. 
+Users won’t have to save that seed phrase on signup as it is securely saved on the device, but can choose to export it at any time. This provides better onboarding while providing them with the ownership of their assets in a non-custodial way.
 
 Using the wallet requires biometric authentication (e.g., faceID...). The seed phrase is stored using [expo-secure-store](https://docs.expo.dev/versions/latest/sdk/securestore/): on Android, values are stored in SharedPreferences, encrypted with Android’s Keystore system, and on iOS, values are stored using the keychain services.
 
@@ -31,7 +31,7 @@ Aurora Pass does not currently support other Ethereum chains and L2s. Assets sen
 
 ### Free transactions
 
-Aurora Pass requires a login with an email or Apple/Google auth which will provide them with free transactions on Aurora Mainnet. 
+Aurora Pass requires a login with an email or Apple/Google auth which will provide them with free transactions on Aurora Mainnet.
 
 The basic plan for Aurora Pass users is **50 free transactions per month**.
 
