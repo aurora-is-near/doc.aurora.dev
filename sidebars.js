@@ -150,7 +150,7 @@ const sidebars = {
       type: 'category',
       label: 'Launch your chain (Aurora Chain)',
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       items: [
         'launch-chain/introduction',
         {
