@@ -9,7 +9,7 @@ Let's find out where you can get it for both Mainnet and Testnet.
 
 :::note
 Gas price on Aurora is always constant and right now is only 0.07GWei, so even small amounts of ETH should be enough to do most of the operations.
-For example, a coin transfer will cost you only around ~0.0000015 ETH (~$0.006), and an ERC-20 contract deployment – ~0.00005 ETH (~$0.2).
+For example, a coin transfer will cost you only around 0.0000015 ETH ($0.006), and an ERC-20 contract deployment – 0.00005 ETH ($0.2).
 :::
 
 ## Get ETH on Testnet

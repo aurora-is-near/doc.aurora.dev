@@ -37,10 +37,10 @@ So, if you are already an experienced developer and want to learn more about mor
 
  We suggest you start with the following articles:
 
-- [Gas Price on Aurora and Near](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora)
-- [Integration tests for XCC](https://dev.aurora.dev/posts/communication-from-aurora-to-near-local-testing)
-- [Contract callbacks in XCC](https://dev.aurora.dev/posts/contract-callbacks-in-xcc)
-- [Aurora RPC Node Architecture](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node)
+- [Gas Price on Aurora and Near](/blog/evm-gas-near-gas-on-aurora)
+- [Integration tests for XCC](/blog/communication-from-aurora-to-near-local-testing)
+- [Contract callbacks in XCC](/blog/contract-callbacks-in-xcc)
+- [Aurora RPC Node Architecture](/blog/spinning-up-your-own-aurora-node)
 
 You can learn a lot from our [GitHub organization repositories](https://github.com/aurora-is-near), directly from code. Here are the most popular ones:
 
@@ -61,12 +61,12 @@ That is why two ecosystems are closely intertwined. Here are some materials to o
 - [JavaScript Devs Near Onboarding](https://docs.near.org/build/web3-apps/quickstart)
 - [Rust Devs Near Onboarding](https://docs.near.org/sdk/rust/introduction)
 - [Near CLI RS](https://github.com/near/near-cli-rs)
-- [Near Plugins](https://github.com/Near-One/near-plugins) with a tutorial [here](https://dev.aurora.dev/posts/plugins-for-smart-contract-devs-building-on-near)
+- [Near Plugins](https://github.com/Near-One/near-plugins) with a tutorial [here](/blog/plugins-for-smart-contract-devs-building-on-near)
 
 The key to understanding on how Aurora is linked with Near is to know the next repos/articles:
 
 - [Aurora Engine](https://github.com/aurora-is-near/aurora-engine/)
 - [Refiner](https://github.com/aurora-is-near/borealis-engine-lib)
 - [Relayer](https://github.com/aurora-is-near/relayer2-public)
-- [Gas Price on Aurora and Near](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora)
-- [Aurora RPC Node Architecture](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node)
+- [Gas Price on Aurora and Near](/blog/evm-gas-near-gas-on-aurora)
+- [Aurora RPC Node Architecture](/blog/spinning-up-your-own-aurora-node)

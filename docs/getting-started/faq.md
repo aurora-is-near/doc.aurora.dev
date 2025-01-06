@@ -22,8 +22,8 @@ Explore the documentation on this site, and also visit our [DevPortal](https://d
 
 - [DevTools Ecosystem](https://dev.aurora.dev/ecosystem)
 - [The Dev Portal Blog](https://dev.aurora.dev/blog)
-- [Getting Started Article](https://dev.aurora.dev/posts/getting-started-with-aurora)
-- [Tutorial about getting ERC-20 testnet tokens](https://dev.aurora.dev/posts/how-to-get-usdc-tokens-on-aurora-testnet)
+- [Getting Started Article](/blog/getting-started-with-aurora)
+- [Tutorial about getting ERC-20 testnet tokens](/blog/how-to-get-usdc-tokens-on-aurora-testnet)
 
 ### Do you have a faucet to get some ETH for Testnet development?
 
@@ -36,13 +36,13 @@ But if you will need a lot more - just let our [Support Team](https://discord.gg
 The base fee token of Aurora is ETH, which will make your users feel right at home.
 By leveraging the underlying low-cost capabilities of the Near Protocol, Aurora transactions will typically cost pennies (~$0.02). The gas cost is always constant on Aurora, there is no gas auction.
 Currently, it equals 0.07GWei.
-You read more about how it is calculated [here](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
+You read more about how it is calculated [here](/blog/evm-gas-near-gas-on-aurora).
 
 ### How to run your own Aurora Node?
 
 If you feel like you need to run an Aurora Node yourself, please use [this setup](https://github.com/aurora-is-near/standalone-rpc/).
 The hardware requirements for the node are the same as for [NEAR RPC Node](https://docs.near.org/docs/develop/node/rpc/hardware-rpc#recommended-hardware-specifications)
-though we recommend having 20-30% more storage. You can also read [a detailed article about the node setup](https://dev.aurora.dev/posts/spinning-up-your-own-aurora-node).
+though we recommend having 20-30% more storage. You can also read [a detailed article about the node setup](/blog/spinning-up-your-own-aurora-node).
 
 ### I'm an app developer. Why should I choose Aurora over other EVMs?
 
@@ -65,7 +65,7 @@ The specifics of Near Protocol is that it has a time-based limitation for the ga
 Or equivalently - 1 block. Every transaction on Near has a 300TGas limit and can not exceed it.
 
 Therefore, we do have the same limit on Aurora too. And we're constantly working on improving it. You can read more about how we tackle it
-and calculate the gas prices [here](https://dev.aurora.dev/posts/evm-gas-near-gas-on-aurora).
+and calculate the gas prices [here](/blog/evm-gas-near-gas-on-aurora).
 
 If you see `"error": "wasm execution failed with error: FunctionCallError(HostError(GasLimitExceeded))"`, it means you've hit that limit.
 
