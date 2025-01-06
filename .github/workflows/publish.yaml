@@ -20,13 +20,15 @@ jobs:
           version: latest
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --ignore-scripts
+        run: |
+          pnpm install --force @img/sharp-linux-x64
+          pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Build the docs
         run: pnpm run build
