@@ -178,11 +178,11 @@ const config = {
           srcDark: 'img/docs_logo_white.svg',
         },
         items: [
-          {label: 'Learn', position: 'left', href: '/'}, /*getting-started/overview*/
-          {label: 'Build on Aurora', position: 'left', href: '/build-a-dapp/introduction'},
-          {label: 'Launch a Virtual Chain', position: 'left', href: '/aurora-cloud/welcome/introduction'},
-          {label: 'Dev tools', position: 'left', href: '/dev-tools/quickstart'},
-          {label: 'Blog', position: 'right', href: '/blog'},
+          {label: 'Learn', position: 'left', to: '/', activeBaseRegex: '(^/$)|(/getting-started|bridge)',}, /*getting-started/overview*/
+          {label: 'Build on Aurora', position: 'left', to: '/build-a-dapp/introduction',  activeBaseRegex: '/build-a-dapp|crosschain|onboard|dev-reference*',},
+          {label: 'Launch a Virtual Chain', position: 'left', to: '/aurora-cloud/welcome/introduction', activeBaseRegex: '/aurora-cloud|launch-chain*'},
+          {label: 'Dev tools', position: 'left', to: '/dev-tools/quickstart', activeBaseRegex: '/dev-tools/*'},
+          {label: 'Blog', position: 'right', to: '/blog', activeBaseRegex: '/blog/*'},
           {
             type: 'dropdown',
             label: 'Resources',
