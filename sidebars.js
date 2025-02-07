@@ -57,31 +57,40 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Build a cross-chain application (XCC)',
+      label: 'Build a cross-chain application',
       collapsible: false,
       collapsed: false,
       items: [
-        //'xcc/quickstart',
+        //'crosschain/quickstart',
+        'crosschain/chain-signatures',
         {
           type: 'category',
           collapsible: true,
           collapsed: true,
-          label: "Aurora to Near",
+          label: 'Cross Contract Calls (XCC)',
           items: [
-            'xcc/aurora-to-near/introduction',
-            'xcc/aurora-to-near/usage-examples',
+            {
+              type: 'category',
+              collapsible: true,
+              collapsed: true,
+              label: "Aurora to Near",
+              items: [
+                'crosschain/xcc/aurora-to-near/introduction',
+                'crosschain/xcc/aurora-to-near/usage-examples',
+              ]
+            },
+            {
+              type: 'category',
+              collapsible: true,
+              collapsed: true,
+              label: "Near to Aurora",
+              items: [
+                'crosschain/xcc/near-to-aurora/introduction',
+                'crosschain/xcc/near-to-aurora/usage-examples',
+              ]
+            }
           ]
-        },
-        {
-          type: 'category',
-          collapsible: true,
-          collapsed: true,
-          label: "Near to Aurora",
-          items: [
-            'xcc/near-to-aurora/introduction',
-            'xcc/near-to-aurora/usage-examples',
-          ]
-        },
+        }
         /*{
           type: 'category',
           collapsible: true,
