@@ -7,10 +7,10 @@ title: Chain Signatures
 
 Every virtual chain (EVM built as a smart contract, e.g., Aurora) on top of NEAR protocol can benefit from [Chain Signatures](https://linktr.ee/chainsignatures) technology.
 
-Chain Signatures on virtual chain enable all addresses, both EOAs and smart contracts, to sign and execute transactions across many blockchain protocols. More info about supported chain is in [this discussion](https://github.com/near/NEPs/issues/503#issuecomment-1713734171).
+Chain Signatures on virtual chains enable all addresses, both EOAs and smart contracts, to sign and execute transactions across many blockchain protocols. More info about the supported chains is in [this discussion](https://github.com/near/NEPs/issues/503#issuecomment-1713734171).
 
 :::tip
-**Currently we support: Bitcoin, Ethereum, Ripple, BNB, TRON, Polkadot, Polygon, Avalanche, Cosmos, Hedera, Filecoin, Internet Computer, Mantle, and any EVM chains.**
+**Currently, we support Bitcoin, Ethereum, Ripple, BNB, TRON, Polkadot, Polygon, Avalanche, Cosmos, Hedera, Filecoin, Internet Computer, Mantle, and any EVM chains.**
 :::
 
 You can use Chain Signatures on your virtual chain by:
@@ -25,7 +25,7 @@ Under the hood, the solution is composed of two pieces of tech together:
 
 ![chain-signatures-virtual-chain](/img/chain-sigs-vchain.png)
 
-This unlocks the next level of blockchain interoperability by giving ownership of diverse assets, cross-chain accounts, and data to every single virtual chain account.
+This unlocks the next level of blockchain interoperability by giving ownership of diverse assets, cross-chain accounts, and data to every virtual chain account.
 
 ## Benefits
 
@@ -33,16 +33,16 @@ Integration with Chain Signatures brings many benefits to Web3 developers:
 
 - **Single Account, Multi-Chain Operations:** Developers can manage interactions with external blockchains from one virtual chain account. This simplifies key management and reduces the need for multiple wallets or addresses, enhancing user experience and security.
 
-- **Reduced Overhead in Cross-Chain Development:**  Developers can write smart contracts on a virtual chain that directly sign for cross-chain transactions. This means also that you could have your contracts on a virtual chain only, so you don't need to have the same contracts on different chains.
+- **Reduced Overhead in Cross-Chain Development:**  Developers can write smart contracts on a virtual chain that directly sign for cross-chain transactions. This also means that you could have your contracts on a virtual chain only, so you don't need to have the same contracts on different chains.
 
-- **Runtime Environment for chains without smart contracts**: you can build smart contracts with a familiar EVM tools on top of Bitcoin, Ripple or other non-EVM chains by using virtual chain smart contracts. You're maintaining control over external accounts and assets on these networks.
+- **Runtime Environment for chains without smart contracts**: you can build smart contracts with familiar EVM tools on top of Bitcoin, Ripple or other non-EVM chains by using virtual chain smart contracts. You're maintaining control over external accounts and assets on these networks.
 
 - **Secure Transaction Signing:** Using Multi-Party Computation (MPC), developers gain access to a decentralized signing process for multi-chain transactions. This means no single entity controls the signing key, reducing risks associated with centralized custodianship.
 
 :::tip
 
-Keep in mind that Chain Signatures is a “one way” solution to sign and execute outbound transactions happening on other blockchains.
-If you're looking to access states on external blockchains, you should check out Omnibridge, Bitcoin or Ethereum Light Clients on NEAR.
+Keep in mind that Chain Signatures is a “one-way” solution to sign and execute outbound transactions happening on other blockchains.
+If want to access states on external blockchains, you should check out Omnibridge, Bitcoin or Ethereum Light Clients on NEAR.
 
 :::
 
@@ -95,7 +95,7 @@ The full cycle is described by the image at the top of the article.
 
 ## How to integrate?
 
-1. Make sure you have NEAR ERC-20 token deployed to your virtual chain. If not, contact Aurora Suport Team to do that for you.
+1. Make sure you have NEAR ERC-20 token deployed to your virtual chain. If not, contact Aurora Support Team to do that for you.
 2. Check if your virtual chain has `AuroraSDK` contract deployed to it. If not – contact us or [deploy it yourself](https://github.com/aurora-is-near/aurora-contracts-sdk/tree/main/aurora-solidity-sdk).
 3. Deploy [Chain Signatures Signer Solidity Contract](https://github.com/aurora-is-near/chain-signatures-signer) to your chain.
 4. Set allowance for NEAR for the Chain Signatures Signer to at least 2 NEAR. Better to add a bit more if you want to sign some transactions with it.
@@ -106,7 +106,7 @@ The full cycle is described by the image at the top of the article.
 
 ## Resources
 
-Here are some useful links and resources, where you can learn more about Chain Signatures:
+Here are some helpful links and resources where you can learn more about Chain Signatures:
 
 Dev Libraries:
 

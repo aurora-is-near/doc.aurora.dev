@@ -5,55 +5,55 @@ date: "2025-02-07"
 authors: [slava]
 tags: [tutorials]
 ---
-In this article, we will discuss how by using [Chain Signatures](/crosschain/chain-signatures) on Aurora a Safe Wallet could control Bitcoin accounts and their assets.
+In this article, we will discuss how, by using [Chain Signatures](/crosschain/chain-signatures) on Aurora, a Safe Wallet could control Bitcoin accounts and their assets.
 
-This is an example of how a virtual chain could be a runtime environment for another blockchain lacking native smart contracts. [The idea](/crosschain/chain-signatures) could be applied in general to any virtual chain and any accounts or contracts on it.
+This is an example of how a virtual chain could be a runtime environment for another blockchain lacking native smart contracts. [The idea](/crosschain/chain-signatures) could generally be applied to any virtual chain and any accounts or contracts on it.
 <!-- truncate -->
 
 ## Acknowledgements
 
-I want to say big "Thank You" to people helping me out while creating this demo:
-- Michael Birch for [XCC] consultations.
-- Oleksandr Anyshchenko for writing the main part of the [Chain Signatures Signer] contract and support with demo.
-- Diego Figueroa for debugging a smart contract with me.
+I want to say a big "Thank You" to the people helping me out while creating this demo:
+- Michael Birch, for [XCC] and Chain Signatures consultations.
+- Oleksandr Anyshchenko, for writing the main part of the [Chain Signatures Signer] contract and support with the demo.
+- Diego Figueroa, for debugging a smart contract with me.
 
 ## TL;DR
 
 If you don't like to read, you can just watch these videos below.
 
-The first one explaining the theory behind the demo and overall idea:
+The first one explains the theory behind the demo and overall idea:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XtwHOsxOljc?si=XZyYd8WTHdZuKnUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The second one demonstrating how everything could be executed on practice:
+The second one demonstrates how everything could be executed in practice:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lj5SiNlxkGU?si=Ihf7m9CzvvVp8CMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## What problem is being solved?
 
-Some blockchains are lacking smart contracts: Bitcoin, Ripple, etc.. 
-Or have non EVM architectures, and no Solidity contracts available. 
-But you are an EVM dev, who wants to build there. Also, you want to have a scalabitity of the NEAR Protocol at the tips of your hands.
+Some blockchains lack smart contracts, such as Bitcoin, Ripple, etc.
+Or have non-EVM architectures and no Solidity contracts available. 
+But you are an EVM dev who wants to build there. Also, you want to have a scalability of the NEAR Protocol at the tips of your hands.
 
-Then [NEAR Chain Signatures] + a virtual chain, like Aurora, is a way to resolve this problem for you! 
+Then [NEAR Chain Signatures] + a virtual chain, like Aurora, can resolve this problem for you! 
 
-I am gonna demonstrate you how it could be done by creating a Safe wallet on Aurora and controlling the derived Bitcoin addresses by it.
+I will demonstrate how it could be done by creating a Safe wallet on Aurora and controlling its derived Bitcoin address.
 
 ## The demo explained
 
 I wanted a Safe Wallet on Aurora to control the Bitcoin assets on the associated derived account.
 
-To achieve this we need two main steps:
+To achieve this, we need two main steps:
 1. Sign a Bitcoin transaction with MPC service
 2. Relay this transaction to Bitcoin Network
 
-To do this two pieces of technology is combined:
+To do this, two pieces of technology are combined:
 1. [XCC].
 2. [NEAR Chain Signatures] (https://docs.near.org/concepts/abstraction/chain-signatures) (MPC + utils to derive accounts, form transactions).
 
-This gives us an implementation of Chain Signatures on Aurora via Solidity contract called [Chain Signatures Signer].
+This gives us an implementation of Chain Signatures on Aurora via a Solidity contract called [Chain Signatures Signer].
 
 You can read more about it in the documentation about [Chain Signatures on Virtual Chains] and the repo's `README.md` itself.
 
-I believe that picture can convey the whole process in a best possible way, so here is it:
+I believe that picture can convey the whole process in the best possible way, so here is it:
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
@@ -66,7 +66,7 @@ import ThemedImage from '@theme/ThemedImage';
   }}
 />
 
-So, we have our Safe wallet with two signers – Safe User 1 and Safe User 2 assigned to it. We assume Safe User 1 is doing most of the actions, and Safe User 2 just need to confirm the transaction.
+So, we have our Safe Wallet with two signers – Safe User 1 and Safe User 2 assigned to it. We assume Safe User 1 is doing most of the actions, and Safe User 2 just needs to confirm the transaction.
 
 Let me repeat the steps from the image above in the text format here.
 The first step is creating and signing the Bitcoin transaction:
@@ -94,7 +94,7 @@ And then second step - Relaying the transaction - is done:
 ## How it works
 
 It is a pretty challenging task to explain everything in detail here. 
-Here is a list of docs and resources which explain all parts needed to understand the demo perfectly:
+Here is a list of docs and resources that explain all parts needed to understand the demo perfectly:
 
 - [XCC]
 - [Chain Signatures on Virtual Chains] - fresh docs about how signing works on EVM side, it has integration instructions also.
@@ -103,9 +103,9 @@ Here is a list of docs and resources which explain all parts needed to understan
 
 I have created the next two repos here to make this demo happen:
 - [Chain Signatures Signer] - Solidity contract to `sign` your payload on NEAR MPC from EVM.
-- [Chain Signatures JS Lib] - some tools to derive accounts and relay the transaction take from [NEAR Multichain Examples]
+- [Chain Signatures JS Lib] - some tools to derive accounts and relay the transaction taken from [NEAR Multichain Examples]
 
-Feel free to reach me out on [Discord](https://discord.com/invite/WXfbGsSUbT), just mention @slava there, if you will have any questions.
+Feel free to reach me out on [Discord](https://discord.com/invite/WXfbGsSUbT); just mention @slava there, if you will have any questions.
 
 ### Chain Signatures Signer
 
@@ -114,7 +114,7 @@ What is the main thing this contract does?
 - It calls the MPC service on NEAR and [signs your payload](https://explorer.mainnet.aurora.dev/tx/0x019fbf6ee6aad1edf9c68ab6cc04b8eba16479a724a1d6a9c741c5d04849c3cd).
 - Then it propagates [the response](https://explorer.mainnet.aurora.dev/tx/0xf5de2f24cd6d9f7d93e40df638c47bc07c25d014190da4f033a676ed96186b8e?tab=logs) back to the EVM.
 
-It is done via `sign` function call and recieving the response in the `signCallback` transaction.
+It is done via the `sign` function call and receiving the response in the `signCallback` transaction.
 
 #### Sign function 
 
@@ -122,7 +122,7 @@ To call `sign` you will need to provide:
 
 - `payload` - the data to be signed
 - `version` - `key_version` from chain signatures, check NEAR docs. At the moment, it is just 0.
-- `attachedNear` - the amount of wNEAR to attach to the NEAR call. Usually 1yoctoNEAR is enough, so you should just enter 1.
+- `attachedNear` - the amount of wNEAR to attach to the NEAR call. Usually, 1yoctoNEAR is enough, so you should just enter 1.
 
 The code for the `sign` method looks like this:
 ```solidity
@@ -142,10 +142,10 @@ The code for the `sign` method looks like this:
     }
 ```
 
-The main moments in it to focus onto are:
+The main moments to focus on are:
 -  **Ownership Preservation**: The derivation path is equal to `addressToString(msg.sender);` which ensures that only the EOA or contract who is `msg.sender` can operate the derived account on other networks.
 - **Callback is optional**: you can remove it and index the NEAR blockchain instead for the MPC response. It will save you some gas if you don't need the signed message back into your Solidity contracts.
-- **Gas for signature**: `SIGN_NEAR_GAS` value can change in the future and be optimized. Right now it is 50TGas.
+- **Gas for signature**: `SIGN_NEAR_GAS` value can change in the future and be optimized. Right now, it is 50TGas.
 
 Here is [the transaction with `sign` call](https://explorer.mainnet.aurora.dev/tx/0x019fbf6ee6aad1edf9c68ab6cc04b8eba16479a724a1d6a9c741c5d04849c3cd) in it.
 
@@ -223,11 +223,11 @@ Now, you're ready to send the transaction:
 node src/send_tx.js 
 ```
 
-After that you will need:
+After that, you will need:
 1. To sign it via a call to [Chain Signatures Signer] contract.
-2. To put the signed data back to your console.
+2. To put the signed data back into your terminal.
 
-Then, a transaction will be relayed and executed on Bitcoin network.
+Then, a transaction will be relayed and executed on the Bitcoin network.
 
 Read more about [relaying transactions](https://github.com/aurora-is-near/chain-signatures-js?tab=readme-ov-file#sending-transactions-to-bitcoin).
 
