@@ -248,6 +248,7 @@ const sidebars = {
         description: "Choose one or more node providers here for your project to get a node for your project",
         items: [
           'dev-tools/rpc-providers/chainstack',
+          'dev-tools/rpc-providers/drpc',
           'dev-tools/rpc-providers/now-nodes',
           'dev-tools/rpc-providers/omnia-protocol',
         ]
