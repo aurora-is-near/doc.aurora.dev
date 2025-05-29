@@ -9,4 +9,5 @@ startCommand:
       ],
       "env": {}
     })
-dockerfile: Dockerfile-mcp
+build:
+  dockerfile: Dockerfile-mcp
