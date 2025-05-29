@@ -1,0 +1,12 @@
+startCommand:
+  type: stdio
+  configSchema: {}
+  commandFunction: |-
+    (config) => ({
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": {}
+    })
+dockerfile: Dockerfile-mcp

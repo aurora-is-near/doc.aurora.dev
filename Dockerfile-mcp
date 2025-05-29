@@ -1,0 +1,9 @@
+FROM node:alpine
+
+WORKDIR /app
+COPY ./mcp /app
+COPY ./docs /app/docs
+RUN npm install && npm run build
+
+ENV DOCS_DIR=/app/docs
+CMD ["node", "dist/index.js"]

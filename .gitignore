@@ -4,6 +4,9 @@
 # Visual Studio Code
 .vscode/
 
+# Cursor
+.cursor/
+
 # IDEA
 .idea/
 
@@ -22,3 +25,7 @@ public/
 # Generated files
 .docusaurus
 .cache-loader
+
+# MCP
+mcp/dist
+mcp/node_modules
