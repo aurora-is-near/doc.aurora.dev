@@ -1,12 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: What is Aurora?
 id: overview
-slug: /
+slug: /getting-started/what-is-aurora
 ---
 
-import ThemedImage from '@theme/ThemedImage';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from "@theme/ThemedImage";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 # What is Aurora?
 
@@ -15,21 +15,23 @@ Aurora is an EVM (Ethereum Virtual Machine) compatible blockchain and ecosystem,
 Aurora is an EVM implemented as a smart contract on NEAR Protocol which provides several advantages:
 
 - Aurora is fully compatible with Ethereum. Applications can be seamlessly deployed on Aurora without the need to re-write smart contracts.
-All you need is to [change the RPC endpoint] you interact with.
+  All you need is to [change the RPC endpoint] you interact with.
 - Aurora runs on the NEAR Protocol, one of the highest-performance third-generation L1 protocols.
 - Transaction fees in Aurora are paid in the base currency, ETH, and are constant ([gas price] is 0.07 GWei).
-- Aurora supports all the Ethereum ecosystem tools  — [MetaMask], [Foundry], [Truffle], [Hardhat], [Remix], etc. 
+- Aurora supports all the Ethereum ecosystem tools — [MetaMask], [Foundry], [Truffle], [Hardhat], [Remix], etc.
 - Aurora has protocol level meta transactions, which enables features such as gasless transactions for end users
 
 ## How it works?
 
 Aurora architecture is a relayer-based one, therefore natively supporting meta-transactions. It could be demonstrated by the picture below:
 
-  <ThemedImage
+{" "}
+
+<ThemedImage
   alt="Docusaurus themed image"
   sources={{
-    light: useBaseUrl('/img/scheme.svg'),
-    dark: useBaseUrl('/img/scheme_white.svg'),
+    light: useBaseUrl("/img/scheme.svg"),
+    dark: useBaseUrl("/img/scheme_white.svg"),
   }}
 />
 

@@ -1,6 +1,8 @@
 ---
+sidebar_position: 1
 sidebar_label: Get started
 title: Get started with Aurora
+slug: /
 ---
 
 # Welcome to Aurora - the network of Virtual Chains
@@ -14,7 +16,7 @@ Let's build together!
 
 ---
 
-## �� Build on Aurora Mainnet
+## Build on Aurora Mainnet
 
 The fastest way to deploy your Ethereum-based dapp with the low fees and high performance of the NEAR Protocol.
 
@@ -46,7 +48,7 @@ You can also use AI to build and deploy full dapps, including smart contract dep
 
 ---
 
-## �� Launch a Virtual Chain
+## Launch a Virtual Chain
 
 Create your own blockchain in minutes with customizable gas, permissions, and ecosystem integrations.
 
@@ -82,7 +84,7 @@ Use these details when deploying contracts and building your frontend.
 
 ---
 
-## �� Leverage AI to speed up development
+## Leverage AI to speed up development
 
 - **Aurora MCP on Smithery** — [Access it here](https://smithery.ai/server/@aurora-is-near/doc-aurora-dev)
   IDE integration — Install the MCP into IDEs like Cursor to access docs and best practices contextually

@@ -287,6 +287,7 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
+        'getting-started/getstarted',
         'getting-started/overview',
         'getting-started/tokenomics',
         'getting-started/explore',
