@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-sidebar_label: Get started
-title: Get started with Aurora
+sidebar_label: Welcome
+title: Welcome to Aurora
 slug: /
 ---
 
@@ -11,12 +11,12 @@ Let's build together!
 
 ### Choose your development path
 
-- [Build on Aurora Mainnet](https://chatgpt.com/g/g-p-67d2da3ba9f481918f0e1d143c89125e-virtual-chains/c/6849a4f7-03d0-8001-b8ad-e0366552ebb9#build-on-aurora-mainnet)
-- [Deploy a Virtual Chain](https://chatgpt.com/g/g-p-67d2da3ba9f481918f0e1d143c89125e-virtual-chains/c/6849a4f7-03d0-8001-b8ad-e0366552ebb9#launch-a-virtual-chain)
+- [Build on Aurora Mainnet](#-build-on-aurora-mainnet)
+- [Deploy a Virtual Chain](#-launch-a-virtual-chain)
 
 ---
 
-## Build on Aurora Mainnet
+## 🔧 Build on Aurora Mainnet
 
 The fastest way to deploy your Ethereum-based dapp with the low fees and high performance of the NEAR Protocol.
 
@@ -25,7 +25,7 @@ The fastest way to deploy your Ethereum-based dapp with the low fees and high pe
 You’ll need an Ethereum-compatible wallet. We recommend:
 
 - [Metamask](https://metamask.io/) — standard EVM wallet
-- [Aurora Pass](https://aurora.dev/pass) — enables free transactions on all Aurora networks
+- [Aurora Pass](https://aurorapass.app/) — enables free transactions on all Aurora networks
 
 ### 2. **Connect to Aurora**
 
@@ -48,7 +48,7 @@ You can also use AI to build and deploy full dapps, including smart contract dep
 
 ---
 
-## Launch a Virtual Chain
+## 🔁 Launch a Virtual Chain
 
 Create your own blockchain in minutes with customizable gas, permissions, and ecosystem integrations.
 
@@ -84,7 +84,7 @@ Use these details when deploying contracts and building your frontend.
 
 ---
 
-## Leverage AI to speed up development
+## 🤖 Leverage AI to speed up development
 
 - **Aurora MCP on Smithery** — [Access it here](https://smithery.ai/server/@aurora-is-near/doc-aurora-dev)
   IDE integration — Install the MCP into IDEs like Cursor to access docs and best practices contextually
