@@ -49,15 +49,15 @@ After that you will see your dashboard there:
 
 ![](../static/img/thirdweb_dashboard.png)
 
-Click "Create Project" button. You will see a popup, enter a name and click "Allow all domains" checkmark there:
+Click "Create Project" button. You will see a popup, enter a name and click "Allow all domains" checkbox there:
 
 ![](../static/img/thirdweb_create_project.png)
 
-Now, click "Create". You will see a popup with you secret key:
+Now, click "Create". You will see a popup with your secret key:
 
 ![](../static/img/thirdweb_secretkey.png)
 
-Save your secret key in a safe place, like password manager inside your browser. Then, click a checkmark "I confirm that I have securily stored my secret key" and click "View Project" button. You will see:
+Save your secret key in a safe place, such as a password manager inside your browser. Then, tick the checkbox "I confirm that I have securily stored my secret key" and click "View Project". You will see:
 
 ![](../static/img/thirdweb_project.png)
 

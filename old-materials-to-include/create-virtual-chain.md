@@ -7,13 +7,14 @@ tags: [tutorials]
 ---
 In this short tutorial we will show how by using [Omnibridge](https://docs.near.org/chain-abstraction/omnibridge/overview) and [AuroraCloud](https://app.auroracloud.dev/auth/login), you can start your own EVM chain with a custom token from other chains (e.g., Solana, Base, Ethereum).
 
-To do this we will create a custom token, bridge it to NEAR and use corresponding fungible token (NEP-141 on NEAR) as a gas token for a virtual chain. 
-<!-- truncate -->
+To do this we will create a custom token, bridge it to NEAR and use corresponding fungible token (NEP-141 on NEAR) as a gas token for a virtual chain.
 
+<!-- truncate -->
 
 ## Quick plan
 
 We're going to:
+
 1. Create a custom token on Base (the same will apply to Solana or any other blockchain).
 2. Deploy that token via Omnibridge to NEAR -> get NEP-141 token there.
 3. Deploy your virtual chain using that NEP-141 token.
@@ -34,10 +35,10 @@ Please contact us on [Discord](https://discord.gg/auroralabs) if you will need a
 
 To create your base token we recommend:
 
--  Use [OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc20) contracts.
--  Or [Aurora Contracts](/build-a-dapp/contracts/erc-20).
--  Use [Thirdweb](https://thirdweb.com/login). Here is [a quick tutorial](/blog/thirdweb-erc20).
--  For Solana you can use [`spl-token` CLI tool](https://www.solana-program.com/docs/token).
+- Use [OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc20) contracts.
+- Or [Aurora Contracts](/build-a-dapp/contracts/erc-20).
+- Use [Thirdweb](https://thirdweb.com/login). Here is [a quick tutorial](/blog/thirdweb-erc20).
+- For Solana you can use [`spl-token` CLI tool](https://www.solana-program.com/docs/token).
 
 ## Deploying token to NEAR
 
@@ -46,7 +47,6 @@ To create your base token we recommend:
 ## Bridging your tokens
 
 ## Executing transaction inside EVM
-
 
 [OmniBridge]: https://docs.near.org/chain-abstraction/omnibridge/overview
 [Chain Signatures Signer]: https://github.com/aurora-is-near/chain-signatures-signer

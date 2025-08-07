@@ -71,7 +71,7 @@ cargo build --release
 ### Put that binary on your $PATH
 
 :::note
-The PATH variable is an environment variable that specifies a list of directories that the operating system searches when you enter a command. It allows you to run commands and programs without specifying their full path, making it easier to use the command line. 
+The PATH variable is an environment variable that specifies a list of directories that the operating system searches when you enter a command. It allows you to run commands and programs without specifying their full path, making it easier to use the command line.
 :::
 
 You can read more about what is [$PATH variable](https://en.wikipedia.org/wiki/PATH_(variable)) on Wiki.
@@ -84,6 +84,7 @@ echo $PATH
 ```
 
 You will see something like:
+
 ```bash
 /Users/aurora/Library/pnpm:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Users/aurora/bin:/Users/aurora/.cargo/bin:/Users/aurora/.foundry/bin
 ```
@@ -97,6 +98,7 @@ bridge-cli --help
 ```
 
 and get
+
 ```bash
 Usage: bridge-cli <NETWORK> <COMMAND>
 
@@ -114,6 +116,7 @@ Commands:
 ```
 
 If `bridge-cli` is not on your PATH, you will see something like that:
+
 ```bash
 zsh: command not found: bridge-cli
 ```
@@ -211,7 +214,7 @@ If we examine [the transaction](https://basescan.org/tx/0xa7c4284c84a847ec8938b1
 To deploy your token to NEAR you will need to wait now around 20 minutes for transfer to be catched up by the Omnibridge services. So you can relax, and get you some tea at this moment. Meditate or just gaze around, relax a bit :)
 
 :::note
-EVM part, except Ethereum, is covered right now by the Wormhole bridge (in future, it will secured by Chain Signatures on NEAR). So, you can also monitor your transactions via [WormholeScan](https://wormholescan.io/#/txs?address=0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&network=Mainnet). When available there, you can try executing `deploy-token` method. 
+EVM part, except Ethereum, is covered right now by the Wormhole bridge (in future, it will secured by Chain Signatures on NEAR). So, you can also monitor your transactions via [WormholeScan](https://wormholescan.io/#/txs?address=0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&network=Mainnet). When available there, you can try executing `deploy-token` method.
 :::
 
 After that, be ready to execute:
@@ -253,6 +256,7 @@ To initialize the transfer we'll need to estimate fees first by providing recipi
 ```bash
 curl 'https://mainnet.api.bridge.nearone.org/api/v1/transfer-fee?recipient=near:karkunow.near&sender=base:0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&token=base:0xF3dFcfFc520811D76236892e88d112D2A4a69D0d'
 ```
+
 We have used the next arguments above:
 
 - Recipient: near:karkunow.near
@@ -300,13 +304,13 @@ If you'll [go to the Basescan](https://basescan.org/tx/0x7df8da588a7894ce666aa37
 
 Then you will need to wait for around 20-25 minutes for that action to be accepted by Omni Bridge services.
 
-Just a reminder, for Base and Arbitrum, you can also monitor your transactions via [WormholeScan](https://wormholescan.io/#/txs?address=0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&network=Mainnet). 
+Just a reminder, for Base and Arbitrum, you can also monitor your transactions via [WormholeScan](https://wormholescan.io/#/txs?address=0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&network=Mainnet).
 
 If you go to WormholeScan and enter your base EOA there, you will see a list of your bridge-related transactions there:
 
 ![](../static/img/om_vaa_dash.png)
 
-The status will switch to `COMPLETED` in 20-25 minutes, the transaction info will look like this: 
+The status will switch to `COMPLETED` in 20-25 minutes, the transaction info will look like this:
 
 ![](../static/img/om_vaa_tx.png)
 
@@ -336,7 +340,7 @@ That is it, you now have your tokens on your balance, which you can check in you
 
 ## Conclusions
 
-That is it! We have bridged your first tokens via Omni Bridge CLI together! 
+That is it! We have bridged your first tokens via Omni Bridge CLI together!
 
 You can take a look at the transactions which happened during this tutorial on block explorer:
 
