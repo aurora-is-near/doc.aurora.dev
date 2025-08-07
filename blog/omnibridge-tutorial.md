@@ -240,13 +240,34 @@ Here is how it looks like in the `Interacted With` field:
 
 ![](../static/img/om_near_token.png)
 
-This is exactly the NEP-141 token account which is a bridged version of the [VGAS] token, but now on NEAR!
+This is exactly [the NEP-141 token account](https://nearblocks.io/address/base-0xf3dfcffc520811d76236892e88d112d2a4a69d0d.omdep.near) which is a bridged version of the [VGAS] token, but now on NEAR!
 
 As you can see, [its name](https://nearblocks.io/address/base-0xf3dfcffc520811d76236892e88d112d2a4a69d0d.omdep.near) mirrors the Base ERC-20 name, but has a prefix `base-` and suffix `.omdep.near` added, with lowercased ERC-20 address in-between these.
 
 ## Bridging your tokens
 
-Now, I want to move 100 VGAS from Base to NEAR. Let's initialize transfer on Base:
+Now, I want to move 100 VGAS from Base to NEAR.
+
+To initialize the transfer we'll need to estimate fees first by providing recipient, sender and token to the API:
+
+```bash
+curl 'https://mainnet.api.bridge.nearone.org/api/v1/transfer-fee?recipient=near:karkunow.near&sender=base:0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&token=base:0xF3dFcfFc520811D76236892e88d112D2A4a69D0d'
+```
+We have used the next arguments above:
+
+- Recipient: near:karkunow.near
+- Sender: base:0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469
+- Token: base:0xF3dFcfFc520811D76236892e88d112D2A4a69D0d
+
+The command will output us:
+
+```bash
+{"native_token_fee":"3273397399996","transferred_token_fee":null,"usd_fee":0.01}
+```
+
+`usd_fee` just shows how much it will cost to us to execute the bridge transaction on Base in USD. But we won't need that field for now.
+
+We should use `native_token_fee` as `native_fee` and `transferred_token_fee` as `fee` in the initialization command. Let's initialize transfer on Base by using these values:
 
 ```bash
 
@@ -256,32 +277,81 @@ bridge-cli mainnet evm-init-transfer \
     --amount 100000000000000000000 \
     --recipient near:karkunow.near \
     --fee 0 \
-    --native-fee 10000 \
-    --message "Just a VGAS gift for you"
+    --native-fee 3273397399996 \
+    --message ""
 ```
 
-I have used [Wei converter](https://www.eth-to-wei.com/) to get 18 decimals for my 100VGAS transfer.
+:::tip
+Leave `--message` to be an empty string if you're making transfer to the regular NEAR account, it should be used only to call methods on the NEAR smart contracts.
+:::
+
+I have used [Wei converter](https://www.eth-to-wei.com/) to get 18 decimals for my 100 VGAS transfer to get the correct number with 18 decimals.
 
 I get this as an output after execution of the command above:
 
 ```bash
-output
+2025-08-06T13:17:52.048469Z EVM INIT TRANSFER: Sent transfer transaction
+tx_hash="0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a"
 ```
 
-Now, we're ready to finalize transfer on the NEAR side:
+If you'll [go to the Basescan](https://basescan.org/tx/0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a), you will see that inside that transaction `initTransfer` method was called on the bridge Base contract:
 
-```bash
-bridge-cli mainnet near-fin-transfer-with-evm-proof \
-    --chain base \
-    --tx-hash 0xabc...def \
-    --storage-deposit-actions <token-on-NEAR>:karkunow.near:100
-```
+![](../static/img/om_init_transfer.png)
+
+Then you will need to wait for around 20-25 minutes for that action to be accepted by Omni Bridge services.
+
+Just a reminder, for Base and Arbitrum, you can also monitor your transactions via [WormholeScan](https://wormholescan.io/#/txs?address=0xBe3e4Cb196bC9579c1C161cA5a2A4D47eD439469&network=Mainnet). 
+
+If you go to WormholeScan and enter your base EOA there, you will see a list of your bridge-related transactions there:
+
+![](../static/img/om_vaa_dash.png)
+
+The status will switch to `COMPLETED` in 20-25 minutes, the transaction info will look like this: 
+
+![](../static/img/om_vaa_tx.png)
+
+Transaction will be finalized automatically for you by `omni-relayer.bridge.near` account on the NEAR side.
+
+## Finding finalization transaction
+
+Note the time of transaction from WormholeScan screenshot above, it is `2025-08-06 13:17:53 UTC` in this case. 
+
+Now, if you want to find the finalization transaction, go to the [Omni Bridge Relayer](https://nearblocks.io/address/omni-relayer.bridge.near) on NearBlocks, and find the transaction there with a timestamp around that time plus 20 minutes, so it should be `2025-08-06 13:37:53 UTC`.
+
+You could hover on the `AGE` field to see timestamps, like this:
+
+![](../static/img/om_fin_tx_dash.png)
+
+As you can see there is only one close enough to my time here. Let's click on it, and then scroll `Interacted With (To)` list of event until you see `mint` functions on `base-...` contract:
+
+![](../static/img/om_fin_tx_mint.png)
+
+When you click on the small arrow near the `mint` event you will be redirected to the `Execution Plan` tab, and see more info about it:
+
+![](../static/img/om_fin_tx_info.png)
+
+You should see the exact info you have passed to the `evm-init-transfer` command above!
+
+That is it, you now have your tokens on your balance, which you can check in your NEAR Wallet, e.g., [MyNearWallet].
 
 ## Conclusions
 
+That is it! We have bridged your first tokens via Omni Bridge CLI together! 
+
+You can take a look at the transactions which happened during this tutorial on block explorer:
+
+- [Log metadata - $0.001](https://basescan.org/tx/0xa7c4284c84a847ec8938b15dd14c4ca83da8d49439615561c229b7411b809e4c)
+- [Deployment transaction on NEAR - $7.49 or 3.01 NEAR, out of which $7.47 went for storage](https://nearblocks.io/txns/EPJWeaHRZWZBf49YgYDj55oHefSZPgQmRye2WsnnbxRv)
+- [Bridge transaction - $0.012](https://basescan.org/tx/0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a)
+
+Deployment cost: $0.033
+Storage cost: $7.47 (3 NEAR)
+
+If you are ready - let's start a new virtual chain with that token now in the next article!
 
 [Omni Bridge]: https://docs.near.org/chain-abstraction/omnibridge/overview
 [VGAS]: https://base.blockscout.com/token/0xF3dFcfFc520811D76236892e88d112D2A4a69D0d
 [bridge-sdk-rs]: https://github.com/Near-One/bridge-sdk-rs
 [bridge-cli]: https://github.com/Near-One/bridge-sdk-rs/tree/main/bridge-cli
 [MyNearWallet]: https://app.mynearwallet.com/
+[Wormhole VAA Parser]: https://wormholescan.io/#/developers/tools/vaa-parser
