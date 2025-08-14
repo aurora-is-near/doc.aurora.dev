@@ -37,77 +37,77 @@ Please contact us on [Discord](https://discord.gg/auroralabs) if you will need a
 
 So, let's go to thirdweb and login there with your wallet:
 
-![](../static/img/thirdweb_login.png)
+![thirdweb login with wallet](../static/img/thirdweb_login.png)
 
 Next, create your account:
 
-![](../static/img/thirdweb_account.png)
+![thirdweb create account](../static/img/thirdweb_account.png)
 
 ## Creating thirdweb project
 
 After that you will see your dashboard there:
 
-![](../static/img/thirdweb_dashboard.png)
+![thirdweb dashboard](../static/img/thirdweb_dashboard.png)
 
 Click "Create Project" button. You will see a popup, enter a name and click "Allow all domains" checkbox there:
 
-![](../static/img/thirdweb_create_project.png)
+![thirdweb create project popup](../static/img/thirdweb_create_project.png)
 
 Now, click "Create". You will see a popup with your secret key:
 
-![](../static/img/thirdweb_secretkey.png)
+![thirdweb project secret key](../static/img/thirdweb_secretkey.png)
 
 Save your secret key in a safe place, such as a password manager inside your browser. Then, tick the checkbox "I confirm that I have securily stored my secret key" and click "View Project". You will see:
 
-![](../static/img/thirdweb_project.png)
+![thirdweb project view](../static/img/thirdweb_project.png)
 
 ## Deploying a contract
 
 Click "Contracts" at the sidebar, you will see:
 
-![](../static/img/thirdweb_contracts.png)
+![thirdweb contracts list](../static/img/thirdweb_contracts.png)
 
 Click "Discover Contracts" and choose "Token" contract, which is just a regular [ERC-20](https://docs.openzeppelin.com/contracts/5.x/erc20):
 
-![](../static/img/thirdweb_discover_contracts.png)
+![thirdweb discover contracts](../static/img/thirdweb_discover_contracts.png)
 
 Then, click "Deploy Now" button:
 
-![](../static/img/thirdweb_token_page.png)
+![thirdweb token contract page](../static/img/thirdweb_token_page.png)
 
 Now, enter your token information:
 
-![](../static/img/thirdweb_contract_info.png)
+![thirdweb token information form](../static/img/thirdweb_contract_info.png)
 
 You can also provide the image for you token above. After that scroll to the bottom of the form and make sure you have Base network (or Arbitrum) selected:
 
-![](../static/img/thirdweb_token_deploy.png)
+![thirdweb token deploy network selection](../static/img/thirdweb_token_deploy.png)
 
 Wait a bit and confirm the transaction in MetaMask:
 
-![](../static/img/thirdweb_mm_confirmation.png)
+![metamask confirmation for deployment](../static/img/thirdweb_mm_confirmation.png)
 
 After that, you will see your token deployed succesfully:
 
-![](../static/img/thirdweb_contract_deployed.png)
+![contract deployed success](../static/img/thirdweb_contract_deployed.png)
 
 ## Minting tokens
 
 You will be redirected here, after clicking "View Contract" above:
 
-![](../static/img/thirdweb_token_dashboard.png)
+![token dashboard](../static/img/thirdweb_token_dashboard.png)
 
 As you can see, you need to mint tokens now. So click on "token tab" link above, you will go here:
 
-![](../static/img/thirdweb_token_actions.png)
+![token actions menu](../static/img/thirdweb_token_actions.png)
 
 Click "Mint" button, you will see a side menu. Enter amount of tokens there (I will mint 1000) and click "Mint Tokens" button:
 
-![](../static/img/thirdweb_token_minting.png)
+![mint tokens form](../static/img/thirdweb_token_minting.png)
 
 Sign a transaction in your wallet:
 
-![](../static/img/thirdweb_mint_tx.png)
+![mint transaction in wallet](../static/img/thirdweb_mint_tx.png)
 
 After that you will receive minted tokens to your account.
 
@@ -115,18 +115,18 @@ After that you will receive minted tokens to your account.
 
 To see your tokens inside your wallet, please click the Basescout button on your token dashboard:
 
-![](../static/img/thirdweb_basescout_button.png)
+![basescout button on token dashboard](../static/img/thirdweb_basescout_button.png)
 
 You will see this page opening up, click on the MetaMask icon near the token address:
-![](../static/img/thirdweb_basescout.png)
+![basescout token page](../static/img/thirdweb_basescout.png)
 
 You will see MetaMask popup asking you to add a new token, click "Add" button:
 
-![](../static/img/thirdweb_mm_token_add.png)
+![metamask add token popup](../static/img/thirdweb_mm_token_add.png)
 
 After that you will see your token balance in your wallet:
 
-![](../static/img/thirdweb_mm_token_shown.png)
+![token shown in wallet](../static/img/thirdweb_mm_token_shown.png)
 
 ## Conclusion
 

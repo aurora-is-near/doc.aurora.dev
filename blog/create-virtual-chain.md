@@ -75,32 +75,32 @@ Let's follow it step-by-step below, and also cover how to configure the custom b
 
 Go to [Aurora Cloud] website and click "Sign In" button:
 
-![](../static/img/acc_sign_in.png)
+![sign in button on aurora cloud website](../static/img/acc_sign_in.png)
 
 Click "Create account" link if you do not have one:
 
-![](../static/img/acc_create_account.png)
+![create account link on aurora cloud website](../static/img/acc_create_account.png)
 
 And fill the needed information here, create an account by clicking "Sign Up" button:
 
-![](../static/img/acc_create_account_popup.png)
+![create account form on aurora cloud](../static/img/acc_create_account_popup.png)
 
 After that go to ["Sign In"](https://app.auroracloud.dev/auth/login) page and log in there, you will see the next screen after that:
 
-![](../static/img/acc_chain_config.png)
+![aurora cloud console chain configuration](../static/img/acc_chain_config.png)
 
 ### Configure your chain
 
 After clicking the "Get started" button on the screenshot above, you will see:
 
-![](../static/img/acc_chain_config_popup.png)
+![chain configuration popup on aurora cloud](../static/img/acc_chain_config_popup.png)
 
 Choose your chain permissions first. Usually the chain will have "Public" permissions, so just choose it.
 With the "Permissioned" ones you will be able to block some people from deploying smart contracts or interacting with a chain. If needed, this could be easily changed in the future for any "Public" chain.
 
 Now, scroll a bit down. You will see Base Token selection, choose "My Token" to deploy your token created in the [previous article](/blog/omnibridge-tutorial):
 
-![](../static/img/acc_chain_token.png)
+![base token selection dropdown in aurora cloud](../static/img/acc_chain_token.png)
 
 :::note
 Of course, you can use any of the already predefined tokens, as AURORA, ETH, USDC, BTC, etc. It will make the deployment faster. We're just covering the most general case here for the educational purposes.
@@ -108,7 +108,7 @@ Of course, you can use any of the already predefined tokens, as AURORA, ETH, USD
 
 Enter your [token address](/blog/omnibridge-tutorial#deploying-token-to-near-1) into the text input:
 
-![](../static/img/acc_chain_token_filled.png)
+![base token address filled in aurora cloud](../static/img/acc_chain_token_filled.png)
 
 :::note
 We're using [this token](https://nearblocks.io/address/base-0xf3dfcffc520811d76236892e88d112d2a4a69d0d.omdep.near) from the [previous tutorial](/blog/omnibridge-tutorial).
@@ -116,13 +116,13 @@ We're using [this token](https://nearblocks.io/address/base-0xf3dfcffc520811d762
 
 Add chain information, and click "Save my chain configuration" button:
 
-![](../static/img/acc_chain_info.png)
+![chain information form in aurora cloud](../static/img/acc_chain_info.png)
 
 ### Deploy your chain
 
 Now, you're ready to deploy your chain, click "Deploy now" button and confirm all of the popups there:
 
-![](../static/img/acc_chain_deployment_button.png)
+![deploy now button in aurora cloud](../static/img/acc_chain_deployment_button.png)
 
 After this we will receive an automatic notification about your chain deployment, and when we'll address it - you will get your chain working.
 
@@ -132,13 +132,13 @@ Note, that we need to do some manual operations during the chain deployment only
 
 When everything is ready, you will see:
 
-![](../static/img/acc_chain_live.png)
+![chain live status screen in aurora cloud](../static/img/acc_chain_live.png)
 
 ### Chain Information
 
 You can find all of the important information about your chain inside the "Chain Settings" tab located at the left sidebar:
 
-![](../static/img/acc_chain_settings.png)
+![chain settings tab in aurora cloud](../static/img/acc_chain_settings.png)
 
 Let us describe some of these for you:
 
@@ -154,7 +154,7 @@ You can find it at the "Chain details" section, right below the same-named label
 
 After that you will be able to see your gas token and erc-20 balances in your wallet:
 
-![](../static/img/acc_chain_added.png)
+![chain added to wallet screenshot](../static/img/acc_chain_added.png)
 
 As well as transaction history.
 
@@ -162,7 +162,7 @@ As well as transaction history.
 
 You can also examine the amount of the transactions supplied for your chain at "Gas abstraction" tab's section "Gas consumed":
 
-![](../static/img/acc_gas_txs.png)
+![gas abstraction tab showing gas consumed in aurora cloud](../static/img/acc_gas_txs.png)
 
 As you can see, you have 10 NEAR of balance on your Engine contract, which is equal to 10000 free transactions.
 
@@ -170,7 +170,7 @@ The way the virtual chain works is that it pays for your EVM transactions on NEA
 
 You can see how much of the EVM chain your chain has accumulated in "Gas collected" section:
 
-![](../static/img/acc_gas_accumulated.png)
+![gas collected section in aurora cloud](../static/img/acc_gas_accumulated.png)
 
 You could also set your "Gas collection address" to withdraw that gas token to it later via clicking "Collect" button seen above.
 
@@ -205,7 +205,7 @@ Convert it proportionally to your token price and you will get the right number.
 
 I will use `0.000001` value and will enter it into to the `Gas price` field at the bottom of the page:
 
-![](../static/img/acc_gas_price.png)
+![gas price field in aurora cloud](../static/img/acc_gas_price.png)
 
 Now, if I will call `eth_gasPrice` method in my terminal - I get:
 
@@ -239,11 +239,11 @@ near account import-account using-web-wallet network-config mainnet
 
 Then, the browser window will open where you will need to import your account:
 
-![](../static/img/acc_near_import.png)
+![near wallet import screen in browser](../static/img/acc_near_import.png)
 
 And when finished, go back to the console and enter your account name there, then press "Enter":
 
-![](../static/img/acc_near_import_terminal.png)
+![near wallet account import confirmation in terminal](../static/img/acc_near_import_terminal.png)
 
 Account will be added to your NEAR CLI config inside your terminal after that.
 
@@ -275,7 +275,7 @@ After executing, you will receive your NEAR transaction hash and can take a look
 
 If you now go to your MetaMask, you will see the balance updated:
 
-![](../static/img/acc_near_vgas.png)
+![updated balance in metamask after bridging funds](../static/img/acc_near_vgas.png)
 
 ## Executing transaction inside EVM
 
@@ -283,46 +283,46 @@ Now, we ready to execute your first transaction in your virtual chain. Let's exe
 
 First of all, create another account in MetaMask, click on your Account Name:
 
-![](../static/img/mm_main.png)
+![metamask main view showing account name](../static/img/mm_main.png)
 
 You will see Accounts Dropdown. Now, click on the "Add account or wallet" button and create a new account:
 
-![](../static/img/mm_add_wallet.png)
+![add account or wallet button in metamask](../static/img/mm_add_wallet.png)
 
 Choose "Ethereum account" type to add:
 
-![](../static/img/mm_account_type.png)
+![ethereum account type selection in metamask](../static/img/mm_account_type.png)
 
 After that enter the name of the account and click "Add" button. Account will be created.
 Switch back to your old account.
 
 Now let's send some tokens to your freshly created account, click "Send":
 
-![](../static/img/mm_send.png)
+![send button in metamask](../static/img/mm_send.png)
 
 Choose you new account in the "To" field, enter some amount of tokens to transfer, and click "Continue":
 
-![](../static/img/mm_send_2.png)
+![token transfer form in metamask](../static/img/mm_send_2.png)
 
 Then, review the data and click "Confirm":
 
-![](../static/img/mm_send_3.png)
+![transaction confirmation screen in metamask](../static/img/mm_send_3.png)
 
 You will the balance on your new account updated:
 
-![](../static/img/mm_send_4.png)
+![updated balance on new metamask account after transfer](../static/img/mm_send_4.png)
 
 To find the transaction in the Explorer, go to the MetaMask main view, locate your transfer there, and click on it:
 
-![](../static/img/mm_explorer_1.png)
+![transaction details in metamask](../static/img/mm_explorer_1.png)
 
 After that click on "View on block explorer" button:
 
-![](../static/img/mm_explorer_2.png)
+![view on block explorer button in metamask](../static/img/mm_explorer_2.png)
 
 The new window will open where you can see more details, gas consumed and copy [transaction URL](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x1d8b006066402bf05b05b3bb3d6dc75df9b2fa0dfc26a2f7ce507c6b07425560) or hash if needed:
 
-![](../static/img/mm_explorer_3.png)
+![transaction details on aurora cloud block explorer](../static/img/mm_explorer_3.png)
 
 If you want, execute a few more transactions now, or [deploy some smart contracts](/build-a-dapp/introduction) to your virtual chain to collect more gas on your relayer account.
 
@@ -330,21 +330,21 @@ If you want, execute a few more transactions now, or [deploy some smart contract
 
 After users has had some activity on your virtual chain, you can collect the gas in the [Aurora Cloud] Console. To do this, go to "Gas abstraction", and then to the "Gas collected" tab:
 
-![](../static/img/acc_gas_collection.png)
+![gas collected tab in aurora cloud](../static/img/acc_gas_collection.png)
 
 You will see the amount of gas accumulated there. Please, enter your NEAR account there if you haven't done this previously. It should be your NEAR wallet address.
 
 After that, click "Collect" button, you will see a popup:
 
-![](../static/img/acc_gas_collection_2.png)
+![gas collection popup in aurora cloud](../static/img/acc_gas_collection_2.png)
 
 Click "Collect gas" and your gas will be transfered to the specified NEAR account. You can find that transaction on NEARBlocks Explorer:
 
-![](../static/img/acc_gas_collection_3.png)
+![gas collection transaction on nearblocks](../static/img/acc_gas_collection_3.png)
 
 Here are the details from the particular transaction I had:
 
-![](../static/img/acc_gas_collection_4.png)
+![gas collection transaction details](../static/img/acc_gas_collection_4.png)
 
 As you can see `0.063 VGAS` were transferred to my account.
 

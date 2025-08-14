@@ -169,7 +169,7 @@ For the [MyNearWallet]:
 - copy it your `.env` file
 
 "Export Local Private Key" button is located here:
-![](../static/img/om_mnw_key.png)
+![export local private key button in MyNearWallet](../static/img/om_mnw_key.png)
 
 Now, when your `.env` file is ready, go to your terminal and execute:
 
@@ -241,7 +241,7 @@ Now, if you take a look at the details of that transaction on [Nearblocks](https
 
 Here is how it looks like in the `Interacted With` field:
 
-![](../static/img/om_near_token.png)
+![NEP-141 token account on NearBlocks](../static/img/om_near_token.png)
 
 This is exactly [the NEP-141 token account](https://nearblocks.io/address/base-0xf3dfcffc520811d76236892e88d112d2a4a69d0d.omdep.near) which is a bridged version of the [VGAS] token, but now on NEAR!
 
@@ -300,7 +300,7 @@ tx_hash="0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a"
 
 If you'll [go to the Basescan](https://basescan.org/tx/0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a), you will see that inside that transaction `initTransfer` method was called on the bridge Base contract:
 
-![](../static/img/om_init_transfer.png)
+![initTransfer transaction on Basescan](../static/img/om_init_transfer.png)
 
 Then you will need to wait for around 20-25 minutes for that action to be accepted by Omni Bridge services.
 
@@ -308,11 +308,11 @@ Just a reminder, for Base and Arbitrum, you can also monitor your transactions v
 
 If you go to WormholeScan and enter your base EOA there, you will see a list of your bridge-related transactions there:
 
-![](../static/img/om_vaa_dash.png)
+![Wormhole VAA dashboard](../static/img/om_vaa_dash.png)
 
 The status will switch to `COMPLETED` in 20-25 minutes, the transaction info will look like this:
 
-![](../static/img/om_vaa_tx.png)
+![Omni relayer transactions list on NearBlocks](../static/img/om_fin_tx_dash.png)
 
 Transaction will be finalized automatically for you by `omni-relayer.bridge.near` account on the NEAR side.
 
@@ -324,15 +324,15 @@ Now, if you want to find the finalization transaction, go to the [Omni Bridge Re
 
 You could hover on the `AGE` field to see timestamps, like this:
 
-![](../static/img/om_fin_tx_dash.png)
+![mint event in finalization transaction](../static/img/om_fin_tx_dash.png)
 
 As you can see there is only one close enough to my time here. Let's click on it, and then scroll `Interacted With (To)` list of event until you see `mint` functions on `base-...` contract:
 
-![](../static/img/om_fin_tx_mint.png)
+![execution plan details for finalization transaction](../static/img/om_fin_tx_mint.png)
 
 When you click on the small arrow near the `mint` event you will be redirected to the `Execution Plan` tab, and see more info about it:
 
-![](../static/img/om_fin_tx_info.png)
+![execution plan details for finalization transaction](../static/img/om_fin_tx_info.png)
 
 You should see the exact info you have passed to the `evm-init-transfer` command above!
 
