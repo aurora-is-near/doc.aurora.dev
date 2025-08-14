@@ -85,7 +85,7 @@ You can also provide the image for you token above. After that scroll to the bot
 
 Wait a bit and confirm the transaction in MetaMask:
 
-![metamask confirmation for deployment](../static/img/thirdweb_mm_confirmation.png)
+![MetaMask confirmation for deployment](../static/img/thirdweb_mm_confirmation.png)
 
 After that, you will see your token deployed succesfully:
 
@@ -122,7 +122,7 @@ You will see this page opening up, click on the MetaMask icon near the token add
 
 You will see MetaMask popup asking you to add a new token, click "Add" button:
 
-![metamask add token popup](../static/img/thirdweb_mm_token_add.png)
+![MetaMask add token popup](../static/img/thirdweb_mm_token_add.png)
 
 After that you will see your token balance in your wallet:
 

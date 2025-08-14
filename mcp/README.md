@@ -103,6 +103,7 @@ The server provides these tools to LLMs:
 Search through all documentation files for specific content.
 
 **Parameters:**
+
 - `query` (string, required): Search term or phrase
 - `case_sensitive` (boolean, optional): Whether search should be case sensitive
 
@@ -175,7 +176,7 @@ Once set up, you can ask Claude things like:
 
 ### Project Structure
 
-```
+```bash
 mcp-docs-server/
 ├── src/
 │   └── index.ts          # Main server code
@@ -209,6 +210,7 @@ npm start
 ## Customization
 
 You can modify the server to:
+
 - Support additional file formats
 - Add more sophisticated search (fuzzy matching, indexing)
 - Include file metadata in responses

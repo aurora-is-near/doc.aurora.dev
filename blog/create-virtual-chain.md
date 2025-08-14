@@ -34,7 +34,7 @@ So we will talk about the previous steps very briefly, and focus more on the nex
 
 ## Requirements
 
-We're expecting you to have your [MetaMask installed](https://metamask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
+We're expecting you to have your [MetaMask installed](https://MetaMask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
 
 Please, also make sure you have a NEAR wallet to be used, you can create one at [MyNearWallet](https://app.mynearwallet.com/).
 
@@ -127,7 +127,7 @@ Now, you're ready to deploy your chain, click "Deploy now" button and confirm al
 After this we will receive an automatic notification about your chain deployment, and when we'll address it - you will get your chain working.
 
 :::info
-Note, that we need to do some manual operations during the chain deployment only if you're using a custom base token. So, if you use some pre-defined token – it will automatic and ready in seconds to be used! 
+Note, that we need to do some manual operations during the chain deployment only if you're using a custom base token. So, if you use some pre-defined token – it will automatic and ready in seconds to be used!
 :::
 
 When everything is ready, you will see:
@@ -148,7 +148,7 @@ Let us describe some of these for you:
 
 ### Adding a chain to your wallet
 
-To add your chain to your Metamask, just click the 'Add to Metamask' button on "Chain Settings" page.
+To add your chain to your MetaMask, just click the 'Add to MetaMask' button on "Chain Settings" page.
 
 You can find it at the "Chain details" section, right below the same-named label seen on the screenshot above.
 
@@ -274,7 +274,7 @@ After executing, you will receive your NEAR transaction hash and can take a look
 
 If you now go to your MetaMask, you will see the balance updated:
 
-![updated balance in metamask after bridging funds](../static/img/acc_near_vgas.png)
+![updated balance in MetaMask after bridging funds](../static/img/acc_near_vgas.png)
 
 ## Executing transaction inside EVM
 
@@ -282,42 +282,42 @@ Now, we ready to execute your first transaction in your virtual chain. Let's exe
 
 First of all, create another account in MetaMask, click on your Account Name:
 
-![metamask main view showing account name](../static/img/mm_main.png)
+![MetaMask main view showing account name](../static/img/mm_main.png)
 
 You will see Accounts Dropdown. Now, click on the "Add account or wallet" button and create a new account:
 
-![add account or wallet button in metamask](../static/img/mm_add_wallet.png)
+![add account or wallet button in MetaMask](../static/img/mm_add_wallet.png)
 
 Choose "Ethereum account" type to add:
 
-![ethereum account type selection in metamask](../static/img/mm_account_type.png)
+![ethereum account type selection in MetaMask](../static/img/mm_account_type.png)
 
 After that enter the name of the account and click "Add" button. Account will be created.
 Switch back to your old account.
 
 Now let's send some tokens to your freshly created account, click "Send":
 
-![send button in metamask](../static/img/mm_send.png)
+![send button in MetaMask](../static/img/mm_send.png)
 
 Choose you new account in the "To" field, enter some amount of tokens to transfer, and click "Continue":
 
-![token transfer form in metamask](../static/img/mm_send_2.png)
+![token transfer form in MetaMask](../static/img/mm_send_2.png)
 
 Then, review the data and click "Confirm":
 
-![transaction confirmation screen in metamask](../static/img/mm_send_3.png)
+![transaction confirmation screen in MetaMask](../static/img/mm_send_3.png)
 
 You will the balance on your new account updated:
 
-![updated balance on new metamask account after transfer](../static/img/mm_send_4.png)
+![updated balance on new MetaMask account after transfer](../static/img/mm_send_4.png)
 
 To find the transaction in the Explorer, go to the MetaMask main view, locate your transfer there, and click on it:
 
-![transaction details in metamask](../static/img/mm_explorer_1.png)
+![transaction details in MetaMask](../static/img/mm_explorer_1.png)
 
 After that click on "View on block explorer" button:
 
-![view on block explorer button in metamask](../static/img/mm_explorer_2.png)
+![view on block explorer button in MetaMask](../static/img/mm_explorer_2.png)
 
 The new window will open where you can see more details, gas consumed and copy [transaction URL](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x1d8b006066402bf05b05b3bb3d6dc75df9b2fa0dfc26a2f7ce507c6b07425560) or hash if needed:
 
@@ -354,10 +354,10 @@ In this article we have successfully:
 - Set up a new chain with a custom base token
 - Learned about how NEAR gas is related to the EVM gas
 - Funded our EVM account with the base token
-- Executed some simple transactions 
+- Executed some simple transactions
 - Collected some gas tokens to our NEAR wallet
 
-That is it for today! Hope you have enjoyed it! 
+That is it for today! Hope you have enjoyed it!
 
 If you have encountered any errors, problems or just have any questions or suggestions, please contact us on [Discord](https://discord.gg/auroralabs).
 

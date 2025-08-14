@@ -123,7 +123,18 @@ zsh: command not found: bridge-cli
 
 ### Configuring .env file
 
-Let's configure enviroment variables now. To do this, create the `.env` file in your current folder:
+:::warning Security warning: protect your private keys
+Storing raw private keys in a plaintext `.env` file is dangerous. Never commit this file to version control and prefer secret managers (e.g., 1Password CLI, `pass`, Bitwarden CLI, or environment-injection in CI like GitHub Actions secrets).
+
+At minimum, add `.env` to your `.gitignore`:
+```gitignore
+.env
+```
+Rotate any keys that might have been exposed.
+Only store the keys you're willing to lose as a plaintext in the `.env` file.
+:::
+
+Let's configure environment variables now. To do this, create the `.env` file in your current folder:
 
 ```bash
 touch .env
@@ -171,7 +182,7 @@ For the [MyNearWallet]:
 "Export Local Private Key" button is located here:
 ![export local private key button in MyNearWallet](../static/img/om_mnw_key.png)
 
-Now, when your `.env` file is ready, go to your terminal and execute:
+Now that your `.env` file is ready, go to your terminal and execute:
 
 ```bash
 source .env
@@ -318,7 +329,66 @@ Transaction will be finalized automatically for you by `omni-relayer.bridge.near
 
 ## Finding finalization transaction
 
-Note the time of transaction from WormholeScan screenshot above, it is `2025-08-06 13:17:53 UTC` in this case. 
+### Simple way
+
+Just go by URL to call OmniBridge API, or `curl` it:
+
+```bash
+curl https://mainnet.api.bridge.nearone.org/api/v1/transfers/?transaction_id=0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a&offset=0&limit=5
+```
+
+Put your transaction hash as `transaction_id` there. You will recieve the next data in response:
+
+```json
+[
+  {
+    "id": {
+      "origin_chain": "Base",
+      "origin_nonce": 11
+    },
+    "initialized": {
+      "EVMLog": {
+        "block_height": 33848463,
+        "block_timestamp_seconds": 1754486273,
+        "transaction_hash": "0x7df8da588a7894ce666aa374b37ccb9c00bb454d97f92cc30be2578762c5237a"
+      }
+    },
+    "signed": null,
+    "updated_fee": [],
+    "fast_finalised_on_near": null,
+    "finalised_on_near": null,
+    "fast_finalised": null,
+    "finalised": {
+      "NearReceipt": {
+        "block_height": 158474326,
+        "block_timestamp_seconds": 1754487576,
+        // highlight-next-line
+        "transaction_hash": "C2SsiJYnGdHXkDGm6SP7XxaBF2c9Z8MB8RL4kgXy4XtM"
+      }
+    },
+    "claimed": null,
+    "transfer_message": {
+      "token": "base:0xf3dfcffc520811d76236892e88d112d2a4a69d0d",
+      "amount": "100000000000000000000",
+      "sender": "base:0xbe3e4cb196bc9579c1c161ca5a2a4d47ed439469",
+      "recipient": "near:karkunow.near",
+      "fee": {
+        "fee": "0",
+        "native_fee": "3273397399996"
+      },
+      "msg": ""
+    }
+  }
+]
+```
+
+Inside `"NearReceipt"` you will find `"transaction_hash"`, which is the hash of your [finalization transaction](https://nearblocks.io/txns/C2SsiJYnGdHXkDGm6SP7XxaBF2c9Z8MB8RL4kgXy4XtM) on the target blockchain.
+
+### Complex way
+
+Now, let's take a look how you could have find it in NearBlocks explorer.
+
+Note the time of transaction from WormholeScan or BaseScan, it was `2025-08-06 13:17:53 UTC` in this case. 
 
 Now, if you want to find the finalization transaction, go to the [Omni Bridge Relayer](https://nearblocks.io/address/omni-relayer.bridge.near) on NearBlocks, and find the transaction there with a timestamp around that time plus 20 minutes, so it should be `2025-08-06 13:37:53 UTC`.
 
@@ -326,7 +396,9 @@ You could hover on the `AGE` field to see timestamps, like this:
 
 ![mint event in finalization transaction](../static/img/om_fin_tx_dash.png)
 
-As you can see there is only one close enough to my time here. Let's click on it, and then scroll `Interacted With (To)` list of event until you see `mint` functions on `base-...` contract:
+As you can see there is only one close enough to my time here. And that is exactly the transaction we have found via API in the last section.
+
+Let's click on it, and then scroll `Interacted With (To)` list of event until you see `mint` functions on `base-...` contract:
 
 ![execution plan details for finalization transaction](../static/img/om_fin_tx_mint.png)
 

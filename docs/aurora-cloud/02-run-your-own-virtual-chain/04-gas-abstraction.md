@@ -1,4 +1,4 @@
-## 🔓 Introduction: what is gas abstraction?
+# 🔓 Introduction: what is gas abstraction?
 
 On traditional blockchains, every user must pay gas to interact with the network — typically in the network’s native token. This often creates friction for users, especially those unfamiliar with crypto, and makes onboarding more complex.
 
