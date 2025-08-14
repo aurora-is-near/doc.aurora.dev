@@ -34,9 +34,9 @@ So we will talk about the previous steps very briefly, and focus more on the nex
 
 ## Requirements
 
-We're expecting you to have your [MetaMask installed](https://MetaMask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
+We're expecting you to have your [MetaMask installed](https://metamask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
 
-Please, also make sure you have a NEAR wallet to be used, you can create one at [MyNearWallet](https://app.mynearwallet.com/).
+Please also make sure you have a NEAR wallet to be used, you can create one at [MyNearWallet](https://app.mynearwallet.com/).
 
 Get some real funds there to pay for gas and token deployments. We recommend using [NEAR Intents](https://near-intents.org/) to swap and bridge tokens between different chains.
 
@@ -127,7 +127,7 @@ Now, you're ready to deploy your chain, click "Deploy now" button and confirm al
 After this we will receive an automatic notification about your chain deployment, and when we'll address it - you will get your chain working.
 
 :::info
-Note, that we need to do some manual operations during the chain deployment only if you're using a custom base token. So, if you use some pre-defined token – it will automatic and ready in seconds to be used!
+Note that we need to do some manual operations during the chain deployment only if you're using a custom base token. So, if you use some pre-defined token, it will automatic and ready in seconds to be used!
 :::
 
 When everything is ready, you will see:
@@ -168,7 +168,7 @@ As you can see, you have 10 NEAR of balance on your Engine contract, which is eq
 
 The way the virtual chain works is that it pays for your EVM transactions on NEAR from the engine account while accumulating the EVM gas for you on its in-EVM account.
 
-You can see how much of the EVM chain your chain has accumulated in "Gas collected" section:
+You can see how much of the EVM gas your chain has accumulated in "Gas collected" section:
 
 ![gas collected section in aurora cloud](../static/img/acc_gas_accumulated.png)
 
@@ -176,7 +176,7 @@ You could also set your "Gas collection address" to withdraw that gas token to i
 
 ## Setting the gas price
 
-Now, let's set up non zero gas price on your blockchain. This ensures that:
+Now, let's set up non-zero gas price on your blockchain. This ensures that:
 
 - Your users will pay the gas fees for the on-chain actions.
 - You will collect these gas fees to extract the value from your chain.
@@ -199,11 +199,11 @@ You will get:
 You may ask - how to set it in the right way? How should I calculate the value?
 The long answer is described in [this article](/blog/evm-gas-near-gas-on-aurora) describing the interplay between the NEAR gas and EVM gas in detail.
 
-The short one – just use `0.07GWei` price (in ETH) - which is the default price on Aurora Mainnet at the moment of the publication of this article.
+The short one – just use `0.07 GWei` price (in ETH) - which is the default price on Aurora Mainnet at the moment of the publication of this article.
 
 Convert it proportionally to your token price and you will get the right number. But what if you don't have the price for your token yet? Don't worry just set it small enough then and correct it later!
 
-I will use `0.000001` value and will enter it into to the `Gas price` field at the bottom of the page:
+I will use the value `0.000001` and will enter it into to the `Gas price` field at the bottom of the page:
 
 ![gas price field in aurora cloud](../static/img/acc_gas_price.png)
 
@@ -230,7 +230,7 @@ For Mac/Linux you can use:
 curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/latest/download/near-cli-rs-installer.sh | sh
 ```
 
-After that import you NEAR Wallet account, if you're using MyNearWallet, with this command executed in your terminal:
+After that import your NEAR Wallet account (if you're using MyNearWallet) with this command executed in your terminal:
 
 ```bash
 near account import-account using-web-wallet network-config mainnet
@@ -278,7 +278,7 @@ If you now go to your MetaMask, you will see the balance updated:
 
 ## Executing transaction inside EVM
 
-Now, we ready to execute your first transaction in your virtual chain. Let's execute a transfer of some gas tokens to your another account to test it out.
+Now, we ready to execute your first transaction in your virtual chain. Let's transfer some gas tokens to your another account to test it out.
 
 First of all, create another account in MetaMask, click on your Account Name:
 
@@ -299,7 +299,7 @@ Now let's send some tokens to your freshly created account, click "Send":
 
 ![send button in MetaMask](../static/img/mm_send.png)
 
-Choose you new account in the "To" field, enter some amount of tokens to transfer, and click "Continue":
+Choose your new account in the "To" field, enter some amount of tokens to transfer, and click "Continue":
 
 ![token transfer form in MetaMask](../static/img/mm_send_2.png)
 
@@ -337,7 +337,7 @@ After that, click "Collect" button, you will see a popup:
 
 ![gas collection popup in aurora cloud](../static/img/acc_gas_collection_2.png)
 
-Click "Collect gas" and your gas will be transfered to the specified NEAR account. You can find that transaction on NEARBlocks Explorer:
+Click "Collect gas" and your gas will be transferred to the specified NEAR account. You can find that transaction on NEARBlocks Explorer:
 
 ![gas collection transaction on nearblocks](../static/img/acc_gas_collection_3.png)
 

@@ -127,9 +127,11 @@ zsh: command not found: bridge-cli
 Storing raw private keys in a plaintext `.env` file is dangerous. Never commit this file to version control and prefer secret managers (e.g., 1Password CLI, `pass`, Bitwarden CLI, or environment-injection in CI like GitHub Actions secrets).
 
 At minimum, add `.env` to your `.gitignore`:
+
 ```gitignore
 .env
 ```
+
 Rotate any keys that might have been exposed.
 Only store the keys you're willing to lose as a plaintext in the `.env` file.
 :::
@@ -388,7 +390,7 @@ Inside `"NearReceipt"` you will find `"transaction_hash"`, which is the hash of 
 
 Now, let's take a look how you could have find it in NearBlocks explorer.
 
-Note the time of transaction from WormholeScan or BaseScan, it was `2025-08-06 13:17:53 UTC` in this case. 
+Note the time of transaction from WormholeScan or BaseScan, it was `2025-08-06 13:17:53 UTC` in this case.
 
 Now, if you want to find the finalization transaction, go to the [Omni Bridge Relayer](https://nearblocks.io/address/omni-relayer.bridge.near) on NearBlocks, and find the transaction there with a timestamp around that time plus 20 minutes, so it should be `2025-08-06 13:37:53 UTC`.
 
