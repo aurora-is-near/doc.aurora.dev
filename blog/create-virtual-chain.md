@@ -217,12 +217,11 @@ If you [decode that hex number](https://www.rapidtables.com/convert/number/hex-t
 
 ## Fund your EVM account
 
-Now, if you will want to execute anything - like a coin transfer or smart contract deployment you will need to have a base token on your account. Right now your balance should be 0, as we have seen when your [was added](/blog/create-virtual-chain#adding-your-new-chain-to-your-wallet) to your wallet.
+Now, if you will want to execute anything - like a coin transfer or smart contract deployment you will need to have a base token on your account. Right now your balance should be 0, as we saw when it [was added](/blog/create-virtual-chain#adding-a-chain-to-your-wallet) to your wallet.
 
 After following steps described in the [previous article](/blog/omnibridge-tutorial), you got your base token from other blockchain to NEAR.
 
 Now, it is time to bridge it to your address inside your virtual chain.
-
 To do this, we will use [NEAR CLI](https://docs.near.org/tools/near-cli). Go to the [official docs](https://docs.near.org/tools/near-cli) and follow installation instructions there.
 
 For Mac/Linux you can use:
