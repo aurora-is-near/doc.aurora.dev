@@ -3,7 +3,7 @@ title: "Launching your base token using thirdweb"
 description: "This tutorial demonstrates how to use thirdweb to deploy your own ERC-20 to be used as a base token for your virtual chain"
 date: "2025-08-06"
 authors: [slava]
-tags: [tutorials]
+tags: [tutorials, aurora_cloud, tips_and_tricks]
 ---
 
 If a developer wants to have their own base token for a [virtual chain] launched via [AuroraCloud](https://app.auroracloud.dev/auth/login), they can use, for example, [OpenZeppelin](https://docs.openzeppelin.com/contracts/5.x/erc20) or [Aurora Contracts](/build-a-dapp/contracts/erc-20).
@@ -138,14 +138,17 @@ You can take a look at the transactions which happened during this tutorial on b
 
 Total cost of creating a token was only around $0.02!
 
-In the next articles we will take a look on how you can bridge that token to NEAR via [OmniBridge].
-And how to use it as a base token for your [virtual chain](/aurora-cloud/run-your-own-virtual-chain/overview-of-aurora-cloud).
+In the [second article](/blog/omnibridge-tutorial) we will take a look on how you can bridge that token to NEAR via [OmniBridge].
+
+And in the [third one](/blog/create-virtual-chain), how to use it as a base token for your [virtual chain](/aurora-cloud/run-your-own-virtual-chain/overview-of-aurora-cloud).
 
 Of course, it is not obligatory to do it yourself – our team can always help you.
 But, doing it gives you more understanding around how everything works in Aurora Ecosystem!
 
 On this note, I wish you great time of the day and I hope you have enjoyed the article!
 Thank you!
+
+If you have encountered any errors, problems or just have any questions or suggestions, please contact us on [Discord](https://discord.gg/auroralabs).
 
 [OmniBridge]: https://docs.near.org/chain-abstraction/omnibridge/overview
 [virtual chain]: /aurora-cloud/run-your-own-virtual-chain/overview-of-aurora-cloud

@@ -1,9 +1,9 @@
 ---
 title: "Bridge-CLI: moving tokens with Omni Bridge"
 description: "In this article we demonstrate how you can use Omni Bridge to bridge tokens cross-chain with focus on getting a base token for a virtual chain on NEAR"
-date: "2025-08-07"
+date: "2025-08-10"
 authors: [slava]
-tags: [tutorials]
+tags: [tutorials, core_tech, aurora_cloud]
 ---
 In this short tutorial we will show how by using [Omni Bridge](https://docs.near.org/chain-abstraction/omnibridge/overview) you can bring your custom token from other chains (e.g., Solana, Base, Ethereum) to NEAR ecosystem.
 
@@ -351,7 +351,9 @@ You can take a look at the transactions which happened during this tutorial on b
 Deployment cost: $0.033
 Storage cost: $7.47 (3 NEAR)
 
-If you are ready - let's start a new virtual chain with that token now in the next article!
+If you are ready - let's start a new virtual chain with that token now in [the next article](/blog/create-virtual-chain)!
+
+If you have encountered any errors, problems or just have any questions or suggestions, please contact us on [Discord](https://discord.gg/auroralabs).
 
 [Omni Bridge]: https://docs.near.org/chain-abstraction/omnibridge/overview
 [VGAS]: https://base.blockscout.com/token/0xF3dFcfFc520811D76236892e88d112D2A4a69D0d
