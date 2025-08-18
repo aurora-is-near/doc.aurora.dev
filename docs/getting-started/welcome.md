@@ -9,7 +9,7 @@ slug: /
 
 Let's build together!
 
-### Choose your development path
+## Choose your development path
 
 - [Build on Aurora Mainnet](#-build-on-aurora-mainnet)
 - [Deploy a Virtual Chain](#-launch-a-virtual-chain)
@@ -24,7 +24,7 @@ The fastest way to deploy your Ethereum-based dapp with the low fees and high pe
 
 You’ll need an Ethereum-compatible wallet. We recommend:
 
-- [Metamask](https://metamask.io/) — standard EVM wallet
+- [MetaMask](https://metamask.io/) — standard EVM wallet
 - [Aurora Pass](https://aurorapass.app/) — enables free transactions on all Aurora networks
 
 ### 2. **Connect to Aurora**
