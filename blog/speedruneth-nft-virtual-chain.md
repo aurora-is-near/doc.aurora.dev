@@ -1,34 +1,43 @@
 ---
 title: "Speedrun Ethereum & Virtual Chains: NFT Challenge"
-description: "In the past article we have deployed our first virtual chain with a custom token. Let's now deploy some NFTs to it!"
+description: "In the previous article we have deployed our first virtual chain with a custom token. Let's now deploy some NFTs to it!"
 date: "2025-08-21"
 authors: [slava]
 tags: [tutorials, aurora_cloud]
 ---
 
-In the past article we have deployed our first virtual chain with a custom token. Let's now deploy some smart NFTs to it!
+In the previous article we have deployed our first virtual chain with a custom token. Let's now deploy some NFTs to it!
 
 To do this we will use [SpeedrunEthereum](https://speedrunethereum.com) first challenge.
 
-We won't cover it here fully, as instructions are great in the [SpeedrunEthereum NFT tutorial](https://speedrunethereum.com/challenge/simple-nft-example).
+We won't cover it here fully, as instructions are great in the SpeedrunEthereum's [NFT tutorial](https://speedrunethereum.com/challenge/simple-nft-example).
 
-Instead, we will talk in detail about specifics of going through that challenge on your own virtual chain.
+Instead, we will talk in detail about specifics of going through that challenge in the context of your own virtual chain.
 
 <!-- truncate -->
 
 ## Quick plan
 
-In the previous articles:
+In the previous article we have  [Launched your virtual chain in minutes](/blog/create-virtual-chain).
 
-- [Launching your base token using thirdweb](/blog/thirdweb-erc20)
-- [Bridge-CLI: moving tokens with Omni Bridge](/blog/omnibridge-tutorial)
+Now, we want to:
 
+1. Deploy some NFT smart contract to it.
+2. Deploy frontend application to operate that smart contract (mint, transfer NFTs).
+3. Mint and transfer some NFTs to other accounts.
+4. Verify your smart contract on Explorer.
+
+Let's go and do this!
 
 ## Requirements
 
-/// add a section about Smart Contracts development here
+You should be a bit familiar with the basics of smart-contract development. If you're not, please read learning materials at [Build A Dapp page](/build-a-dapp/introduction).
 
-We're expecting you to have your [MetaMask installed](https://metamask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
+E.g., try [CryptoZombies game](https://cryptozombies.io/) or read [Ethereum's Intro to Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/).
+
+SpeedrunEthereum challenges are still highly top-level, so they could be done just with a pure UI interaction and CLI commands. But it is always good to understand what is going inside there.
+
+Also, we're expecting you to have your [MetaMask installed](https://metamask.io/faqs) and your wallet already created there. You can use any other EVM wallet too. E.g., Rabby, Brave or Coinbase Wallet.
 
 Register on [Vercel](https://vercel.com/) to deploy your frontend there.
 
@@ -282,9 +291,10 @@ Now, you will be able to see contract code and call contract methods of [your co
 
 In this article we have successfully:
 
-- 1
-- 2
-- 3
+- Deployed an NFT contract to your virtual chain ([explorer link](https://0x4e454265.explorer.aurora-cloud.dev/token/0x3Db13fBC5F634EfDE0aFEd5372FbE38dfC92B0eA)).
+- Deployed a frontend (Dapp) to operate your smart contract on Vercel ([example](https://vgaschain-6s4to65f3-iaroslavkarkunovauroradevs-projects.vercel.app/))
+- Minted and transferred an NFT between your wallets ([mint transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x0a7d820e972ddd352a36cd4a2641333e1a2c265cd0d112982f9a4d47610a8cd4), [transfer transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x9a70601810772ae9170d72972bf86142fcd3b0629141f3ef5660d34f569154a3))
+- Verified your contract, makind its code and methods public and usable via Explorer.
 
 That is it for today! Hope you have enjoyed it!
 
