@@ -12,7 +12,7 @@ To do this we will use [SpeedrunEthereum](https://speedrunethereum.com) first ch
 
 We won't cover it here fully, as instructions are great in the SpeedrunEthereum's [NFT tutorial](https://speedrunethereum.com/challenge/simple-nft-example).
 
-Instead, we will talk in detail about specifics of going through that challenge in the context of your own virtual chain.
+Instead, we will talk in detail about specifics of going through Speedrun challenges in the context of your own virtual chain. So you will able to pass all of them on it!
 
 <!-- truncate -->
 
@@ -27,7 +27,7 @@ Now, we want to:
 3. Mint and transfer some NFTs to other accounts.
 4. Verify your smart contract on Explorer.
 
-Let's go and do this!
+After doing these you will be prepared to follow other Speedrun challenges, like [Staking App](https://speedrunethereum.com/challenge/decentralized-staking), [Token Vending Machine](https://speedrunethereum.com/challenge/decentralized-staking) or even [create your DEX](https://speedrunethereum.com/challenge/dex) on a virtual chain.
 
 ## Requirements
 
@@ -287,6 +287,17 @@ waiting for result...
 
 Now, you will be able to see contract code and call contract methods of [your contract](https://0x4e454265.explorer.aurora-cloud.dev/token/0x3Db13fBC5F634EfDE0aFEd5372FbE38dfC92B0eA?tab=contract_code) via Explorer.
 
+## Try other Speedrun challenges
+
+
+Now you are prepared to follow other Speedrun challenges to be deployed to your virtual chain:
+
+- [Decentralized Staking App](https://speedrunethereum.com/challenge/decentralized-staking)
+- [Token Vending Machine](https://speedrunethereum.com/challenge/decentralized-staking)
+- [Your DEX](https://speedrunethereum.com/challenge/dex)
+
+You can also join [Ethereum Speedrun Telegram Group](https://t.me/+_NeUIJ664Tc1MzIx) to get more help and support from other Solidity devs.
+
 ## Conclusions
 
 In this article we have successfully:
@@ -294,7 +305,7 @@ In this article we have successfully:
 - Deployed an NFT contract to your virtual chain ([explorer link](https://0x4e454265.explorer.aurora-cloud.dev/token/0x3Db13fBC5F634EfDE0aFEd5372FbE38dfC92B0eA)).
 - Deployed a frontend (Dapp) to operate your smart contract on Vercel ([example](https://vgaschain-6s4to65f3-iaroslavkarkunovauroradevs-projects.vercel.app/))
 - Minted and transferred an NFT between your wallets ([mint transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x0a7d820e972ddd352a36cd4a2641333e1a2c265cd0d112982f9a4d47610a8cd4), [transfer transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x9a70601810772ae9170d72972bf86142fcd3b0629141f3ef5660d34f569154a3))
-- Verified your contract, makind its code and methods public and usable via Explorer.
+- Verified your contract, making its code and methods public and usable via Explorer.
 
 That is it for today! Hope you have enjoyed it!
 
