@@ -1,24 +1,22 @@
 ---
 title: "Speedrun Ethereum & Virtual Chains: NFT Challenge"
 description: "In the previous article we have deployed our first virtual chain with a custom token. Let's now deploy some NFTs to it!"
-date: "2025-08-21"
+date: "2025-08-25"
 authors: [slava]
 tags: [tutorials, aurora_cloud]
 ---
 
 In the previous article we have deployed our first virtual chain with a custom token. Let's now deploy some NFTs to it!
 
-To do this we will use [SpeedrunEthereum](https://speedrunethereum.com) first challenge.
+To do this we will use [SpeedrunEthereum](https://speedrunethereum.com) first challenge. We won't cover it here fully, as instructions are great in their [NFT tutorial](https://speedrunethereum.com/challenge/simple-nft-example).
 
-We won't cover it here fully, as instructions are great in the SpeedrunEthereum's [NFT tutorial](https://speedrunethereum.com/challenge/simple-nft-example).
-
-Instead, we will talk in detail about specifics of going through Speedrun challenges in the context of your own virtual chain. So you will able to pass all of them on it!
+Instead, we will talk in detail about specifics of going through SpeedrunETH challenges in the context of your own virtual chain. So you will be able to pass all of them on it!
 
 <!-- truncate -->
 
 ## Quick plan
 
-In the previous article we have  [Launched your virtual chain in minutes](/blog/create-virtual-chain).
+In the previous article we have [Launched your virtual chain in minutes](/blog/create-virtual-chain).
 
 Now, we want to:
 
@@ -27,7 +25,7 @@ Now, we want to:
 3. Mint and transfer some NFTs to other accounts.
 4. Verify your smart contract on Explorer.
 
-After doing these you will be prepared to follow other Speedrun challenges, like [Staking App](https://speedrunethereum.com/challenge/decentralized-staking), [Token Vending Machine](https://speedrunethereum.com/challenge/decentralized-staking) or even [create your DEX](https://speedrunethereum.com/challenge/dex) on a virtual chain.
+After doing these you will be prepared to follow other Speedrun challenges, like [Staking App](https://speedrunethereum.com/challenge/decentralized-staking), [Token Vending Machine](https://speedrunethereum.com/challenge/token-vendor) or even [create your DEX](https://speedrunethereum.com/challenge/dex) on a virtual chain.
 
 ## Requirements
 
@@ -42,6 +40,7 @@ Also, we're expecting you to have your [MetaMask installed](https://metamask.io/
 Register on [Vercel](https://vercel.com/) to deploy your frontend there.
 
 You will also need:
+
 - [Node](https://nodejs.org/en/download/) (>= v20.18.3)
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/#mac-stable) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
@@ -55,6 +54,7 @@ We will deploy [NFT contract](https://speedrunethereum.com/challenge/simple-nft-
 Go [there](https://speedrunethereum.com/challenge/simple-nft-example) and follow instructions to start up your own project.
 
 You will need 3 terminal tabs or 3 terminal windows to run everything:
+
 - first - will be used to run your local chain with `yarn chain`.
 - second - to deploy contracts to it with `yarn deploy`.
 - third - to run the UI at `localhost:3000` with `yarn start`.
@@ -67,11 +67,11 @@ You can also debug your deployed contract by going to `http://localhost:3000/deb
 
 ## Adding virtual chain to config
 
-This NFT example actually runs on top of [HardHat](https://hardhat.org/) - familiar framework to deploy and develop smart contacts on EVM.
+This NFT example actually runs on top of [Hardhat](https://hardhat.org/) - familiar framework to deploy and develop smart contracts on EVM.
 
 Let's add your virtual chain to the configuration file there, so you will be able to deploy your first NFT contract there (and all othere SpeedrunEthereum challenges!).
 
-You can use your favorite code editor to edit HardHat config, we recommend using [VSCode](https://code.visualstudio.com/download).
+You can use your favorite code editor to edit Hardhat config, we recommend using [VSCode](https://code.visualstudio.com/download).
 
 Now, open your VSCode, and open your project folder (`challenge-simple-nft-example`) in it. Open file `packages/hardhat/hardhat.config.ts` (find it in a sidebar).
 
@@ -140,7 +140,7 @@ To do this you have two variants, considering that your chain is using a custom 
 1. Repeat the process to [fund it from NEAR](https://doc.aurora.dev/blog/create-virtual-chain#fund-your-evm-account).
 2. If you already have your gas tokens on some other account - use your EVM wallet, like MetaMask to transfer these ([example of transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x9aca5e1edeeb09f1e5dd8546380b9610a54112e0a4906060c1cb12f8ad5c5ac2)).
 
-After succesful funding, `yarn account` will return you non-zero balance on your virtual chain:
+After successful funding, `yarn account` will return you non-zero balance on your virtual chain:
 
 ```bash
 ➜  challenge-simple-nft-example git:(main) ✗ yarn account
@@ -224,7 +224,7 @@ You should see the correct network in the frontend (`http://localhost:3000`) aft
 
 Also, you will be able to connect your MetaMask and Mint some NFTs from your account (if it has the gas tokens). Try it out!
 
-Here is example of such [minting transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x0a7d820e972ddd352a36cd4a2641333e1a2c265cd0d112982f9a4d47610a8cd4) on my chain.
+Here is an example of such [minting transaction](https://0x4e454265.explorer.aurora-cloud.dev/tx/0x0a7d820e972ddd352a36cd4a2641333e1a2c265cd0d112982f9a4d47610a8cd4) on my chain.
 
 ### Deploying Vercel frontend
 
@@ -234,9 +234,9 @@ Now, you will need to [create a Vercel account](https://vercel.com/) and login i
 yarn vercel:login
 Vercel CLI 39.1.3
 ? Log in to Vercel Continue with Email
-? Enter your email address: iaroslav.karkunov@aurora.dev
-We sent an email to iaroslav.karkunov@aurora.dev. Please follow the steps provided inside it and make sure the security code matches Magnificent Ocelot.
-> Success! Email authentication complete for iaroslav.karkunov@aurora.dev
+? Enter your email address: your-email@example.com
+We sent an email to your-email@example.com. Please follow the steps provided inside it and make sure the security code matches Magnificent Ocelot.
+> Success! Email authentication complete for <your-email@example.com>
 Congratulations! You are now logged in. In order to deploy something, run `vercel`.
 ```
 
@@ -289,11 +289,10 @@ Now, you will be able to see contract code and call contract methods of [your co
 
 ## Try other Speedrun challenges
 
-
 Now you are prepared to follow other Speedrun challenges to be deployed to your virtual chain:
 
 - [Decentralized Staking App](https://speedrunethereum.com/challenge/decentralized-staking)
-- [Token Vending Machine](https://speedrunethereum.com/challenge/decentralized-staking)
+- [Token Vending Machine](https://speedrunethereum.com/challenge/token-vendor)
 - [Your DEX](https://speedrunethereum.com/challenge/dex)
 
 You can also join [Ethereum Speedrun Telegram Group](https://t.me/+_NeUIJ664Tc1MzIx) to get more help and support from other Solidity devs.
