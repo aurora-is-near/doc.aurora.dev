@@ -86,8 +86,5 @@ Use these details when deploying contracts and building your frontend.
 
 ## 🤖 Leverage AI to speed up development
 
-- **Aurora MCP on Smithery** — [Access it here](https://smithery.ai/server/@aurora-is-near/doc-aurora-dev)
-  IDE integration — Install the MCP into IDEs like Cursor to access docs and best practices contextually
-
 - **Aurora Cloud GPT** — [Chat here](https://chatgpt.com/g/g-683f659db39081918e8e7bcb85405dce-aurora-cloud-bot) for instant support powered by all Aurora documentation
 - **Coingecko MCP** — [Access it here](https://docs.coingecko.com/reference/mcp-server) to pull Aurora Mainnet on-chain data into your IDE or AI workflows
