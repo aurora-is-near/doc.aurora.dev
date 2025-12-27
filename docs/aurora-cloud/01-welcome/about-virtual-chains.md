@@ -27,3 +27,4 @@ Usually, appchains are side chains or rollups, which are completely separate blo
 Aurora has built a platform for this purpose:  [**Aurora Cloud**](https://auroracloud.dev/).
 
 Aurora Cloud proposes different plans to get your own chain, including **free transactions**, custom **professional services** and much more... in order to let you focus on **building your application**, not setting up infrastructure!
+k
