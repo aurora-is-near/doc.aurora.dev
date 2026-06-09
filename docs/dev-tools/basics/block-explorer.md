@@ -13,8 +13,8 @@ You can also see all of the verified contracts[here](https://explorer.mainnet.au
 \
 As an example of the API usage, you can get your ERC-20 token balance by using this method:
 
-![](https://www.datocms-assets.com/95026/1679535253-screenshot-2023-03-23-at-01-33-30.png)
+![](https://doc.aurora.dev/img/1679535253-screenshot-2023-03-23-at-01-33-30.png)
 
 Or get source code or ABI for the verified contract by calling those ones:
 
-![](https://www.datocms-assets.com/95026/1679535223-screenshot-2023-03-23-at-01-31-46.png)
+![](https://doc.aurora.dev/img/1679535223-screenshot-2023-03-23-at-01-31-46.png)

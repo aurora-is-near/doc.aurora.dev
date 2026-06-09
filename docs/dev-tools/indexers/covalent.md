@@ -18,11 +18,11 @@ Covalent maintains a full archival copy of every supported blockchain, meaning e
 
 ## Unified API
 
-![](https://www.datocms-assets.com/95026/1688042117-1686100325-example-api-response-json-aurora.png)
+![](https://doc.aurora.dev/img/1688042117-1686100325-example-api-response-json-aurora.png)
 
 The Covalent API is RESTful and offers the following for Aurora:
 
-![](https://www.datocms-assets.com/95026/1688042347-screenshot-2023-06-29-at-13-38-43.png)
+![](https://doc.aurora.dev/img/1688042347-screenshot-2023-06-29-at-13-38-43.png)
 
 ### API Tiers
 
@@ -68,7 +68,7 @@ The Premium tier is available for users who want to scale with us and require be
 
 ## Increment
 
-![](https://www.datocms-assets.com/95026/1688042855-1684974544-increment-example-partner-docs.png)
+![](https://doc.aurora.dev/img/1688042855-1684974544-increment-example-partner-docs.png)
 
 Increment is a novel no-code charting and reporting tool powered by Covalent, revolutionizing how the Web3 space approaches analytics. Many analytics tools let you write SQL to create charts, but *Increment is the only one to encode business logic - Reach, Retention, and Revenue - into an SQL compiler that can write valid SQL for you.*
 
@@ -82,7 +82,7 @@ Increment can be used for:
 
 For example, [click here](https://www.covalenthq.com/docs/networks/aurora/?utm_source=aurora\&utm_medium=partner-docs#network-status) to get the latest number of active wallets, transactions, and tokens by day, week, month, or year for Aurora:
 
-![](https://www.datocms-assets.com/95026/1688042897-1686100924-example_network_status_increment_general.png)
+![](https://doc.aurora.dev/img/1688042897-1686100924-example_network_status_increment_general.png)
 
 ### Get started
 

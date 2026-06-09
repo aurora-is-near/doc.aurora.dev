@@ -4,7 +4,7 @@ description: "In this post we focus on the need to refund tokens to a user in th
 date: "2023-11-17"
 authors: [michael]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1700215626-xcc-cc.png
+image: https://doc.aurora.dev/img/1700215626-xcc-cc.png
 ---
 In previous posts, we have written about the cross-contract calls (XCC) feature on Aurora. These include [*an overview*](/blog/cross-ecosystem-communication), [*an application*](/blog/building-a-game-using-near-aurora-and-bos), and a [*deep dive into writing tests*](/blog/communication-from-aurora-to-near-local-testing).
 

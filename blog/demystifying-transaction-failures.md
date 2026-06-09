@@ -4,7 +4,7 @@ description: "Getting transaction receipts and parsing Aurora Engine's transacti
 date: "2023-03-30"
 authors: [slava]
 tags: [tips_and_tricks]
-image: https://www.datocms-assets.com/95026/1682082259-dtf-article-cover.png
+image: https://doc.aurora.dev/img/1682082259-dtf-article-cover.png
 ---
 In this blog post, I want to discuss transaction failures on the Aurora blockchain and guide developers in understanding what exactly has happened with your transaction.
 
@@ -16,25 +16,25 @@ In this blog post, I want to discuss transaction failures on the Aurora blockcha
 
 One common challenge that developers may face when dealing with transaction failures is the small amount of information provided by [*Block Explorer*](https://explorer.mainnet.aurora.dev/). While some errors may be clearly displayed in it, and at least give some clue about the problem:
 
-![](https://www.datocms-assets.com/95026/1679334253-screenshot-2023-03-16-at-20-55-40.png)
+![](https://doc.aurora.dev/img/1679334253-screenshot-2023-03-16-at-20-55-40.png)
 
 Others may not provide any information at all, leaving developers wondering what went wrong and how to fix it:
 
-![](https://www.datocms-assets.com/95026/1679334351-screenshot-2023-03-16-at-20-56-46.png)
+![](https://doc.aurora.dev/img/1679334351-screenshot-2023-03-16-at-20-56-46.png)
 
 Let's take one of those transactions which fai `Error: Unknown`, e.g., `0x36e2339784004c5dd40df74e663f1fe6683705a8ad665a05a9ad0aa4e11b559b`:
 
-![](https://www.datocms-assets.com/95026/1679336814-screenshot-2023-03-20-at-18-25-56.png)
+![](https://doc.aurora.dev/img/1679336814-screenshot-2023-03-20-at-18-25-56.png)
 
 ### Aurora Helpers Tool
 
 In the case of an `Error: Unknown,` you just could go to the [*Aurora Helpers dApp*](https://aurora-helpers.vercel.app/aurora_to_near) and enter your transaction hash there to get the corresponding Near Receipt/Transaction:
 
-![](https://www.datocms-assets.com/95026/1679324662-screenshot-2023-03-20-at-15-03-32.png)
+![](https://doc.aurora.dev/img/1679324662-screenshot-2023-03-20-at-15-03-32.png)
 
 Below you will see the transaction status:
 
-![](https://www.datocms-assets.com/95026/1679350478-screenshot-2023-03-20-at-22-14-25.png)
+![](https://doc.aurora.dev/img/1679350478-screenshot-2023-03-20-at-22-14-25.png)
 
 That is it. The task is solved. You can see in Aurora Helpers directly what this status means, but we will talk a little more about those codes in the next section.
 

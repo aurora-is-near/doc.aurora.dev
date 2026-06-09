@@ -4,7 +4,7 @@ description: "How the Aurora's EVM gas and Near gas are related? What gas limits
 date: "2023-07-07"
 authors: [michael]
 tags: [core_tech]
-image: https://www.datocms-assets.com/95026/1688080861-gas.png
+image: https://doc.aurora.dev/img/1688080861-gas.png
 ---
 A core piece of Aurora’s technology is the [*Aurora Engine smart contract*](https://github.com/aurora-is-near/aurora-engine), which is an Ethereum Virtual Machine (EVM) implementation deployed as a smart contract on Near. Therefore, Aurora sits at the intersection of both EVM and Near runtimes. It naturally draws us to think about comparisons between EVM and Near.
 
@@ -72,7 +72,7 @@ Given this, it’s pretty easy to automate obtaining the EVM and Near gas data f
 
 In what follows, we consider all the successful (i.e., ignoring obvious failures like incorrect nonce – these would be outliers in our data because they don’t do any real EVM execution) Aurora transactions from June 4, 2023 (block height 93442283) to June 12, 2023 (block height 94047083). Below is a plot of EVM gas vs Near gas. The Near numbers have been scaled by 10^12 since Tgas is the common unit Near gas values are presented in, and the EVM numbers have been scaled by 10^3 since the smallest EVM gas possible is 2100.
 
-![](https://www.datocms-assets.com/95026/1688079135-screenshot-2023-06-29-at-23-51-52.png)
+![](https://doc.aurora.dev/img/1688079135-screenshot-2023-06-29-at-23-51-52.png)
 
 As expected, there is a strong linear correlation between the values. Though interestingly, there are (at least) 3 distinct lines as opposed to just one.
 

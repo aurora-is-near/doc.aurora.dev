@@ -39,7 +39,7 @@ Typically, setting up a deal would initiate with specific parameters. These, how
 
 Here are a few simple examples of Gas Abstraction deals:
 
-![](https://www.datocms-assets.com/95026/1687255307-untitled-2023-06-12-1504.png)
+![](https://doc.aurora.dev/img/1687255307-untitled-2023-06-12-1504.png)
 
 ### Aurora Pass as a Deal
 
@@ -49,7 +49,7 @@ The Rule Engine plays a crucial role when transactions occur by validating each 
 \
 Here is an image describing how the AuroraPass (AP) Deal works:
 
-![](https://www.datocms-assets.com/95026/1687255382-pasted-image-0-1.png)
+![](https://doc.aurora.dev/img/1687255382-pasted-image-0-1.png)
 
 ## Whitelisting
 
@@ -80,7 +80,7 @@ Gas Abstraction’ user journey is seamless. Once a user signs into a dApp with 
 
 Here is a scheme describing the User Journey above:
 
-![](https://www.datocms-assets.com/95026/1687256296-untitled-2023-06-20-1009.png)
+![](https://doc.aurora.dev/img/1687256296-untitled-2023-06-20-1009.png)
 
 ## Anti-abuse Rules
 

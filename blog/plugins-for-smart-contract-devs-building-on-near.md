@@ -4,7 +4,7 @@ description: "Let’s discover how ‘near-plugins’ library could be used by y
 date: "2024-01-19"
 authors: [moritz]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1705627571-np2.png
+image: https://doc.aurora.dev/img/1705627571-np2.png
 ---
 Some common functionality is required for many smart contracts. Examples are temporarily pausing certain features, staging and deploying a new version of the contract, and restricting access to contract methods. While such functionality is out of scope for an SDK like `near-sdk-rs`, ideally it is not implemented anew for every smart contract.
 

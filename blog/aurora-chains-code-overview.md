@@ -4,7 +4,7 @@ description: "Discover the source code for Aurora Chains: how fixed gas cost and
 date: "2023-05-19"
 authors: [slava]
 tags: [core_tech]
-image: https://www.datocms-assets.com/95026/1701394771-ac4.png
+image: https://doc.aurora.dev/img/1701394771-ac4.png
 ---
 The main goal of this article is to understand the Aurora Chain code. In a future post, we will discuss how it embellishes the Aurora Engine and how the advantages of an Aurora Chain correspond to different parts of code and Aurora architecture.
 
@@ -24,11 +24,11 @@ Now, let's look closer at the PR itself and what Aurora Chain actually is.
 
 First, we take a look at the folders in which developers have changed files:
 
-![](https://www.datocms-assets.com/95026/1684180353-screenshot-2023-05-15-at-20-52-18.png)
+![](https://doc.aurora.dev/img/1684180353-screenshot-2023-05-15-at-20-52-18.png)
 
 `engine-standalone-storage` folder shouldn't worry you: it is kinda an IO for the Engine, definitely not the main part of it. As for the `engine-tests` and `engine-types,` those are not critical for understanding, but they can give you some insights about the details because – as we all know – tests and types are foundational for a nicely working code. So, the only folder left is `engine` and that is the right guess to look into it:
 
-![](https://www.datocms-assets.com/95026/1684180726-screenshot-2023-05-15-at-20-58-36.png)
+![](https://doc.aurora.dev/img/1684180726-screenshot-2023-05-15-at-20-58-36.png)
 
 This folder is the heart of the repo and the Aurora itself. Inside we will see some files of the Engine changed, among which `engine.rs` , and `lib.rs` are the key ones. Also, notice the `src/silo` folder. Which is the thing we were looking for!
 
@@ -87,14 +87,14 @@ We can whitelist users by a NEAR account or Aurora address. EVM address is their
 \
 To understand this part better, take a look at this picture which illustrates how Aurora works in general:
 
-![](https://www.datocms-assets.com/95026/1682422805-screenshot-2023-04-25-at-12-39-54.png)
+![](https://doc.aurora.dev/img/1682422805-screenshot-2023-04-25-at-12-39-54.png)
 
 \
 The RPC in the picture above is our Relayer instance (it includes [RPC, relayer, and refiner](https://github.com/aurora-is-near/standalone-rpc), but that is a matter for another article). At the triangle base, we have NEAR Node and Engine Contract. So it is the address of the top vertex we're filtering with the account's whitelists.\
 \
 To continue with the whitelist kinds, we have another dimension to whitelist users: either to allow the deployment of new contracts or allow them to transact. We can make this really clear by using this table (with the exception, that an Admin can also edit whitelists):
 
-![](https://www.datocms-assets.com/95026/1684454005-screenshot-2023-05-19-at-00-53-10.png)
+![](https://doc.aurora.dev/img/1684454005-screenshot-2023-05-19-at-00-53-10.png)
 
 #### Whitelist Args
 

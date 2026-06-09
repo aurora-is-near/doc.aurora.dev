@@ -4,7 +4,7 @@ description: "XCC is a powerful tool to merge blockchain ecosystems together. In
 date: "2023-09-08"
 authors: [olga]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1694085970-article-cover.png
+image: https://doc.aurora.dev/img/1694085970-article-cover.png
 ---
 In this article, we will learn how to write local tests for the Aurora contracts, which use [XCC calls](/blog/cross-ecosystem-communication) to Near ecosystem. I will use a simple example to demonstrate it, step by step, we will write:
 
@@ -432,7 +432,7 @@ After that, we can compile and deploy the counter contract itself:
 
 When we use XCC for the first time in our setup, the implicit contract on the Near will be created. You can read more about it [here](https://github.com/aurora-is-near/aurora-contracts-sdk/blob/main/docs/NearFromAurora.md). We also could call this implicit contract as sub-account. The overall scheme could be presented as:
 
-![](https://www.datocms-assets.com/95026/1694083461-screenshot-2023-09-07-at-11-42-21.png)
+![](https://doc.aurora.dev/img/1694083461-screenshot-2023-09-07-at-11-42-21.png)
 
 Creation of a sub-account will cost you 2 NEAR tokens. That is why we need to mint 2 wNEAR for our user on Aurora after approving the spending of the wNear by counter contract.
 

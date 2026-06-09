@@ -4,7 +4,7 @@ description: "Learn how you can use functional programming patterns in Rust to s
 date: "2023-08-25"
 authors: [michael]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1692963087-tsci.png
+image: https://doc.aurora.dev/img/1692963087-tsci.png
 ---
 Recently, Michael Birch gave a [*talk at a virtual Rust conference*](https://www.conf42.com/Rustlang\_2023\_Michael_Birch_smart_contracts_indexers_crosscompilation) about some work we have done here at Aurora to enable our technology. In case you missed it, this blog post is a written version of the talk.
 

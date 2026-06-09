@@ -4,7 +4,7 @@ description: "Learn how to hide the fees complexities from your users by using B
 date: "2023-06-20"
 authors: [boris]
 tags: [core_tech]
-image: https://www.datocms-assets.com/95026/1687257758-bb-cover.png
+image: https://doc.aurora.dev/img/1687257758-bb-cover.png
 ---
 Since its inception, the Aurora Protocol has continued to break boundaries in the blockchain world. Its latest innovation is a service known as Borealis Business, aimed at solving one of the most significant challenges for users of Web3 products – the concept of transaction fees.
 
@@ -45,7 +45,7 @@ Typically, setting up a deal would initiate with specific parameters. These, how
 
 Here are a few simple examples of Borealis Business deals:
 
-![](https://www.datocms-assets.com/95026/1687255307-untitled-2023-06-12-1504.png)
+![](https://doc.aurora.dev/img/1687255307-untitled-2023-06-12-1504.png)
 
 ### Aurora Pass as a Deal
 
@@ -55,7 +55,7 @@ The Rule Engine plays a crucial role when transactions occur by validating each 
 \
 Here is an image describing how the AuroraPass (AP) Deal works:
 
-![](https://www.datocms-assets.com/95026/1687255382-pasted-image-0-1.png)
+![](https://doc.aurora.dev/img/1687255382-pasted-image-0-1.png)
 
 ## Whitelisting
 
@@ -86,7 +86,7 @@ Borealis Business’ user journey is seamless. Once a user signs into a dApp wit
 
 Here is a scheme describing the User Journey above:
 
-![](https://www.datocms-assets.com/95026/1687256296-untitled-2023-06-20-1009.png)
+![](https://doc.aurora.dev/img/1687256296-untitled-2023-06-20-1009.png)
 
 ## Anti-abuse Rules
 

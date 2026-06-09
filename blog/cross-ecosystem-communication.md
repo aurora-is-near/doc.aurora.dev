@@ -4,7 +4,7 @@ description: "Discover how cross-contracts calls communication can happen betwee
 date: "2023-04-21"
 authors: [boris]
 tags: [core_tech]
-image: https://www.datocms-assets.com/95026/1682340168-cec-article-cover.png
+image: https://doc.aurora.dev/img/1682340168-cec-article-cover.png
 ---
 Aurora’s infrastructure is built upon an innovative combination—our Ethereum Virtual Machine (EVM) operates as a smart contract running atop the powerful NEAR protocol. Harnessing NEAR's innate ability for smart contracts to communicate with one another, we seamlessly route EVM-compatible transactions to any smart contract deployed within NEAR. By doing so, developers are granted unparalleled access to the best of both ecosystems - from a rich collection of sound and robust Solidity libraries to the groundbreaking NEAR accounts model and an ever-growing, expansive user base.
 
@@ -14,7 +14,7 @@ Embracing Aurora's dedication to exceptional user experiences, our team has craf
 
 Aurora's Solidity developers can install an npm package by executing `npm i @auroraisnear/aurora-sdk` in any terminal, while NEAR Rust developers can similarly incorporate a cargo package from our [repository](https://github.com/aurora-is-near/aurora-engine.git). For a more customized installation, or if you want to contribute to the project, you can also follow the installation instructions in the repository.
 
-![](https://www.datocms-assets.com/95026/1682019691-screen-shot-2023-04-20-at-12-41-15-pm.png)
+![](https://doc.aurora.dev/img/1682019691-screen-shot-2023-04-20-at-12-41-15-pm.png)
 
 For this article, we have prepared two examples for developers to understand how to use the SDK. The first is a Solidity smart contract that connects the SocialDB contract, the storage layer that backs the [NEAR.social](https://near.social/#/) decentralized social media platform. Even though this integration would allow using MetaMask as an entry point into that social network, its importance extends further.
 
@@ -30,7 +30,7 @@ In this example, a solidity contract called \`SocialDB.sol\` will call the \`set
 \
 In summary, this contract interacts with the SocialDB contract on the NEAR platform. It sends wNEAR tokens as a fee to cover the storage cost of data being persisted on NEAR and using promises to chain cross-contract calls and callbacks. This regular solidity contract implements common libraries such as OpenZeppelin's AccessControl.
 
-![](https://www.datocms-assets.com/95026/1682019506-screen-shot-2023-04-20-at-12-37-46-pm.png)
+![](https://doc.aurora.dev/img/1682019506-screen-shot-2023-04-20-at-12-37-46-pm.png)
 
 Now, to interact with the SocialDB contract, this contract imports the Aurora SDK.
 
@@ -80,7 +80,7 @@ As we can see, the SDK provides a way to wrap functions in NEAR contracts easily
 
 In this example, a NEAR contract calls the Uniswap V3 contract deployed on Aurora. A callback is attached to the NEAR contract so that it can check the result of the EVM execution. Because the entire Uniswap API is complex, this example only implements one function–`exactOutputSingle`–to illustrate the pattern. The `exactOutputSingle` function performs a token swap using a single liquidity pool where the swap is constrained to give an exact amount of the "output" token within some price limitation of the "input" token. The return value is the number of input tokens spent to make the swap.
 
-![](https://www.datocms-assets.com/95026/1682019594-screen-shot-2023-04-20-at-12-39-37-pm.png)
+![](https://doc.aurora.dev/img/1682019594-screen-shot-2023-04-20-at-12-39-37-pm.png)
 
 To interact with the Uniswap contract, this contract imports the Aurora SDK.
 
