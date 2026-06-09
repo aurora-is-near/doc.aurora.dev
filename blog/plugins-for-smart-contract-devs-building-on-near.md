@@ -179,7 +179,7 @@ The functionality provided by `near-plugins` is critical for security and we str
 
 ## Ready for production, though?
 
-As mentioned earlier, `near-plugins` comes with the caveat of not yet being published to *crates.io*. Nevertheless, it is already used in some contracts on mainnet, e.g. contracts related to the [Rainbow Bridge](https://rainbowbridge.app/transfer). Moreover, both [Hacken](https://www.datocms-assets.com/50156/1680101850-hacken-near-plugins-final-report-updated-march2023.pdf) and [AuditOne](https://www.datocms-assets.com/50156/1680590522-auditone-near-plugins-final-report-updated-march2023.pdf) audited `near-plugins`, awarding it high scores.
+As mentioned earlier, `near-plugins` comes with the caveat of not yet being published to *crates.io*. Nevertheless, it is already used in some contracts on mainnet, e.g. contracts related to the [Rainbow Bridge](https://rainbowbridge.app/transfer). Moreover, both [Hacken](../static/pdf/1680101850-hacken-near-plugins-final-report-updated-march2023.pdf) and [AuditOne](../static/pdf/1680590522-auditone-near-plugins-final-report-updated-march2023.pdf) audited `near-plugins`, awarding it high scores.
 
 ## Conclusion
 
