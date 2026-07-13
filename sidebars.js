@@ -260,6 +260,7 @@ const sidebars = {
         collapsed: false,
         description: "React to the on-chain events emitted by smart contracts, store and analyze your data in a database by using indexers",
         items: [
+          'dev-tools/indexers/envio',
           'dev-tools/indexers/covalent',
           'dev-tools/indexers/flair',
           'dev-tools/indexers/the-graph',
