@@ -45,16 +45,15 @@ chains:
 
 ### Get started
 
-* [Quickstart](https://docs.envio.dev/docs/HyperIndex/quickstart?utm_source=aurora&utm_medium=partner-docs) - build your first Aurora indexer in minutes
+* [Quickstart](https://docs.envio.dev/docs/HyperIndex/quickstart?utm_source=aurora&utm_medium=partner-docs) - auto-generate an indexer from any verified Aurora contract in minutes
 * [Documentation](https://docs.envio.dev/docs/HyperIndex/overview?utm_source=aurora&utm_medium=partner-docs) - learn the full HyperIndex framework
-* [Contract Import](https://docs.envio.dev/docs/HyperIndex/contract-import?utm_source=aurora&utm_medium=partner-docs) - auto-generate an indexer from any verified Aurora contract
 * [Configuration guide](https://docs.envio.dev/docs/HyperIndex/configuration-file?utm_source=aurora&utm_medium=partner-docs) - set up your config, schema, and event handlers
 
 ## HyperSync
 
 [HyperSync](https://docs.envio.dev/docs/HyperSync/overview?utm_source=aurora&utm_medium=partner-docs) is Envio's real-time indexed data layer, purpose-built to make retrieving large amounts of Aurora data dramatically faster than traditional RPC. Point your client at the Aurora endpoint and stream logs, transactions, blocks, and traces at high speed.
 
-The HyperSync endpoint for Aurora is `https://aurora.hypersync.xyz` and works with the HyperSync clients for Rust, Python, and Node.js.
+The HyperSync endpoint for Aurora is `https://aurora.hypersync.xyz` and works with the HyperSync clients for Python, Rust, Node.js, and Go.
 
 ### Get started
 
