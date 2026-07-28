@@ -1,4 +1,4 @@
-# 💡 Welcome to Aurora
+# 💡 Welcome to Aurora let’s build the future of blockchain together 
 
 ## What is Aurora?
 
