@@ -11,7 +11,7 @@ Let's create an Infura project and send some requests to the Aurora network to t
 
 To sign up for an account on the [Infura website](https://infura.io/), enter your email address and password, and click **SIGN UP**.
 
-![](https://www.datocms-assets.com/95026/1679605373-inf1.webp)
+![](https://doc.aurora.dev/img/1679605373-inf1.webp)
 
 Infura sign upTo activate your account, verify your email address by clicking the link sent to your inbox.
 
@@ -19,19 +19,19 @@ Infura sign upTo activate your account, verify your email address by clicking th
 
 Once verified, you’ll be taken to the [Infura dashboard](https://infura.io/dashboard) where you can create projects, view analytics, select add-ons, or raise support requests. Infura supports the following projects, based on the networks:
 
-![](https://www.datocms-assets.com/95026/1679605426-screenshot-2023-03-23-at-21-00-00.png)
+![](https://doc.aurora.dev/img/1679605426-screenshot-2023-03-23-at-21-00-00.png)
 
 You must create an API key to authenticate your requests for your project. Click **CREATE NEW KEY**.
 
-![](https://www.datocms-assets.com/95026/1679605466-inf3.png)
+![](https://doc.aurora.dev/img/1679605466-inf3.png)
 
 From the pop-up, select the network and provide a name, then click **CREATE**.
 
-![](https://www.datocms-assets.com/95026/1679605506-inf4.webp)
+![](https://doc.aurora.dev/img/1679605506-inf4.webp)
 
 Your new project page has all the information you need to connect to the network. Use the available endpoints to send API requests.Web3 network endpoints:
 
-![](https://www.datocms-assets.com/95026/1679605681-inf5.webp)
+![](https://doc.aurora.dev/img/1679605681-inf5.webp)
 
 ### 3. Secure your project
 
@@ -41,11 +41,11 @@ Configure security settings in the **SECURITY** tab. This is optional.
 
 Force API requests to include the API key secret and/or [JSON Web Tokens (JWTs)](https://docs.infura.io/infura/learn/json-web-token-jwt).
 
-![](https://www.datocms-assets.com/95026/1679605849-inf6.webp)
+![](https://doc.aurora.dev/img/1679605849-inf6.webp)
 
 Use an allowlist to prevent unwanted access to your project. Refer to the [allowlist documentation](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/use-an-allowlist) for configuration instructions and best practices.
 
-![](https://www.datocms-assets.com/95026/1679605888-inf7.webp)
+![](https://doc.aurora.dev/img/1679605888-inf7.webp)
 
 ### 4. Send requests
 
@@ -100,7 +100,7 @@ This result is the hexadecimal value of the contract in Wei (the smallest denomi
 The Infura dashboard shows performance and API usage data such as methods called, bandwidth usage, and most active usage times.\
 Optimize your app and better understand your users by [reviewing the dashboard](https://docs.infura.io/infura/dashboard-stats) regularly.
 
-![](https://www.datocms-assets.com/95026/1679606470-inf8.webp)
+![](https://doc.aurora.dev/img/1679606470-inf8.webp)
 
 ### 6. Manage your account
 
@@ -108,6 +108,6 @@ You can find additional settings in **Profile Settings** to manage your account.
 
 You can update your [usage limits](https://docs.infura.io/infura/networks/ethereum/how-to/secure-a-project/set-rate-limits) and [network add-ons](https://docs.infura.io/infura/networks/ethereum/how-to/add-a-network-add-on) in the **Manage Plan tab**. You can manage [shared projects](https://docs.infura.io/infura/features/project-sharing) in the **Project Sharing** tab.
 
-![](https://www.datocms-assets.com/95026/1679606490-inf9.webp)
+![](https://doc.aurora.dev/img/1679606490-inf9.webp)
 
 If you want to learn more, please consult [official Infura documentation](https://docs.infura.io/infura/).

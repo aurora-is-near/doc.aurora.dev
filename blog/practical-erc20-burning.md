@@ -4,7 +4,7 @@ description: "Token burning is the act of permanently removing a certain number 
 date: "2023-09-22"
 authors: [alex_lapitsky]
 tags: [tips_and_tricks]
-image: https://www.datocms-assets.com/95026/1695381651-article-cover.png
+image: https://doc.aurora.dev/img/1695381651-article-cover.png
 ---
 
 Token burning is the act of permanently removing a certain number of tokens from circulation. This article delves into its intricacies and offers guidance based on my real-world experiences at Aurora

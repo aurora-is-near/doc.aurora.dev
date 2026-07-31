@@ -4,7 +4,7 @@ description: "Let's find out how to dig into Aurora transactions and get the und
 date: "2023-03-30"
 authors: [slava]
 tags: [tips_and_tricks]
-image: https://www.datocms-assets.com/95026/1682082350-na-article-cover.png
+image: https://doc.aurora.dev/img/1682082350-na-article-cover.png
 ---
 In this *Tips & Tricks* article, we will learn how to get a NEAR transaction hash by having the Aurora transaction's one.
 
@@ -16,7 +16,7 @@ Let's consider some random Aurora transaction for our tests, like this one: `0x3
 
 If you’re not interested in the code-solution, you can take a shortcut and use [*Aurora Helpers dApp*](https://aurora-helpers.vercel.app/aurora_to_near). Go there, paste Aurora’s hash – and you’ll get the result, e.g., for our test transaction, the result will be:
 
-![](https://www.datocms-assets.com/95026/1679324662-screenshot-2023-03-20-at-15-03-32.png)
+![](https://doc.aurora.dev/img/1679324662-screenshot-2023-03-20-at-15-03-32.png)
 
 ### NEAR Receipt: Hex
 
@@ -66,11 +66,11 @@ You'll get this result: `6wHHsKvNz2uaEaTyuqTDtLdhChQNtPXSfYJQYu7LrxFy`.
 
 At this point, you can go to the NEAR Explorer, enter the receipt, and get your transaction information:
 
-![](https://www.datocms-assets.com/95026/1679325885-screenshot-2023-03-20-at-15-24-17.png)
+![](https://doc.aurora.dev/img/1679325885-screenshot-2023-03-20-at-15-24-17.png)
 
 You can check that this is the correct transaction by scrolling down and seeing the corresponding receipt hash in the Transaction Execution Plan section:
 
-![](https://www.datocms-assets.com/95026/1679325931-screenshot-2023-03-20-at-15-24-31.png)
+![](https://doc.aurora.dev/img/1679325931-screenshot-2023-03-20-at-15-24-31.png)
 
 ### NEAR Tx Hash: Using Code
 

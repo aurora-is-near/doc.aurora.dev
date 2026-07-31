@@ -9,7 +9,7 @@ You can select:
 * **Permissions**: Chains can be defined as Public, Permissioned, or Private and permissions can be granted at the individual wallet address level.
 * **Gas Mechanics**: Define how gas is collected. It can be usage based or a fixed fee.&#x20;
   * Alternatively gas can be removed for end users. The Virtual Chain owner will still need to settle transaction costs in NEAR but end users will not be required to pay gas fees.
-  * [The Gas Abstraction](../enable-gas-abstraction) feature enables more advanced logic around free transactions, allowing you to define limits and whitelists.
+  * [The Gas Abstraction](../gas-abstraction) feature enables more advanced logic around free transactions, allowing you to define limits and whitelists.
 
 Examples:
 

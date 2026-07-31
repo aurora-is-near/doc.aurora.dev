@@ -4,7 +4,7 @@ description: "Practical guide for beginners who want to learn how to use Aurora 
 date: "2023-06-06"
 authors: [olga]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1686009470-gswa.png
+image: https://doc.aurora.dev/img/1686009470-gswa.png
 ---
 This article is a practical guide for beginners who want to learn how to work with the Aurora blockchain. It covers various aspects such as the connection of Aurora with Ethereum and Near blockchains, setting up an account on the Aurora's `testnet` using MetaMask, writing a small smart contract, and interacting with it using the Hardhat. Additionally, it includes writing a simple test and exploring different explorers to view transaction details.
 
@@ -105,7 +105,7 @@ To directly obtain AuroraETH in the `testnet`, you can follow these steps:
 
 Congratulations! You now have AuroraETH in your `testnet` wallet!
 
-![](https://www.datocms-assets.com/95026/1685341594-auroaeth.jpg)
+![](https://doc.aurora.dev/img/1685341594-auroaeth.jpg)
 
 Sadly, using this method can only obtain a limited amount of ETH. Luckily, to acquire larger amounts of AuroraETH, you can follow the method described below.
 
@@ -163,7 +163,7 @@ echo "AURORA_PRIVATE_KEY=[YOUR_AURORA_PRIVATE_KEY_HERE>" >](YOUR_AURORA_PRIVATE_
 
 You can get your private key from MetaMask:
 
-![](https://www.datocms-assets.com/95026/1685342401-metamaskgetprivatekey-1.jpg)
+![](https://doc.aurora.dev/img/1685342401-metamaskgetprivatekey-1.jpg)
 
 > *WARNING: the space of the account for Aurora testnet, Aurora mainnet, Ethereum mainnet, and Ethereum testnets is the same. So, the Aurora testnet's private key can also be used for Aurora/Ethereum mainnet. Please ensure that the provided account is indeed a test account and that it does not hold any real funds in any live networks*
 
@@ -214,7 +214,7 @@ yarn hardhat run scripts/deploy.js --network testnet_aurora
 
 Congratulations, your smart contract is deployed! You can find more details about transactions with this contract in the [Aurora Testnet Explorer](https://explorer.testnet.aurora.dev/address/0x0a11fF48B2D9B4eE14658b0836168219E1676118):
 
-![](https://www.datocms-assets.com/95026/1686009148-screenshot-2023-06-06-at-00-52-03.png)
+![](https://doc.aurora.dev/img/1686009148-screenshot-2023-06-06-at-00-52-03.png)
 
 ## Interaction with the contract by using Hardhat
 
@@ -321,7 +321,7 @@ yarn hardhat get-counter --network testnet_aurora --incrementer-address $INCREME
 
 Here I provide the address where the `Incrementer` contract was deployed. You should provide the address which was shown in the terminal after the contract was deployed.
 
-![](https://www.datocms-assets.com/95026/1685344118-run-deploy.jpg)
+![](https://doc.aurora.dev/img/1685344118-run-deploy.jpg)
 
 The task for incrementing `counter` looks similar:
 
@@ -347,7 +347,7 @@ yarn hardhat increment-counter --network testnet_aurora --incrementer-address $I
 
 After the increment, you can run `get-counter` task and check that counter is increased:
 
-![](https://www.datocms-assets.com/95026/1685344456-screenshot-from-2023-05-22-17-52-10.png)
+![](https://doc.aurora.dev/img/1685344456-screenshot-from-2023-05-22-17-52-10.png)
 
 ## Testing
 

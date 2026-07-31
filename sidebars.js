@@ -248,6 +248,7 @@ const sidebars = {
         description: "Choose one or more node providers here for your project to get a node for your project",
         items: [
           'dev-tools/rpc-providers/chainstack',
+          'dev-tools/rpc-providers/drpc',
           'dev-tools/rpc-providers/now-nodes',
           'dev-tools/rpc-providers/omnia-protocol',
         ]
@@ -259,6 +260,7 @@ const sidebars = {
         collapsed: false,
         description: "React to the on-chain events emitted by smart contracts, store and analyze your data in a database by using indexers",
         items: [
+          'dev-tools/indexers/envio',
           'dev-tools/indexers/covalent',
           'dev-tools/indexers/flair',
           'dev-tools/indexers/the-graph',
@@ -286,6 +288,7 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
+        'getting-started/welcome',
         'getting-started/overview',
         'getting-started/tokenomics',
         'getting-started/explore',

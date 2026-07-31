@@ -4,7 +4,7 @@ description: "While developing your smart contracts on Aurora, there are situati
 date: "2023-07-28"
 authors: [olga]
 tags: [tips_and_tricks]
-image: https://www.datocms-assets.com/95026/1690542624-usdc.png
+image: https://doc.aurora.dev/img/1690542624-usdc.png
 ---
 When you develop a contract, quite often you need ERC-20 tokens for testing. If your contract is rather small and doesn't use cross-contract calls, most likely, you don't need official USDC tokens or any other specific tokens. In that case, the best solution is just to take the standard ERC-20 contract, deploy it, and mint as many test tokens as you wish.
 
@@ -35,11 +35,11 @@ Official USDC address on Goerli Ethereum: [0x07865c6E87B9F70255377e024ace6630C1E
 
 For search the addresses on the Near and Aurora testnet networks and check that address is supported by Rainbow Bridge you can go to [https://testnet.rainbowbridge.app/deploy](https://testnet.rainbowbridge.app/deploy) , write the address of the USDC token in the search and click the `Find Token` button:
 
-![](https://www.datocms-assets.com/95026/1690544553-screenshot-2023-07-28-at-12-40-45.png)
+![](https://doc.aurora.dev/img/1690544553-screenshot-2023-07-28-at-12-40-45.png)
 
 You will see the query result:
 
-![](https://www.datocms-assets.com/95026/1690545689-screenshot-2023-07-28-at-13-01-18.png)
+![](https://doc.aurora.dev/img/1690545689-screenshot-2023-07-28-at-13-01-18.png)
 
 As we can see from the image above, the address on the NEAR is: `07865c6e87b9f70255377e024ace6630c1eaa37f.factory.goerli.testnet`
 
@@ -59,39 +59,39 @@ We have the Goerli Ethereum account and some GoerliETH. Let’s exchange some Et
 
 * Click the `Connect` button. Choose MetaMask and connect to your account.
 
-![](https://www.datocms-assets.com/95026/1689675168-uniswapconnect.jpg)
+![](https://doc.aurora.dev/img/1689675168-uniswapconnect.jpg)
 
 * Switch on `Show testnets` option on the Uniswap site:
 
-![](https://www.datocms-assets.com/95026/1690544253-screenshot-2023-07-28-at-12-35-32.png)
+![](https://doc.aurora.dev/img/1690544253-screenshot-2023-07-28-at-12-35-32.png)
 
-![](https://www.datocms-assets.com/95026/1690544262-screenshot-2023-07-28-at-12-35-41.png)
+![](https://doc.aurora.dev/img/1690544262-screenshot-2023-07-28-at-12-35-41.png)
 
-![](https://www.datocms-assets.com/95026/1690544274-screenshot-2023-07-28-at-12-35-54.png)
+![](https://doc.aurora.dev/img/1690544274-screenshot-2023-07-28-at-12-35-54.png)
 
 * Change the network to Goerli Testnet.
 
-![](https://www.datocms-assets.com/95026/1690544545-screenshot-2023-07-28-at-12-39-49.png)
+![](https://doc.aurora.dev/img/1690544545-screenshot-2023-07-28-at-12-39-49.png)
 
 **3. Swap GoerliEth into USDC:**
 
 * Click `Select token`. Yes, you doesn’t see the USDC tokens in the list. It is Ok, don’t worry:
 
-![](https://www.datocms-assets.com/95026/1690544771-screenshot-2023-07-28-at-12-45-29.png)
+![](https://doc.aurora.dev/img/1690544771-screenshot-2023-07-28-at-12-45-29.png)
 
 In the search field write `USDC` and select the `USD Coin` from the list. For some tokens, even searching by the token's name doesn't help. In that case, try to use the **token's address** in the search.
 
-![](https://www.datocms-assets.com/95026/1690544783-screenshot-2023-07-28-at-12-45-51.png)
+![](https://doc.aurora.dev/img/1690544783-screenshot-2023-07-28-at-12-45-51.png)
 
-![](https://www.datocms-assets.com/95026/1690544794-screenshot-2023-07-28-at-12-45-57.png)
+![](https://doc.aurora.dev/img/1690544794-screenshot-2023-07-28-at-12-45-57.png)
 
 * Put some small amount of ETH in first line. 0.01 GöETH will be enough.
 
-![](https://www.datocms-assets.com/95026/1690544849-screenshot-2023-07-28-at-12-44-59.png)
+![](https://doc.aurora.dev/img/1690544849-screenshot-2023-07-28-at-12-44-59.png)
 
 * Click Swap
 
-![](https://www.datocms-assets.com/95026/1690544873-screenshot-2023-07-28-at-12-45-06.png)
+![](https://doc.aurora.dev/img/1690544873-screenshot-2023-07-28-at-12-45-06.png)
 
 Congratulations! Now you get a lot of test USDC in your Ethereum account. You can check, that you receive tokens in MetaMask and check the address of the received tokens. If you don’t see the USDC tokens click "Import tokens" in MetaMask and put the address of USDC token.
 
@@ -102,15 +102,15 @@ Now the easy part: transfer USDC tokens from Ethereum to Aurora.
 * Open the Rainbow Bridge for testnet: [https://testnet.rainbowbridge.app/](https://testnet.rainbowbridge.app/)
 * Click New Transfer:
 
-![](https://www.datocms-assets.com/95026/1690544972-screenshot-2023-07-28-at-12-48-40.png)
+![](https://doc.aurora.dev/img/1690544972-screenshot-2023-07-28-at-12-48-40.png)
 
 * Connect to your accounts on Ethereum and on Aurora:
 
-![](https://www.datocms-assets.com/95026/1690545004-screenshot-2023-07-28-at-12-48-57.png)
+![](https://doc.aurora.dev/img/1690545004-screenshot-2023-07-28-at-12-48-57.png)
 
 And now, choose USDC.e tokens and amount for transferring, and click `Continue`:
 
-![](https://www.datocms-assets.com/95026/1690545027-screenshot-2023-07-28-at-12-49-11.png)
+![](https://doc.aurora.dev/img/1690545027-screenshot-2023-07-28-at-12-49-11.png)
 
 Done! Now you need to wait *20 minutes* before you get your test USDC on Aurora.
 

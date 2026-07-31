@@ -1,7 +1,7 @@
 ---
 title: RedStone
 ---
-![](https://www.datocms-assets.com/95026/1685655574-redstone-banner-7257fdf47d9e295449b82eb474c10b2c.png)
+![](https://doc.aurora.dev/img/1685655574-redstone-banner-7257fdf47d9e295449b82eb474c10b2c.png)
 
 RedStone is an Oracle that delivers frequently updated, reliable, and diverse data feeds for your dApp and smart contracts on multiple L1s & L2s.
 

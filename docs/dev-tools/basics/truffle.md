@@ -9,7 +9,7 @@ This tutorial assumes that you are familiar with Truffle and the non-fungible to
 
 This example is originally forked from the [OpenZeppelin examples](https://docs.openzeppelin.com/contracts/4.x/erc721). However, the code has been changed to fit the use case of this tutorial. The use case is about how to deploy and manage the life cycle of a simple COVID-19 vaccine NFT token 💊💊 using Truffle on the Aurora Testnet.
 
-![](https://www.datocms-assets.com/95026/1679442341-truffle_nft_example-a9d17b3f4f30477f3f6d67c4336f20e5.png)
+![](https://doc.aurora.dev/img/1679442341-truffle_nft_example-a9d17b3f4f30477f3f6d67c4336f20e5.png)
 
 1. The minter address (which is managed by the vaccination program manager) can distribute (mint) the vaccine tickets (NFT tokens 💊💊💊) to the people who are part of the vaccination program.
 2. When participants receive the tokens 💊, they can get access to the vaccine by spending the NFT token.

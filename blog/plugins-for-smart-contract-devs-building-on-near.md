@@ -4,7 +4,7 @@ description: "Let’s discover how ‘near-plugins’ library could be used by y
 date: "2024-01-19"
 authors: [moritz]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1705627571-np2.png
+image: https://doc.aurora.dev/img/1705627571-np2.png
 ---
 Some common functionality is required for many smart contracts. Examples are temporarily pausing certain features, staging and deploying a new version of the contract, and restricting access to contract methods. While such functionality is out of scope for an SDK like `near-sdk-rs`, ideally it is not implemented anew for every smart contract.
 
@@ -179,7 +179,7 @@ The functionality provided by `near-plugins` is critical for security and we str
 
 ## Ready for production, though?
 
-As mentioned earlier, `near-plugins` comes with the caveat of not yet being published to *crates.io*. Nevertheless, it is already used in some contracts on mainnet, e.g. contracts related to the [Rainbow Bridge](https://rainbowbridge.app/transfer). Moreover, both [Hacken](https://www.datocms-assets.com/50156/1680101850-hacken-near-plugins-final-report-updated-march2023.pdf) and [AuditOne](https://www.datocms-assets.com/50156/1680590522-auditone-near-plugins-final-report-updated-march2023.pdf) audited `near-plugins`, awarding it high scores.
+As mentioned earlier, `near-plugins` comes with the caveat of not yet being published to *crates.io*. Nevertheless, it is already used in some contracts on mainnet, e.g. contracts related to the [Rainbow Bridge](https://rainbowbridge.app/transfer). Moreover, both [Hacken](../static/pdf/1680101850-hacken-near-plugins-final-report-updated-march2023.pdf) and [AuditOne](../static/pdf/1680590522-auditone-near-plugins-final-report-updated-march2023.pdf) audited `near-plugins`, awarding it high scores.
 
 ## Conclusion
 

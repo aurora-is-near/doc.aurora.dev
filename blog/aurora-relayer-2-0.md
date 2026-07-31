@@ -4,7 +4,7 @@ description: "Learn about Aurora's relayer inner workings and how those innovate
 date: "2023-03-31"
 authors: [oleksii_krasynskyi]
 tags: [core_tech]
-image: https://www.datocms-assets.com/95026/1682082014-relayer-article-cover.png
+image: https://doc.aurora.dev/img/1682082014-relayer-article-cover.png
 ---
 In the blockchain world, relayers are off-chain facilitators of data exchange and transactions between blockchain networks and/or layers. They are used primarily in decentralized finance applications, cross-chain communication, and Layer 2 solutions, like sidechains or state channels. In general, relayers listen for events and transactions from one point and then submit the corresponding data or transactions to another. For that, they can charge fees for their services, incentivizing them to operate and maintain their infrastructure.
 
@@ -20,7 +20,7 @@ As mentioned above, the Aurora Relayer has two main components. First, an implem
 
 The Relayer had [its first version](https://github.com/aurora-is-near/aurora-relayer) deployed in October 2021. Developed in Typescript and JavaScript. It has been deprecated and replaced by [version 2.0](https://github.com/aurora-is-near/relayer2-public), with a JSON-RPC server written in go-lang and the indexer developed in go-lang and rust.
 
-![](https://www.datocms-assets.com/95026/1680267251-relayer-10.png)
+![](https://doc.aurora.dev/img/1680267251-relayer-10.png)
 
 Relayer 2.0 was motivated by the necessity of migrating from JavaScript to a more reliable language like golang that is designed for concurrency and is particularly good at managing multiple connections and resource-intensive tasks, making it very well-suited for the type of high-performance RPC systems required in blockchains.
 
@@ -30,7 +30,7 @@ Additionally, it required migrating to a more efficient database system, so it w
 
 Written in go-lang, it exposes endpoints that implement the methods of Ethereum’s JSON-RPC protocol, commonly known as the Web3 API. This middleware leverages a messaging system that forwards JSON-PRC calls to the NEAR network and vice versa. Its source code is open and available to developers, contributors, and anyone who would like to build, run and experiment with it natively. A list of all the implemented methods and the server's source code can be found in the GitHub [*repo*](https://github.com/aurora-is-near/relayer2-public). Also, there is a standalone version available [*here*](https://github.com/aurora-is-near/standalone-rpc).
 
-![](https://www.datocms-assets.com/95026/1680267260-relayer-20.png)
+![](https://doc.aurora.dev/img/1680267260-relayer-20.png)
 
 #### **The Database**
 

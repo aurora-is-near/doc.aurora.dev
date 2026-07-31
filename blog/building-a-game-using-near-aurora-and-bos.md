@@ -4,7 +4,7 @@ description: "Find out how to build a fully decentralized UI and back-end of an 
 date: "2023-05-05"
 authors: [michael]
 tags: [tutorials]
-image: https://www.datocms-assets.com/95026/1683223806-bos-article.png
+image: https://doc.aurora.dev/img/1683223806-bos-article.png
 ---
 
 In this blog post, we explore building a simple Tic Tac Toe game using the Near ecosystem’s tech stack. This includes using Aurora for a seamless onboarding experience (free transactions), Near for complex smart contract logic, and BOS for the front end. The final result is a free-to-use, fully decentralized application that anyone can pick up and play.
