@@ -51,3 +51,5 @@ The Testnet Websocket endpoint is at: `wss://testnet.aurora.dev`
 [aurora@Mainnet]: https://explorer.near.org/accounts/aurora
 
 [aurora@Testnet]: https://explorer.testnet.near.org/accounts/aurora
+
+> Live latency benchmarks for these endpoints (p50/p90/p99, 3 regions, updated every 60 s): [OpenChainBench Aurora RPC](https://openchainbench.com/benchmarks/aurora-rpc)
