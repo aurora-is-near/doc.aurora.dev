@@ -98,7 +98,7 @@ export TOKEN_ADDRESS='YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0A1
 We will use Hardhat tasks to take care of parsing the values provided for each parameter.
 It gets the values, performs the type validation and converts them into your desired type.
 
-In this example, we will go through a set of predefined Hardhat tasks that use the [Hardhat Runtime Environment](https://hardhat.org/advanced/hardhat-runtime-environment.html).
+In this example, we will go through a set of predefined Hardhat tasks that use the [Hardhat Runtime Environment](https://hardhat.org/hardhat-runner/docs/advanced/hardhat-runtime-environment).
 
 :::note
 The Hardhat Runtime Environment is an object containing all the functionality that Hardhat exposes when running a task, test or script. In reality, Hardhat is the HRE.
