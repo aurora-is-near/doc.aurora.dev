@@ -46,7 +46,7 @@ $ export TOKEN_ADDRESS='YOUR OUTPUT FROM DEPLOY (e.g. 0xD7f2A76F5DA173043E6c61a0
 
 Hardhat tasks take care of parsing the values provided for each parameter. It gets the values, performs the type validation and converts them into your desired type.
 
-In this example, we will go through a set of pre-defined Hardhat tasks that uses the Hardhat Runtime Environment ([HRE](https://hardhat.org/advanced/hardhat-runtime-environment.html)). In order to complete the tutorial, you should use them in the same order:
+In this example, we will go through a set of pre-defined Hardhat tasks that uses the Hardhat Runtime Environment ([HRE](https://hardhat.org/hardhat-runner/docs/advanced/hardhat-runtime-environment)). In order to complete the tutorial, you should use them in the same order:
 
 ### ETH Balance[​](https://doc.aurora.dev/interact/hardhat/#eth-balance "Direct link to heading")
 
