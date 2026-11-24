@@ -251,6 +251,7 @@ const sidebars = {
           'dev-tools/rpc-providers/drpc',
           'dev-tools/rpc-providers/now-nodes',
           'dev-tools/rpc-providers/omnia-protocol',
+          'dev-tools/rpc-providers/tatum',
         ]
       },
       {
